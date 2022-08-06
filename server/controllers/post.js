@@ -990,7 +990,7 @@ const sendReport = async (req, res) => {
   try {
     console.log(req.body);
     var emailParameters = {
-      post: `https://app.lokalpetition.de/petition/${req.body.postId}`,
+      post: req.body.link,
     };
 
     let emailToSend = [

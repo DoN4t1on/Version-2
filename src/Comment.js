@@ -165,11 +165,21 @@ export const Comment = (props) => {
   return (
     <div className='single-comment'>
       <div className='campaign-header campaign-header-comments'>
-        <button style={{ visibility: 'hidden' }} className='btn btn-success button small'>
+        <button
+          style={{ visibility: 'hidden' }}
+          className='btn btn-success button small'
+        >
           <img className='clock' src={require('./img/clock-fill.svg')} />
           (Zeit)
         </button>
-        <Link to={'/melden'}>
+        <Link
+          to={`/melden/`}
+          state={{
+            name: 'comment',
+            Id: props.item._id,
+            link: `https://app.lokalpetition.de/neuste-kommentare/${props.item._id}`,
+          }}
+        >
           <img
             className='report-comments'
             src={require('./img/three-dots.svg')}
@@ -246,12 +256,7 @@ export const Comment = (props) => {
           {' '}
           <img src={require('./img/share.svg')} className='share-button' />
         </Link>
-
       </div>
-
-
-
     </div>
-
   );
 };
