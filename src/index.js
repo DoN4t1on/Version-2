@@ -155,7 +155,7 @@ ReactDOM.render(
 
           <Route path='/profil/:Id' element={<Profile />} />
 
-          <Route path='/melden/:Id' element={<Report />} />
+          <Route path='/melden' element={<Report />} />
 
           <Route path='/spendenzusagen/:Id' element={<Supporters />} />
 

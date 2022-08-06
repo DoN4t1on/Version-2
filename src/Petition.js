@@ -221,23 +221,27 @@ export const Petition = (petition) => {
   return (
     <div className='single-campaign'>
       <div className='campaign-header'>
-        <Link style={{visibility: 'hidden'}} to='/'>
+        <Link style={{ visibility: 'hidden' }} to='/'>
           <button className='btn btn-success button small'>
-         
             <img className='clock' src={require('./img/clock-fill.svg')} />
             (Zeit)
           </button>
         </Link>
-        <Link to={`/melden/${petition.item._id}`}>
+
+        <Link
+          to={`/melden/`}
+          state={{ name: 'petetion', Id: petition.item._id }}
+        >
           {' '}
           <img src={require('./img/three-dots.svg')} className='report' />{' '}
         </Link>
         <div>
-         
           <Link to={`/profil/${petition.item.user._id}`}>
             {petition.item.user != '' ? (
               <button className='btn btn-success button small'>
-               <span className='petition-creator-name'>{petition.item.user.fname}</span> 
+                <span className='petition-creator-name'>
+                  {petition.item.user.fname}
+                </span>
                 <img
                   src={
                     petition.item.user.pic
@@ -252,7 +256,7 @@ export const Petition = (petition) => {
             )}
           </Link>
           <br />
-            {/* <img
+          {/* <img
             src={pinimage}
             className='marker-image'
             onClick={mark}
@@ -269,7 +273,7 @@ export const Petition = (petition) => {
       />
 
       <br />
-      
+
       <Grid container spacing={2}>
         <Grid item lg={3} md={3} sm={1} xs={1} />
         <Grid item lg={6} md={6} sm={12} xs={12}>
@@ -364,9 +368,9 @@ export const Petition = (petition) => {
           <img src={require('./img/share.svg')} className='share-button' />
         </Link>
       </div>
-     <div className='divider-horizontal-rule'>
+      <div className='divider-horizontal-rule'>
         <hr />
-      </div> 
+      </div>
     </div>
   );
 };

@@ -7,10 +7,15 @@ import userServices from './services/httpService/userAuth/userServices';
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import { useLocation } from 'react-router-dom';
 export const Report = () => {
   let navigate = useNavigate();
 
-  const { Id } = useParams();
+  const location = useLocation();
+
+  const { name, Id } = location.state;
+
+  // const { Id } = useParams();
   const sendReport = useMutation(
     (NewReport) =>
       userServices.commonPostService('/post/sendReport', NewReport),
@@ -51,4 +56,4 @@ export const Report = () => {
       />
     </div>
   );
-};
+};;
