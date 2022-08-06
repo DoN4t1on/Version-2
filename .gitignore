@@ -104,8 +104,6 @@ dist
 .tern-port
 
 .parcel-cache
-src/config/config.js
-src/config/config.js
-src/config/config.js
+
 .DS_Store
 .DS_Store
