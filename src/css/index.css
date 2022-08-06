@@ -1,0 +1,1172 @@
+@import url(bootstrap.css);
+
+::placeholder {
+  color: #000000;
+}
+
+.error-color{
+  color:red
+}
+body {
+  text-align: center;
+}
+.left {
+  float: left;
+}
+
+.button {
+  border-radius: 100px;
+}
+.share-button-link {
+  float: left;
+  border-radius: 100px;
+}
+.voter-div {
+  position: relative;
+  right: 0px;
+}
+.single-comment {
+  margin-bottom: 0px;
+}
+.activity-subsettings {
+  position: relative;
+  bottom: 7px;
+}
+#header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  /* margin-top: -20px; */
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  text-align: center;
+  z-index: 2;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 0px 0px;
+}
+
+.anonym {
+  position: relative;
+
+  left: 22px;
+}
+.range-info {
+  height: 18px;
+  position: relative;
+  bottom: 7px;
+  left: 4px;
+}
+#location {
+  color: white;
+  position: relative;
+  height: 35px;
+  left: 8px;
+}
+.filter-checkbox {
+  height: 25px;
+  width: 25px;
+  position: relative;
+  top: 4px;
+  border-radius: 50px;
+}
+.left-menu {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-color: black;
+  background-color: #116b26;
+
+}
+.left-menu-filter {
+
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-color: black;
+}
+.right-menu-filter {
+
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-color: black;
+  /* background-color: #116b26; */
+}
+.input-style1{
+  width: 5000px;
+}
+.input-style2{
+  width: 5000px;
+}
+.middle-menu {
+  border-color: black;
+}
+.border-black {
+  border-color: black;
+}
+.right-menu {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-color: black;
+}
+.crowdfunding-description {
+  margin-bottom: 25px;
+}
+.create-image {
+  position: relative;
+  left: 25px;
+}
+#filter {
+  height: 24px;
+  width: auto;
+  position: relative;
+  bottom: 2px;
+  right: 4px;
+}
+.create-titel {
+  clear: left;
+}
+.create-font-size {
+  font-size: 40px;
+}
+.Pflichtfeld {
+  float: left;
+  position: relative;
+  left: 10px;
+}
+.pac-container
+{
+	position:fixed;
+	display:block;
+	margin-top: -210px;
+}
+.menu1 {
+  font-size: 16px;
+}
+.create-titel-input {
+  max-width: 100%;
+  width: 300px;
+  border-radius: 100px;
+  border-color: black;
+  border: 1px solid black;
+}
+.create-description-input {
+  border-radius: 25px;
+  max-width: 100%;
+  border-color: black;
+  border: 1px solid black;
+}
+.menu2 {
+  font-size: 16px;
+  margin-top: 0px;
+}
+.last-menu {
+  margin-bottom: 3px;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.notification-setting {
+  display: flex;
+  justify-content: space-between;
+  max-width: 350px;
+  padding-left: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.report {
+  height: 35px;
+
+  position: relative;
+  top: 3px;
+
+  left: 20px;
+
+}
+.report-crowdfunding-campaign {
+  position: relative;
+  top: 3px;
+  right: 66px;
+  height: 35px;
+}
+.hidden {
+  visibility: hidden;
+}
+.black {
+  color: black;
+}
+.report-comments {
+  position: relative;
+  top: 3px;
+  left: 32px;
+  height: 35px;
+}
+.headline {
+  color: white;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.headline-with-back-button {
+  color: white;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  position: relative;
+  right: 22px;
+}
+.comments-headline{
+  position: relative;
+  right: 20px;
+}
+.search-title {
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+.search-settings {
+  font-size: 16px;
+}
+.search-input {
+  border-radius: 50px;
+  border-color: white;
+  color: white;
+  background: url(../img/search.svg) no-repeat scroll 10px 6px;
+  padding-left: 30px;
+
+  border: solid 2px;
+  width: 90%;
+}
+.back-button {
+  height: 45px;
+
+  float: left;
+  position: relative;
+  top: 16px;
+  left: 00px;
+  z-index: 10;
+
+}
+.back-button-comments {
+  height: 45px;
+
+  float: left;
+  position: relative;
+  top: 27px;
+  left: 0px;
+  z-index: 10;
+
+}
+.settings-image {
+  height: 36px;
+
+  float: right;
+  position: relative;
+  top: 19px;
+  right: 15px;
+  z-index: 10;
+}
+.crowdfunding-campaign {
+  margin-bottom: 40px;
+}
+.input-checkbox {
+  height: 25px;
+  width: 25px;
+  position: relative;
+  top: 4px;
+  border-radius: 50px;
+}
+.headline-profilesettings {
+  position: relative;
+  left: 15px;
+}
+.casual-header-div {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  text-align: center;
+  z-index: 2;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.casual-menu {
+  margin-top: 90px;
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+.right {
+  float: right;
+}
+.profile-picture {
+  border-radius: 100px;
+  height: 25px;
+  width: auto;
+  position: relative;
+  bottom: 1px;
+  left: 2px;
+}
+.range-description {
+  position: relative;
+  bottom: 2px;
+}
+.range {
+  width: 250px;
+  position: relative;
+  top: 2px;
+}
+#donation-statements {
+  font-size: 30px;
+}
+#your-donation {
+  font-size: 25px;
+}
+.marker-image {
+  height: 32px;
+  width: auto;
+  float: right;
+  position: relative;
+  top: 3px;
+  right: 4px;
+  clear: right;
+}
+
+.marker-image-crowdfunding {
+  height: 32px;
+  width: auto;
+  float: right;
+  position: relative;
+  top: 2px;
+  right: 4px;
+  clear: right;
+}
+#petition-titel {
+  clear: right;
+  font-size: 35px;
+  position: relative;
+  bottom: 10px;
+}
+#crowdfunding-titel {
+  margin-top: 15px;
+  font-size: 35px;
+}
+.petition-picture {
+  border-radius: 5px;
+  
+  object-fit: cover;
+
+
+}
+#Donated {
+  font-size: 30px;
+}
+.comments-img {
+  height: 32px;
+  width: auto;
+  position: relative;
+  bottom: 3px;
+}
+.comment {
+  font-size: 20px;
+  padding-top: 0px;
+  padding-right: 20px;
+  padding-left: 20px;
+  word-break: break-all;
+ margin-bottom: 0px;
+ position: relative;
+ top: 10px;
+ width: 95%;
+ margin: 0 auto;
+}
+.campaigns {
+  margin-bottom: 90px;
+  overflow: hidden;
+  margin-top: 120px;
+}
+.single-campaign {
+  margin-bottom: 15px;
+}
+.comment-bar {
+  position: fixed;
+  bottom: 60px;
+  z-index: 3;
+  display: flex;
+
+  width: 100%;
+}
+.addon {
+  position: relative;
+  font-size: 25px;
+}
+.headline-activity {
+  color: white;
+  margin-top: 5px;
+  
+  margin-bottom: 0px;
+}
+.comment-input {
+  text-align: center;
+  border-radius: 100px;
+  border-color: black;
+  border: solid 3px;
+  width: 100%;
+  margin-top: 15px;
+  margin-left: 2px;
+}
+
+.comment-button {
+  position: relative;
+  top: 7px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.comment-image {
+  height: 37px;
+}
+.notification-settings-image {
+  height: 37px;
+  z-index: 10;
+  float: right;
+  position: relative;
+  bottom: 10px;
+  right: 12px;
+}
+.activity {
+  position: relative;
+  padding-bottom: 0px;
+}
+.subheader-activity {
+  font-size: 15px;
+  position: relative;
+  
+  padding-bottom: 5px;
+}
+.profile-description {
+padding: 0 20 0 20;
+
+}
+.schieben{
+position: relative;
+bottom: 5px;
+font-size: 15px;
+}
+.standort{
+  position: relative;
+  left: 40px;
+}
+.fragen-crowdfunding {
+  position: relative;
+  left: 13px;
+  bottom: 4px;
+  font-size: 25px;
+}
+
+.amount {
+  text-align: center;
+  border-radius: 25px;
+  border-color: #000000;
+  border: solid 3px;
+  width: 130px;
+  position: relative;
+}
+
+.amount-p {
+  position: relative;
+  left: 25px;
+}
+.unterstützer-link {
+  color: black;
+  text-decoration: none;
+}
+.crowdfundingcampaigns-activity {
+  position: relative;
+ 
+}
+#euros {
+  font-size: 25px;
+}
+.comments-link {
+  color: black;
+}
+.comments-counter {
+  position: relative;
+  right: 1px;
+  color: black;
+  font-size: 30px;
+}
+.voting-counter-sum {
+  position: relative;
+  bottom: 10px;
+  font-size: 35px;
+  width: 40px;
+  text-align: center;
+}
+
+.voting-counter-upanddown {
+  position: relative;
+  bottom: 8px;
+  font-size: 35px;
+  z-index: -3;
+}
+.share-button {
+  position: relative;
+ 
+  top: 12px;
+  right: 12px;
+}
+.voting-button {
+  height: 35px;
+  width: auto;
+}
+
+.info-image {
+  height: 22px;
+  width: auto;
+  position: fixed;
+  bottom: 60px;
+  left: 6px;
+}
+.info-image-comments {
+  height: 32px;
+  width: auto;
+  position: fixed;
+  bottom: 105px;
+  left: 6px;
+}
+.under-navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 55px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  background-color: #28a745;
+  display: flex;
+  overflow-x: auto;
+  z-index: 1;
+}
+.conatiner-cookies{
+  position: fixed;
+  bottom: 0;
+  background-color: #292929;
+  height: 20%;
+  width:100%;
+  padding-top: 15px;
+  /* opacity: 0.7; */
+  z-index: 2;
+
+}
+.content-cookies{
+  color: white
+}
+.btn-cookies{
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+
+.profile-link {
+  color: blue;
+}
+.under-navitem-selected {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  min-width: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: sans-serif;
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 0.1s ease-in-out;
+}
+.location-marker {
+  position: relative;
+  bottom: 1px;
+}
+.under-navitem-unselected {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  min-width: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: sans-serif;
+  font-size: 13px;
+  color: lightgrey;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 0.1s ease-in-out;
+}
+.three-menus {
+  margin-bottom: 100px;
+  overflow: hidden;
+  margin-top: 160px;
+}
+#Supporters {
+  font-size: 40px;
+}
+.anonymous-support {
+  position: relative;
+  left: 22px;
+}
+.location {
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  position: relative;
+  bottom: 4px;
+}
+.profile-picture-fullscreen {
+  border-radius: 150px;
+  object-fit: cover;
+
+  width: 200px;
+  height: 200px;
+}
+.comments-header {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+.comment-menu {
+  margin-top: 90px;
+  margin-bottom: 150px;
+}
+.search-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  text-align: center;
+  z-index: 2;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.horzontal-rule-general {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.horzontal-rule-setting {
+  max-width: 175px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.interaction-bar {
+  display: flex;
+  justify-content: space-between;
+}
+.interaction-bar-comment{
+  position: relative;
+  top: 18px;
+}
+.voting-div {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  height: 80px;
+}
+
+.profile-name {
+  font-size: 35px;
+}
+.comments-div {
+  position: relative;
+  top: 3px;
+  right: 28px;
+  
+}
+
+.sub-comments-div {
+  position: relative;
+  top: 3px;
+  right: 32px;
+  visibility: hidden;
+}
+.share-div {
+  position: relative;
+  top: 3px;
+}
+.donation-bar {
+  height: 25px;
+  border-radius: 100px;
+}
+.moneyprogress {
+  font-size: 30px;
+}
+.donors {
+  font-size: 25px;
+}
+.petition-creator-name {
+
+  position: relative;
+  top: 1px;
+}
+.campaign-header {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.campaign-header-comments {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 10px;
+}
+.linkblack {
+  color: #000;
+}
+.switch {
+  position: relative;
+  bottom: 7px;
+  left: 5px;
+}
+.slider {
+  max-width: 330px;
+}
+.share-crowdfunding {
+  float: right;
+  position: relative;
+  right: 12px;
+  bottom: 5px;
+}
+.questionsymbol {
+  height: 32px;
+  width: auto;
+}
+.clock {
+  position: relative;
+  bottom: 1.5px;
+  height: 18px;
+  
+}
+.notification-settings-menu {
+  width: 300px;
+}
+.switch-special {
+  position: relative;
+  top: 7px;
+  left: 5px;
+}
+.text-align-left {
+  text-align: left;
+}
+.MapCreate {
+  border: 1px solid black;
+  max-width: 80%;
+  border-radius: 25px;
+}
+.divider-horizontal-rule {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.divider-horizontal-rule-comments {
+ width: 40%;
+  position: relative;
+  top: 23px;
+}
+.search-input::placeholder {
+  color: white;
+  font-weight: bold;
+  position: relative;
+  top: 1px;
+}
+.location-marker-profile {
+  position: relative;
+bottom: 1px;
+  left: 1px;
+}
+.location-marker-your-profile {
+  position: relative;
+  
+  right: 2px;
+}
+.link-profile {
+  position: relative;
+  left: 0px;
+  bottom: 1px;
+ 
+}
+
+.link-your-profile {
+  position: relative;
+  right: 2px;
+}
+.margin-bottom {
+  margin-bottom: 8px;
+}
+.activity-further-selectors {
+  position: relative;
+  bottom: 6px;
+}
+
+.info {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.strong {
+  font-weight: bold;
+}
+.btn-social {
+  all: unset;
+width: 70%;
+padding: 7px;
+border-radius:10px;
+border: 1px solid lightgrey;
+
+
+}
+.btn-facebook{
+  background-color: #4267B2;
+
+
+}
+.btn-apple{
+  background-color:#000000
+
+}
+.upload-img {
+width:400px;
+height:400px;
+border-radius:10px;
+  object-fit: cover;
+}
+
+.separator {
+ margin-top:10px;
+  color: #333;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+  
+}
+.separator:after {
+  background: #fff;
+  content: 'oder';
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
+}
+
+.input-border {
+  border-color: #3E68A8 !important;
+}
+
+
+.fa-google {
+  background: conic-gradient(
+      from -45deg,
+      #ea4335 110deg,
+      #4285f4 90deg 180deg,
+      #34a853 180deg 270deg,
+      #fbbc05 270deg
+    )
+    73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.input-style1{
+border: 1px solid #28a745;
+padding:10px;
+
+border-radius: 10px;
+
+}
+.input-style2{
+  border: 1px solid #28a745;
+  padding:10px;
+  width: 100%;
+  border-radius: 10px;
+  
+  }
+.btn-sign{
+  width:70%
+}
+.notdisplay{
+  display:none
+}
+.largediv{
+
+  width: 500px;
+}
+
+.back-btn{
+  margin-top:30px
+}
+
+
+.agb-styl{
+  text-align: left;
+  margin: 20px;
+  margin-top:150px;
+  
+}
+.no-data{
+  margin: 150px 30px 150px 30px ;
+  font-size: 20px;
+  
+  
+}
+.no-data-statement{
+  margin: 50px 30px 150px 30px ;
+  font-size: 20px;
+  
+  
+}
+.petition-desc{
+  margin: 5px 10px 0 10px;
+}
+@media (max-width: 310px) {
+  
+   body {
+    visibility: hidden;
+  }
+}
+@media (min-width: 350px) {
+  .input-style1{
+    width:80%;
+
+  
+  }
+  .divider-horizontal-rule-comments {
+    width: 55%;
+    
+   }
+
+  .petition-picture {
+    width: 100%;
+  }
+  .interaction-bar {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+  .profile-picture-fullscreen {
+    border-radius: 150px;
+    object-fit: cover;
+  
+    width: 200px;
+    height: 200px;
+  }
+  .donation-bar {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .back-btn{
+    margin-left:50px
+  }
+}
+@media (max-width: 370px) {
+  .petition-picture {
+    width: 100%;
+  }
+  .profile-picture-fullscreen {
+    border-radius: 150px;
+  object-fit: cover;
+
+  width: 200px;
+  height: 200px;
+  }
+  .small {
+    font-size: 12px;
+  }
+  .small-headlines {
+    font-size: 14px;
+  }
+  .location-marker {
+    position: relative;
+    right: 1px;
+    bottom: 1px;
+    height: 20px;
+  }
+
+  .profile-picture {
+    height: 20px;
+    width: auto;
+    position: relative;
+    bottom: 1px;
+  }
+  .campaigns {
+    margin-top: 110px;
+  }
+  .interaction-bar {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+  .report-crowdfunding-campaign {
+    visibility: hidden;
+  }
+ .upload-img{
+   margin-left:-20px;
+ }
+}
+
+@media (min-width: 900px) {
+  .petition-picture {
+    width: 70%;
+  }
+  .divider-horizontal-rule-comments {
+    width: 65%;
+     
+   }
+   
+  .input-style1{
+    width:60%;
+
+  }
+  .input-style2{
+    
+    width: 60%;
+    
+    
+    }
+    .no-data{
+      margin: 150px 250px 0px 250px ;
+      font-size: 20px;
+      
+      
+    }
+  .info {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  .donation-bar {
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+
+  .profile-picture-fullscreen {
+    border-radius: 150px;
+    object-fit: cover;
+  
+    width: 250px;
+    height: 250px;
+  }
+  .campaign-header,
+  .comment-bar,
+  .interaction-bar,
+  .under-navbar,
+  .search-title,
+  .casual-header-div,
+  .casual-menu, .comment {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .under-navbar {
+    border-radius: 0px 0px 0px 0px;
+  }
+
+  .search-header,
+  .casual-header-div {
+    border-radius: 0px 0px 00px 0px;
+  }
+
+  .divider-horizontal-rule {
+    padding-left: 270px;
+    padding-right: 270px;
+  }
+ 
+  .share-crowdfunding {
+    margin-right: 150px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .petition-picture {
+    width: 50%;
+  }
+  .input-style1{
+    width:40%;
+
+  }
+  .no-data{
+    margin: 150px 450px 0px 450px ;
+    font-size: 20px;
+    
+    
+  }
+  .info {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+  .donation-bar {
+    margin-left: 330px;
+    margin-right: 330px;
+  }
+  .profile-picture-fullscreen {
+    border-radius: 150px;
+    object-fit: cover;
+  
+    width: 250px;
+    height: 250px;
+  }
+  .campaign-header,
+  .interaction-bar,
+  .under-navbar,
+  .comment-bar,
+  .search-title,
+  .casual-header-div,
+  .casual-menu, .comment {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+  .divider-horizontal-rule {
+    padding-left: 420px;
+    padding-right: 420px;
+  }
+  
+  .share-crowdfunding {
+    margin-right: 300px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .petition-picture {
+    width: 40%;
+  }
+  .input-style1{
+    width:30%;
+
+  }
+  .info {
+    margin-left: 450px;
+    margin-right: 450px;
+  }
+  .donation-bar {
+    margin-left: 480px;
+    margin-right: 480px;
+  }
+  .profile-picture-fullscreen {
+    border-radius: 150px;
+  object-fit: cover;
+
+  width: 250px;
+  height: 250px;
+  }
+  .campaign-header,
+  .interaction-bar,
+  .under-navbar,
+  .comment-bar,
+  .search-title,
+  .casual-header-div,
+  .casual-menu, .comment {
+    padding-left: 450px;
+    padding-right: 450px;
+  }
+  .divider-horizontal-rule {
+    padding-left: 570px;
+    padding-right: 570px;
+  }
+  
+  .share-crowdfunding {
+    margin-right: 450px;
+  }
+}

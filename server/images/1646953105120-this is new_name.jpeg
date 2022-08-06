@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Error: ENOENT: no such file or directory, stat &#39;C:\Projects\xpera\images\1646953039023-Screenshot 2022-03-02 at 5.00.15 PM.png&#39;</pre>
+</body>
+</html>

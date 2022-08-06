@@ -1,0 +1,12 @@
+const mongoose = require('mongoose');
+
+const biddingSchema = new mongoose.Schema({
+  userId: { type: mongoose.Schema.Types.ObjectId, ref: 'Users' },
+  postId: { type: mongoose.Schema.Types.ObjectId },
+
+  amount: { type: Number },
+  dateTime: { type: Date },
+  Isincognito: { type: Boolean, default: false },
+});
+
+module.exports = mongoose.model('bidding', biddingSchema);

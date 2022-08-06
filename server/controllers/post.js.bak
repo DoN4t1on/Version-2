@@ -1,0 +1,183 @@
+const { ObjectId } = require('mongodb');
+
+const { Post, Thema } = require("../model");
+
+
+const moment = require("moment-timezone");
+
+const uploadPost = async (req, res) => {
+  try {
+    console.log(req.body);
+
+    const {
+      Isincognito,
+      userId,
+      symptons_id,
+      means_thearay_id,
+      whatHelped,
+      own_experience,
+      rating,
+      professional_other,
+	  
+	  
+	  timeZone,
+	  dateTime
+    } = req.body;
+	
+	
+	 req.body.dateTime = moment.tz(dateTime, timeZone)
+
+    req.body.symptons_id = ObjectId(req.body.symptons_id);
+
+    req.body.userId = ObjectId(req.body.userId);
+
+    req.body.means_thearay_id =
+      req.body.means_thearay_id == ""
+        ? ObjectId("6216619e6c52ca2390dab9d4")
+        : ObjectId(req.body.means_thearay_id);
+
+    const user = await Post.create(req.body);
+
+    return res.status(200).json({ status: true, data: user });
+  } catch (err) {
+    console.log(err);
+
+    return res.status(400).json({ message: "something Went Wrong" });
+  }
+};
+
+const getAllPosts = async (req, res) => {
+  try {
+    let Fetch = await Post.aggregate([
+      {
+        $match: {},
+      },
+
+      { $sort: { _id: -1 } },
+      {
+        $lookup: {
+          from: "users",
+          localField: "userId",
+          foreignField: "_id",
+          as: "user",
+        },
+      },
+
+      { $unwind: "$user" },
+
+      {
+        $lookup: {
+          from: "diseases",
+          localField: "symptons_id",
+          foreignField: "_id",
+          as: "symptons",
+        },
+      },
+
+      { $unwind: "$symptons" },
+
+      {
+        $lookup: {
+          from: "treatments",
+          localField: "means_thearay_id",
+          foreignField: "_id",
+          as: "means_thearay",
+        },
+      },
+
+      { $unset: ["user.pass"] },
+    ]);
+
+    return res.status(200).json({ status: true, data: Fetch });
+  } catch (err) {
+    console.log(err);
+
+    return res.status(400).json({ message: "something Went Wrong" });
+  }
+};
+
+const addTheme = async (req, res) => {
+  try {
+    console.log(req.body);
+
+    req.body.userId = ObjectId(req.body.userId);
+
+    req.body.symptons_id = ObjectId(req.body.symptons_id);
+
+    const user = await Thema.create(req.body);
+
+    return res.status(200).json({ status: true, data: user });
+  } catch (err) {
+    console.log(err);
+
+    return res.status(400).json({ message: "something Went Wrong" });
+  }
+};
+
+
+const DeleteTheme = async (req, res) => {
+  try {
+    console.log(req.body);
+
+
+    let Fetch = await Thema.deleteOne(
+      {_id:ObjectId(req.body.Id)});
+
+
+    return res.status(200).json({ status: true, data: "deleted" });
+  } catch (err) {
+    console.log(err);
+
+    return res.status(400).json({ message: "something Went Wrong" });
+  }
+};
+
+
+const getThemeByUserId = async (req, res) => {
+  try {
+    console.log(req.params);
+
+    let Fetch = await Thema.aggregate([
+      {
+        $match: { userId: ObjectId(req.params.userId) },
+      },
+
+      { $sort: { _id: -1 } },
+      // {
+      //   $lookup: {
+      //     from: "users",
+      //     localField: "userId",
+      //     foreignField: "_id",
+      //     as: "user",
+      //   },
+      // },
+
+      // { $unwind: "$user" },
+
+      {
+        $lookup: {
+          from: "diseases",
+          localField: "symptons_id",
+          foreignField: "_id",
+          as: "symptons",
+        },
+      },
+
+      { $unwind: "$symptons" },
+    ]);
+
+    return res.status(200).json({ status: true, data: Fetch });
+  } catch (err) {
+    console.log(err);
+
+    return res.status(400).json({ message: "something Went Wrong" });
+  }
+};
+module.exports = {
+  uploadPost,
+  getAllPosts,
+  addTheme,
+  getThemeByUserId,
+  DeleteTheme
+  
+};

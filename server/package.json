@@ -1,0 +1,41 @@
+{
+  "name": "B2b_Backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.983.0",
+    "bcrypt": "^5.0.1",
+    "dotenv": "^10.0.0",
+    "expo-server-sdk": "^3.6.0",
+    "express": "^4.17.2",
+    "http-errors": "^2.0.0",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken-refresh": "^5.7.0",
+    "link-check": "^5.0.0",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.33",
+    "mongoose": "^5.13.7",
+    "multer": "^1.4.3",
+    "multer-s3": "^2.9.0",
+    "node-mailjet": "^3.3.4",
+    "nodemailer": "^6.7.2",
+    "react-stripe": "^0.1.0",
+    "request": "^2.88.2",
+    "stripe": "^8.176.0",
+    "twilio": "^3.69.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

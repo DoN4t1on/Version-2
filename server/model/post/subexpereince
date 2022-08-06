@@ -1,0 +1,14 @@
+const mongoose = require("mongoose");
+
+const subexpereinceSchema = new mongoose.Schema({
+  userId: { type: mongoose.Schema.Types.ObjectId, ref: "Users" },
+  expereinceId: { type: mongoose.Schema.Types.ObjectId },
+  Isincognito: { type: Boolean },
+  expereince: { type: String },
+
+  timeZone: { type: String },
+
+  dateTime: { type: Date },
+});
+
+module.exports = mongoose.model("subexpereince", subexpereinceSchema);
