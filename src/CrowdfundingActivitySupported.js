@@ -9,7 +9,7 @@ export const CrowdfundingActivitySupported = () => {
 
 
 
-	return (
+  return (
     <div>
       <div className='casual-header-div'>
         <h4 className='headline-activity'>Aktivität</h4>
@@ -26,7 +26,7 @@ export const CrowdfundingActivitySupported = () => {
         <p className='subheader-activity'>
           <Link to='/activity'>Benachrichtigungen</Link>
           <br />
-          <Link to='/petitionen-activity'>Petitionen</Link>
+          <Link to='/antrag-activity'>Anträge</Link>
           <br />
           <Link
             to='/crowdfunding-activity'

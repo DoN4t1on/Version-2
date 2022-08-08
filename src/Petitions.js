@@ -110,14 +110,14 @@ export const Petitions = () => {
     track();
   }, []);
 
- 
+
   return (
     <div>
       {locationName != '' ? (
         <>
           {locationName != 'Köln' &&
-          locationName != 'Cologne' &&
-          locationName != 'Sargodha' ? (
+            locationName != 'Cologne' &&
+            locationName != 'Sargodha' ? (
             ///// {locationName != 'Köln' ? (
             <>
               <div id='header'>
@@ -167,7 +167,7 @@ export const Petitions = () => {
                 <p className='menu1 small-headlines'>
                   {' '}
                   <Link className='strong' to='/'>
-                    Petitionen
+                    Anträge
                   </Link>{' '}
                   | <Link to='/crowdfunding'>Crowdfunding</Link>
                 </p>
@@ -177,12 +177,12 @@ export const Petitions = () => {
                     Aktiv{' '}
                   </Link>
                   |
-                  <Link to='/petitionen-akzeptiert' className=''>
+                  <Link to='/antrage-akzeptiert' className=''>
                     {' '}
                     Akzeptiert{' '}
                   </Link>
                   |{' '}
-                  <Link to='/petitionen-abgelehnt' className=''>
+                  <Link to='/antrage-abgelehnt' className=''>
                     Abgelehnt{' '}
                   </Link>{' '}
                 </p>
@@ -192,12 +192,12 @@ export const Petitions = () => {
                     Am nächsten{' '}
                   </Link>
                   |{' '}
-                  <Link to='/petitionen-aktiv-neuste' className=''>
+                  <Link to='/antrage-aktiv-neuste' className=''>
                     {' '}
                     Neuste{' '}
                   </Link>
                   |{' '}
-                  <Link to='/petitionen-aktiv-am-beliebtesten' className=''>
+                  <Link to='/antrage-aktiv-am-beliebtesten' className=''>
                     {' '}
                     Beliebtest
                   </Link>{' '}

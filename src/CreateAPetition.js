@@ -138,7 +138,7 @@ export const CreateAPetition = () => {
         toast.error(ErrorService.uniformError(error));
       },
       onSuccess: (res) => {
-        toast.success('Ihre Petition wurde erfolgreich erstellt');
+        toast.success('Ihr Antrag wurde erfolgreich erstellt');
         navigate('/');
       },
     }
@@ -170,7 +170,7 @@ export const CreateAPetition = () => {
   return (
     <div>
       <div className='casual-header-div'>
-        <h4 className='headline'>Erstelle eine Petition</h4>
+        <h4 className='headline'>Erstelle einen Antrag</h4>
       </div>
 
       <div className='casual-menu'>
@@ -236,7 +236,7 @@ export const CreateAPetition = () => {
           <p className='create-font-size'>Begründung:</p>
 
           <div className=''>
-           <textarea
+            <textarea
               id='description'
               name='description'
               type='description'
@@ -248,9 +248,9 @@ export const CreateAPetition = () => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.description}
-            /> 
+            />
 
-            
+
 
             {formik.touched.description && formik.errors.description ? (
               <div className='error-color'>{formik.errors.description}</div>
@@ -270,9 +270,9 @@ export const CreateAPetition = () => {
             setCordinates={setCordinates}
             setlong={setcurrentLong}
           /> */}
-      
 
-          <div style={{ height: '320px', marginTop: 10, width: '100%', borderRadius:'10px' }}>
+
+          <div style={{ height: '320px', marginTop: 10, width: '100%', borderRadius: '10px' }}>
             {/* <GoogleMapReact
               bootstrapURLKeys={{
                 key: 'key',
@@ -297,7 +297,7 @@ export const CreateAPetition = () => {
               setlatlong={setlatlong}
               setlocationName={setlocationName}
             />
-                
+
           </div>
           <br />
           {/*
@@ -312,7 +312,7 @@ export const CreateAPetition = () => {
             disabled={true}
             value={locationName}
           /> */}
-         
+
           <br />
           {addNewPetition.isLoading ? (
             <CircularProgress />

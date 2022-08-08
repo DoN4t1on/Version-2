@@ -101,36 +101,36 @@ ReactDOM.render(
         <Routes>
           <Route path='/' element={<Petitions />} />
           <Route
-            path='/petitionen-aktiv-neuste'
+            path='/antrage-aktiv-neuste'
             element={<PetitionsActiveNewest />}
           />
           <Route
-            path='/petitionen-aktiv-am-beliebtesten'
+            path='/antrage-aktiv-am-beliebtesten'
             element={<PetitionsActiveMostPopular />}
           />
 
-          <Route path='/geteilte-petition/:Id' element={<PetitionsSingle />} />
+          <Route path='/geteilter-antrag/:Id' element={<PetitionsSingle />} />
 
           <Route
-            path='/petitionen-akzeptiert'
+            path='/antrage-akzeptiert'
             element={<PetitionsAccepted />}
           />
           <Route
-            path='/petitionen-akzeptiert-neuste'
+            path='/antrage-akzeptiert-neuste'
             element={<PetitionsAcceptedNewest />}
           />
           <Route
-            path='/petitionen-akzeptiert-am-beliebtesten'
+            path='/antrage-akzeptiert-am-beliebtesten'
             element={<PetitionsAcceptedMostPopular />}
           />
 
-          <Route path='/petitionen-abgelehnt' element={<PetitionsRejected />} />
+          <Route path='/antrage-abgelehnt' element={<PetitionsRejected />} />
           <Route
-            path='/petitionen-abgelehnt-neuste'
+            path='/antrage-abgelehnt-neuste'
             element={<PetitionsRejectedNewest />}
           />
           <Route
-            path='/petitionen-abgelehnt-am-beliebtesten'
+            path='/antrage-abgelehnt-am-beliebtesten'
             element={<PetitionsRejectedMostPopular />}
           />
 
@@ -180,19 +180,19 @@ ReactDOM.render(
 
           <Route path='/suche' element={<Search />} />
 
-          <Route path='/petition-erstellen' element={<CreateAPetition />} />
+          <Route path='/antrag-erstellen' element={<CreateAPetition />} />
 
           <Route path='/activity' element={<Activity />} />
 
-          <Route path='/petitionen-activity' element={<PetitionActivity />} />
+          <Route path='/antrag-activity' element={<PetitionActivity />} />
 
           <Route
-            path='/petitionen-activity-supported'
+            path='/antrag-activity-supported'
             element={<PetitionActivitySupported />}
           />
 
           <Route
-            path='/petitionen-activity-created'
+            path='/antrag-activity-created'
             element={<PetitionActivityCreated />}
           />
 
