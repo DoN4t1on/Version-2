@@ -210,7 +210,7 @@ export const CreateAPetition = () => {
                 <img
                   id='output'
                   src='https://ui-avatars.com/api/?name=John+Doe'
-                  className='upload-img '
+                  className='upload-img max-width-100'
                   alt=''
                 />
               </div>
@@ -288,9 +288,9 @@ export const CreateAPetition = () => {
 
             <WrappedMap
               googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${mapAPiKey}`}
-              loadingElement={<div style={{ height: `100%`, borderRadius:'10px' }} />}
-              containerElement={<div style={{ height: `200px`, borderRadius:'10px' }} />}
-              mapElement={<div style={{ height: `170%`, borderRadius:'10px', width: '100%',  border: '1px solid #28a745' }} />}
+              loadingElement={<div style={{ height: `100%`, borderRadius: '10px' }} />}
+              containerElement={<div style={{ height: `200px`, borderRadius: '10px' }} />}
+              mapElement={<div style={{ height: `170%`, borderRadius: '10px', width: '100%', border: '1px solid #28a745' }} />}
               setlat={setcurrentLat}
               setlong={setcurrentLong}
               latlong={latlong}
