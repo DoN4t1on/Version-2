@@ -931,6 +931,8 @@ border-radius: 10px;
 }
 .no-data {
   margin: 100px 30px 150px 30px ;
+  font-size: 20px; }
+  
 .petition-desc{
   margin: 5px 10px 0 10px;
 }
