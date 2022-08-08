@@ -110,15 +110,14 @@ body {
 .crowdfunding-description {
   margin-bottom: 25px;
 }
-<<<<<<< Updated upstream
-=======
+
 .max-width-100 {
   max-width: 100%;
 }
 .overflow {
   overflow: hidden;
 }
->>>>>>> Stashed changes
+
 .create-image {
   position: relative;
   left: 25px;
@@ -188,11 +187,9 @@ body {
   height: 35px;
 
   position: relative;
-<<<<<<< Updated upstream
+
   top: 3px;
-=======
-  top: 5px;
->>>>>>> Stashed changes
+
 
   left: 20px;
 
