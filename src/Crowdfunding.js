@@ -12,9 +12,9 @@ import Header from './components/Header';
 export const Crowdfunding = () => {
 
 
-	return (
+  return (
     <div>
-       <div id='header'>
+      <div id='header'>
         <p className='location' id='location'>
           <Link to='/karte'>
             Köln{' '}
@@ -24,16 +24,16 @@ export const Crowdfunding = () => {
 
         <p className='menu1 small-headlines'>
           {' '}
-          <Link  to='/'>
-            Petitionen
+          <Link to='/'>
+            Anträge
           </Link>{' '}
           | <Link to='/crowdfunding' className='strong'>Crowdfunding</Link>
         </p>
-       
+
       </div>
-    
+
       <div className='campaigns no-data'>In diesem Gebiet befinden sich noch keine Crowdfundingkampagnen. Wir sind aber bereits im Dialog mit der öffentlichen Verwaltung. Gerne können Sie diese auch persönlich kontaktieren.</ div>
-      
+
 
       <NavbarBottom
         classstart='under-navitem-selected'

@@ -139,7 +139,7 @@ export const SetLocation = () => {
         toast.error(ErrorService.uniformError(error));
       },
       onSuccess: (res) => {
-        toast.success('Ihre Petition wurde erfolgreich erstellt');
+        toast.success('Ihr Antrag wurde erfolgreich erstellt');
         navigate('/');
       },
     }
@@ -194,7 +194,7 @@ export const SetLocation = () => {
           for (var i = 0; i < address_components.length; i++) {
             if (
               address_components[i].types[0] ===
-                'administrative_area_level_1' &&
+              'administrative_area_level_1' &&
               address_components[i].types[1] === 'political'
             ) {
               state = address_components[i].long_name;
@@ -252,21 +252,21 @@ export const SetLocation = () => {
           />{' '}
         </Link>
 
-            <h4 className=' headline headline-with-back-button '> Ihr Standort </h4>
-          </div>
-<div style={{ position: 'fixed', top: '0px', left: '0px', height: '100%', width: '100%' }}  >
-      <WrappedMap
-        googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${mapAPiKey}`}
-        loadingElement={<div style={{ height: `100%` }} />}
-        containerElement={<div style={{ height: `600px`, width: '400px' }} />}
-        mapElement={<div style={{ height: `100%` }} />}
-        setlat={setcurrentLat}
-        setlong={setcurrentLong}
-        latlong={latlong}
-        setlatlong={setlatlong}
-        setlocationName={setlocationName}
-      />
-</div>
+        <h4 className=' headline headline-with-back-button '> Ihr Standort </h4>
+      </div>
+      <div style={{ position: 'fixed', top: '0px', left: '0px', height: '100%', width: '100%' }}  >
+        <WrappedMap
+          googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${mapAPiKey}`}
+          loadingElement={<div style={{ height: `100%` }} />}
+          containerElement={<div style={{ height: `600px`, width: '400px' }} />}
+          mapElement={<div style={{ height: `100%` }} />}
+          setlat={setcurrentLat}
+          setlong={setcurrentLong}
+          latlong={latlong}
+          setlatlong={setlatlong}
+          setlocationName={setlocationName}
+        />
+      </div>
       <NavbarBottom
         classstart='under-navitem-unselected'
         classsearch='under-navitem-unselected'

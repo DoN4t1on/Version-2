@@ -110,9 +110,15 @@ body {
 .crowdfunding-description {
   margin-bottom: 25px;
 }
+
+
 .max-width-100 {
   max-width: 100%;
 }
+.overflow {
+  overflow: hidden;
+}
+
 .create-image {
   position: relative;
   left: 25px;
@@ -182,7 +188,11 @@ body {
   height: 35px;
 
   position: relative;
-  top: 6px;
+
+
+  top: 3px;
+
+
 
   left: 20px;
 
@@ -347,6 +357,7 @@ body {
   font-size: 35px;
   position: relative;
   bottom: 10px;
+  margin: 0px 10px 0px 10px;
 }
 #crowdfunding-titel {
   margin-top: 15px;
