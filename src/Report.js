@@ -13,11 +13,7 @@ export const Report = () => {
 
   const location = useLocation();
 
-  ////const { name, Id, link } = location.state;
-
-  const { link } = location.state;
-
-  console.log(location.state);
+  const { name, Id } = location.state;
 
   // const { Id } = useParams();
   const sendReport = useMutation(
@@ -44,9 +40,7 @@ export const Report = () => {
       <button
         onClick={() => {
           sendReport.mutate({
-            ////postId: Id,
-            /// name: name,
-            link: link,
+            postId: Id,
           });
         }}
         className='btn btn-success btn-lg button'

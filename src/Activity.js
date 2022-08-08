@@ -17,18 +17,18 @@ export const Activity = () => {
 
         <p className="activity" >
 
-      
 
-         
-         <strong>Meine Petitionen</strong> 
+
+
+          <strong>Meine Petitionen</strong>
           <br />
 
 
-         Meine Kommentare
+          Meine Kommentare
           <br />
 
 
-        
+
 
         </p>
       </div>

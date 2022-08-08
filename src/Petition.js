@@ -229,13 +229,8 @@ export const Petition = (petition) => {
         </Link>
 
         <Link
-          to={`/melden`}
-          state={{
-            name: 'petetion',
-            Id: petition.item._id,
-
-            link: `https://app.lokalpetition.de/geteilte-petition/${petition.item._id}`,
-          }}
+          to={`/melden/`}
+          state={{ name: 'petetion', Id: petition.item._id }}
         >
           {' '}
           <img src={require('./img/three-dots.svg')} className='report' />{' '}
