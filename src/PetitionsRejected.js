@@ -43,7 +43,7 @@ export const PetitionsRejected = () => {
             Abgelehnt{' '}
           </Link>{' '}
         </p>
-
+       
       </div>
 
       <div className='campaigns no-data'>In diesem Gebiet befinden sich noch keine abgelehnten Petitionen. Wir sind bereits im Dialog mit der öffentlichen Verwaltung. Gerne können Sie diese auch persönlich kontaktieren.</ div>
