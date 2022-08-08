@@ -110,14 +110,14 @@ export const Petitions = () => {
     track();
   }, []);
 
-
+ 
   return (
     <div>
       {locationName != '' ? (
         <>
           {locationName != 'Köln' &&
-            locationName != 'Cologne' &&
-            locationName != 'Sargodha' ? (
+          locationName != 'Cologne' &&
+          locationName != 'Sargodha' ? (
             ///// {locationName != 'Köln' ? (
             <>
               <div id='header'>
@@ -128,7 +128,7 @@ export const Petitions = () => {
                   </Link>{' '}
                 </p>
               </div>
-              <div className='campaigns no-data statement-petitions'>
+              <div className='campaigns no-data-statement'>
                 Wir arbeiten noch nicht in dieser Region. Registrieren Sie sich{' '}
                 <a style={{ color: 'blue' }} href='https://lokalpetition.de/'>
                   {' '}

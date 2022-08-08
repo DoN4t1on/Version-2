@@ -170,11 +170,10 @@ export const CreateAPetition = () => {
   return (
     <div>
       <div className='casual-header-div'>
-        <h4 className='headline'>Erstelle einen Petitionen</h4>
+        <h4 className='headline'>Erstelle eine Petition</h4>
       </div>
 
-      <div className='casual-menu create-a-petition'>
-
+      <div className='casual-menu'>
         <form onSubmit={formik.handleSubmit}>
           {/* <p className='Pflichtfeld'>* = Pflichtfeld</p> */}
           <br />
@@ -199,7 +198,7 @@ export const CreateAPetition = () => {
 
           <p className='create-font-size'>Bild:</p>
 
-          <label htmlFor='icon-button-file' >
+          <label htmlFor='icon-button-file'>
             <Input
               accept='image/*'
               onChange={onChangeHandler}
@@ -211,7 +210,7 @@ export const CreateAPetition = () => {
                 <img
                   id='output'
                   src='https://ui-avatars.com/api/?name=John+Doe'
-                  className='upload-img max-width-100'
+                  className='upload-img '
                   alt=''
                 />
               </div>
@@ -237,7 +236,7 @@ export const CreateAPetition = () => {
           <p className='create-font-size'>Begründung:</p>
 
           <div className=''>
-            <textarea
+           <textarea
               id='description'
               name='description'
               type='description'
@@ -249,9 +248,9 @@ export const CreateAPetition = () => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.description}
-            />
+            /> 
 
-
+            
 
             {formik.touched.description && formik.errors.description ? (
               <div className='error-color'>{formik.errors.description}</div>
@@ -271,9 +270,9 @@ export const CreateAPetition = () => {
             setCordinates={setCordinates}
             setlong={setcurrentLong}
           /> */}
+      
 
-
-          <div style={{ height: '320px', marginTop: 10, width: '100%', borderRadius: '10px' }}>
+          <div style={{ height: '320px', marginTop: 10, width: '100%', borderRadius:'10px' }}>
             {/* <GoogleMapReact
               bootstrapURLKeys={{
                 key: 'key',
@@ -289,16 +288,16 @@ export const CreateAPetition = () => {
 
             <WrappedMap
               googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${mapAPiKey}`}
-              loadingElement={<div style={{ height: `100%`, borderRadius: '10px' }} />}
-              containerElement={<div style={{ height: `200px`, borderRadius: '10px' }} />}
-              mapElement={<div style={{ height: `170%`, borderRadius: '10px', width: '100%', border: '1px solid #28a745' }} />}
+              loadingElement={<div style={{ height: `100%`, borderRadius:'10px' }} />}
+              containerElement={<div style={{ height: `200px`, borderRadius:'10px' }} />}
+              mapElement={<div style={{ height: `170%`, borderRadius:'10px', width: '100%',  border: '1px solid #28a745' }} />}
               setlat={setcurrentLat}
               setlong={setcurrentLong}
               latlong={latlong}
               setlatlong={setlatlong}
               setlocationName={setlocationName}
             />
-
+                
           </div>
           <br />
           {/*
@@ -313,7 +312,7 @@ export const CreateAPetition = () => {
             disabled={true}
             value={locationName}
           /> */}
-
+         
           <br />
           {addNewPetition.isLoading ? (
             <CircularProgress />
