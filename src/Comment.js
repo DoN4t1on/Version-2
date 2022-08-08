@@ -62,7 +62,7 @@ export const Comment = (props) => {
         dateTime: new Date(),
       });
     } else {
-      toast.error('Loggen Sie sich zuerst unter „Profil“ ein');
+      toast.error('Erstelle ein Konto im Menü „Profil“ um fortzufahren');
     }
 
     // if (upvotecounter == 0) {
@@ -104,7 +104,7 @@ export const Comment = (props) => {
         dateTime: new Date(),
       });
     } else {
-      toast.error('Loggen Sie sich zuerst unter „Profil“ ein');
+      toast.error('Erstelle ein Konto im Menü „Profil“ um fortzufahren');
     }
 
     // if (downvotecounter == 0) {
@@ -165,10 +165,7 @@ export const Comment = (props) => {
   return (
     <div className='single-comment'>
       <div className='campaign-header campaign-header-comments'>
-        <button
-          style={{ visibility: 'hidden' }}
-          className='btn btn-success button small'
-        >
+       <button style={{ visibility: 'hidden' }} className='btn btn-success button small'>
           <img className='clock' src={require('./img/clock-fill.svg')} />
           (Zeit)
         </button>

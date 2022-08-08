@@ -128,7 +128,7 @@ export const Petitions = () => {
                   </Link>{' '}
                 </p>
               </div>
-              <div className='campaigns no-data-statement'>
+              <div className='campaigns no-data statement-petitions'>
                 Wir arbeiten noch nicht in dieser Region. Registrieren Sie sich{' '}
                 <a style={{ color: 'blue' }} href='https://lokalpetition.de/'>
                   {' '}

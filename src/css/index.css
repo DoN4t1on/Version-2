@@ -111,6 +111,7 @@ body {
   margin-bottom: 25px;
 }
 
+
 .max-width-100 {
   max-width: 100%;
 }
@@ -188,7 +189,9 @@ body {
 
   position: relative;
 
+
   top: 3px;
+
 
 
   left: 20px;
@@ -196,7 +199,7 @@ body {
 }
 .report-crowdfunding-campaign {
   position: relative;
-  top: 3px;
+  top: 4px;
   right: 66px;
   height: 35px;
 }
@@ -208,7 +211,7 @@ body {
 }
 .report-comments {
   position: relative;
-  top: 3px;
+  top: 4px;
   left: 32px;
   height: 35px;
 }
@@ -779,9 +782,9 @@ font-size: 15px;
   padding-right: 40px;
 }
 .divider-horizontal-rule-comments {
- width: 40%;
+ width: 35%;
   position: relative;
-  top: 23px;
+  top: 11px;
 }
 .search-input::placeholder {
   color: white;
@@ -927,12 +930,20 @@ border-radius: 10px;
   
   
 }
-.no-data-statement{
-  margin: 50px 30px 150px 30px ;
-  font-size: 20px;
-  
-  
+
+.create-a-petition {
+  max-width: 100%;
 }
+.no-data-crowdfunding{
+  margin: 80px 30px 150px 30px ;
+  font-size: 20px;
+
+
+}
+.no-data {
+  margin: 100px 30px 150px 30px ;
+  font-size: 20px; }
+  
 .petition-desc{
   margin: 5px 10px 0 10px;
 }
@@ -949,7 +960,7 @@ border-radius: 10px;
   
   }
   .divider-horizontal-rule-comments {
-    width: 55%;
+    width: 50%;
     
    }
 
@@ -978,6 +989,12 @@ border-radius: 10px;
 @media (max-width: 370px) {
   .petition-picture {
     width: 100%;
+  }
+  .report {
+
+    top: 2px;
+
+
   }
   .profile-picture-fullscreen {
     border-radius: 150px;
@@ -1015,14 +1032,23 @@ border-radius: 10px;
   .report-crowdfunding-campaign {
     visibility: hidden;
   }
- .upload-img{
-   margin-left:-20px;
- }
+ 
 }
+@media (min-width: 600px) {
+  .divider-horizontal-rule-comments {
+    width: 60%;
 
+   }
+   .search-input {
+
+
+    background: url(../img/search.svg) no-repeat scroll 10px 3px;
+
+  }
+}
 @media (min-width: 900px) {
   .petition-picture {
-    width: 70%;
+    width: 80%;
   }
   .divider-horizontal-rule-comments {
     width: 65%;
@@ -1040,7 +1066,7 @@ border-radius: 10px;
     
     }
     .no-data{
-      margin: 150px 250px 0px 250px ;
+      margin: 100px 250px 0px 250px ;
       font-size: 20px;
       
       
@@ -1099,7 +1125,7 @@ border-radius: 10px;
 
   }
   .no-data{
-    margin: 150px 450px 0px 450px ;
+    margin: 100px 450px 0px 450px ;
     font-size: 20px;
     
     
@@ -1181,3 +1207,6 @@ border-radius: 10px;
     margin-right: 450px;
   }
 }
+.statement-petitions {
+  margin-top: 50px;
+} 
