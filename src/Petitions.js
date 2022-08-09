@@ -147,11 +147,11 @@ export const Petitions = () => {
                 den Standort.
                 <br />
                 <br />
-                Gebiet in dem wir Arbeiten: Köln
+                Gebiet in dem wir Arbeiten: <br /> Köln
                 <br />
                 <br />
-                Gebiete auf der Warteliste: Aachen, Paris, Stuttgart,
-                Rheinland-Pfalz, Ungarn
+                Gebiete auf der Warteliste:  <br /> Aachen  <br /> Paris  <br />Stuttgart  <br />
+                Rheinland-Pfalz <br /> Ungarn
               </div>
             </>
           ) : (
