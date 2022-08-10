@@ -42,7 +42,7 @@ const uploadPost = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 
@@ -92,7 +92,7 @@ const getAllPosts = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 
@@ -110,7 +110,7 @@ const addTheme = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 
@@ -128,7 +128,7 @@ const DeleteTheme = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 
@@ -170,7 +170,7 @@ const getThemeByUserId = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 module.exports = {

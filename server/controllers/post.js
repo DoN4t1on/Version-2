@@ -33,7 +33,7 @@ const uploadPost = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 
@@ -68,7 +68,7 @@ const uploadParentComment = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 
@@ -134,7 +134,7 @@ const bidOnPost = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 
@@ -232,7 +232,7 @@ const upvoteOnPost = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 
@@ -331,7 +331,7 @@ const downvoteOnPost = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 
@@ -375,7 +375,7 @@ const getComments = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 
@@ -405,7 +405,7 @@ const getbidder = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 
@@ -435,7 +435,7 @@ const getUpvoterList = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 
@@ -466,7 +466,7 @@ const getUpvoterListComments = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 
@@ -497,7 +497,7 @@ const getDownvoterList = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 
@@ -527,7 +527,7 @@ const getDownvoterListComments = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 
@@ -560,7 +560,7 @@ const uploadChildComment = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 
@@ -662,7 +662,7 @@ const getAllPostsByDiseaseId = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 
@@ -710,7 +710,7 @@ const getAllMostPopularPost = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 
@@ -762,7 +762,7 @@ async function getLatestPostsWithoutGeoLocation(req, res) {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 }
 
@@ -843,7 +843,7 @@ async function getWithGeolocation(req, res) {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 }
 
@@ -858,7 +858,7 @@ const getAllPosts = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 
@@ -876,7 +876,7 @@ const addTheme = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 
@@ -895,7 +895,7 @@ const DeleteTheme = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 
@@ -936,7 +936,7 @@ const getThemeByUserId = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 
@@ -982,7 +982,7 @@ const getOnePetition = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 
@@ -1008,7 +1008,7 @@ const sendReport = async (req, res) => {
 
     return res.status(200).json({ status: true });
   } catch (err) {
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 
@@ -1106,7 +1106,7 @@ const upvoteOnComment = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 
@@ -1204,7 +1204,7 @@ const downvoteOnComment = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 

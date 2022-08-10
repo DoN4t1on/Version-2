@@ -9,10 +9,10 @@ const registerUser = async (req, res, isChildAccount = false) => {
 
     // Validate user input
     if (!(email && pass && username)) {
-      return res.status(400).json({ message: 'All input are required' });
+      return res.status(400).json({ message: 'Alle Eingabefelder werden benötigt' });
     }
 
-    // check if user already exist
+    // check if Der Nutzer existiert bereits
     // Validate if user exist in our database
     const oldUser = await User.findOne({
       $or: [
@@ -125,10 +125,10 @@ const registerUser = async (req, res, isChildAccount = false) => {
     if (isChildAccount) {
       return {
         success: false,
-        message: 'something Went Wrong',
+        message: 'Etwas lief schief',
       };
     }
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 
