@@ -123,7 +123,7 @@ export const Petition = (petition) => {
         dateTime: new Date(),
       });
     } else {
-      toast.error('Erstelle ein Konto im Menü „Profil“ um fortzufahren');
+      toast.error('Erstelle ein Profil um fortzufahren');
     }
 
     // if (upvotecounter == 0) {
@@ -165,7 +165,7 @@ export const Petition = (petition) => {
         dateTime: new Date(),
       });
     } else {
-      toast.error('Erstelle ein Konto im Menü „Profil“ um fortzufahren');
+      toast.error('Erstelle ein Profil um fortzufahren');
     }
 
     // if (downvotecounter == 0) {
@@ -214,7 +214,7 @@ export const Petition = (petition) => {
       });
       setAmount('');
     } else {
-      toast.error('Erstelle ein Konto im Menü „Profil“ um fortzufahren');
+      toast.error('Erstelle ein Profil um fortzufahren');
     }
   };
 
