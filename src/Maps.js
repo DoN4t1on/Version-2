@@ -30,7 +30,10 @@ function Maps(props) {
 
   const { lat, long } = useSelector((state) => state.Geo);
 
-  const [center, setCenter] = useState({ lat: lat, lng: long });
+  const [center, setCenter] = useState({
+    lat: lat == 'false' ? 40.856795 : lat,
+    lng: long == 'false' ? -73.954298 : long,
+  });
 
   // useEffect(() => {
   //   navigator.geolocation.getCurrentPosition(function (position) {

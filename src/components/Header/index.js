@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { SET_City, SET_LatLong } from '../../reactStore/actions/Actions';
 import { store } from '../../reactStore/MainStore';
 function Header() {
+
   const dispatch = useDispatch();
   /////const [locationName, setlocationName] = useState('Standort');
   Geocode.setApiKey(mapAPiKey);
