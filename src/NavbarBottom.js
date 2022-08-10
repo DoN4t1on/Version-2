@@ -52,7 +52,7 @@ export const NavbarBottom = (props) => {
 
           <span className='nav__text'></span>
         </a>
-        <Link to='/activity' className={`nav__link ${props.classactivity}`}>
+        <Link to='/aktivitat' className={`nav__link ${props.classactivity}`}>
           <i
             className='material-icons nav__icon '
             style={{ 'font-size': '35px' }}

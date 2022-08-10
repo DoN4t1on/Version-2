@@ -24,14 +24,14 @@ export const PetitionActivity = () => {
           />
         </Link>
         <p className='subheader-activity'>
-          <Link to='/activity'>Benachrichtigungen</Link>
+          <Link to='/aktivitat'>Benachrichtigungen</Link>
           <br />
           <Link to='/antrag-activity'>
             <strong>Anträge</strong>
           </Link>
           <br />
           <Link
-            to='/crowdfunding-activity'
+            to='/crowdfunding-aktivitat'
             className='crowdfundingcampaigns-activity'
           >
             Crowdfundingkampagnen
@@ -42,8 +42,8 @@ export const PetitionActivity = () => {
           <Link to='/antrag-activity'>
             <strong>Erstellt</strong>
           </Link>{' '}
-          | <Link to='/antrag-activity-supported'> Markiert</Link>|{' '}
-          <Link to='/antrag-activity-created'>Unterstützt</Link>
+          | <Link to='/antrag-activity-unterstutzt'> Markiert</Link>|{' '}
+          <Link to='/antrag-activity-erstellt'>Unterstützt</Link>
         </p>
       </div>
 

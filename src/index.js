@@ -60,7 +60,7 @@ import { Search } from './Search';
 
 import { CreateAPetition } from './CreateAPetition';
 
-import { Activity } from './Activity';
+import { Activity } from './aktivitat';
 
 import { PetitionActivity } from './PetitionActivity';
 import { PetitionActivitySupported } from './PetitionActivitySupported';
@@ -182,27 +182,27 @@ ReactDOM.render(
 
           <Route path='/antrag-erstellen' element={<CreateAPetition />} />
 
-          <Route path='/activity' element={<Activity />} />
+          <Route path='/aktivitat' element={<Activity />} />
 
           <Route path='/antrag-activity' element={<PetitionActivity />} />
 
           <Route
-            path='/antrag-activity-supported'
+            path='/antrag-activity-unterstutzt'
             element={<PetitionActivitySupported />}
           />
 
           <Route
-            path='/antrag-activity-created'
+            path='/antrag-activity-erstellt'
             element={<PetitionActivityCreated />}
           />
 
           <Route
-            path='/crowdfunding-activity'
+            path='/crowdfunding-aktivitat'
             element={<CrowdfundingActivity />}
           />
 
           <Route
-            path='/crowdfunding-activity-supported'
+            path='antrag-activitat-unterstutzt'
             element={<CrowdfundingActivitySupported />}
           />
 

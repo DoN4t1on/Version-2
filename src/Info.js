@@ -67,7 +67,7 @@ export const Info = () => {
 
           <span className='nav__text'></span>
         </Link>
-        <Link to='/activity' className='nav__link under-navitem-unselected'>
+        <Link to='/aktivitat' className='nav__link under-navitem-unselected'>
           <i
             className='material-icons nav__icon '
             style={{ 'font-size': '35px' }}

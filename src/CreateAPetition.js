@@ -260,7 +260,7 @@ export const CreateAPetition = () => {
           {/* <PlacesAutocomplete setSelected={setSelected} /> */}
 
           <p className='create-font-size'>Standort:</p>
-          <span className='schieben'>(schieben)</span>
+         
           {/* <Address
             label='Address'
             // setaddress={setaddress}
