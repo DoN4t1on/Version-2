@@ -60,7 +60,7 @@ import { Search } from './Search';
 
 import { CreateAPetition } from './CreateAPetition';
 
-import { Activity } from './aktivitat';
+import { Activity } from './Activity';
 
 import { PetitionActivity } from './PetitionActivity';
 import { PetitionActivitySupported } from './PetitionActivitySupported';
