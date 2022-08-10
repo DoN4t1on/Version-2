@@ -127,7 +127,7 @@ const handleEnterpriseEnrollment = async (req, res) => {
     };
   } catch (err) {
     console.log(err);
-    return { message: "something Went Wrong", status: 400 };
+    return { message: "Etwas lief schief", status: 400 };
   }
 };
 
@@ -265,7 +265,7 @@ const enrollUser = async (req, res) => {
     });
   } catch (err) {
     console.log(err);
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 
@@ -317,7 +317,7 @@ const updateEnrollUser = async (req, res) => {
     });
   } catch (err) {
     console.log(err);
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 

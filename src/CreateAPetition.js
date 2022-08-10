@@ -122,7 +122,7 @@ export const CreateAPetition = () => {
 
         console.log(values);
       } else {
-        toast.error('Erstelle ein Konto im Menü „Profil“ um fortzufahren');
+        toast.error('Erstelle ein Profil um fortzufahren');
       }
 
       // toast('');
@@ -260,7 +260,7 @@ export const CreateAPetition = () => {
           {/* <PlacesAutocomplete setSelected={setSelected} /> */}
 
           <p className='create-font-size'>Standort:</p>
-         
+
           {/* <Address
             label='Address'
             // setaddress={setaddress}

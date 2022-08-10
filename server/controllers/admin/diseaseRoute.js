@@ -21,7 +21,7 @@ const addNewDisease = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 
@@ -37,7 +37,7 @@ const deleteOneDisease = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 
@@ -49,7 +49,7 @@ const fetchallDisease = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 
@@ -187,7 +187,7 @@ const fetchDiseaseById = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 
@@ -210,7 +210,7 @@ const adminVerify = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 
@@ -234,7 +234,7 @@ const updateImageDisease = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 
@@ -255,7 +255,7 @@ const updateOneDisease = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 

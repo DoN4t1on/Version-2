@@ -72,7 +72,7 @@ const createApiPlans = async (req, res) => {
     });
   } catch (err) {
     console.log(err);
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 
@@ -87,7 +87,7 @@ const getAllApiPlans = async (req, res) => {
     });
   } catch (err) {
     console.log(err);
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 
@@ -107,8 +107,8 @@ const updateApiPlanInfo = async (req, res) => {
     if (title === "Enterprise") {
       const dataToUpdate = price
         ? {
-            price,
-          }
+          price,
+        }
         : {};
 
       const updatedInfo = await ApiPlans.findOneAndUpdate(
@@ -150,7 +150,7 @@ const updateApiPlanInfo = async (req, res) => {
     });
   } catch (err) {
     console.log(err);
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 

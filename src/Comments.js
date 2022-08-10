@@ -59,26 +59,26 @@ export const Comments = () => {
       });
       setAmount('');
     } else {
-      toast.error('Erstelle ein Konto im Menü „Profil“ um fortzufahren');
+      toast.error('Erstelle ein Profil um fortzufahren');
     }
   };
 
 
   return (
     <div>
-     
-        <div className='casual-header-div '>
-          <Link to='/'>
-            {' '}
-            <img
-              className='back-button'
-              src={require('./img/arrow-left-short.svg')}
-            />{' '}
-          </Link>
-          <h4 className=' headline headline-with-back-button '> Kommentare ({allComments.length})</h4>
-        </div>
 
-    
+      <div className='casual-header-div '>
+        <Link to='/'>
+          {' '}
+          <img
+            className='back-button'
+            src={require('./img/arrow-left-short.svg')}
+          />{' '}
+        </Link>
+        <h4 className=' headline headline-with-back-button '> Kommentare ({allComments.length})</h4>
+      </div>
+
+
       <div className='comment-menu'>
         {allComments.map((item) => (
           <Comment item={item} />
