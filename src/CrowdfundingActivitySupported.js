@@ -24,12 +24,12 @@ export const CrowdfundingActivitySupported = () => {
           />
         </Link>
         <p className='subheader-activity'>
-          <Link to='/activity'>Benachrichtigungen</Link>
+          <Link to='/aktivitat'>Benachrichtigungen</Link>
           <br />
           <Link to='/antrag-activity'>Anträge</Link>
           <br />
           <Link
-            to='/crowdfunding-activity'
+            to='/crowdfunding-aktivitat'
             className='crowdfundingcampaigns-activity'
           >
             <strong>Crowdfundingkampagnen</strong>
@@ -37,8 +37,8 @@ export const CrowdfundingActivitySupported = () => {
         </p>
         <p className='activity-further-selectors'>
           {' '}
-          <Link to='/crowdfunding-activity'>Markiert</Link> |{' '}
-          <Link to='/crowdfunding-activity-supported'>
+          <Link to='/crowdfunding-aktivitat'>Markiert</Link> |{' '}
+          <Link to='antrag-activitat-unterstutzt'>
             <strong>Unterstützt</strong>
           </Link>
         </p>
