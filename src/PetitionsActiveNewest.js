@@ -18,9 +18,10 @@ import Header from './components/Header';
 import ReactGA from 'react-ga4';
 import { useDispatch, useSelector } from 'react-redux';
 import { Get_All_POSTS } from './reactStore/actions/Actions';
-
+import { useDispatch, useSelector } from 'react-redux';
 export const PetitionsActiveNewest = () => {
   const dispatch = useDispatch();
+  const { locationName, lat, long } = useSelector((state) => state.Geo);
 
   const [allPost, setallPost] = React.useState([]);
 
@@ -91,7 +92,7 @@ export const PetitionsActiveNewest = () => {
       <div id='header'>
         <p className='location' id='location'>
           <Link to='/karte'>
-            Köln{' '}
+            {locationName}
             <img id='filter' src={require('./img/funnel-fill.svg')} />{' '}
           </Link>{' '}
         </p>

@@ -7,16 +7,16 @@ import Sportplatz from "./img/sportsfield.jpg";
 import Radweg from "./img/bikeway.jpg";
 import { Link } from "react-router-dom";
 import Header from './components/Header';
-
+import { useDispatch, useSelector } from 'react-redux';
 export const PetitionsAccepted = () => {
-
+  const { locationName, lat, long } = useSelector((state) => state.Geo);
 
   return (
     <div>
       <div id='header'>
         <p className='location' id='location'>
           <Link to='/karte'>
-            Köln{' '}
+            {locationName}
             <img id='filter' src={require('./img/funnel-fill.svg')} />{' '}
           </Link>{' '}
         </p>
@@ -43,10 +43,13 @@ export const PetitionsAccepted = () => {
             Abgelehnt{' '}
           </Link>{' '}
         </p>
-
       </div>
 
-      <div className='campaigns no-data'>In diesem Gebiet befinden sich noch keine akzeptierten Petitionen. Wir sind bereits im Dialog mit der öffentlichen Verwaltung. Gerne können Sie diese auch persönlich kontaktieren.</ div>
+      <div className='campaigns no-data'>
+        In diesem Gebiet befinden sich noch keine akzeptierten Petitionen. Wir
+        sind bereits im Dialog mit der öffentlichen Verwaltung. Gerne können Sie
+        diese auch persönlich kontaktieren.
+      </div>
       <NavbarBottom
         classstart='under-navitem-selected'
         classsearch='under-navitem-unselected'
@@ -55,5 +58,4 @@ export const PetitionsAccepted = () => {
       />
     </div>
   );
-
-}
+};
