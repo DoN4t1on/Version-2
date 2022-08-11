@@ -85,7 +85,9 @@ export const PetitionsSingle = () => {
   }, []);
   return (
     <div>
-      <Header />
+      <div className='casual-header-div'>
+        <h4 className='headline'>Geteilter Antrag</h4>
+      </div>
       <div className='campaigns'>
         {allPost.map((item) => (
           <Petition
@@ -113,7 +115,7 @@ export const PetitionsSingle = () => {
         /> */}
       </div>
       <NavbarBottom
-        classstart='under-navitem-selected'
+        classstart='under-navitem-unselected'
         classsearch='under-navitem-unselected'
         classactivity='under-navitem-unselected'
         classprofile='under-navitem-unselected'
