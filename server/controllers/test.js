@@ -7,7 +7,7 @@ const login = async (req, res) => {
 
     // Validate user input
     if (!(username && password)) {
-      return res.status(400).json({ message: 'All input is required' });
+      return res.status(400).json({ message: 'Alle Eingabefelder werden benötigt' });
     }
     // Validate if user exist in our database
     const user = await User.findOne({
@@ -34,12 +34,12 @@ const login = async (req, res) => {
       // user
       res.status(200).json({ status: true, data: user });
     } else {
-      res.status(400).json({ message: 'invalid crendtial' });
+      res.status(400).json({ message: 'Ungültige Anmeldeinformation' });
     }
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
   // Our register logic ends here
 };

@@ -47,7 +47,7 @@ const addApiInfo = async (req, res) => {
     });
   } catch (err) {
     console.log(err);
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 
@@ -93,7 +93,7 @@ const updateApiInfo = async (req, res) => {
     });
   } catch (err) {
     console.log(err);
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 
@@ -117,7 +117,7 @@ const checkApiLimit = async (req, res) => {
     });
   } catch (err) {
     console.log(err);
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 

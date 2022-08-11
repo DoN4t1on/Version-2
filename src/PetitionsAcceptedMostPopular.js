@@ -78,7 +78,7 @@ export const PetitionsAcceptedMostPopular = () => {
         <p className='menu1 small-headlines'>
           {' '}
           <Link className='strong' to='/'>
-            Petitionen
+            Anträge
           </Link>{' '}
           | <Link to='/crowdfunding'>Crowdfunding</Link>
         </p>
@@ -88,12 +88,12 @@ export const PetitionsAcceptedMostPopular = () => {
             Aktiv{' '}
           </Link>
           |
-          <Link to='/petitionen-akzeptiert' className='strong'>
+          <Link to='/antrage-akzeptiert' className='strong'>
             {' '}
             Akzeptiert{' '}
           </Link>
           |{' '}
-          <Link to='/petitionen-abgelehnt' className=''>
+          <Link to='/antrage-abgelehnt' className=''>
             Abgelehnt{' '}
           </Link>{' '}
         </p>

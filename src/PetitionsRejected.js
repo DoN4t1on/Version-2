@@ -1,11 +1,10 @@
-
-import { Petition } from "./Petition";
-import { NavbarBottom } from "./NavbarBottom";
-import Spielplatz from "./img/playground_petition.jpg";
-import Parkbank from "./img/bench.jpg";
-import Sportplatz from "./img/sportsfield.jpg";
-import Radweg from "./img/bikeway.jpg";
-import { Link } from "react-router-dom";
+import { Petition } from './Petition';
+import { NavbarBottom } from './NavbarBottom';
+import Spielplatz from './img/playground_petition.jpg';
+import Parkbank from './img/bench.jpg';
+import Sportplatz from './img/sportsfield.jpg';
+import Radweg from './img/bikeway.jpg';
+import { Link } from 'react-router-dom';
 import Header from './components/Header';
 import { useDispatch, useSelector } from 'react-redux';
 export const PetitionsRejected = () => {
@@ -24,7 +23,7 @@ export const PetitionsRejected = () => {
         <p className='menu1 small-headlines'>
           {' '}
           <Link className='strong' to='/'>
-            Petitionen
+            Anträge
           </Link>{' '}
           | <Link to='/crowdfunding'>Crowdfunding</Link>
         </p>
@@ -34,20 +33,20 @@ export const PetitionsRejected = () => {
             Aktiv{' '}
           </Link>
           |
-          <Link to='/petitionen-akzeptiert' className=''>
+          <Link to='/antrage-akzeptiert' className=''>
             {' '}
             Akzeptiert{' '}
           </Link>
           |{' '}
-          <Link to='/petitionen-abgelehnt' className='strong'>
+          <Link to='/antrage-abgelehnt' className='strong'>
             Abgelehnt{' '}
           </Link>{' '}
         </p>
       </div>
 
       <div className='campaigns no-data'>
-        In diesem Gebiet befinden sich noch keine abgelehnten Petitionen. Wir
-        sind bereits im Dialog mit der öffentlichen Verwaltung. Gerne können Sie
+        In diesem Gebiet befinden sich noch keine abgelehnten Anträge. Wir sind
+        bereits im Dialog mit der öffentlichen Verwaltung. Gerne können Sie
         diese auch persönlich kontaktieren.
       </div>
       <NavbarBottom

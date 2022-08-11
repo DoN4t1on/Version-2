@@ -40,7 +40,7 @@ function Header() {
             for (var i = 0; i < address_components.length; i++) {
               if (
                 address_components[i].types[0] ===
-                  'administrative_area_level_1' &&
+                'administrative_area_level_1' &&
                 address_components[i].types[1] === 'political'
               ) {
                 state = address_components[i].long_name;
@@ -108,7 +108,7 @@ function Header() {
             className={window.location.pathname == '/' ? 'strong' : ''}
             to='/'
           >
-            Petitionen
+            Anträge
           </Link>{' '}
           |{' '}
           <Link
@@ -130,9 +130,9 @@ function Header() {
           </Link>
           |
           <Link
-            to='/petitionen-akzeptiert'
+            to='/antrage-akzeptiert'
             className={
-              window.location.pathname == '/petitionen-akzeptiert'
+              window.location.pathname == '/antrage-akzeptiert'
                 ? 'strong'
                 : ''
             }
@@ -142,9 +142,9 @@ function Header() {
           </Link>
           |{' '}
           <Link
-            to='/petitionen-abgelehnt'
+            to='/antrage-abgelehnt'
             className={
-              window.location.pathname == '/petitionen-abgelehnt'
+              window.location.pathname == '/antrage-abgelehnt'
                 ? 'strong'
                 : ''
             }
@@ -162,9 +162,9 @@ function Header() {
           </Link>
           |{' '}
           <Link
-            to='/petitionen-aktiv-neuste'
+            to='/antrage-aktiv-neuste'
             className={
-              window.location.pathname == '/petitionen-aktiv-neuste'
+              window.location.pathname == '/antrage-aktiv-neuste'
                 ? 'strong'
                 : ''
             }
@@ -174,9 +174,9 @@ function Header() {
           </Link>
           |{' '}
           <Link
-            to='/petitionen-aktiv-am-beliebtesten'
+            to='/antrage-aktiv-am-beliebtesten'
             className={
-              window.location.pathname == '/petitionen-aktiv-am-beliebtesten'
+              window.location.pathname == '/antrage-aktiv-am-beliebtesten'
                 ? 'strong'
                 : ''
             }

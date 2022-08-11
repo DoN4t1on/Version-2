@@ -33,7 +33,7 @@ const forgetPasswordVerify = async (req, res) => {
     }
   } catch (err) {
     console.log(err);
-    return res.status(400).json({ message: 'somrthing Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 
@@ -46,7 +46,7 @@ const login = async (req, res) => {
 
     // Validate user input
     if (!(username && pass)) {
-      return res.status(400).json({ message: 'All input is required' });
+      return res.status(400).json({ message: 'Alle Eingabefelder werden benötigt' });
     }
     // Validate if user exist in our database
     const user = await User.findOne({
@@ -80,18 +80,18 @@ const login = async (req, res) => {
       // user
       res.status(200).json({ status: true, data: user });
     } else {
-      res.status(400).json({ message: 'invalid crendtial' });
+      res.status(400).json({ message: 'Ungültige Anmeldeinformation' });
     }
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
   // Our register logic ends here
 };
 
 const welcome = (req, res) => {
-  res.json('Welcome 🙌 ');
+  res.json('Willkommen 🙌 ');
 };
 
 const deleteAllUsers = async (req, res) => {
@@ -117,7 +117,7 @@ const refreshToken = async (req, res) => {
     return res.status(200).json(token);
   } catch (err) {
     console.log(err);
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 
@@ -127,10 +127,10 @@ const registerByFb = async (req, res) => {
 
     // Validate user input
     if (!(fname && email && id)) {
-      return res.status(400).json({ message: 'All input are required' });
+      return res.status(400).json({ message: 'Alle Eingabefelder sind benötige' });
     }
 
-    // check if user already exist
+    // check if Der Nutzer existiert bereits
     // Validate if user exist in our database
     const oldUser = await User.findOne({
       $or: [
@@ -150,7 +150,7 @@ const registerByFb = async (req, res) => {
         return res.status(400).json({
           status: false,
           data: null,
-          message: 'User Already exist ',
+          message: 'Der Nutzer existiert bereits ',
         });
       }
     } else {
@@ -199,7 +199,7 @@ const registerByFb = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 
@@ -209,10 +209,10 @@ const registerByGoogle = async (req, res) => {
 
     // Validate user input
     if (!(fname && email && id)) {
-      return res.status(400).json({ message: 'All input are required' });
+      return res.status(400).json({ message: 'Alle Eingabefelder werden benötigt' });
     }
 
-    // check if user already exist
+    // check if Der Nutzer existiert bereits
     // Validate if user exist in our database
     const oldUser = await User.findOne({
       $or: [
@@ -232,7 +232,7 @@ const registerByGoogle = async (req, res) => {
         return res.status(400).json({
           status: false,
           data: null,
-          message: 'User Already exist ',
+          message: 'Der Nutzer existiert bereits ',
         });
       }
     } else {
@@ -281,7 +281,7 @@ const registerByGoogle = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 
@@ -293,10 +293,10 @@ const registerByEmail = async (req, res) => {
 
     // Validate user input
     if (!(email && pass && username)) {
-      return res.status(400).json({ message: 'All input are required' });
+      return res.status(400).json({ message: 'Alle Eingabefelder werden benötigt' });
     }
     let encryptedpass = await bcrypt.hash(pass, 10);
-    // check if user already exist
+    // check if Der Nutzer existiert bereits
     // Validate if user exist in our database
     const oldUser = await User.findOne({
       $or: [
@@ -313,7 +313,7 @@ const registerByEmail = async (req, res) => {
       return res.status(400).json({
         status: false,
         data: 'user already Exist',
-        message: 'user already Exist',
+        message: 'Der Nutzer existiert bereits',
       });
     } else {
       const lastRecord = await User.findOne().sort({ _id: -1 }).limit(1);
@@ -387,7 +387,7 @@ const registerByEmail = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 
@@ -399,10 +399,10 @@ const CheckEmailOrUsername = async (req, res) => {
 
     // Validate user input
     if (!username) {
-      return res.status(400).json({ message: 'All input are required' });
+      return res.status(400).json({ message: 'Alle Eingabefelder werden benötigt' });
     }
 
-    // check if user already exist
+    // check if Der Nutzer existiert bereits
     // Validate if user exist in our database
     const oldUser = await User.findOne({
       $or: [
@@ -428,7 +428,7 @@ const CheckEmailOrUsername = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 
@@ -474,12 +474,12 @@ const updateUserInfo = async (req, res) => {
         description: desc,
         address: location,
         fname: fname,
-      
+
         loc: req.body.loc,
       };
     }
 
-   
+
     await User.findOneAndUpdate({ _id: ObjectId(userId) }, update);
 
     let updatedUser = await User.findOne({ _id: ObjectId(userId) });
@@ -489,7 +489,7 @@ const updateUserInfo = async (req, res) => {
     return res.status(200).json({ status: true, data: updatedUser });
   } catch (err) {
     console.log(err);
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 
@@ -505,7 +505,7 @@ const getSingleUserDetail = async (req, res) => {
     return res.status(200).json({ status: true, data: updatedUser });
   } catch (err) {
     console.log(err);
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 
@@ -518,7 +518,7 @@ const updateUserPassword = async (req, res) => {
 
     // Validate user input
     if (!(email && pass)) {
-      return res.status(400).json({ message: 'All input is required' });
+      return res.status(400).json({ message: 'Alle Eingabefelder werden benötigt' });
     }
     // Validate if user exist in our database
     const user = await User.findOne({
@@ -568,7 +568,7 @@ const updateUserPassword = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
   // Our register logic ends here
 };

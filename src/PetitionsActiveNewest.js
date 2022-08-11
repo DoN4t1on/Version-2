@@ -100,7 +100,7 @@ export const PetitionsActiveNewest = () => {
         <p className='menu1 small-headlines'>
           {' '}
           <Link className='strong' to='/'>
-            Petitionen
+            Anträge
           </Link>{' '}
           | <Link to='/crowdfunding'>Crowdfunding</Link>
         </p>
@@ -110,12 +110,12 @@ export const PetitionsActiveNewest = () => {
             Aktiv{' '}
           </Link>
           |
-          <Link to='/petitionen-akzeptiert' className=''>
+          <Link to='/antrage-akzeptiert' className=''>
             {' '}
             Akzeptiert{' '}
           </Link>
           |{' '}
-          <Link to='/petitionen-abgelehnt' className=''>
+          <Link to='/antrage-abgelehnt' className=''>
             Abgelehnt{' '}
           </Link>{' '}
         </p>
@@ -125,12 +125,12 @@ export const PetitionsActiveNewest = () => {
             Am nächsten{' '}
           </Link>
           |{' '}
-          <Link to='/petitionen-aktiv-neuste' className='strong'>
+          <Link to='/antrage-aktiv-neuste' className='strong'>
             {' '}
             Neuste{' '}
           </Link>
           |{' '}
-          <Link to='/petitionen-aktiv-am-beliebtesten' className=''>
+          <Link to='/antrage-aktiv-am-beliebtesten' className=''>
             {' '}
             Beliebtest
           </Link>{' '}

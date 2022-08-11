@@ -1,12 +1,11 @@
+import { NavbarBottom } from './NavbarBottom';
+import { Link } from 'react-router-dom';
 
-import { NavbarBottom } from "./NavbarBottom";
-import { Link } from "react-router-dom";
+import { Crowdfundingcampaign } from './Crowdfundingcampaign';
 
-import { Crowdfundingcampaign } from "./Crowdfundingcampaign";
-
-import Spielplatz from "./img/playground_petition.jpg";
-import Radweg from "./img/bikeway.jpg";
-import Bunker from "./img/bunker.jpg";
+import Spielplatz from './img/playground_petition.jpg';
+import Radweg from './img/bikeway.jpg';
+import Bunker from './img/bunker.jpg';
 import Header from './components/Header';
 import { useDispatch, useSelector } from 'react-redux';
 export const Crowdfunding = () => {
@@ -24,7 +23,7 @@ export const Crowdfunding = () => {
 
         <p className='menu1 small-headlines'>
           {' '}
-          <Link to='/'>Petitionen</Link> |{' '}
+          <Link to='/'>Anträge</Link> |{' '}
           <Link to='/crowdfunding' className='strong'>
             Crowdfunding
           </Link>

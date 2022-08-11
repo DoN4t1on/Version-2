@@ -7,7 +7,7 @@ export const Share = () => {
   const { state } = useLocation();
   console.log(state.id);
 
-  let urlToSend = `/geteilte-petition/${state.id}`;
+  let urlToSend = `/geteilter-antrag/${state.id}`;
 
   return (
     <div>

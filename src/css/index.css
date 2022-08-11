@@ -92,7 +92,6 @@ body {
 }
 .input-style1{
   width: 5000px;
-  max-width: 100%;
 }
 .input-style2{
   width: 5000px;
@@ -111,9 +110,15 @@ body {
 .crowdfunding-description {
   margin-bottom: 25px;
 }
+
+
 .max-width-100 {
   max-width: 100%;
 }
+.overflow {
+  overflow: hidden;
+}
+
 .create-image {
   position: relative;
   left: 25px;
@@ -183,7 +188,11 @@ body {
   height: 35px;
 
   position: relative;
-  top: 6px;
+
+
+  top: 3px;
+
+
 
   left: 20px;
 
@@ -348,6 +357,7 @@ body {
   font-size: 35px;
   position: relative;
   bottom: 10px;
+  margin: 0px 10px 0px 10px;
 }
 #crowdfunding-titel {
   margin-top: 15px;
@@ -915,27 +925,25 @@ border-radius: 10px;
   
 }
 .no-data{
-  margin: 100px 30px 150px 30px ;
+  margin: 150px 30px 150px 30px ;
   font-size: 20px;
   
   
 }
+
 .create-a-petition {
   max-width: 100%;
 }
 .no-data-crowdfunding{
   margin: 80px 30px 150px 30px ;
   font-size: 20px;
-  
-  
+
+
 }
 .no-data {
   margin: 100px 30px 150px 30px ;
-  font-size: 20px;
+  font-size: 20px; }
   
-  
-}
-
 .petition-desc{
   margin: 5px 10px 0 10px;
 }
@@ -983,10 +991,10 @@ border-radius: 10px;
     width: 100%;
   }
   .report {
-   
+
     top: 2px;
-  
-  
+
+
   }
   .profile-picture-fullscreen {
     border-radius: 150px;
@@ -1024,25 +1032,24 @@ border-radius: 10px;
   .report-crowdfunding-campaign {
     visibility: hidden;
   }
-
+ 
 }
 @media (min-width: 600px) {
   .divider-horizontal-rule-comments {
     width: 60%;
-    
+
    }
    .search-input {
- 
-   
+
+
     background: url(../img/search.svg) no-repeat scroll 10px 3px;
-   
+
   }
 }
 @media (min-width: 900px) {
   .petition-picture {
     width: 80%;
   }
-  
   .divider-horizontal-rule-comments {
     width: 65%;
      
@@ -1202,4 +1209,4 @@ border-radius: 10px;
 }
 .statement-petitions {
   margin-top: 50px;
-}
+} 

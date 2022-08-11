@@ -8,9 +8,9 @@ export const NavbarBottom = (props) => {
 
   const route = () => {
     if (localStorageData('_id')) {
-      navigate('/petition-erstellen');
+      navigate('/antrag-erstellen');
     } else {
-      toast.error('Erstelle ein Konto im Menü „Profil“ um fortzufahren');
+      toast.error('Erstelle ein Profil um fortzufahren');
     }
   };
 
@@ -39,7 +39,7 @@ export const NavbarBottom = (props) => {
           <span className='nav__text'>Suche</span>
         </Link>
         <a
-          // to={localStorageData('_id') ? '/petition-erstellen' : '/dein-profil'}
+          // to={localStorageData('_id') ? '/antrag-erstellen' : '/dein-profil'}
           onClick={() => route()}
           className='nav__link under-navitem-selected'
         >
@@ -52,7 +52,7 @@ export const NavbarBottom = (props) => {
 
           <span className='nav__text'></span>
         </a>
-        <Link to='/activity' className={`nav__link ${props.classactivity}`}>
+        <Link to='/aktivitat' className={`nav__link ${props.classactivity}`}>
           <i
             className='material-icons nav__icon '
             style={{ 'font-size': '35px' }}
