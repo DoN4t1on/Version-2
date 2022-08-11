@@ -195,7 +195,7 @@ export const Comment = (props) => {
           state={{
             //// name: 'comment',
             // Id: props.item._id,
-            link: `https://app.lokalpetition.de/neuste-kommentare/${props.item._id}`,
+            link: `https://app.lokalspende.org/neuste-kommentare/${props.item._id}`,
           }}
         >
           <img
