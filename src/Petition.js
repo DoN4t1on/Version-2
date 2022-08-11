@@ -234,7 +234,7 @@ export const Petition = (petition) => {
             name: 'petetion',
             Id: petition.item._id,
 
-            link: `https://app.lokalpetition.de/geteilter-antrag/${petition.item._id}`,
+            link: `https://app.lokalspende.org/geteilter-antrag/${petition.item._id}`,
           }}
         >
           {' '}

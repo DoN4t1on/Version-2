@@ -28,7 +28,7 @@ export const Share = () => {
           <a
             onClick={() => {
               navigator.clipboard.writeText(
-                'https://app.lokalpetition.de' + urlToSend
+                'https://app.lokalspende.org' + urlToSend
               );
               toast.success('Link kopiert');
             }}
@@ -40,7 +40,7 @@ export const Share = () => {
           <br /> <br />
           <a
             href={
-              'https://twitter.com/share?url=https://app.lokalpetition.de' +
+              'https://twitter.com/share?url=https://app.lokalspende.org' +
               urlToSend
             }
             target='_blank'
@@ -52,7 +52,7 @@ export const Share = () => {
           <br /> <br />
           <a
             href={
-              'whatsapp://send?text=https://app.lokalpetition.de' + urlToSend
+              'whatsapp://send?text=https://app.lokalspende.org' + urlToSend
             }
             data-action='share/whatsapp/share'
           >
@@ -63,7 +63,7 @@ export const Share = () => {
           <br /> <br />
           <a
             href={
-              'https://t.me/share/url?url=https://app.lokalpetition.de' +
+              'https://t.me/share/url?url=https://app.lokalspende.org' +
               urlToSend
             }
           >
@@ -73,7 +73,7 @@ export const Share = () => {
           </a>
           <br /> <br />
           <a
-            href={`https://www.linkedin.com/shareArticle?url=https://app.lokalpetition.de${urlToSend}&title=Lokalpetition`}
+            href={`https://www.linkedin.com/shareArticle?url=https://app.lokalspende.org${urlToSend}&title=Lokalpetition`}
           >
             <button className='btn btn-success share-button-link'>
               LinkedIn
@@ -81,7 +81,7 @@ export const Share = () => {
           </a>
           <br /> <br />
           <a
-            href={`https://reddit.com/submit?url=https://app.lokalpetition.de${urlToSend}&title=Lokalpetition`}
+            href={`https://reddit.com/submit?url=https://app.lokalspende.org${urlToSend}&title=Lokalpetition`}
           >
             <button className='btn btn-success share-button-link'>
               Reddit
@@ -91,7 +91,7 @@ export const Share = () => {
           <br /> <br />
           <a
             href={
-              'https://www.facebook.com/sharer/sharer.php?u=app.lokalpetition.de' +
+              'https://www.facebook.com/sharer/sharer.php?u=app.lokalspende.org' +
               urlToSend
             }
             target='_blank'

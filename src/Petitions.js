@@ -139,7 +139,7 @@ export const Petitions = () => {
                 beschleunigen oder ändern Sie{' '}
                 <a
                   style={{ color: 'blue' }}
-                  href='https://app.lokalpetition.de/karte'
+                  href='https://app.lokalspende.org/karte'
                 >
                   {' '}
                   hier{' '}
