@@ -33,7 +33,7 @@ export const Comments = () => {
   const [allComments, setallComments] = React.useState([]);
 
   const getComments = useQuery(
-    'getComments',
+    'getCommentshere',
     () => userServices.commonGetService(`/post/getComments/${Id}`),
     {
       refetchOnWindowFocus: false,
@@ -63,7 +63,6 @@ export const Comments = () => {
     }
   };
 
-
   return (
     <div>
 
@@ -75,7 +74,10 @@ export const Comments = () => {
             src={require('./img/arrow-left-short.svg')}
           />{' '}
         </Link>
-        <h4 className=' headline headline-with-back-button '> Kommentare ({allComments.length})</h4>
+        <h4 className=' headline headline-with-back-button '>
+          {' '}
+          Kommentare ({allComments.length})
+        </h4>
       </div>
 
 
