@@ -335,6 +335,43 @@ const downvoteOnPost = async (req, res) => {
   }
 };
 
+
+async function getExpereinceById(Id) {
+  let Fetch = await Expereince.aggregate([
+    {
+      $match: { _id: ObjectId(Id) },
+    },
+
+    { $sort: { _id: 1 } },
+    {
+      $lookup: {
+        from: 'users',
+        localField: 'userId',
+        foreignField: '_id',
+        as: 'user',
+      },
+    },
+    {
+      $lookup: {
+        from: 'upvotecomments',
+        localField: '_id',
+        foreignField: 'expId',
+        as: 'upvotecomments',
+      },
+    },
+    {
+      $lookup: {
+        from: 'downvotecomments',
+        localField: '_id',
+        foreignField: 'expId',
+        as: 'downvotecomments',
+      },
+    },
+  ]);
+
+  return Fetch;
+}
+
 const getComments = async (req, res) => {
   try {
     const { Id } = req.params;
@@ -1100,7 +1137,9 @@ const upvoteOnComment = async (req, res) => {
       });
     }
 
-    const refreshpost = await Expereince.findOne({ _id: ObjectId(expId) });
+    const refreshpost = await getExpereinceById(expId);
+    console.log('77777', refreshpost);
+    /// const refreshpost = await Expereince.findOne({ _id: ObjectId(expId) });
 
     return res.status(200).json({ status: true, data: refreshpost });
   } catch (err) {
@@ -1198,7 +1237,9 @@ const downvoteOnComment = async (req, res) => {
       });
     }
 
-    const refreshpost = await Expereince.findOne({ _id: ObjectId(expId) });
+    const refreshpost = await getExpereinceById(expId);
+
+    //const refreshpost = await Expereince.findOne({ _id: ObjectId(expId) });
 
     return res.status(200).json({ status: true, data: refreshpost });
   } catch (err) {

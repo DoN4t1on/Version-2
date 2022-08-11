@@ -33,7 +33,7 @@ export const Comments = () => {
   const [allComments, setallComments] = React.useState([]);
 
   const getComments = useQuery(
-    'getComments',
+    'getCommentshere',
     () => userServices.commonGetService(`/post/getComments/${Id}`),
     {
       refetchOnWindowFocus: false,
@@ -63,22 +63,22 @@ export const Comments = () => {
     }
   };
 
-
   return (
     <div>
-     
-        <div className='casual-header-div '>
-          <Link to='/'>
-            {' '}
-            <img
-              className='back-button'
-              src={require('./img/arrow-left-short.svg')}
-            />{' '}
-          </Link>
-          <h4 className=' headline headline-with-back-button '> Kommentare ({allComments.length})</h4>
-        </div>
+      <div className='casual-header-div '>
+        <Link to='/'>
+          {' '}
+          <img
+            className='back-button'
+            src={require('./img/arrow-left-short.svg')}
+          />{' '}
+        </Link>
+        <h4 className=' headline headline-with-back-button '>
+          {' '}
+          Kommentare ({allComments.length})
+        </h4>
+      </div>
 
-    
       <div className='comment-menu'>
         {allComments.map((item) => (
           <Comment item={item} />

@@ -15,16 +15,24 @@ import moment from 'moment-timezone';
 import { Link } from 'react-router-dom';
 
 export const Comment = (props) => {
-  console.log('---------props', props);
+ 
 
   const localtz = moment.tz.guess();
   const [sumcounter, setSumcounter] = useState(
-    props.item.upVote - props.item.downVote
+    props.item.upvotecomments.length - props.item.downvotecomments.length
   );
 
-  const [upvotecounter, setUpvotecounter] = useState(props.item.upVote);
+  //console.log('upvote------', props.item.upvotecomments.length);
 
-  const [downvotecounter, setDownvotecounter] = useState(props.item.downVote);
+  ///console.log('downVote-----------', props.item.downvotecomments.length);
+
+  const [upvotecounter, setUpvotecounter] = useState(
+    props.item.upvotecomments.length
+  );
+
+  const [downvotecounter, setDownvotecounter] = useState(
+    props.item.downvotecomments.length
+  );
 
   const [upvoteimage, setUpvoteimage] = useState(upvoteempty);
 
@@ -133,10 +141,13 @@ export const Comment = (props) => {
         toast.error(ErrorService.uniformError(error));
       },
       onSuccess: (res) => {
-        console.log(res.data.data);
-        setUpvotecounter(res.data.data.upVote);
-        setDownvotecounter(res.data.data.downVote);
-        setSumcounter(res.data.data.upVote - res.data.data.downVote);
+        ///  console.log('--------------------', res.data.data);
+        setUpvotecounter(res.data.data[0].upvotecomments.length);
+        setDownvotecounter(res.data.data[0].downvotecomments.length);
+        setSumcounter(
+          res.data.data[0].upvotecomments.length -
+            res.data.data[0].downvotecomments.length
+        );
         //// getComments.refetch();
         /// navigate('/');
       },
@@ -150,11 +161,18 @@ export const Comment = (props) => {
         toast.error(ErrorService.uniformError(error));
       },
       onSuccess: (res) => {
-        console.log(res.data.data);
+        /// console.log(res.data.data);
 
-        setUpvotecounter(res.data.data.upVote);
-        setDownvotecounter(res.data.data.downVote);
-        setSumcounter(res.data.data.upVote - res.data.data.downVote);
+        setUpvotecounter(res.data.data[0].upvotecomments.length);
+        setDownvotecounter(res.data.data[0].downvotecomments.length);
+        setSumcounter(
+          res.data.data[0].upvotecomments.length -
+            res.data.data[0].downvotecomments.length
+        );
+
+        //setUpvotecounter(res.data.data.upVote);
+        //setDownvotecounter(res.data.data.downVote);
+        /// setSumcounter(res.data.data.upVote - res.data.data.downVote);
 
         //// getComments.refetch();
         /// navigate('/');
@@ -165,7 +183,10 @@ export const Comment = (props) => {
   return (
     <div className='single-comment'>
       <div className='campaign-header campaign-header-comments'>
-        <button style={{ visibility: 'hidden' }} className='btn btn-success button small'>
+        <button
+          style={{ visibility: 'hidden' }}
+          className='btn btn-success button small'
+        >
           <img className='clock' src={require('./img/clock-fill.svg')} />
           (Zeit)
         </button>
@@ -246,12 +267,7 @@ export const Comment = (props) => {
           {' '}
           <img src={require('./img/share.svg')} className='share-button' />
         </Link>
-
       </div>
-
-
-
     </div>
-
   );
 };
