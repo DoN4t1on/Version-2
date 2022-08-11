@@ -25,7 +25,7 @@ export const Crowdfunding = () => {
         <p className='menu1 small-headlines'>
           {' '}
           <Link to='/'>
-            Petitionen
+            Anträge
           </Link>{' '}
           | <Link to='/crowdfunding' className='strong'>Crowdfunding</Link>
         </p>

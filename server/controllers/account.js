@@ -86,7 +86,7 @@ const createChildAccount = async (req, res) => {
     });
   } catch (err) {
     console.log(err);
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 
@@ -157,7 +157,7 @@ const updateChildAccountUsageLimit = async (req, res) => {
     });
   } catch (error) {
     console.log(error);
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 
@@ -187,7 +187,7 @@ const getChildAccountInfo = async (req, res) => {
     });
   } catch (err) {
     console.log(err);
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 
@@ -213,7 +213,7 @@ const getUserInfo = async (req, res) => {
     });
   } catch (err) {
     console.log(err);
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 

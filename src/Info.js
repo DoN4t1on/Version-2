@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export const Info = () => {
 
 
-	return (
+  return (
     <div>
       <div className='casual-header-div'>
         <h4 className='headline'>Info</h4>
@@ -33,7 +33,7 @@ export const Info = () => {
           </p>{' '}
         </Link>
 
-    </div>
+      </div>
 
       <nav className='nav under-navbar'>
         <Link to='/' className='nav__link under-navitem-unselected'>
@@ -55,7 +55,7 @@ export const Info = () => {
           <span className='nav__text'>Suche</span>
         </Link>
         <Link
-          to='/petition-erstellen'
+          to='/antrag-erstellen'
           className='nav__link under-navitem-selected'
         >
           <i
@@ -67,7 +67,7 @@ export const Info = () => {
 
           <span className='nav__text'></span>
         </Link>
-        <Link to='/activity' className='nav__link under-navitem-unselected'>
+        <Link to='/aktivitat' className='nav__link under-navitem-unselected'>
           <i
             className='material-icons nav__icon '
             style={{ 'font-size': '35px' }}

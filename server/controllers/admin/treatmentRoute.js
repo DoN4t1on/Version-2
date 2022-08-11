@@ -22,7 +22,7 @@ const addNewTreatment = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 
@@ -38,7 +38,7 @@ const deleteOneTreatment = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 
@@ -50,7 +50,7 @@ const fetchallTreatment = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 
@@ -113,7 +113,7 @@ const fetchallTreatmentByUserid = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 
@@ -135,7 +135,7 @@ const updateOneTreatment = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 
@@ -159,7 +159,7 @@ const updateImagTreatment = async (req, res) => {
   } catch (err) {
     console.log(err);
 
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 

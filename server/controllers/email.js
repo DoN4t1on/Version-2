@@ -57,7 +57,7 @@ const applyForgotPassword = async (req, res) => {
     }
   } catch (err) {
     console.log(err);
-    return res.status(400).json({ message: 'something Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 
@@ -106,7 +106,7 @@ const verifyEmail = async (req, res) => {
     }
   } catch (err) {
     console.log(err);
-    return res.status(400).json({ message: 'somrthing Went Wrong' });
+    return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
 

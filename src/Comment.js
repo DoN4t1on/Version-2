@@ -70,7 +70,7 @@ export const Comment = (props) => {
         dateTime: new Date(),
       });
     } else {
-      toast.error('Erstelle ein Konto im Menü „Profil“ um fortzufahren');
+      toast.error('Erstelle ein Profil um fortzufahren');
     }
 
     // if (upvotecounter == 0) {
@@ -112,7 +112,7 @@ export const Comment = (props) => {
         dateTime: new Date(),
       });
     } else {
-      toast.error('Erstelle ein Konto im Menü „Profil“ um fortzufahren');
+      toast.error('Erstelle ein Profil um fortzufahren');
     }
 
     // if (downvotecounter == 0) {
@@ -190,7 +190,14 @@ export const Comment = (props) => {
           <img className='clock' src={require('./img/clock-fill.svg')} />
           (Zeit)
         </button>
-        <Link to={'/melden'}>
+        <Link
+          to={`/melden/`}
+          state={{
+            //// name: 'comment',
+            // Id: props.item._id,
+            link: `https://app.lokalpetition.de/neuste-kommentare/${props.item._id}`,
+          }}
+        >
           <img
             className='report-comments'
             src={require('./img/three-dots.svg')}

@@ -24,7 +24,7 @@ export const PetitionsRejected = () => {
         <p className='menu1 small-headlines'>
           {' '}
           <Link className='strong' to='/'>
-            Petitionen
+            Anträge
           </Link>{' '}
           | <Link to='/crowdfunding'>Crowdfunding</Link>
         </p>
@@ -34,19 +34,19 @@ export const PetitionsRejected = () => {
             Aktiv{' '}
           </Link>
           |
-          <Link to='/petitionen-akzeptiert' className=''>
+          <Link to='/antrage-akzeptiert' className=''>
             {' '}
             Akzeptiert{' '}
           </Link>
           |{' '}
-          <Link to='/petitionen-abgelehnt' className='strong'>
+          <Link to='/antrage-abgelehnt' className='strong'>
             Abgelehnt{' '}
           </Link>{' '}
         </p>
 
       </div>
 
-      <div className='campaigns no-data'>In diesem Gebiet befinden sich noch keine abgelehnten Petitionen. Wir sind bereits im Dialog mit der öffentlichen Verwaltung. Gerne können Sie diese auch persönlich kontaktieren.</ div>
+      <div className='campaigns no-data'>In diesem Gebiet befinden sich noch keine abgelehnten Anträge. Wir sind bereits im Dialog mit der öffentlichen Verwaltung. Gerne können Sie diese auch persönlich kontaktieren.</ div>
       <NavbarBottom
         classstart='under-navitem-selected'
         classsearch='under-navitem-unselected'

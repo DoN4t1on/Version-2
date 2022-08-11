@@ -20,7 +20,7 @@ export const Activity = () => {
 
 
 
-          <strong>Meine Petitionen</strong>
+          <strong>Meine Anträge</strong>
           <br />
 
 

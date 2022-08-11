@@ -9,7 +9,7 @@ export const PetitionActivitySupported = () => {
 
 
 
-	return (
+  return (
     <div>
       <div className='casual-header-div'>
         <h4 className='headline-activity'>Aktivität</h4>
@@ -24,14 +24,14 @@ export const PetitionActivitySupported = () => {
           />
         </Link>
         <p className='subheader-activity'>
-          <Link to='/activity'>Benachrichtigungen</Link>
+          <Link to='/aktivitat'>Benachrichtigungen</Link>
           <br />
-          <Link to='/petitionen-activity'>
-            <strong>Petitionen</strong>
+          <Link to='/antrag-activity'>
+            <strong>Anträge</strong>
           </Link>
           <br />
           <Link
-            to='/crowdfunding-activity'
+            to='/crowdfunding-aktivitat'
             className='crowdfundingcampaigns-activity'
           >
             Crowdfundingkampagnen
@@ -39,11 +39,11 @@ export const PetitionActivitySupported = () => {
         </p>
         <p className='activity-further-selectors'>
           {' '}
-          <Link to='/petitionen-activity'>
+          <Link to='/antrag-activity'>
             <strong>Erstellt</strong>
           </Link>{' '}
-          | <Link to='/petitionen-activity-supported'> Markiert</Link>|{' '}
-          <Link to='/petitionen-activity-created'>Unterstützt</Link>
+          | <Link to='/antrag-activity-unterstutzt'> Markiert</Link>|{' '}
+          <Link to='/antrag-activity-erstellt'>Unterstützt</Link>
         </p>
       </div>
 

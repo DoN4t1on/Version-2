@@ -232,11 +232,11 @@ export const Petitions = () => {
                 den Standort.
                 <br />
                 <br />
-                Gebiet in dem wir Arbeiten: Köln
+                Gebiet in dem wir Arbeiten: <br /> Köln
                 <br />
                 <br />
-                Gebiete auf der Warteliste: Aachen, Paris, Stuttgart,
-                Rheinland-Pfalz, Ungarn
+                Gebiete auf der Warteliste:  <br /> Aachen  <br /> Paris  <br />Stuttgart  <br />
+                Rheinland-Pfalz <br /> Ungarn
               </div>
             </>
           ) : (
@@ -252,7 +252,7 @@ export const Petitions = () => {
                 <p className='menu1 small-headlines'>
                   {' '}
                   <Link className='strong' to='/'>
-                    Petitionen
+                    Anträge
                   </Link>{' '}
                   | <Link to='/crowdfunding'>Crowdfunding</Link>
                 </p>
@@ -262,12 +262,12 @@ export const Petitions = () => {
                     Aktiv{' '}
                   </Link>
                   |
-                  <Link to='/petitionen-akzeptiert' className=''>
+                  <Link to='/antrage-akzeptiert' className=''>
                     {' '}
                     Akzeptiert{' '}
                   </Link>
                   |{' '}
-                  <Link to='/petitionen-abgelehnt' className=''>
+                  <Link to='/antrage-abgelehnt' className=''>
                     Abgelehnt{' '}
                   </Link>{' '}
                 </p>
@@ -277,12 +277,12 @@ export const Petitions = () => {
                     Am nächsten{' '}
                   </Link>
                   |{' '}
-                  <Link to='/petitionen-aktiv-neuste' className=''>
+                  <Link to='/antrage-aktiv-neuste' className=''>
                     {' '}
                     Neuste{' '}
                   </Link>
                   |{' '}
-                  <Link to='/petitionen-aktiv-am-beliebtesten' className=''>
+                  <Link to='/antrage-aktiv-am-beliebtesten' className=''>
                     {' '}
                     Beliebtest
                   </Link>{' '}

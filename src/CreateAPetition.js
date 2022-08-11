@@ -122,7 +122,7 @@ export const CreateAPetition = () => {
 
         console.log(values);
       } else {
-        toast.error('Erstelle ein Konto im Menü „Profil“ um fortzufahren');
+        toast.error('Erstelle ein Profil um fortzufahren');
       }
 
       // toast('');
@@ -138,7 +138,7 @@ export const CreateAPetition = () => {
         toast.error(ErrorService.uniformError(error));
       },
       onSuccess: (res) => {
-        toast.success('Ihre Petition wurde erfolgreich erstellt');
+        toast.success('Ihr Antrag wurde erfolgreich erstellt');
         navigate('/');
       },
     }
@@ -170,11 +170,10 @@ export const CreateAPetition = () => {
   return (
     <div>
       <div className='casual-header-div'>
-        <h4 className='headline'>Erstelle einen Petitionen</h4>
+        <h4 className='headline'>Erstelle einen Antrag</h4>
       </div>
 
-      <div className='casual-menu create-a-petition'>
-
+      <div className='casual-menu'>
         <form onSubmit={formik.handleSubmit}>
           {/* <p className='Pflichtfeld'>* = Pflichtfeld</p> */}
           <br />
@@ -199,7 +198,7 @@ export const CreateAPetition = () => {
 
           <p className='create-font-size'>Bild:</p>
 
-          <label htmlFor='icon-button-file' >
+          <label htmlFor='icon-button-file'>
             <Input
               accept='image/*'
               onChange={onChangeHandler}
@@ -261,7 +260,7 @@ export const CreateAPetition = () => {
           {/* <PlacesAutocomplete setSelected={setSelected} /> */}
 
           <p className='create-font-size'>Standort:</p>
-          <span className='schieben'>(schieben)</span>
+
           {/* <Address
             label='Address'
             // setaddress={setaddress}

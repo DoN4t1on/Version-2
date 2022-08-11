@@ -22,7 +22,7 @@ const createSampleData = async (req, res) => {
     }
   } catch (err) {
     console.log(err);
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 
@@ -37,7 +37,7 @@ const getAllSampleData = async (req, res) => {
     });
   } catch (err) {
     console.log(err);
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 
@@ -52,7 +52,7 @@ const getSampleDataMatchingTitle = async (req, res) => {
     });
   } catch (err) {
     console.log(err);
-    return res.status(400).json({ message: "something Went Wrong" });
+    return res.status(400).json({ message: "Etwas lief schief" });
   }
 };
 
