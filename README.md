@@ -21,4 +21,4 @@
 ## German Social Media
 
 - Facebook: https://www.facebook.com/Lokalspende
-- Instagram: https://www.instagram.com/lokalspende
+- Instagram: https://www.instagram.com/Lokalspende
