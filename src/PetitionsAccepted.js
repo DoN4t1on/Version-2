@@ -16,11 +16,7 @@ export const PetitionsAccepted = () => {
       <div id='header'>
         <p className='location' id='location'>
           <Link to='/karte'>
-<<<<<<< Updated upstream
-            Köln{' '}
-=======
             {locationName}{' '}
->>>>>>> Stashed changes
             <img id='filter' src={require('./img/funnel-fill.svg')} />{' '}
           </Link>{' '}
         </p>
