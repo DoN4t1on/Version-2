@@ -15,7 +15,7 @@ export const PetitionsRejected = () => {
       <div id='header'>
         <p className='location' id='location'>
           <Link to='/karte'>
-            {locationName}
+            {locationName}{' '}
             <img id='filter' src={require('./img/funnel-fill.svg')} />{' '}
           </Link>{' '}
         </p>
