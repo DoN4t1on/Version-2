@@ -236,7 +236,7 @@ export const Petitions = () => {
                 <br />
                 <br />
                 Gebiete auf der Warteliste:  <br /> Aachen  <br /> Paris  <br />Stuttgart  <br />
-                Rheinland-Pfalz <br /> Ungarn
+                Rheinland-Pfalz <br /> Ungarn <br /> Nordrhein-Westfalen
               </div>
             </>
           ) : (
