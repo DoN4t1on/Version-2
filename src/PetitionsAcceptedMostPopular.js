@@ -11,7 +11,7 @@ import Header from './components/Header';
 import ErrorService from './services/formatError/ErrorService';
 import userServices from './services/httpService/userAuth/userServices';
 import { useMutation, useQuery } from 'react-query';
-
+import { useDispatch, useSelector } from 'react-redux';
 export const PetitionsAcceptedMostPopular = () => {
   const [allPost, setallPost] = React.useState([]);
 
@@ -70,7 +70,7 @@ export const PetitionsAcceptedMostPopular = () => {
       <div id='header'>
         <p className='location' id='location'>
           <Link to='/karte'>
-            Köln{' '}
+            {locationName}{' '}
             <img id='filter' src={require('./img/funnel-fill.svg')} />{' '}
           </Link>{' '}
         </p>
@@ -114,7 +114,11 @@ export const PetitionsAcceptedMostPopular = () => {
           </Link>{' '}
         </p>
       </div>
-      <div className='campaigns no-data'>In diesem Gebiet befinden sich noch keine akzeptierten Crowdfundingkampagnen. Wir sind bereits im Dialog mit der öffentlichen Verwaltung. Gerne können Sie diese auch persönlich kontaktieren.</ div>
+      <div className='campaigns no-data'>
+        In diesem Gebiet befinden sich noch keine akzeptierten
+        Crowdfundingkampagnen. Wir sind bereits im Dialog mit der öffentlichen
+        Verwaltung. Gerne können Sie diese auch persönlich kontaktieren.
+      </div>
       <NavbarBottom
         classstart='under-navitem-selected'
         classsearch='under-navitem-unselected'

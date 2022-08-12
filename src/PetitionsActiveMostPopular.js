@@ -24,6 +24,7 @@ export const PetitionsActiveMostPopular = () => {
   const dispatch = useDispatch();
 
   const [allPost, setallPost] = React.useState([]);
+  const { locationName, lat, long } = useSelector((state) => state.Geo);
 
   //////const { allPost } = useSelector((state) => state.Posts);
 
@@ -92,7 +93,7 @@ export const PetitionsActiveMostPopular = () => {
       <div id='header'>
         <p className='location' id='location'>
           <Link to='/karte'>
-            Köln{' '}
+            {locationName}{' '}
             <img id='filter' src={require('./img/funnel-fill.svg')} />{' '}
           </Link>{' '}
         </p>
@@ -140,9 +141,9 @@ export const PetitionsActiveMostPopular = () => {
         {allPost.map((item) => (
           <Petition
             item={item}
-          // titel={item.title}
-          // beschreibung={item.description}
-          // bild={ImageEndPoint + item.pic}
+            // titel={item.title}
+            // beschreibung={item.description}
+            // bild={ImageEndPoint + item.pic}
           />
         ))}
 

@@ -13,12 +13,12 @@
 
 ## Social Media
 
-- Facebook: https://www.facebook.com/LocalPetitions
-- Twitter: https://twitter.com/localpetitions
-- Instagram: https://instagram.com/localpetition
-- LinkedIn: https://www.linkedin.com/company/localpetition
+- Facebook: https://www.facebook.com/LocalDonationFacebook
+- Twitter: https://twitter.com/LocalDonation
+- Instagram: https://instagram.com/LocalDonation
+- LinkedIn: https://www.linkedin.com/company/LocalDonation
 
 ## German Social Media
 
-- Facebook: https://www.facebook.com/Lokalpetition
-- Instagram: https://www.instagram.com/lokalpetition/
+- Facebook: https://www.facebook.com/Lokalspende
+- Instagram: https://www.instagram.com/Lokalspende
