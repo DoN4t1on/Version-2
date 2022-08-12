@@ -327,10 +327,17 @@ body {
   position: relative;
   top: 2px;
 }
-#donation-statements {
-  font-size: 30px;
+.donation-statements {
+  font-size: 25px;
+  margin-bottom: 0;
+  position: relative;
+  bottom: 10px;
+  height: 20px;
 }
-#your-donation {
+.button-petition {
+  margin-bottom: 15px;
+}
+.your-donation {
   font-size: 25px;
 }
 .marker-image {
@@ -352,12 +359,15 @@ body {
   right: 4px;
   clear: right;
 }
-#petition-titel {
-  clear: right;
+.petition-titel {
+
   font-size: 35px;
   position: relative;
-  bottom: 10px;
-  margin: 0px 5px 0px 5px;
+  
+  bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
 }
 #crowdfunding-titel {
   margin-top: 15px;
@@ -365,7 +375,7 @@ body {
 }
 .petition-picture {
   border-radius: 5px;
-  
+  width: 100%;
   object-fit: cover;
 
 
@@ -621,8 +631,10 @@ font-size: 15px;
   overflow: hidden;
   margin-top: 160px;
 }
-#Supporters {
+.Supporters {
   font-size: 40px;
+  position: relative;
+  top: 5px;
 }
 .anonymous-support {
   position: relative;
@@ -943,9 +955,17 @@ border-radius: 10px;
 .no-data {
   margin: 100px 30px 150px 30px ;
   font-size: 20px; }
-  
-.petition-desc{
-  margin: 5px 10px 0 10px;
+.petition-titel {
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  }
+.petition-desc {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  width: 95%;
+  margin-bottom: 0px;
 }
 @media (max-width: 310px) {
   
@@ -987,9 +1007,7 @@ border-radius: 10px;
   }
 }
 @media (max-width: 370px) {
-  .petition-picture {
-    width: 100%;
-  }
+  
   .report {
 
     top: 2px;
@@ -1039,6 +1057,14 @@ border-radius: 10px;
     width: 60%;
 
    }
+   .petition-desc, .petition-titel {
+    
+    width: 65%;
+    
+  }
+   .petition-picture {
+    width: 70%;
+  }
    .search-input {
 
 
@@ -1050,11 +1076,18 @@ border-radius: 10px;
   .petition-picture {
     width: 80%;
   }
+  .petition-desc, .petition-titel{
+    
+    width: 60%;
+    
+  }
   .divider-horizontal-rule-comments {
     width: 65%;
      
    }
-   
+   .petition-picture {
+    width: 60%;
+  }
   .input-style1{
     width:60%;
 
@@ -1123,6 +1156,11 @@ border-radius: 10px;
   .input-style1{
     width:40%;
 
+  }
+  .petition-desc, .petition-titel{
+    
+    width: 45%;
+    
   }
   .no-data{
     margin: 100px 450px 0px 450px ;
