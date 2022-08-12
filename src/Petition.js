@@ -271,8 +271,8 @@ export const Petition = (petition) => {
           />*/}
         </div>
       </div>
-      <br />
-      <p id='petition-titel'> {petition.item.title} </p>
+      
+      <p className='petition-titel'> {petition.item.title} </p>
 
       <img
         src={ImageEndPoint + petition.item.pic}
@@ -281,23 +281,20 @@ export const Petition = (petition) => {
 
       <br />
 
-      <Grid container spacing={2}>
-        <Grid item lg={3} md={3} sm={1} xs={1} />
-        <Grid item lg={6} md={6} sm={12} xs={12}>
+    
           <p className='petition-desc'> {petition.item.description} </p>
-        </Grid>
-      </Grid>
+       
 
-      <p id='donation-statements'> Spendenzusagen: </p>
+      <p className='donation-statements'> Spendenzusagen: </p>
 
       <Link
         to={`/spendenzusagen/${petition.item._id}`}
-        id='Supporters'
-        className='unterstützer-link'
+        className='Supporters unterstützer-link'
+        
       >
         {supporters}
       </Link>
-      <p id='your-donation'> Ihre Spendenzusage: </p>
+      <p className='your-donation'> Ihre Spendenzusage: </p>
       <form onSubmit={handleSubmit}>
         <p className='amount-p'>
           <input
@@ -314,14 +311,14 @@ export const Petition = (petition) => {
         </p>
 
         <button
-          className='btn btn-success btn-lg button'
+          className='btn btn-success button-petition btn-lg button'
           type='submit'
           id='Donate'
         >
           Spende zusagen
         </button>
       </form>
-      <br />
+     
 
       <div className='interaction-bar'>
         <div className='voting-div'>
