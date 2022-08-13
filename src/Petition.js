@@ -233,7 +233,7 @@ export const Petition = (petition) => {
         <Link
           to={`/melden`}
           state={{
-            name: 'petetion',
+            name: 'petition',
             Id: petition.item._id,
 
             link: `https://app.lokalspende.org/geteilter-antrag/${petition.item._id}`,
@@ -271,7 +271,7 @@ export const Petition = (petition) => {
           />*/}
         </div>
       </div>
-      
+
       <p className='petition-titel'> {petition.item.title} </p>
 
       <img
@@ -281,16 +281,16 @@ export const Petition = (petition) => {
 
       <br />
 
-    
-          <p className='petition-desc'> {petition.item.description} </p>
-       
+
+      <p className='petition-desc'> {petition.item.description} </p>
+
 
       <p className='donation-statements'> Spendenzusagen: </p>
 
       <Link
         to={`/spendenzusagen/${petition.item._id}`}
         className='Supporters unterstützer-link'
-        
+
       >
         {supporters}
       </Link>
@@ -318,7 +318,7 @@ export const Petition = (petition) => {
           Spende zusagen
         </button>
       </form>
-     
+
 
       <div className='interaction-bar'>
         <div className='voting-div'>

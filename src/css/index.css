@@ -368,6 +368,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0px;
+ 
+  width: 98%;
 }
 #crowdfunding-titel {
   margin-top: 15px;
@@ -955,11 +957,7 @@ border-radius: 10px;
 .no-data {
   margin: 100px 30px 150px 30px ;
   font-size: 20px; }
-.petition-titel {
-  margin-left: auto;
-  margin-right: auto;
-  width: 95%;
-  }
+
 .petition-desc {
   margin-left: auto;
   margin-right: auto;
