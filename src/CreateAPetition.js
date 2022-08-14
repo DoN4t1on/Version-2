@@ -183,6 +183,7 @@ export const CreateAPetition = () => {
             id='title'
             name='title'
             type='title'
+            maxLength='40'
             className='input-style1'
             placeholder={'Titel'}
             onChange={formik.handleChange}
@@ -243,7 +244,7 @@ export const CreateAPetition = () => {
               className='input-style2'
               rows='10'
               cols='2'
-              maxLength='350'
+              maxLength='2500'
               placeholder={'Begründung'}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}

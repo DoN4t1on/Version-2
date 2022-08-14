@@ -30,7 +30,7 @@ export const Crowdfunding = () => {
         </p>
       </div>
 
-      <div className='campaigns no-data'>
+      <div className='campaigns no-data-crowdfunding'>
         In diesem Gebiet befinden sich noch keine Crowdfundingkampagnen. Wir
         sind aber bereits im Dialog mit der öffentlichen Verwaltung. Gerne
         können Sie diese auch persönlich kontaktieren.
