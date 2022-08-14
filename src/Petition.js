@@ -307,7 +307,7 @@ export const Petition = (petition) => {
             onChange={(e) => setAmount(Number(e.target.value))}
             required
           />
-          <span id='euros'>,00€</span>
+          <span className='euros'>€</span>
         </p>
 
         <button
@@ -373,7 +373,7 @@ export const Petition = (petition) => {
         </Link>
       </div>
       <div className='divider-horizontal-rule'>
-        <hr />
+        <hr className='hr-petition' />
       </div>
     </div>
   );

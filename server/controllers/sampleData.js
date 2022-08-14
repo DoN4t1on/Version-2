@@ -18,7 +18,7 @@ const createSampleData = async (req, res) => {
     } else {
       return res
         .status(400)
-        .json({ success: false, message: "Please provide title for record" });
+        .json({ success: false, message: "Bitte geben Sie einen Titel für den Eintrag ein" });
     }
   } catch (err) {
     console.log(err);

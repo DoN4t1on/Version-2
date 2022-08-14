@@ -172,7 +172,7 @@ const getChildAccountInfo = async (req, res) => {
     if (!parentAccountInfo) {
       return res.status(400).json({
         success: false,
-        message: `no account existed for this ID`,
+        message: `Es gibt keinen Account unter dieser ID`,
       });
     }
 
@@ -202,7 +202,7 @@ const getUserInfo = async (req, res) => {
     if (!accountInfo) {
       return res.status(400).json({
         success: false,
-        message: `no account existed for this ID`,
+        message: `Es gibt keinen Account unter dieser ID`,
       });
     }
 

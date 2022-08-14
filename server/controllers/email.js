@@ -51,9 +51,9 @@ const applyForgotPassword = async (req, res) => {
       );
 
       console.log(emailParameters);
-      return res.status(200).json('Email Has been sent');
+      return res.status(200).json('Eine Email wurde gesendet');
     } else {
-      return res.status(400).json({ message: 'No Such User Exist' });
+      return res.status(400).json({ message: 'Dieser Nutzer existiert nicht' });
     }
   } catch (err) {
     console.log(err);
@@ -102,7 +102,7 @@ const verifyEmail = async (req, res) => {
       );
       res.send(ThanksEmailBody);
     } else {
-      res.send('no record found ');
+      res.send('Kein Eintrag gefunden');
     }
   } catch (err) {
     console.log(err);

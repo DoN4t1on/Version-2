@@ -339,6 +339,7 @@ body {
 }
 .your-donation {
   font-size: 25px;
+  height: 25px;
 }
 .marker-image {
   height: 32px;
@@ -409,7 +410,7 @@ body {
   margin-top: 120px;
 }
 .single-campaign {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .comment-bar {
   position: fixed;
@@ -493,11 +494,12 @@ font-size: 15px;
   border: solid 3px;
   width: 130px;
   position: relative;
+  
 }
 
 .amount-p {
   position: relative;
-  left: 25px;
+  left: 10px;
 }
 .unterstützer-link {
   color: black;
@@ -507,8 +509,10 @@ font-size: 15px;
   position: relative;
  
 }
-#euros {
-  font-size: 25px;
+.euros {
+  font-size: 32px;
+  position: relative;
+  top: 6px;
 }
 .comments-link {
   color: black;
@@ -523,8 +527,10 @@ font-size: 15px;
   position: relative;
   bottom: 10px;
   font-size: 35px;
-  width: 40px;
+  width: auto;
   text-align: center;
+  margin-left: 6px;
+  margin-right: 6px;
 }
 
 .voting-counter-upanddown {
@@ -711,7 +717,9 @@ font-size: 15px;
   right: 28px;
   
 }
-
+.hr-petition {
+  margin-top: 6px;
+  margin-bottom: 2px; }
 .sub-comments-div {
   position: relative;
   top: 3px;

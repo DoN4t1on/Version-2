@@ -127,7 +127,7 @@ const registerByFb = async (req, res) => {
 
     // Validate user input
     if (!(fname && email && id)) {
-      return res.status(400).json({ message: 'Alle Eingabefelder sind benötige' });
+      return res.status(400).json({ message: 'Alle Eingabefelder sind benötigt' });
     }
 
     // check if Der Nutzer existiert bereits
@@ -312,7 +312,7 @@ const registerByEmail = async (req, res) => {
     if (oldUser) {
       return res.status(400).json({
         status: false,
-        data: 'user already Exist',
+        data: 'Der Nutzer existiert bereits',
         message: 'Der Nutzer existiert bereits',
       });
     } else {
@@ -551,18 +551,18 @@ const updateUserPassword = async (req, res) => {
 
         return res
           .status(200)
-          .json('Password Has been Updated.Now please Login');
+          .json('Ihr Passwort wurde geändert.');
       } else {
         return res
           .status(400)
 
           .json({
-            message: 'You are not Allowed to change Password. Check your Email',
+            message: 'Sie dürfen das Passwort nicht ändern. Wir haben Ihnen eine Email geschickt.',
           });
       }
     } else {
       return res.status(400).json({
-        message: 'You are not Allowed to change Password. Check your Email',
+        message: 'Sie dürfen das Passwort nicht ändern. Wir haben Ihnen eine Email geschickt.',
       });
     }
   } catch (err) {
