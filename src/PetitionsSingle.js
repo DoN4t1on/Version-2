@@ -88,7 +88,7 @@ export const PetitionsSingle = () => {
       <div className='casual-header-div'>
         <h4 className='headline'>Geteilter Antrag</h4>
       </div>
-      <div className='campaigns'>
+      <div className='casual-menu'>
         {allPost.map((item) => (
           <Petition
             item={item}

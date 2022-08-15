@@ -1,4 +1,5 @@
 import ReactDOM from 'react-dom';
+import { Link } from "react-router-dom";
 
 import './css/index.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -242,7 +243,7 @@ ReactDOM.render(
         contentClasses='content-cookies'
         overlay
       >
-        Diese Webseite benutzt Cookies.
+        Diese Webseite benutzt Cookies. <a href='https://app.lokalspende.org/datenschutz' style={{ 'color': 'lightblue' }}>Hier</a> können Sie die Datenschutzerklärung einsehen.
       </CookieConsent>
       <ToastContainer limit={1} />
     </QueryClientProvider>

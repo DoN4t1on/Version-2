@@ -443,6 +443,7 @@ body {
 .comment-input::placeholder {
   font-weight: 650;
   color: black;
+  opacity: 80%;
 
 }
 .comment-button {
@@ -507,7 +508,8 @@ font-size: 15px;
   font-weight: 650;
   color: black;
   position: relative;
-  left: 2px;
+  left: 0px;
+  opacity: 80%;
 }
 
 .amount-p {
