@@ -438,8 +438,13 @@ body {
   width: 100%;
   margin-top: 15px;
   margin-left: 2px;
+  font-weight: 650;
 }
+.comment-input::placeholder {
+  font-weight: 650;
+  color: black;
 
+}
 .comment-button {
   position: relative;
   top: 7px;
@@ -502,7 +507,7 @@ font-size: 15px;
   font-weight: 650;
   color: black;
   position: relative;
-  left: 6px;
+  left: 2px;
 }
 
 .amount-p {
@@ -705,7 +710,7 @@ font-size: 15px;
 }
 .interaction-bar-comment{
   position: relative;
-  top: 18px;
+  top: 10px;
 }
 .voting-div {
   display: flex;
