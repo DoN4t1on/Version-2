@@ -492,9 +492,17 @@ font-size: 15px;
   border-radius: 25px;
   border-color: #000000;
   border: solid 3px;
-  width: 130px;
+  width: 80px;
   position: relative;
+  font-weight: 650;
+ 
   
+}
+.amount::placeholder {
+  font-weight: 650;
+  color: black;
+  position: relative;
+  left: 6px;
 }
 
 .amount-p {

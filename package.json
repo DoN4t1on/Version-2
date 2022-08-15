@@ -4,7 +4,7 @@
   "description": "starter for react",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel src/index.html && parcel watch src/index.html",
+    "start": "parcel src/index.html",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "build": "parcel build --public-url ."
