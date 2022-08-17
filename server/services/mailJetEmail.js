@@ -28,7 +28,7 @@ async function sendEmail(emailToSend, subject, data, Email_templete) {
       Messages: [
         {
           From: {
-            Email: 'it@localpetition.org',
+            Email: 'it@LocalDonation.org',
             Name: process.env.Email_Name,
           },
           To: emailToSend,

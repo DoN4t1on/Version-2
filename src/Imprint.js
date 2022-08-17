@@ -16,7 +16,7 @@ export const Imprint = () => {
         <strong> Impressum </strong>{' '}
       </h3>
       <br />
-      LocalPetition UG (haftungsbeschränkt) <br />
+      LocalDonation UG (haftungsbeschränkt) <br />
       Am Nordpark 106 <br />
       50733 Köln, Deutschland <br /> <br />
       Gründer und Geschäftsführer: Felix Scherf <br />
@@ -33,7 +33,7 @@ export const Imprint = () => {
       <br />
       <br />
       <strong>
-        Urheberrecht © 2021-2022 LocalPetition UG (haftungsbeschränkt). <br />{' '}
+        Urheberrecht © 2021-2022 LocalDonation UG (haftungsbeschränkt). <br />{' '}
         Alle Rechte vorbehalten.{' '}
       </strong>
       <br /> <br />

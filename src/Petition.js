@@ -300,13 +300,14 @@ export const Petition = (petition) => {
           <input
             type='number'
             min='1'
+           
             value={amount}
             className='amount'
             id='inputAmount'
             placeholder='Betrag'
             onChange={(e) => setAmount(Number(e.target.value))}
             required
-          />
+          /> 
           <span className='euros'>€</span>
         </p>
 

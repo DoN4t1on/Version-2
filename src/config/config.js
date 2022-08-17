@@ -5,5 +5,5 @@ module.exports = {
 
   ImageEndPoint: 'https://app.lokalspende.org/readfiles/',
 
-  localToken: 'localpetition',
+  localToken: 'LocalDonation',
 };
