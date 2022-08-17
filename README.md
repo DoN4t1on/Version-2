@@ -8,7 +8,7 @@
 
 ##
 
-- German landingpage: http://lokalpetition.de
+- German landingpage: http://Lokalspende.org
 - International landingpage: http://localpetition.org
 
 ## Social Media

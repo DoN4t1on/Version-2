@@ -8,7 +8,7 @@ export const Imprint = () => {
 
 
 
-	return (
+  return (
     <div>
       <br />
       <h3>
@@ -22,7 +22,7 @@ export const Imprint = () => {
       Gründer und Geschäftsführer: Felix Scherf <br />
       <br />
       Telefon: +49 1577 9683734 <br />
-      E-Mail: info@lokalpetition.de <br /> <br />
+      E-Mail: info@Lokalspende.org <br /> <br />
       Handelsregister: HRB 106411 <br />
       USt-ID: DE351686821 <br />
       <br />
