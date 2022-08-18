@@ -9,6 +9,7 @@
     "deploy": "gh-pages -d dist",
     "build": "parcel build --public-url ."
   },
+  "proxy": "https://app.localdonation.org/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/getmimo/react-parcel-starter.git"

@@ -15,7 +15,7 @@ import moment from 'moment-timezone';
 import { Link } from 'react-router-dom';
 
 export const Comment = (props) => {
- 
+  const { Id } = useParams();
 
   const localtz = moment.tz.guess();
   const [sumcounter, setSumcounter] = useState(
@@ -270,7 +270,7 @@ export const Comment = (props) => {
           <hr />
         </div>
 
-        <Link to='/teilen'>
+        <Link to='/teilen' state={{ url: '/neuste-kommentare/' + Id }}>
           {' '}
           <img src={require('./img/share.svg')} className='share-button' />
         </Link>

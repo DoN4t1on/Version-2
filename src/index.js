@@ -93,6 +93,7 @@ import { ToastContainer } from 'react-toastify';
 import Test from './Test';
 import Agb from './Agb';
 
+
 const queryClient = new QueryClient();
 const app = document.getElementById('app');
 ReactDOM.render(

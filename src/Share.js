@@ -3,11 +3,14 @@ import { NavbarBottom } from './NavbarBottom';
 import { Link } from 'react-router-dom';
 import { useLocation, useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
+
+import { baseUrl } from './config/config';
 export const Share = () => {
   const { state } = useLocation();
+
   console.log(state.id);
 
-  let urlToSend = `/geteilter-antrag/${state.id}`;
+  let urlToSend = state.url;
 
   return (
     <div>
@@ -22,14 +25,11 @@ export const Share = () => {
         <h4 className=' headline headline-with-back-button '> Teilen </h4>
       </div>
 
-
       <div className='casual-menu'>
         <div style={{ float: 'right' }}>
           <a
             onClick={() => {
-              navigator.clipboard.writeText(
-                'https://app.lokalspende.org' + urlToSend
-              );
+              navigator.clipboard.writeText(baseUrl + urlToSend);
               toast.success('Link kopiert');
             }}
           >
@@ -39,10 +39,7 @@ export const Share = () => {
           </a>
           <br /> <br />
           <a
-            href={
-              'https://twitter.com/share?url=https://app.lokalspende.org' +
-              urlToSend
-            }
+            href={`https://twitter.com/share?url=${baseUrl}` + urlToSend}
             target='_blank'
           >
             <button className='btn btn-success share-button-link'>
@@ -51,9 +48,7 @@ export const Share = () => {
           </a>
           <br /> <br />
           <a
-            href={
-              'whatsapp://send?text=https://app.lokalspende.org' + urlToSend
-            }
+            href={`whatsapp://send?text=${baseUrl}` + urlToSend}
             data-action='share/whatsapp/share'
           >
             <button className='btn btn-success share-button-link'>
@@ -61,19 +56,14 @@ export const Share = () => {
             </button>
           </a>
           <br /> <br />
-          <a
-            href={
-              'https://t.me/share/url?url=https://app.lokalspende.org' +
-              urlToSend
-            }
-          >
+          <a href={`https://t.me/share/url?url=${baseUrl}` + urlToSend}>
             <button className='btn btn-success share-button-link'>
               Telegram
             </button>
           </a>
           <br /> <br />
           <a
-            href={`https://www.linkedin.com/shareArticle?url=https://app.lokalspende.org${urlToSend}&title=Lokalspende`}
+            href={`https://www.linkedin.com/shareArticle?url=${baseUrl}${urlToSend}&title=Lokalspende`}
           >
             <button className='btn btn-success share-button-link'>
               LinkedIn
@@ -81,17 +71,16 @@ export const Share = () => {
           </a>
           <br /> <br />
           <a
-            href={`https://reddit.com/submit?url=https://app.lokalspende.org${urlToSend}&title=Lokalspende`}
+            href={`https://reddit.com/submit?url=${baseUrl}${urlToSend}&title=Lokalspende`}
           >
             <button className='btn btn-success share-button-link'>
               Reddit
             </button>
           </a>
-
           <br /> <br />
           <a
             href={
-              'https://www.facebook.com/sharer/sharer.php?u=app.lokalspende.org' +
+              `https://www.facebook.com/sharer/sharer.php?u=${baseUrl}` +
               urlToSend
             }
             target='_blank'
