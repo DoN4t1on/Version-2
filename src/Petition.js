@@ -281,16 +281,13 @@ export const Petition = (petition) => {
 
       <br />
 
-
       <p className='petition-desc'> {petition.item.description} </p>
-
 
       <p className='donation-statements'> Spendenzusagen: </p>
 
       <Link
         to={`/spendenzusagen/${petition.item._id}`}
         className='Supporters unterstützer-link'
-
       >
         {supporters}
       </Link>
@@ -300,14 +297,13 @@ export const Petition = (petition) => {
           <input
             type='number'
             min='1'
-           
             value={amount}
             className='amount'
             id='inputAmount'
             placeholder='Betrag'
             onChange={(e) => setAmount(Number(e.target.value))}
             required
-          /> 
+          />
           <span className='euros'>€</span>
         </p>
 
@@ -319,7 +315,6 @@ export const Petition = (petition) => {
           Spende zusagen
         </button>
       </form>
-
 
       <div className='interaction-bar'>
         <div className='voting-div'>
@@ -368,7 +363,10 @@ export const Petition = (petition) => {
           </Link>
         </div>
 
-        <Link to='/teilen' state={{ id: petition.item._id }}>
+        <Link
+          to='/teilen'
+          state={{ url: '/geteilter-antrag/' + petition.item._id }}
+        >
           {' '}
           <img src={require('./img/share.svg')} className='share-button' />
         </Link>
