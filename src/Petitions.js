@@ -201,8 +201,8 @@ export const Petitions = () => {
       {locationName != '' ? (
         <>
           {locationName != 'Köln' &&
-            locationName != 'Cologne' &&
-            locationName != 'Sargodha' ? (
+          locationName != 'Cologne' &&
+          locationName != 'Sargodha' ? (
             ///// {locationName != 'Köln' ? (
             <>
               <div id='header'>
@@ -235,7 +235,8 @@ export const Petitions = () => {
                 Gebiet in dem wir Arbeiten: <br /> Köln
                 <br />
                 <br />
-                Gebiete auf der Warteliste:  <br /> Aachen  <br /> Paris  <br />Stuttgart  <br />
+                Gebiete auf der Warteliste: <br /> Aachen <br /> Paris <br />
+                Stuttgart <br />
                 Rheinland-Pfalz <br /> Ungarn <br /> Nordrhein-Westfalen
               </div>
             </>
@@ -297,7 +298,17 @@ export const Petitions = () => {
             </>
           )}
         </>
-      ) : null}
+      ) : (
+        <>
+          <div className='campaigns no-data statement-petitions'>
+            Leider können wir Sie nicht automatisch orten. (Hier) können Sie
+            Ihren Standort manuell angeben. Gebiet in dem wir Arbeiten: Köln.
+            Gebiete auf der Warteliste: Aachen, Paris, Stuttgart,
+            Rheinland-Pfalz, Ungarn. (Hier) können Sie Ihre Region in der
+            Warteliste eintragen
+          </div>
+        </>
+      )}
 
       {lat == '' ? (
         <>
