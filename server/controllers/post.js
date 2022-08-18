@@ -1032,7 +1032,7 @@ const sendReport = async (req, res) => {
 
     let emailToSend = [
       {
-        Email: 'it@localpetition.org',
+        Email: 'it@LocalDonation.org',
       },
     ];
 

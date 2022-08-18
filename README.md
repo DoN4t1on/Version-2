@@ -1,6 +1,6 @@
 ## Links
 
-- App: https://app.lokalspende.org
+- App: https://App.Lokalspende.org
 
 ##
 
@@ -8,8 +8,8 @@
 
 ##
 
-- German landingpage: http://lokalpetition.de
-- International landingpage: http://localpetition.org
+- German landingpage: http://Lokalspende.org
+- International landingpage: http://LocalDonation.org
 
 ## Social Media
 

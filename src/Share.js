@@ -73,7 +73,7 @@ export const Share = () => {
           </a>
           <br /> <br />
           <a
-            href={`https://www.linkedin.com/shareArticle?url=https://app.lokalspende.org${urlToSend}&title=Lokalpetition`}
+            href={`https://www.linkedin.com/shareArticle?url=https://app.lokalspende.org${urlToSend}&title=Lokalspende`}
           >
             <button className='btn btn-success share-button-link'>
               LinkedIn
@@ -81,7 +81,7 @@ export const Share = () => {
           </a>
           <br /> <br />
           <a
-            href={`https://reddit.com/submit?url=https://app.lokalspende.org${urlToSend}&title=Lokalpetition`}
+            href={`https://reddit.com/submit?url=https://app.lokalspende.org${urlToSend}&title=Lokalspende`}
           >
             <button className='btn btn-success share-button-link'>
               Reddit

@@ -8,18 +8,18 @@ export const Settings = () => {
   return (
     <div>
       <div className='casual-header-div '>
-          <Link to='/dein-profil'>
+        <Link to='/dein-profil'>
           {' '}
           <img
             className='back-button'
             src={require('./img/arrow-left-short.svg')}
           />{' '}
         </Link>
-            <h4 className=' headline headline-with-back-button '> Einstellungen </h4>
-          </div>
+        <h4 className=' headline headline-with-back-button '> Einstellungen </h4>
+      </div>
 
       <div className='casual-menu'>
-       
+
         {/* <Link to='/teilen'>
           {' '}
           <button className='btn btn-success btn-lg button border-black'>
@@ -28,22 +28,22 @@ export const Settings = () => {
         </Link>
         
         {' '} */}
-        
-        <a href='https://lokalpetition.de/fragen/'>
+
+        <a href='https://Lokalspende.org/fragen/'>
           {' '}
           <button className='btn btn-success btn-lg button border-black'>
             Fragen ⁉️
           </button>{' '}
         </a>{' '}
         <br /> <br />
-        <a href='https://lokalpetition.de/kontakt/'>
+        <a href='https://Lokalspende.org/kontakt/'>
           {' '}
           <button className='btn btn-success btn-lg button border-black'>
             Kontaktiere uns 📩
           </button>{' '}
         </a>
         <br /> <br />
-        
+
         <a href='https://www.paypal.com/donate/?hosted_button_id=D6VXHJ7G7RCYU'>
           {' '}
           <button className='btn btn-success btn-lg button border-black'>
@@ -51,7 +51,7 @@ export const Settings = () => {
           </button>{' '}
         </a>
         <br /> <br />
-        <a href='https://t.me/LocalPetitionorg'>
+        <a href='https://t.me/LocalDonationorg'>
           {' '}
           <button className='btn btn-success btn-lg button border-black'>
             Werde Teil des Teams 🙌🏻
@@ -60,7 +60,7 @@ export const Settings = () => {
         <div className='horzontal-rule-setting'>
           <hr />
         </div>
-       
+
         {localStorageData('_id') != '' ? (
           <button
             className='btn btn-success btn-lg button border-black'

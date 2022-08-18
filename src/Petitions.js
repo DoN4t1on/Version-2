@@ -87,7 +87,7 @@ export const Petitions = () => {
             for (var i = 0; i < address_components.length; i++) {
               if (
                 address_components[i].types[0] ===
-                  'administrative_area_level_1' &&
+                'administrative_area_level_1' &&
                 address_components[i].types[1] === 'political'
               ) {
                 state = address_components[i].long_name;
@@ -201,8 +201,8 @@ export const Petitions = () => {
       {locationName != '' ? (
         <>
           {locationName != 'Köln' &&
-          locationName != 'Cologne' &&
-          locationName != 'Sargodha' ? (
+            locationName != 'Cologne' &&
+            locationName != 'Sargodha' ? (
             ///// {locationName != 'Köln' ? (
             <>
               <div id='header'>
@@ -215,7 +215,7 @@ export const Petitions = () => {
               </div>
               <div className='campaigns no-data statement-petitions'>
                 Wir arbeiten noch nicht in dieser Region. Registrieren Sie sich{' '}
-                <a style={{ color: 'blue' }} href='https://lokalpetition.de/'>
+                <a style={{ color: 'blue' }} href='https://Lokalspende.org/'>
                   {' '}
                   hier{' '}
                 </a>{' '}
