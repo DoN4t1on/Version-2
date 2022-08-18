@@ -303,7 +303,7 @@ body {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }
 .casual-menu {
-  margin-top: 90px;
+  margin-top: 80px;
   margin-bottom: 100px;
   overflow: hidden;
 }
@@ -445,6 +445,11 @@ body {
   color: black;
   opacity: 100%;
 
+}
+.sharing {
+  margin-bottom: 90px;
+  overflow: hidden;
+  margin-top: 80px;
 }
 .comment-button {
   position: relative;

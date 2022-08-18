@@ -201,8 +201,8 @@ export const Petitions = () => {
       {locationName != '' ? (
         <>
           {locationName != 'Köln' &&
-          locationName != 'Cologne' &&
-          locationName != 'Sargodha' ? (
+            locationName != 'Cologne' &&
+            locationName != 'Sargodha' ? (
             ///// {locationName != 'Köln' ? (
             <>
               <div id='header'>
@@ -301,11 +301,29 @@ export const Petitions = () => {
       ) : (
         <>
           <div className='campaigns no-data statement-petitions'>
-            Leider können wir Sie nicht automatisch orten. (Hier) können Sie
-            Ihren Standort manuell angeben. Gebiet in dem wir Arbeiten: Köln.
-            Gebiete auf der Warteliste: Aachen, Paris, Stuttgart,
-            Rheinland-Pfalz, Ungarn. (Hier) können Sie Ihre Region in der
-            Warteliste eintragen
+            Leider können wir Sie nicht automatisch orten. {' '}
+                <a
+                  style={{ color: 'blue' }}
+                  href='https://app.lokalspende.org/karte'
+                >
+                  {' '}
+                  Hier{' '}
+                </a>{' '}können Sie
+            Ihren Standort manuell angeben. <br />
+            <br />
+            Gebiet in dem wir Arbeiten: <br /> Köln
+            <br />
+            <br />
+            Gebiete auf der Warteliste: <br /> Aachen <br /> Paris <br />
+            Stuttgart <br />
+            Rheinland-Pfalz <br /> Ungarn <br /> Nordrhein-Westfalen 
+            <br />
+            <br />
+            <a style={{ color: 'blue' }} href='https://Lokalspende.org/'>
+              {' '}
+              Hier{' '}
+            </a>{' '}können Sie Ihre Region in der
+            Warteliste eintragen.
           </div>
         </>
       )}
@@ -316,12 +334,30 @@ export const Petitions = () => {
         </>
       ) : lat == 'false' ? (
         <>
-          <div className='campaigns no-data'>
-            (Hier) können Sie Ihren Standort manuell setzten und (hier) können
-            sie sich auf der Warteliste mit Ihrer Region eintragen um zum Start
-            benachrichtigt zu werden und den Start zu beschleunigen. Gebiet in
-            dem wir Arbeiten: Köln. Gebiete auf der Warteliste: Aachen, Paris,
-            Stuttgart, Rheinland-Pfalz, Ungarn
+          <div className='campaigns no-data statement-petitions'>
+            Leider können wir Sie nicht automatisch orten. {' '}
+                <a
+                  style={{ color: 'blue' }}
+                  href='https://app.lokalspende.org/karte'
+                >
+                  {' '}
+                  Hier{' '}
+                </a>{' '}können Sie
+            Ihren Standort manuell angeben. <br />
+            <br />
+            Gebiet in dem wir Arbeiten: <br /> Köln
+            <br />
+            <br />
+            Gebiete auf der Warteliste: <br /> Aachen <br /> Paris <br />
+            Stuttgart <br />
+            Rheinland-Pfalz <br /> Ungarn <br /> Nordrhein-Westfalen 
+            <br />
+            <br />
+            <a style={{ color: 'blue' }} href='https://Lokalspende.org/'>
+              {' '}
+              Hier{' '}
+            </a>{' '}können Sie Ihre Region in der
+            Warteliste eintragen.
           </div>
         </>
       ) : null}
