@@ -1,6 +1,6 @@
 ## Links
 
-- App: https://app.lokalspende.org
+- App: https://App.Lokalspende.org
 
 ##
 
