@@ -303,7 +303,7 @@ body {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }
 .casual-menu {
-  margin-top: 80px;
+  margin-top: 82px;
   margin-bottom: 100px;
   overflow: hidden;
 }
@@ -431,7 +431,7 @@ body {
   margin-bottom: 0px;
 }
 .comment-input {
-  text-align: center;
+  text-align: left;
   border-radius: 100px;
   border-color: black;
   border: solid 3px;
@@ -439,13 +439,17 @@ body {
   margin-top: 15px;
   margin-left: 2px;
   font-weight: 650;
+  position: relative;
 }
 .comment-input::placeholder {
   font-weight: 650;
   color: black;
   opacity: 100%;
-
+  position: relative;
+  left: 10px;
+  bottom: 1px;
 }
+
 .sharing {
   margin-bottom: 90px;
   overflow: hidden;
