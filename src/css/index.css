@@ -1101,9 +1101,7 @@ border-radius: 10px;
   }
 }
 @media (min-width: 900px) {
-  .petition-picture {
-    width: 80%;
-  }
+  
   .petition-desc, .petition-titel{
     
     width: 60%;
@@ -1161,8 +1159,8 @@ border-radius: 10px;
   .search-title,
   .casual-header-div,
   .casual-menu, .comment {
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 130px;
+    padding-right: 130px;
   }
   .under-navbar {
     border-radius: 0px 0px 0px 0px;
@@ -1230,8 +1228,8 @@ border-radius: 10px;
   .search-title,
   .casual-header-div,
   .casual-menu, .comment {
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 270px;
+    padding-right: 270px;
   }
   .divider-horizontal-rule {
     padding-left: 420px;
