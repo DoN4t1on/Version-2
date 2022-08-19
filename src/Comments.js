@@ -104,13 +104,61 @@ export const Comments = () => {
           </button>
         </div>
       </form>
+      <Link to='/info'>
+        <img src={require('./img/info-circle.svg')} className='info-image-comments' />
+      </Link>
+      <nav className='nav under-navbar'>
+      <Link to='/' className={`nav__link under-navitem-selected`}>
+        <i
+          className='material-icons nav__icon '
+          style={{ 'font-size': '35px' }}
+        >
+          home
+        </i>
+        <span className='nav__text'>Start</span>
+      </Link>
+      <Link to='/suche' className={`nav__link under-navitem-unselected`}>
+        <i
+          className='material-icons nav__icon '
+          style={{ 'font-size': '35px' }}
+        >
+          search
+        </i>
+        <span className='nav__text'>Suche</span>
+      </Link>
+      <a
+        // to={localStorageData('_id') ? '/antrag-erstellen' : '/dein-profil'}
+        onClick={() => route()}
+        className='nav__link under-navitem-selected'
+      >
+        <i
+          className='material-icons nav__icon'
+          style={{ 'font-size': '55px' }}
+        >
+          add_circle_outline
+        </i>
 
-      <NavbarBottom
-        classstart='under-navitem-selected'
-        classsearch='under-navitem-unselected'
-        classactivity='under-navitem-unselected'
-        classprofile='under-navitem-unselected'
-      />
+        <span className='nav__text'></span>
+      </a>
+      <Link to='/aktivitat' className={`nav__link under-navitem-unselected`}>
+        <i
+          className='material-icons nav__icon '
+          style={{ 'font-size': '35px' }}
+        >
+          bolt
+        </i>
+        <span className='nav__text'>Aktivität</span>
+      </Link>
+      <Link to='/dein-profil' className={`nav__link under-navitem-unselected`}>
+        <i
+          className='material-icons nav__icon '
+          style={{ 'font-size': '35px' }}
+        >
+          person
+        </i>
+        <span className='nav__text'>Profil</span>
+      </Link>
+    </nav>
     </div>
   );
 };
