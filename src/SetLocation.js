@@ -254,11 +254,21 @@ export const SetLocation = () => {
 
         <h4 className=' headline headline-with-back-button '> Ihr Standort </h4>
       </div>
-      <div style={{ position: 'fixed', top: '0px', left: '0px', height: '100%', width: '100%' }}  >
+      <div
+        style={{
+          position: 'fixed',
+          top: '0px',
+          left: '0px',
+          height: '100%',
+          width: '100%',
+        }}
+      >
         <WrappedMap
           googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${mapAPiKey}`}
           loadingElement={<div style={{ height: `100%` }} />}
-          containerElement={<div style={{ height: `600px`, width: '400px' }} />}
+          containerElement={
+            <div style={{ height: `600px`, width: '1450px' }} />
+          }
           mapElement={<div style={{ height: `100%` }} />}
           setlat={setcurrentLat}
           setlong={setcurrentLong}

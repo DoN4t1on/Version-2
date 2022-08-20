@@ -5,6 +5,8 @@ const postSchema = new mongoose.Schema({
 
   title: { type: String },
 
+  status: { type: Boolean, default: false },
+
   description: { type: String },
   pic: { type: String },
   comments: { type: Number, default: 0 },
