@@ -29,6 +29,23 @@ const uploadPost = async (req, res) => {
 
     const post = await Post.create(req.body);
 
+    var emailParameters = {
+      post: post._id,
+    };
+
+    let emailToSend = [
+      {
+        Email: 'it@LocalDonation.org',
+      },
+    ];
+
+    sendEmail(
+      emailToSend,
+      'New Post to Approve',
+      emailParameters,
+      'Post_Approve'
+    );
+
     return res.status(200).json({ status: true, data: post });
   } catch (err) {
     console.log(err);
@@ -65,6 +82,29 @@ const uploadParentComment = async (req, res) => {
       expereince: own_experience,
     });
     return res.status(200).json({ status: true, data: ex });
+  } catch (err) {
+    console.log(err);
+
+    return res.status(400).json({ message: 'Etwas lief schief' });
+  }
+};
+
+const approvePostByadmin = async (req, res) => {
+  try {
+    console.log(req.body);
+
+    const { Id } = req.params;
+
+    const post = await Post.findOne({ _id: ObjectId(Id) });
+
+    const filter = { _id: ObjectId(Id) };
+    const update = {
+      status: true,
+    };
+
+    let doc = await Post.findOneAndUpdate(filter, update);
+
+    return res.status(200).json({ status: true, data: doc });
   } catch (err) {
     console.log(err);
 
@@ -334,7 +374,6 @@ const downvoteOnPost = async (req, res) => {
     return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
-
 
 async function getExpereinceById(Id) {
   let Fetch = await Expereince.aggregate([
@@ -757,7 +796,7 @@ async function getLatestPostsWithoutGeoLocation(req, res) {
   try {
     let Fetch = await Post.aggregate([
       {
-        $match: {},
+        $match: { status: true },
       },
       { $sort: { _id: -1 } },
 
@@ -838,7 +877,7 @@ async function getWithGeolocation(req, res) {
       },
 
       {
-        $match: {},
+        $match: { status: true },
       },
       { $skip: parseInt(req.params.counter) },
       { $limit: 1 },
@@ -1273,4 +1312,5 @@ module.exports = {
   sendReport,
   upvoteOnComment,
   downvoteOnComment,
+  approvePostByadmin,
 };

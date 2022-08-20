@@ -19,8 +19,8 @@ async function verifyEmailBody(data) {
     `
 <p style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left:0in;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'>Hi, ` +
     data.fname +
-    `<br>&nbsp;welcome to API service . Please open that link in your browser for verification of your account.&nbsp;</p>
-<p style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left:0in;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'>Verification Link :&nbsp;</p>
+    `<br>&nbsp;<p>Willkommen bei Lokalspende. Bitte &ouml;ffnen Sie diesen Link in Ihrem Browser, um Ihr Konto zu verifizieren.</p>
+    <p>Best&auml;tigungslink :</p>
 
 <p style="text-align: center;"><strong><span style="color: rgb(209, 72, 65);">` +
     data.uniquelink +
@@ -70,12 +70,12 @@ const ThanksEmailBody = `<!DOCTYPE html>
 <body class="jumbotron text-center">
     <div class="jumbotron text-center">
         <h1 class="display-3">Thank You!</h1>
-        <p class="lead"><strong>Your Email is now verified </strong>Please login to your Account
+        <p class="lead"><strong>Ihre E-Mail ist jetzt verifiziert</strong>Bitte loggen Sie sich in Ihren Account ein
         </p>
         <hr>
 
         <p class="lead">
-            <a class="btn btn-primary btn-sm" href="${websiteLink}signin" role="button">Continue to
+            <a class="btn btn-primary btn-sm" href="${websiteLink}dein-profil" role="button">Continue to
                 LOGIN</a>
         </p>
     </div>
@@ -87,6 +87,19 @@ async function Report_Email_Body(data) {
   return `
 
     <p>Here is post to see : ${data.post} &nbsp;</p>
+    
+    
+    `;
+}
+
+async function Post_Approve(data) {
+  return `
+
+  62eb9b0bc5d4a03d7ba3830f
+
+    <p>Here is link to view : https://app.lokalspende.org/geteilter-antrag/${data.post} &nbsp;</p>
+
+    <p>Here is link to Verify : https://app.lokalspende.org/api/post/verify-post/${data.post}&nbsp;</p>
     
     
     `;
@@ -122,4 +135,5 @@ module.exports = {
   ThanksEmailBody,
   Report_Email_Body,
   testFacebook,
+  Post_Approve,
 };

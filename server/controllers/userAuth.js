@@ -127,7 +127,9 @@ const registerByFb = async (req, res) => {
 
     // Validate user input
     if (!(fname && email && id)) {
-      return res.status(400).json({ message: 'Alle Eingabefelder sind benötigt' });
+      return res
+        .status(400)
+        .json({ message: 'Alle Eingabefelder sind benötigt' });
     }
 
     // check if Der Nutzer existiert bereits
@@ -169,7 +171,7 @@ const registerByFb = async (req, res) => {
       }
 
       const user = await User.create({
-        fname,
+        fname: fname,
 
         email: email.toLowerCase(),
         fbId: id,
@@ -209,7 +211,9 @@ const registerByGoogle = async (req, res) => {
 
     // Validate user input
     if (!(fname && email && id)) {
-      return res.status(400).json({ message: 'Alle Eingabefelder werden benötigt' });
+      return res
+        .status(400)
+        .json({ message: 'Alle Eingabefelder werden benötigt' });
     }
 
     // check if Der Nutzer existiert bereits
@@ -251,7 +255,7 @@ const registerByGoogle = async (req, res) => {
       }
 
       const user = await User.create({
-        fname,
+        fname: fname,
         username: username,
         email: email.toLowerCase(),
         googleId: id,
@@ -293,7 +297,9 @@ const registerByEmail = async (req, res) => {
 
     // Validate user input
     if (!(email && pass && username)) {
-      return res.status(400).json({ message: 'Alle Eingabefelder werden benötigt' });
+      return res
+        .status(400)
+        .json({ message: 'Alle Eingabefelder werden benötigt' });
     }
     let encryptedpass = await bcrypt.hash(pass, 10);
     // check if Der Nutzer existiert bereits
@@ -332,7 +338,7 @@ const registerByEmail = async (req, res) => {
       const user = await User.create({
         username: username.toLowerCase(),
         email: email.toLowerCase(),
-
+        fname: username,
         registeredBy: 'email',
         pass: encryptedpass,
         counterId: counterId,
@@ -352,35 +358,35 @@ const registerByEmail = async (req, res) => {
       user.token = token;
       console.log(token);
 
-      // const VerifiedEmial = await EmailVerify.create({
-      //   email: email.toLowerCase(),
-      // });
+      const VerifiedEmial = await EmailVerify.create({
+        email: email.toLowerCase(),
+      });
 
-      // var emailParameters = {
-      //   fname,
-      //   email,
+      var emailParameters = {
+        username,
+        email,
 
-      //   uniquelink:
-      //     process.env.websiteLink +
-      //     'api/email/verify/' +
-      //     email.toLowerCase() +
-      //     '/uniqueid/' +
-      //     VerifiedEmial._id,
-      // };
+        uniquelink:
+          process.env.websiteLink +
+          'api/email/verify/' +
+          email.toLowerCase() +
+          '/uniqueid/' +
+          VerifiedEmial._id,
+      };
 
-      // let emailToSend = [
-      //   {
-      //     Email: email,
-      //   },
-      // ];
+      let emailToSend = [
+        {
+          Email: email,
+        },
+      ];
 
-      // /// subject, data, emaile templete to select
-      // sendEmail(
-      //   emailToSend,
-      //   'Welcome to Xperea',
-      //   emailParameters,
-      //   'veerify_Email_Body'
-      // );
+      /// subject, data, emaile templete to select
+      sendEmail(
+        emailToSend,
+        'Willkommen bei Lokalspende',
+        emailParameters,
+        'veerify_Email_Body'
+      );
 
       return res.status(200).json({ status: true, data: user });
     }

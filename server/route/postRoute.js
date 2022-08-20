@@ -128,6 +128,14 @@ module.exports = (PostController) => {
   );
 
   postRouter.get(
+    '/verify-post/:Id',
+
+    PostController.approvePostByadmin
+  );
+
+  
+
+  postRouter.get(
     '/getAllPost/:diseaseId',
 
     PostController.getAllPostsByDiseaseId

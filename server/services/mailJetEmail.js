@@ -8,6 +8,7 @@ const {
   verifyEmailBody,
   welcomeEmailBody,
   Report_Email_Body,
+  Post_Approve,
 } = require('./EmailTemplates');
 
 async function sendEmail(emailToSend, subject, data, Email_templete) {
@@ -21,6 +22,8 @@ async function sendEmail(emailToSend, subject, data, Email_templete) {
       Email_Templete_Name = await forgetEmailBody(data);
     } else if (Email_templete == 'Report_Email_Body') {
       Email_Templete_Name = await Report_Email_Body(data);
+    } else if (Email_templete == 'Post_Approve') {
+      Email_Templete_Name = await Post_Approve(data);
     }
 
     console.log(Email_Templete_Name);

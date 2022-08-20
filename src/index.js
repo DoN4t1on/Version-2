@@ -11,6 +11,11 @@ import { PetitionsActiveMostPopular } from './PetitionsActiveMostPopular';
 
 import { PetitionsSingle } from './PetitionsSingle';
 
+
+
+
+import { PetitionsApprove } from './PetitionsApprove';
+
 import { PetitionsAccepted } from './PetitionsAccepted';
 import { PetitionsAcceptedNewest } from './PetitionsAcceptedNewest';
 import { PetitionsAcceptedMostPopular } from './PetitionsAcceptedMostPopular';
@@ -93,7 +98,6 @@ import { ToastContainer } from 'react-toastify';
 import Test from './Test';
 import Agb from './Agb';
 
-
 const queryClient = new QueryClient();
 const app = document.getElementById('app');
 ReactDOM.render(
@@ -113,10 +117,9 @@ ReactDOM.render(
 
           <Route path='/geteilter-antrag/:Id' element={<PetitionsSingle />} />
 
-          <Route
-            path='/antrage-akzeptiert'
-            element={<PetitionsAccepted />}
-          />
+          <Route path='/post-verify/:Id' element={<PetitionsApprove />} />
+
+          <Route path='/antrage-akzeptiert' element={<PetitionsAccepted />} />
           <Route
             path='/antrage-akzeptiert-neuste'
             element={<PetitionsAcceptedNewest />}
@@ -244,7 +247,14 @@ ReactDOM.render(
         contentClasses='content-cookies'
         overlay
       >
-        Diese Webseite benutzt Cookies. <a href='https://app.lokalspende.org/datenschutz' style={{ 'color': 'blue' }}>Hier</a> können Sie die Datenschutzerklärung einsehen.
+        Diese Webseite benutzt Cookies.{' '}
+        <a
+          href='https://app.lokalspende.org/datenschutz'
+          style={{ color: 'blue' }}
+        >
+          Hier
+        </a>{' '}
+        können Sie die Datenschutzerklärung einsehen.
       </CookieConsent>
       <ToastContainer limit={1} />
     </QueryClientProvider>
