@@ -585,7 +585,7 @@ font-size: 15px;
   height: 22px;
   width: auto;
   position: fixed;
-  bottom: 105px;
+  bottom: 100px;
   left: 6px;
 }
 .under-navbar {
@@ -728,7 +728,7 @@ font-size: 15px;
   display: flex;
   justify-content: space-between;
   position: relative;
-  top: 10px;
+  top: 12px;
   left: 10px;
   height: 80px;
 }
