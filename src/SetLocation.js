@@ -139,7 +139,7 @@ export const SetLocation = () => {
         toast.error(ErrorService.uniformError(error));
       },
       onSuccess: (res) => {
-        toast.success('Ihr Antrag wurde erfolgreich erstellt');
+        toast.success('Ihr Antrag wurde erfolgreich erstellt und wird überprüft');
         navigate('/');
       },
     }
@@ -267,7 +267,7 @@ export const SetLocation = () => {
           googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${mapAPiKey}`}
           loadingElement={<div style={{ height: `100%` }} />}
           containerElement={
-            <div style={{ height: `600px`, width: '1450px' }} />
+            <div style={{ height: `1000px`, width: '2000px' }} />
           }
           mapElement={<div style={{ height: `100%` }} />}
           setlat={setcurrentLat}
@@ -284,5 +284,5 @@ export const SetLocation = () => {
         classprofile='under-navitem-unselected'
       />
     </div>
-  );
-};
+  )
+}

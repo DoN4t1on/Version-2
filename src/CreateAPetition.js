@@ -138,7 +138,7 @@ export const CreateAPetition = () => {
         toast.error(ErrorService.uniformError(error));
       },
       onSuccess: (res) => {
-        toast.success('Ihr Antrag wurde erfolgreich erstellt');
+        toast.success('Ihr Antrag wurde erfolgreich erstellt und wird überprüft');
         navigate('/');
       },
     }
@@ -273,7 +273,7 @@ export const CreateAPetition = () => {
           /> */}
 
 
-          <div style={{ height: '320px', marginTop: 10, width: '100%', borderRadius: '10px' }}>
+          <div className='create-map-div'>
             {/* <GoogleMapReact
               bootstrapURLKeys={{
                 key: 'key',
@@ -291,7 +291,7 @@ export const CreateAPetition = () => {
               googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${mapAPiKey}`}
               loadingElement={<div style={{ height: `100%`, borderRadius: '10px' }} />}
               containerElement={<div style={{ height: `200px`, borderRadius: '10px' }} />}
-              mapElement={<div style={{ height: `170%`, borderRadius: '10px', width: '100%', border: '1px solid #28a745' }} />}
+              mapElement={<div style={{ height: `180%`, borderRadius: '10px', width: '100%', border: '1px solid #28a745' }} />}
               setlat={setcurrentLat}
               setlong={setcurrentLong}
               latlong={latlong}
