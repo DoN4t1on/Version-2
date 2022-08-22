@@ -266,9 +266,7 @@ export const SetLocation = () => {
         <WrappedMap
           googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${mapAPiKey}`}
           loadingElement={<div style={{ height: `100%` }} />}
-          containerElement={
-            <div style={{ height: `600px`, width: '1450px' }} />
-          }
+          containerElement={<div style={{ height: `100%`, width: '100%' }} />}
           mapElement={<div style={{ height: `100%` }} />}
           setlat={setcurrentLat}
           setlong={setcurrentLong}
