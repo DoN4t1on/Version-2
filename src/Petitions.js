@@ -232,10 +232,10 @@ export const Petitions = () => {
                 den Standort.
                 <br />
                 <br />
-                Gebiet in dem wir Arbeiten: <br /> <br />Köln
+                Region in der wir arbeiten: <br /> <br />Köln
                 <br />
                 <br />
-                Gebiete auf der Warteliste: <br /><br /> 1. Aachen <br /> 2. Paris <br />
+                Regionen auf der Warteliste: <br /><br /> 1. Aachen <br /> 2. Paris <br />
                 3. Stuttgart <br />
                 4. Rheinland-Pfalz <br /> 5. Ungarn <br />6. Nordrhein-Westfalen
               </div>
@@ -302,12 +302,12 @@ export const Petitions = () => {
         <>
           <div className='campaigns no-data statement-petitions'>
             Leider können wir Sie nicht automatisch orten. <br />
-            Klicken Sie auf den Standort den sie öffnen möchten. <br />
+            Klicken Sie auf die Region die sie öffnen möchten. <br />
             <br />
-            Gebiet in dem wir Arbeiten: <br /><br /> Köln
+            Region in der wir Arbeiten: <br /><br /> Köln
             <br />
             <br />
-            Gebiete auf der Warteliste: <br /><br />1. Aachen <br />2. Paris <br />
+            Regionen auf der Warteliste: <br /><br />1. Aachen <br />2. Paris <br />
             3. Stuttgart <br />
             4. Rheinland-Pfalz <br />5. Ungarn <br />6. Nordrhein-Westfalen
             <br />
@@ -330,13 +330,13 @@ export const Petitions = () => {
           <div className='campaigns no-data statement-petitions'>
             Leider können wir Sie nicht automatisch orten.
             <br />
-            Klicken Sie auf den Standort den sie öffnen möchten. <br />
+            Klicken Sie auf die Region die sie öffnen möchten. <br />
             <br />
             <br />
-            Gebiet in dem wir Arbeiten: <br /> Köln
+            Region in der wir Arbeiten: <br /> Köln
             <br />
             <br />
-            Gebiete auf der Warteliste: <br /> Aachen <br /> Paris <br />
+            Regionen auf der Warteliste: <br /> Aachen <br /> Paris <br />
             Stuttgart <br />
             Rheinland-Pfalz <br /> Ungarn <br /> Nordrhein-Westfalen
             <br />
