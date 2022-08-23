@@ -266,7 +266,7 @@ const upvoteOnPost = async (req, res) => {
       });
     }
 
-    const refreshpost = await Post.findOne({ _id: ObjectId(postId) });
+    const refreshpost = await getSinlePostById(postId);
 
     return res.status(200).json({ status: true, data: refreshpost });
   } catch (err) {
@@ -365,7 +365,7 @@ const downvoteOnPost = async (req, res) => {
         timeZone: timeZone,
       });
     }
-    const refreshpost = await Post.findOne({ _id: ObjectId(postId) });
+    const refreshpost = await getSinlePostById(postId);
 
     return res.status(200).json({ status: true, data: refreshpost });
   } catch (err) {
@@ -789,6 +789,49 @@ const getAllMostPopularPost = async (req, res) => {
     return res.status(400).json({ message: 'Etwas lief schief' });
   }
 };
+
+async function getSinlePostById(Id) {
+  let Fetch = await Post.aggregate([
+    {
+      $match: { _id: ObjectId(Id) },
+    },
+    { $sort: { _id: -1 } },
+
+    {
+      $lookup: {
+        from: 'upvotes',
+        localField: '_id',
+        foreignField: 'postId',
+        as: 'upvotes',
+      },
+    },
+    {
+      $lookup: {
+        from: 'downvotes',
+        localField: '_id',
+        foreignField: 'postId',
+        as: 'downvotes',
+      },
+    },
+
+    {
+      $lookup: {
+        from: 'users',
+        localField: 'userId',
+        foreignField: '_id',
+        as: 'user',
+      },
+    },
+
+    { $unwind: '$user' },
+
+    { $unset: ['user.pass'] },
+  ]);
+
+  return Fetch;
+}
+
+
 
 async function getLatestPostsWithoutGeoLocation(req, res) {
   console.log(req.params);

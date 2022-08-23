@@ -20,13 +20,15 @@ import Grid from '@mui/material/Grid';
 export const Petition = (petition) => {
   const localtz = moment.tz.guess();
   const [sumcounter, setSumcounter] = useState(
-    petition.item.upVote - petition.item.downVote
+    petition.item.upvotes.length - petition.item.downvotes.length
   );
 
-  const [upvotecounter, setUpvotecounter] = useState(petition.item.upVote);
+  const [upvotecounter, setUpvotecounter] = useState(
+    petition.item.upvotes.length
+  );
 
   const [downvotecounter, setDownvotecounter] = useState(
-    petition.item.downVote
+    petition.item.downvotes.length
   );
 
   const [upvoteimage, setUpvoteimage] = useState(upvoteempty);
@@ -78,9 +80,11 @@ export const Petition = (petition) => {
       },
       onSuccess: (res) => {
         console.log(res.data.data);
-        setUpvotecounter(res.data.data.upVote);
-        setDownvotecounter(res.data.data.downVote);
-        setSumcounter(res.data.data.upVote - res.data.data.downVote);
+        setUpvotecounter(res.data.data[0].upvotes.length);
+        setDownvotecounter(res.data.data[0].downvotes.length);
+        setSumcounter(
+          res.data.data[0].upvotes.length - res.data.data[0].downvotes.length
+        );
         //// getComments.refetch();
         /// navigate('/');
       },
@@ -95,10 +99,11 @@ export const Petition = (petition) => {
       },
       onSuccess: (res) => {
         console.log(res.data.data);
-
-        setUpvotecounter(res.data.data.upVote);
-        setDownvotecounter(res.data.data.downVote);
-        setSumcounter(res.data.data.upVote - res.data.data.downVote);
+        setUpvotecounter(res.data.data[0].upvotes.length);
+        setDownvotecounter(res.data.data[0].downvotes.length);
+        setSumcounter(
+          res.data.data[0].upvotes.length - res.data.data[0].downvotes.length
+        );
 
         //// getComments.refetch();
         /// navigate('/');
