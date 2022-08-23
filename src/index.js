@@ -115,7 +115,7 @@ ReactDOM.render(
             element={<PetitionsActiveMostPopular />}
           />
 
-          <Route path='/geteilte-petition/:Id' element={<PetitionsSingle />} />
+          <Route path='/geteilter-antrag/:Id' element={<PetitionsSingle />} />
 
           <Route path='/post-verify/:Id' element={<PetitionsApprove />} />
 
