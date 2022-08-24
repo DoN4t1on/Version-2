@@ -107,3 +107,5 @@ dist
 
 .DS_Store
 .DS_Store
+src/config/config.js
+src/config/config.js
