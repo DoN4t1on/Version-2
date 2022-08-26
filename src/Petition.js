@@ -305,7 +305,7 @@ export const Petition = (petition) => {
             value={amount}
             className='amount'
             id='inputAmount'
-            placeholder='Betrag'
+            placeholder='0'
             onChange={(e) => setAmount(Number(e.target.value))}
             required
           />
@@ -337,11 +337,11 @@ export const Petition = (petition) => {
               </p>
             </Link>
           </div>
-
+{/*
           <p id='votes' className='voting-counter-sum'>
             {sumcounter}
           </p>
-
+*/} 
           <div>
             {' '}
             <img
