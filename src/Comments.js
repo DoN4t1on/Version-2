@@ -91,6 +91,7 @@ export const Comments = () => {
           <input
             value={amount}
             type='text'
+            maxLength='300'
             className='comment-input'
             placeholder='Kommentieren'
             onChange={(e) => setAmount(e.target.value)}

@@ -243,9 +243,11 @@ export const Comment = (props) => {
             </Link>
           </div>
 
+          {/*
           <p id='votes' className='voting-counter-sum'>
             {sumcounter}
           </p>
+*/} 
 
           <div>
             {' '}
