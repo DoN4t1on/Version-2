@@ -4,7 +4,7 @@
 
 ##
 
-- PayPal: https://www.paypal.com/donate/?hosted_button_id=L4FDWZVU9AXK6
+- Donate: https://donorbox.org/localdonation
 
 ##
 
