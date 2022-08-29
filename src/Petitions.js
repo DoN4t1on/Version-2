@@ -202,6 +202,7 @@ export const Petitions = () => {
   // locationName != 'Sargodha'
 
   async function setKolin() {
+
     let payload = {
       lat: 50.9361189,
       long: 6.9564453,
@@ -209,7 +210,7 @@ export const Petitions = () => {
 
     dispatch(SET_LatLong(payload));
 
-    dispatch(SET_City({ locationName: city, manualLocation: false }));
+    dispatch(SET_City({ locationName: 'Köln', manualLocation: false }));
 
     navigate('/');
   }
