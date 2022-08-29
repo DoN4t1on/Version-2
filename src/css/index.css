@@ -499,8 +499,9 @@ body {
   font-weight: 650;
   color: black;
   position: relative;
-  left: 5px;
+  right: 1px;
   opacity: 100%;
+  font-size: large;
 }
 
 .amount-p {
@@ -589,7 +590,7 @@ body {
   padding-top: 15px;
 
   /* opacity: 0.7; */
-  z-index: 2;
+  z-index: 1000;
 }
 .content-cookies {
   color: white;

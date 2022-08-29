@@ -319,30 +319,30 @@ export const Petitions = () => {
       ) : (
         <>
           <div className='campaigns no-data statement-petitions'>
-            Klicken Sie auf die Region die sie öffnen möchten. <br />
-            <br />
-            Region in der wir Arbeiten: <br />
-            <br /> Köln
-            <br />
-            <br />
-            Regionen auf der Warteliste: <br />
-            <br />
-            1. Aachen <br />
-            2. Paris <br />
-            3. Stuttgart <br />
-            4. Rheinland-Pfalz <br />
-            5. Ungarn <br />
-            6. Nordrhein-Westfalen <br />
-            7. Indien <br />
-            8. Bayern
-            <br />
-            <br />
-            <a style={{ color: 'blue' }} href='https://Lokalspende.org/'>
-              {' '}
-              Hier{' '}
-            </a>{' '}
-            können Sie Ihre Region in der Warteliste eintragen.
-          </div>
+          Klicken Sie auf eine Region in der wir arbeiten, oder registrieren Sie<a style={{ color: 'blue' }} href='https://Lokalspende.org/'>
+                  {' '}
+                  hier{' '}
+                </a>{' '}Ihre Region in der Warteliste.
+                <br />
+                <br />
+                Region in der wir arbeiten: <br /> <br />
+                <a
+                  style={{ color: 'blue' }}
+                  onClick={setKolin}
+                  ///href='https://app.lokalspende.org/karte'
+                >
+                  Köln
+                </a>
+                <br />
+                <br />
+                Regionen auf der Warteliste: <br />
+                <br /> 1. Aachen <br /> 2. Paris <br />
+                3. Stuttgart <br />
+                4. Rheinland-Pfalz <br /> 5. Ungarn <br />
+                6. Nordrhein-Westfalen <br />
+                7. Indien <br />
+                8. Bayern
+              </div>
         </>
       )}
 
@@ -353,30 +353,30 @@ export const Petitions = () => {
       ) : lat == 'false' ? (
         <>
           <div className='campaigns no-data statement-petitions'>
-            Klicken Sie auf die Region die sie öffnen möchten. <br />
-            <br />
-            <br />
-            Region in der wir Arbeiten: <br /> Köln
-            <br />
-            <br />
-            Regionen auf der Warteliste: <br />
-            <br />
-            1. Aachen <br />
-            2. Paris <br />
-            3. Stuttgart <br />
-            4. Rheinland-Pfalz <br />
-            5. Ungarn <br />
-            6. Nordrhein-Westfalen <br />
-            7. Indien <br />
-            8. Bayern
-            <br />
-            <br />
-            <a style={{ color: 'blue' }} href='https://Lokalspende.org/'>
-              {' '}
-              Hier{' '}
-            </a>{' '}
-            können Sie Ihre Region in der Warteliste eintragen.
-          </div>
+          Klicken Sie auf eine Region in der wir arbeiten, oder registrieren Sie<a style={{ color: 'blue' }} href='https://Lokalspende.org/'>
+                  {' '}
+                  hier{' '}
+                </a>{' '}Ihre Region in der Warteliste.
+                <br />
+                <br />
+                Region in der wir arbeiten: <br /> <br />
+                <a
+                  style={{ color: 'blue' }}
+                  onClick={setKolin}
+                  ///href='https://app.lokalspende.org/karte'
+                >
+                  Köln
+                </a>
+                <br />
+                <br />
+                Regionen auf der Warteliste: <br />
+                <br /> 1. Aachen <br /> 2. Paris <br />
+                3. Stuttgart <br />
+                4. Rheinland-Pfalz <br /> 5. Ungarn <br />
+                6. Nordrhein-Westfalen <br />
+                7. Indien <br />
+                8. Bayern
+              </div>
         </>
       ) : null}
 
