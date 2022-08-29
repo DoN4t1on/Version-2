@@ -231,22 +231,10 @@ export const Petitions = () => {
                 </p>
               </div>
               <div className='campaigns no-data statement-petitions'>
-                Wir arbeiten noch nicht in dieser Region. Registrieren Sie sich{' '}
-                <a style={{ color: 'blue' }} href='https://Lokalspende.org/'>
+               Klicken Sie auf eine Region in der wir arbeiten, oder registrieren Sie<a style={{ color: 'blue' }} href='https://Lokalspende.org/'>
                   {' '}
                   hier{' '}
-                </a>{' '}
-                auf unserer Warteliste um zum Start in Ihrer Region
-                benachrichtigt zu werden und den Start in Ihrer Region zu
-                beschleunigen oder ändern Sie{' '}
-                <a
-                  style={{ color: 'blue' }}
-                  href='https://app.lokalspende.org/karte'
-                >
-                  {' '}
-                  hier{' '}
-                </a>{' '}
-                den Standort.
+                </a>{' '}Ihre Region in der Warteliste.
                 <br />
                 <br />
                 Region in der wir arbeiten: <br /> <br />
