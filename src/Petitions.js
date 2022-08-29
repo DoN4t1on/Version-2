@@ -15,6 +15,7 @@ import Header from './components/Header';
 import ReactGA from 'react-ga4';
 import { useDispatch, useSelector } from 'react-redux';
 import { Get_All_POSTS } from './reactStore/actions/Actions';
+import { useNavigate } from 'react-router-dom';
 
 import Geocode from 'react-geocode';
 import { mapAPiKey } from './config/config';
@@ -23,6 +24,8 @@ import { SET_City, SET_LatLong } from './reactStore/actions/Actions';
 import { store } from './reactStore/MainStore';
 
 export const Petitions = () => {
+  let navigate = useNavigate();
+
   const dispatch = useDispatch();
   Geocode.setApiKey(mapAPiKey);
 
@@ -87,7 +90,7 @@ export const Petitions = () => {
             for (var i = 0; i < address_components.length; i++) {
               if (
                 address_components[i].types[0] ===
-                'administrative_area_level_1' &&
+                  'administrative_area_level_1' &&
                 address_components[i].types[1] === 'political'
               ) {
                 state = address_components[i].long_name;
@@ -196,13 +199,26 @@ export const Petitions = () => {
     track();
   }, []);
 
+  // locationName != 'Sargodha'
+
+  async function setKolin() {
+    let payload = {
+      lat: 50.9361189,
+      long: 6.9564453,
+    };
+
+    dispatch(SET_LatLong(payload));
+
+    dispatch(SET_City({ locationName: city, manualLocation: false }));
+
+    navigate('/');
+  }
+
   return (
     <div>
       {locationName != '' ? (
         <>
-          {locationName != 'Köln' &&
-            locationName != 'Cologne' &&
-            locationName != 'Sargodha' ? (
+          {locationName != 'Köln' && locationName != 'Cologne' ? (
             ///// {locationName != 'Köln' ? (
             <>
               <div id='header'>
@@ -232,12 +248,23 @@ export const Petitions = () => {
                 den Standort.
                 <br />
                 <br />
-                Region in der wir arbeiten: <br /> <br />Köln
+                Region in der wir arbeiten: <br /> <br />
+                <a
+                  style={{ color: 'blue' }}
+                  onClick={setKolin}
+                  ///href='https://app.lokalspende.org/karte'
+                >
+                  Köln
+                </a>
                 <br />
                 <br />
-                Regionen auf der Warteliste: <br /><br /> 1. Aachen <br /> 2. Paris <br />
+                Regionen auf der Warteliste: <br />
+                <br /> 1. Aachen <br /> 2. Paris <br />
                 3. Stuttgart <br />
-                4. Rheinland-Pfalz <br /> 5. Ungarn <br />6. Nordrhein-Westfalen <br />7. Indien <br />8. Bayern
+                4. Rheinland-Pfalz <br /> 5. Ungarn <br />
+                6. Nordrhein-Westfalen <br />
+                7. Indien <br />
+                8. Bayern
               </div>
             </>
           ) : (
@@ -304,19 +331,27 @@ export const Petitions = () => {
             Leider können wir Sie nicht automatisch orten. <br />
             Klicken Sie auf die Region die sie öffnen möchten. <br />
             <br />
-            Region in der wir Arbeiten: <br /><br /> Köln
+            Region in der wir Arbeiten: <br />
+            <br /> Köln
             <br />
             <br />
-            Regionen auf der Warteliste: <br /><br />1. Aachen <br />2. Paris <br />
+            Regionen auf der Warteliste: <br />
+            <br />
+            1. Aachen <br />
+            2. Paris <br />
             3. Stuttgart <br />
-            4. Rheinland-Pfalz <br />5. Ungarn <br />6. Nordrhein-Westfalen <br />7. Indien <br />8. Bayern
+            4. Rheinland-Pfalz <br />
+            5. Ungarn <br />
+            6. Nordrhein-Westfalen <br />
+            7. Indien <br />
+            8. Bayern
             <br />
             <br />
             <a style={{ color: 'blue' }} href='https://Lokalspende.org/'>
               {' '}
               Hier{' '}
-            </a>{' '}können Sie Ihre Region in der
-            Warteliste eintragen.
+            </a>{' '}
+            können Sie Ihre Region in der Warteliste eintragen.
           </div>
         </>
       )}
@@ -336,16 +371,23 @@ export const Petitions = () => {
             Region in der wir Arbeiten: <br /> Köln
             <br />
             <br />
-            Regionen auf der Warteliste: <br /><br />1. Aachen <br />2. Paris <br />
+            Regionen auf der Warteliste: <br />
+            <br />
+            1. Aachen <br />
+            2. Paris <br />
             3. Stuttgart <br />
-            4. Rheinland-Pfalz <br />5. Ungarn <br />6. Nordrhein-Westfalen <br />7. Indien <br />8. Bayern
+            4. Rheinland-Pfalz <br />
+            5. Ungarn <br />
+            6. Nordrhein-Westfalen <br />
+            7. Indien <br />
+            8. Bayern
             <br />
             <br />
             <a style={{ color: 'blue' }} href='https://Lokalspende.org/'>
               {' '}
               Hier{' '}
-            </a>{' '}können Sie Ihre Region in der
-            Warteliste eintragen.
+            </a>{' '}
+            können Sie Ihre Region in der Warteliste eintragen.
           </div>
         </>
       ) : null}
@@ -358,4 +400,4 @@ export const Petitions = () => {
       />
     </div>
   );
-};
+};;;;;
