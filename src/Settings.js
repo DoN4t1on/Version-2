@@ -44,7 +44,7 @@ export const Settings = () => {
         </a>
         <br /> <br />
 
-        <a href='https://www.paypal.com/donate/?hosted_button_id=D6VXHJ7G7RCYU'>
+        <a href='https://donorbox.org/localdonation'>
           {' '}
           <button className='btn btn-success btn-lg button border-black'>
             Unterstütze uns mit einer Spende! 💸

@@ -185,7 +185,7 @@ export const CreateAPetition = () => {
             type='title'
             maxLength='40'
             className='input-style1'
-            placeholder={'Titel'}
+            
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.title}
@@ -245,7 +245,7 @@ export const CreateAPetition = () => {
               rows='10'
               cols='2'
               maxLength='2500'
-              placeholder={'Begründung'}
+             
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.description}

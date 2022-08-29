@@ -237,7 +237,7 @@ export const Petitions = () => {
                 <br />
                 Regionen auf der Warteliste: <br /><br /> 1. Aachen <br /> 2. Paris <br />
                 3. Stuttgart <br />
-                4. Rheinland-Pfalz <br /> 5. Ungarn <br />6. Nordrhein-Westfalen
+                4. Rheinland-Pfalz <br /> 5. Ungarn <br />6. Nordrhein-Westfalen <br />7. Indien <br />8. Bayern
               </div>
             </>
           ) : (
@@ -309,7 +309,7 @@ export const Petitions = () => {
             <br />
             Regionen auf der Warteliste: <br /><br />1. Aachen <br />2. Paris <br />
             3. Stuttgart <br />
-            4. Rheinland-Pfalz <br />5. Ungarn <br />6. Nordrhein-Westfalen
+            4. Rheinland-Pfalz <br />5. Ungarn <br />6. Nordrhein-Westfalen <br />7. Indien <br />8. Bayern
             <br />
             <br />
             <a style={{ color: 'blue' }} href='https://Lokalspende.org/'>
@@ -336,9 +336,9 @@ export const Petitions = () => {
             Region in der wir Arbeiten: <br /> Köln
             <br />
             <br />
-            Regionen auf der Warteliste: <br /> Aachen <br /> Paris <br />
-            Stuttgart <br />
-            Rheinland-Pfalz <br /> Ungarn <br /> Nordrhein-Westfalen
+            Regionen auf der Warteliste: <br /><br />1. Aachen <br />2. Paris <br />
+            3. Stuttgart <br />
+            4. Rheinland-Pfalz <br />5. Ungarn <br />6. Nordrhein-Westfalen <br />7. Indien <br />8. Bayern
             <br />
             <br />
             <a style={{ color: 'blue' }} href='https://Lokalspende.org/'>

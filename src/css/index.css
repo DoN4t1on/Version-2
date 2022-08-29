@@ -224,7 +224,7 @@ body {
 }
 .search-title {
   margin-top: 25px;
-  margin-bottom: 5px;
+  margin-bottom: 25px;
 }
 .search-settings {
   font-size: 16px;
@@ -235,7 +235,7 @@ body {
   color: white;
   background: url(../img/search.svg) no-repeat scroll 10px 6px;
   padding-left: 30px;
-
+  font-weight: bold;
   border: solid 2px;
   width: 90%;
 }
@@ -499,7 +499,7 @@ body {
   font-weight: 650;
   color: black;
   position: relative;
-  left: 0px;
+  left: 5px;
   opacity: 100%;
 }
 
@@ -700,7 +700,7 @@ body {
 }
 .interaction-bar-comment {
   position: relative;
-  top: 10px;
+  top: 0px;
 }
 .voting-div {
   display: flex;
@@ -709,6 +709,7 @@ body {
   top: 12px;
   left: 10px;
   height: 80px;
+  min-width: 90px;
 }
 
 .profile-name {
@@ -967,29 +968,6 @@ body {
   margin-right: auto;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 310px) {
   body {
     visibility: hidden;
@@ -1087,9 +1065,8 @@ body {
     width: 60%;
   }
   .create-map-div {
-    
     width: 80%;
-    
+
     margin-left: auto;
     margin-right: auto;
   }
