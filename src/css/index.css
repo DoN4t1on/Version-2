@@ -702,6 +702,7 @@ body {
 .interaction-bar-comment {
   position: relative;
   top: 0px;
+  height: 55px;
 }
 .voting-div {
   display: flex;
