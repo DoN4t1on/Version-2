@@ -255,6 +255,8 @@ export const Petitions = () => {
                 7. Indien <br />
                 8. Bayern
               </div>
+              <br />
+                <br />
             </>
           ) : (
             <>
