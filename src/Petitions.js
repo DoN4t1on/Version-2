@@ -301,7 +301,6 @@ export const Petitions = () => {
       ) : (
         <>
           <div className='campaigns no-data statement-petitions'>
-            Leider können wir Sie nicht automatisch orten. <br />
             Klicken Sie auf die Region die sie öffnen möchten. <br />
             <br />
             Region in der wir Arbeiten: <br /><br /> Köln
@@ -328,8 +327,6 @@ export const Petitions = () => {
       ) : lat == 'false' ? (
         <>
           <div className='campaigns no-data statement-petitions'>
-            Leider können wir Sie nicht automatisch orten.
-            <br />
             Klicken Sie auf die Region die sie öffnen möchten. <br />
             <br />
             <br />
