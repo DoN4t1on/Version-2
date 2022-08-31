@@ -90,7 +90,7 @@ export const Petitions = () => {
             for (var i = 0; i < address_components.length; i++) {
               if (
                 address_components[i].types[0] ===
-                  'administrative_area_level_1' &&
+                'administrative_area_level_1' &&
                 address_components[i].types[1] === 'political'
               ) {
                 state = address_components[i].long_name;
@@ -231,20 +231,23 @@ export const Petitions = () => {
                 </p>
               </div>
               <div className='campaigns no-data statement-petitions'>
-               Klicken Sie auf eine Region in der wir arbeiten, oder registrieren Sie<a style={{ color: 'blue' }} href='https://Lokalspende.org/'>
-                  {' '}
-                  hier{' '}
-                </a>{' '}Ihre Region in der Warteliste.
+                Klicken Sie auf eine Region in der wir arbeiten.
                 <br />
                 <br />
                 Region in der wir arbeiten: <br /> <br />
                 <a
                   style={{ color: 'blue' }}
                   onClick={setKolin}
-                  ///href='https://app.lokalspende.org/karte'
+                ///href='https://app.lokalspende.org/karte'
                 >
                   Köln
                 </a>
+                <br />
+                <br />
+                Oder registrieren Sie<a style={{ color: 'blue' }} href='https://Lokalspende.org/'>
+                  {' '}
+                  hier{' '}
+                </a>{' '}Ihre Region in der Warteliste.
                 <br />
                 <br />
                 Regionen auf der Warteliste: <br />
@@ -254,9 +257,10 @@ export const Petitions = () => {
                 6. Nordrhein-Westfalen <br />
                 7. Indien <br />
                 8. Bayern
-              </div>
-              <br />
                 <br />
+                <br />
+              </div>
+
             </>
           ) : (
             <>
@@ -319,30 +323,35 @@ export const Petitions = () => {
       ) : (
         <>
           <div className='campaigns no-data statement-petitions'>
-          Klicken Sie auf eine Region in der wir arbeiten, oder registrieren Sie<a style={{ color: 'blue' }} href='https://Lokalspende.org/'>
-                  {' '}
-                  hier{' '}
-                </a>{' '}Ihre Region in der Warteliste.
-                <br />
-                <br />
-                Region in der wir arbeiten: <br /> <br />
-                <a
-                  style={{ color: 'blue' }}
-                  onClick={setKolin}
-                  ///href='https://app.lokalspende.org/karte'
-                >
-                  Köln
-                </a>
-                <br />
-                <br />
-                Regionen auf der Warteliste: <br />
-                <br /> 1. Aachen <br /> 2. Paris <br />
-                3. Stuttgart <br />
-                4. Rheinland-Pfalz <br /> 5. Ungarn <br />
-                6. Nordrhein-Westfalen <br />
-                7. Indien <br />
-                8. Bayern
-              </div>
+            Klicken Sie auf eine Region in der wir arbeiten.
+            <br />
+            <br />
+            Region in der wir arbeiten: <br /> <br />
+            <a
+              style={{ color: 'blue' }}
+              onClick={setKolin}
+            ///href='https://app.lokalspende.org/karte'
+            >
+              Köln
+            </a>
+            <br />
+            <br />
+            Oder registrieren Sie<a style={{ color: 'blue' }} href='https://Lokalspende.org/'>
+              {' '}
+              hier{' '}
+            </a>{' '}Ihre Region in der Warteliste.
+            <br />
+            <br />
+            Regionen auf der Warteliste: <br />
+            <br /> 1. Aachen <br /> 2. Paris <br />
+            3. Stuttgart <br />
+            4. Rheinland-Pfalz <br /> 5. Ungarn <br />
+            6. Nordrhein-Westfalen <br />
+            7. Indien <br />
+            8. Bayern
+            <br />
+            <br />
+          </div>
         </>
       )}
 
@@ -353,30 +362,35 @@ export const Petitions = () => {
       ) : lat == 'false' ? (
         <>
           <div className='campaigns no-data statement-petitions'>
-          Klicken Sie auf eine Region in der wir arbeiten, oder registrieren Sie<a style={{ color: 'blue' }} href='https://Lokalspende.org/'>
-                  {' '}
-                  hier{' '}
-                </a>{' '}Ihre Region in der Warteliste.
-                <br />
-                <br />
-                Region in der wir arbeiten: <br /> <br />
-                <a
-                  style={{ color: 'blue' }}
-                  onClick={setKolin}
-                  ///href='https://app.lokalspende.org/karte'
-                >
-                  Köln
-                </a>
-                <br />
-                <br />
-                Regionen auf der Warteliste: <br />
-                <br /> 1. Aachen <br /> 2. Paris <br />
-                3. Stuttgart <br />
-                4. Rheinland-Pfalz <br /> 5. Ungarn <br />
-                6. Nordrhein-Westfalen <br />
-                7. Indien <br />
-                8. Bayern
-              </div>
+            Klicken Sie auf eine Region in der wir arbeiten.
+            <br />
+            <br />
+            Region in der wir arbeiten: <br /> <br />
+            <a
+              style={{ color: 'blue' }}
+              onClick={setKolin}
+            ///href='https://app.lokalspende.org/karte'
+            >
+              Köln
+            </a>
+            <br />
+            <br />
+            Oder registrieren Sie<a style={{ color: 'blue' }} href='https://Lokalspende.org/'>
+              {' '}
+              hier{' '}
+            </a>{' '}Ihre Region in der Warteliste.
+            <br />
+            <br />
+            Regionen auf der Warteliste: <br />
+            <br /> 1. Aachen <br /> 2. Paris <br />
+            3. Stuttgart <br />
+            4. Rheinland-Pfalz <br /> 5. Ungarn <br />
+            6. Nordrhein-Westfalen <br />
+            7. Indien <br />
+            8. Bayern
+            <br />
+            <br />
+          </div>
         </>
       ) : null}
 
