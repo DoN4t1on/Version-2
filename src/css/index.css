@@ -544,6 +544,8 @@ body {
   bottom: 8px;
   font-size: 35px;
   z-index: -3;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .share-button {
   position: relative;
