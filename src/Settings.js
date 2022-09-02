@@ -32,7 +32,7 @@ export const Settings = () => {
         <a href='https://Lokalspende.org/fragen/'>
           {' '}
           <button className='btn btn-success btn-lg button border-black'>
-            Fragen ⁉️
+            Fragen & Antworten ⁉️
           </button>{' '}
         </a>{' '}
         <br /> <br />

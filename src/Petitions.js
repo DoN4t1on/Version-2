@@ -248,7 +248,6 @@ export const Petitions = () => {
                   hier{' '}
                 </a>{' '}Ihre Region in der Warteliste.
                 <br />
-                <br />
                 <br /> 1. Aachen <br /> 2. Paris <br />
                 3. Stuttgart <br />
                 4. Rheinland-Pfalz <br /> 5. Ungarn <br />
@@ -258,7 +257,7 @@ export const Petitions = () => {
                 <br />
                 <br />
                 <Link to='/info'>
-        <img src={require('./img/info-circle.svg')} className='info-image-comments' />
+        <img src={require('./img/info-circle.svg')} className='info-image-notification' />
       </Link>
               </div>
 
@@ -357,7 +356,7 @@ export const Petitions = () => {
             <br />
             <br />
             <Link to='/info'>
-        <img src={require('./img/info-circle.svg')} className='info-image-comments' />
+        <img src={require('./img/info-circle.svg')} className='info-image-notification' />
       </Link>
           </div>
         </>
@@ -397,7 +396,7 @@ export const Petitions = () => {
             <br />
             <br />
             <Link to='/info'>
-        <img src={require('./img/info-circle.svg')} className='info-image-comments' />
+        <img src={require('./img/info-circle.svg')} className='info-image-notification' />
       </Link>
           </div>
         </>

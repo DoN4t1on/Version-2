@@ -565,6 +565,13 @@ body {
   bottom: 60px;
   left: 6px;
 }
+.info-image-notification {
+  height: 22px;
+  width: auto;
+  position: fixed;
+  bottom: 10px;
+  left: 6px;
+}
 .info-image-comments {
   height: 22px;
   width: auto;
