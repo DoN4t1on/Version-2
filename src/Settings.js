@@ -39,7 +39,7 @@ export const Settings = () => {
         <a href='https://Lokalspende.org/kontakt/'>
           {' '}
           <button className='btn btn-success btn-lg button border-black'>
-            Kontaktiere uns 📩
+            Kontaktieren Sie uns 📩
           </button>{' '}
         </a>
         <br /> <br />
@@ -54,7 +54,7 @@ export const Settings = () => {
         <a href='https://t.me/LocalDonation'>
           {' '}
           <button className='btn btn-success btn-lg button border-black'>
-            Werde Teil des Teams 🙌🏻
+            Werden Sie Teil des Teams 🙌🏻
           </button>{' '}
         </a>
         <div className='horzontal-rule-setting'>
