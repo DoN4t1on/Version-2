@@ -231,6 +231,7 @@ export const Petitions = () => {
                 </p>
               </div>
               <div className='campaigns no-data statement-petitions'>
+                Wir arbeiten noch nicht in dieser Region.
                 Klicken Sie auf eine Region in der wir arbeiten.
                 <br />
                 <br />
@@ -364,41 +365,7 @@ export const Petitions = () => {
 
       {lat == '' ? (
         <>
-          <div className='campaigns no-data'></div>
-        </>
-      ) : lat == 'false' ? (
-        <>
-          <div className='campaigns no-data statement-petitions'>
-            Klicken Sie auf eine Region in der wir arbeiten.
-            <br />
-            <br />
-            <a
-              style={{ color: 'blue' }}
-              onClick={setKolin}
-            ///href='https://app.lokalspende.org/karte'
-            >
-              Köln
-            </a>
-            <br />
-            <br />
-            Oder registrieren Sie<a style={{ color: 'blue' }} href='https://Lokalspende.org/'>
-              {' '}
-              hier{' '}
-            </a>{' '}Ihre Region in der Warteliste.
-            <br />
-            <br />
-            1. Aachen <br /> 2. Paris <br />
-            3. Stuttgart <br />
-            4. Rheinland-Pfalz <br /> 5. Ungarn <br />
-            6. Nordrhein-Westfalen <br />
-            7. Indien <br />
-            8. Bayern
-            <br />
-            <br />
-            <Link to='/info'>
-        <img src={require('./img/info-circle.svg')} className='info-image-notification' />
-      </Link>
-          </div>
+          
         </>
       ) : null}
 
