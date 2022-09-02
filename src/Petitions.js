@@ -234,7 +234,6 @@ export const Petitions = () => {
                 Klicken Sie auf eine Region in der wir arbeiten.
                 <br />
                 <br />
-                Region in der wir arbeiten: <br /> <br />
                 <a
                   style={{ color: 'blue' }}
                   onClick={setKolin}
@@ -250,7 +249,6 @@ export const Petitions = () => {
                 </a>{' '}Ihre Region in der Warteliste.
                 <br />
                 <br />
-                Regionen auf der Warteliste: <br />
                 <br /> 1. Aachen <br /> 2. Paris <br />
                 3. Stuttgart <br />
                 4. Rheinland-Pfalz <br /> 5. Ungarn <br />
@@ -259,6 +257,9 @@ export const Petitions = () => {
                 8. Bayern
                 <br />
                 <br />
+                <Link to='/info'>
+        <img src={require('./img/info-circle.svg')} className='info-image-comments' />
+      </Link>
               </div>
 
             </>
@@ -317,6 +318,12 @@ export const Petitions = () => {
                   <Petition item={item} />
                 ))}
               </div>
+              <NavbarBottom
+        classstart='under-navitem-selected'
+        classsearch='under-navitem-unselected'
+        classactivity='under-navitem-unselected'
+        classprofile='under-navitem-unselected'
+      />
             </>
           )}
         </>
@@ -326,7 +333,6 @@ export const Petitions = () => {
             Klicken Sie auf eine Region in der wir arbeiten.
             <br />
             <br />
-            Region in der wir arbeiten: <br /> <br />
             <a
               style={{ color: 'blue' }}
               onClick={setKolin}
@@ -342,8 +348,7 @@ export const Petitions = () => {
             </a>{' '}Ihre Region in der Warteliste.
             <br />
             <br />
-            Regionen auf der Warteliste: <br />
-            <br /> 1. Aachen <br /> 2. Paris <br />
+            1. Aachen <br /> 2. Paris <br />
             3. Stuttgart <br />
             4. Rheinland-Pfalz <br /> 5. Ungarn <br />
             6. Nordrhein-Westfalen <br />
@@ -351,6 +356,9 @@ export const Petitions = () => {
             8. Bayern
             <br />
             <br />
+            <Link to='/info'>
+        <img src={require('./img/info-circle.svg')} className='info-image-comments' />
+      </Link>
           </div>
         </>
       )}
@@ -365,7 +373,6 @@ export const Petitions = () => {
             Klicken Sie auf eine Region in der wir arbeiten.
             <br />
             <br />
-            Region in der wir arbeiten: <br /> <br />
             <a
               style={{ color: 'blue' }}
               onClick={setKolin}
@@ -381,8 +388,7 @@ export const Petitions = () => {
             </a>{' '}Ihre Region in der Warteliste.
             <br />
             <br />
-            Regionen auf der Warteliste: <br />
-            <br /> 1. Aachen <br /> 2. Paris <br />
+            1. Aachen <br /> 2. Paris <br />
             3. Stuttgart <br />
             4. Rheinland-Pfalz <br /> 5. Ungarn <br />
             6. Nordrhein-Westfalen <br />
@@ -390,16 +396,14 @@ export const Petitions = () => {
             8. Bayern
             <br />
             <br />
+            <Link to='/info'>
+        <img src={require('./img/info-circle.svg')} className='info-image-comments' />
+      </Link>
           </div>
         </>
       ) : null}
 
-      <NavbarBottom
-        classstart='under-navitem-selected'
-        classsearch='under-navitem-unselected'
-        classactivity='under-navitem-unselected'
-        classprofile='under-navitem-unselected'
-      />
+     
     </div>
   );
-};;;;;
+};

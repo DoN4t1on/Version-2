@@ -51,7 +51,7 @@ export const Settings = () => {
           </button>{' '}
         </a>
         <br /> <br />
-        <a href='https://t.me/LocalDonationorg'>
+        <a href='https://t.me/LocalDonation'>
           {' '}
           <button className='btn btn-success btn-lg button border-black'>
             Werde Teil des Teams 🙌🏻
