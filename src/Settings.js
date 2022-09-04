@@ -86,16 +86,17 @@ export const Settings = () => {
         </p>
         <p>
           {' '}
-          <Link className='black' to='/datenschutz'>
-            <strong>Datenschutzerklärung</strong>
-          </Link>
-        </p>
-        <p>
-          {' '}
           <Link className='black' to='/agb'>
             <strong>AGB</strong>
           </Link>
         </p>
+        <p>
+          {' '}
+          <Link className='black' to='/datenschutz'>
+            <strong>Datenschutzerklärung</strong>
+          </Link>
+        </p>
+        
       </div>
 
       <NavbarBottom
