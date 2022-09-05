@@ -21,8 +21,10 @@ export const Search = () => {
 					<input className="search-input" placeholder="   Suche" />
 				</div>
 
+
 				
 			</div>
+			<p className="under-work-statement"> Dieser Bereich befindet sich in Arbeit </p>
 			<NavbarBottom classstart="under-navitem-unselected" classsearch="under-navitem-selected" classactivity="under-navitem-unselected" classprofile="under-navitem-unselected" />
 		</div>
 	)
