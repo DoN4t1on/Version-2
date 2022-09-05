@@ -716,6 +716,7 @@ body {
   position: relative;
   top: 0px;
   height: 55px;
+  z-index: 1;
 }
 .voting-div {
   display: flex;
@@ -772,6 +773,7 @@ body {
   justify-content: space-between;
   position: relative;
   bottom: 10px;
+  z-index: 0;
 }
 .linkblack {
   color: #000;
