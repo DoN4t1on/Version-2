@@ -63,84 +63,84 @@ export const Petitions = () => {
   //   );
   // }, []);
 
-  useEffect(() => {
-    if (store.getState().Geo.manualLocation == false) {
-      navigator.geolocation.getCurrentPosition(function (position) {
-        let payload = {
-          lat: position.coords.latitude,
-          long: position.coords.longitude,
-        };
+  // useEffect(() => {
+  //   if (store.getState().Geo.manualLocation == false) {
+  //    (function (position) {
+  //       let payload = {
+  //         lat: position.coords.latitude,
+  //         long: position.coords.longitude,
+  //       };
 
-        dispatch(SET_LatLong(payload));
+  //       dispatch(SET_LatLong(payload));
 
-        Geocode.fromLatLng(
-          position.coords.latitude,
-          position.coords.longitude
-          /// 50.9697143,
-          //6.9679737
-        ).then(
-          (response) => {
-            var city = '';
-            var state = '';
-            var country = '';
-            var zipcode = '';
+  //       Geocode.fromLatLng(
+  //         position.coords.latitude,
+  //         position.coords.longitude
+  //         /// 50.9697143,
+  //         //6.9679737
+  //       ).then(
+  //         (response) => {
+  //           var city = '';
+  //           var state = '';
+  //           var country = '';
+  //           var zipcode = '';
 
-            var address_components = response.results[0].address_components;
+  //           var address_components = response.results[0].address_components;
 
-            for (var i = 0; i < address_components.length; i++) {
-              if (
-                address_components[i].types[0] ===
-                  'administrative_area_level_1' &&
-                address_components[i].types[1] === 'political'
-              ) {
-                state = address_components[i].long_name;
-              }
-              if (
-                address_components[i].types[0] === 'locality' &&
-                address_components[i].types[1] === 'political'
-              ) {
-                city = address_components[i].long_name;
-              }
+  //           for (var i = 0; i < address_components.length; i++) {
+  //             if (
+  //               address_components[i].types[0] ===
+  //                 'administrative_area_level_1' &&
+  //               address_components[i].types[1] === 'political'
+  //             ) {
+  //               state = address_components[i].long_name;
+  //             }
+  //             if (
+  //               address_components[i].types[0] === 'locality' &&
+  //               address_components[i].types[1] === 'political'
+  //             ) {
+  //               city = address_components[i].long_name;
+  //             }
 
-              if (
-                address_components[i].types[0] === 'postal_code' &&
-                zipcode == ''
-              ) {
-                zipcode = address_components[i].long_name;
-              }
+  //             if (
+  //               address_components[i].types[0] === 'postal_code' &&
+  //               zipcode == ''
+  //             ) {
+  //               zipcode = address_components[i].long_name;
+  //             }
 
-              if (address_components[i].types[0] === 'country') {
-                country = address_components[i].long_name;
-              }
-            }
+  //             if (address_components[i].types[0] === 'country') {
+  //               country = address_components[i].long_name;
+  //             }
+  //           }
 
-            ///// const address = response.results[0].formatted_address;
+  //           ///// const address = response.results[0].formatted_address;
 
-            dispatch(SET_City({ locationName: city, manualLocation: false }));
-            ///  setlocationName(city);
-          },
-          (error) => {
-            console.error(error);
+  //           dispatch(SET_City({ locationName: city, manualLocation: false }));
+  //           ///  setlocationName(city);
+  //         },
+  //         (error) => {
+  //           console.error(error);
 
-            /// dispatch(SET_City('Standort'));
-            // dispatch(
-            //   SET_City({ locationName: 'Standort', manualLocation: false })
-            // );
+  //           /// dispatch(SET_City('Standort'));
+  //           // dispatch(
+  //           //   SET_City({ locationName: 'Standort', manualLocation: false })
+  //           // );
 
-            let payload = {
-              lat: 'false',
-              long: 'false',
-            };
+  //           let payload = {
+  //             lat: 'false',
+  //             long: 'false',
+  //           };
 
-            dispatch(SET_LatLong(payload));
-          }
-        );
+  //           dispatch(SET_LatLong(payload));
+  //         }
+  //       );
 
-        ///   console.log('Latitude is :', position.coords.latitude);
-        ///console.log('Longitude is :', position.coords.longitude);
-      });
-    }
-  }, []);
+  //       ///   console.log('Latitude is :', position.coords.latitude);
+  //       ///console.log('Longitude is :', position.coords.longitude);
+  //     });
+  //   }
+  // }, []);
 
   const getAllPosts = useQuery(
     'allpostdataPetitions',
@@ -202,7 +202,6 @@ export const Petitions = () => {
   // locationName != 'Sargodha'
 
   async function setKolin() {
-
     let payload = {
       lat: 50.9361189,
       long: 6.9564453,
