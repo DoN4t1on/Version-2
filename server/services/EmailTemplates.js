@@ -3,8 +3,7 @@ const { websiteLink } = process.env;
 async function forgetEmailBody(data) {
   return (
     `
-    <p>You have requested to update the password. Here is the verification link its only valid for only 15 minutes. Be quick</p>
-    <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;verification link:</p>
+    <p>Hier ist der Link um Ihr Passwort zu ändern:</p>
     <p>` +
     data.uniquelink +
     `</p>
@@ -17,10 +16,8 @@ async function forgetEmailBody(data) {
 async function verifyEmailBody(data) {
   return (
     `
-<p style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left:0in;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'>Hi, ` +
-    data.fname +
-    `<br>&nbsp;<p>Willkommen bei Lokalspende. Bitte &ouml;ffnen Sie diesen Link in Ihrem Browser, um Ihr Konto zu verifizieren.</p>
-    <p>Best&auml;tigungslink :</p>
+<p>Willkommen bei Lokalspende. Bitte &ouml;ffnen Sie diesen Link in Ihrem Browser, um Ihr Konto zu verifizieren:</p>
+    
 
 <p style="text-align: center;"><strong><span style="color: rgb(209, 72, 65);">` +
     data.uniquelink +
@@ -34,9 +31,7 @@ async function welcomeEmailBody(data) {
   return (
     `
 
-    <p style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left:0in;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'>Hi,` +
-    data.fname +
-    `<br>&nbsp;welcome to API service 
+    <p>Willkommen bei unserem API service</p>
     
     
     `
@@ -69,14 +64,13 @@ const ThanksEmailBody = `<!DOCTYPE html>
 
 <body class="jumbotron text-center">
     <div class="jumbotron text-center">
-        <h1 class="display-3">Thank You!</h1>
-        <p class="lead"><strong>Ihre E-Mail ist jetzt verifiziert</strong>Bitte loggen Sie sich in Ihren Account ein
+        <h1 class="display-3"></h1>
+        <p class="lead"><strong>Ihre E-Mail ist jetzt bestätigt</strong> Bitte loggen Sie sich in Ihren Account ein
         </p>
         <hr>
 
         <p class="lead">
-            <a class="btn btn-primary btn-sm" href="${websiteLink}dein-profil" role="button">Continue to
-                LOGIN</a>
+            <a class="btn btn-primary btn-sm" href="${websiteLink}dein-profil" role="button">Login</a>
         </p>
     </div>
 </body>
@@ -97,9 +91,9 @@ async function Post_Approve(data) {
 
   62eb9b0bc5d4a03d7ba3830f
 
-    <p>Here is link to view : https://app.lokalspende.org/geteilter-antrag/${data.post} &nbsp;</p>
+    <p>Hier ist der Antrag zum angucken: https://app.lokalspende.org/geteilter-antrag/${data.post} &nbsp;</p>
 
-    <p>Here is link to Verify : https://app.lokalspende.org/api/post/verify-post/${data.post}&nbsp;</p>
+    <p>Hier ist der Link zur Freischaltung des Antrags: https://app.lokalspende.org/api/post/verify-post/${data.post}&nbsp;</p>
     
     
     `;

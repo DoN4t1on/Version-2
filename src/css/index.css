@@ -188,6 +188,10 @@ body {
 
   left: 20px;
 }
+.under-work-statement {
+
+  margin-top: 250px;
+}
 .report-crowdfunding-campaign {
   position: relative;
   top: 4px;
@@ -499,8 +503,9 @@ body {
   font-weight: 650;
   color: black;
   position: relative;
-  left: 5px;
+  right: 1px;
   opacity: 100%;
+  font-size: large;
 }
 
 .amount-p {
@@ -543,6 +548,8 @@ body {
   bottom: 8px;
   font-size: 35px;
   z-index: -3;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .share-button {
   position: relative;
@@ -560,6 +567,13 @@ body {
   width: auto;
   position: fixed;
   bottom: 60px;
+  left: 6px;
+}
+.info-image-notification {
+  height: 22px;
+  width: auto;
+  position: fixed;
+  bottom: 10px;
   left: 6px;
 }
 .info-image-comments {
@@ -589,7 +603,7 @@ body {
   padding-top: 15px;
 
   /* opacity: 0.7; */
-  z-index: 2;
+  z-index: 1000;
 }
 .content-cookies {
   color: white;
@@ -701,6 +715,8 @@ body {
 .interaction-bar-comment {
   position: relative;
   top: 0px;
+  height: 55px;
+  z-index: 1;
 }
 .voting-div {
   display: flex;
@@ -757,6 +773,7 @@ body {
   justify-content: space-between;
   position: relative;
   bottom: 10px;
+  z-index: 0;
 }
 .linkblack {
   color: #000;

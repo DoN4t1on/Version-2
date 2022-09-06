@@ -32,14 +32,14 @@ export const Settings = () => {
         <a href='https://Lokalspende.org/fragen/'>
           {' '}
           <button className='btn btn-success btn-lg button border-black'>
-            Fragen ⁉️
+            Fragen & Antworten ⁉️
           </button>{' '}
         </a>{' '}
         <br /> <br />
         <a href='https://Lokalspende.org/kontakt/'>
           {' '}
           <button className='btn btn-success btn-lg button border-black'>
-            Kontaktiere uns 📩
+            Kontaktieren Sie uns 📩
           </button>{' '}
         </a>
         <br /> <br />
@@ -47,14 +47,14 @@ export const Settings = () => {
         <a href='https://donorbox.org/localdonation'>
           {' '}
           <button className='btn btn-success btn-lg button border-black'>
-            Unterstütze uns mit einer Spende! 💸
+            Spenden 💸
           </button>{' '}
         </a>
         <br /> <br />
-        <a href='https://t.me/LocalDonationorg'>
+        <a href='https://t.me/LocalDonation'>
           {' '}
           <button className='btn btn-success btn-lg button border-black'>
-            Werde Teil des Teams 🙌🏻
+            Werden Sie Teil des Teams 🙌🏻
           </button>{' '}
         </a>
         <div className='horzontal-rule-setting'>
@@ -86,16 +86,17 @@ export const Settings = () => {
         </p>
         <p>
           {' '}
-          <Link className='black' to='/datenschutz'>
-            <strong>Datenschutzerklärung</strong>
-          </Link>
-        </p>
-        <p>
-          {' '}
           <Link className='black' to='/agb'>
             <strong>AGB</strong>
           </Link>
         </p>
+        <p>
+          {' '}
+          <Link className='black' to='/datenschutz'>
+            <strong>Datenschutzerklärung</strong>
+          </Link>
+        </p>
+        
       </div>
 
       <NavbarBottom

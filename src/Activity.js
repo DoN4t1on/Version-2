@@ -32,7 +32,7 @@ export const Activity = () => {
 
         </p>
       </div>
-
+      <p className="under-work-statement"> Dieser Bereich befindet sich in Arbeit </p>
       <NavbarBottom
         classstart='under-navitem-unselected'
         classsearch='under-navitem-unselected'

@@ -19,6 +19,12 @@ export const Info = () => {
             <strong>Impressum </strong>
           </p>{' '}
         </Link>
+        <Link style={{ color: 'black' }} to='/agb'>
+          <p>
+            {' '}
+            <strong>AGB</strong>
+          </p>{' '}
+        </Link>
         <Link style={{ color: 'black' }} to='/datenschutz'>
           <p>
             {' '}
@@ -26,12 +32,7 @@ export const Info = () => {
           </p>{' '}
         </Link>
 
-        <Link style={{ color: 'black' }} to='/agb'>
-          <p>
-            {' '}
-            <strong>AGB</strong>
-          </p>{' '}
-        </Link>
+       
 
       </div>
 
