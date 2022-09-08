@@ -186,7 +186,15 @@ body {
 
   top: 3px;
 
-  left: 20px;
+  left: 60px;
+
+  
+}
+.post-creator-div {
+  width: 200px;
+}
+.position-right{
+  float: right;
 }
 .under-work-statement {
 
@@ -207,7 +215,7 @@ body {
 .report-comments {
   position: relative;
   top: 4px;
-  left: 32px;
+  left: 60px;
   height: 35px;
 }
 .headline {

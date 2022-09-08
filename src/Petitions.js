@@ -262,14 +262,9 @@ export const Petitions = () => {
                 <br />
                 <br />
                 <Link to='/info'>
-<<<<<<< Updated upstream
-                  <img
-                    src={require('./img/info-circle.svg')}
-                    className='info-image-notification'
-                  />
-=======
+
                   <img src={require('./img/info-circle.svg')} className='info-image-notification' />
->>>>>>> Stashed changes
+
                 </Link>
               </div>
             </>
@@ -371,22 +366,15 @@ export const Petitions = () => {
             <br />
             <br />
             <Link to='/info'>
-<<<<<<< Updated upstream
-              <img
-                src={require('./img/info-circle.svg')}
-                className='info-image-notification'
-              />
-=======
+
               <img src={require('./img/info-circle.svg')} className='info-image-notification' />
->>>>>>> Stashed changes
+
             </Link>
           </div>
         </>
       )}
 
-<<<<<<< Updated upstream
-      {lat == '' ? <></> : null}
-=======
+
       {lat == '' ? (
         <>
 
@@ -394,7 +382,7 @@ export const Petitions = () => {
       ) : null}
 
 
->>>>>>> Stashed changes
+
     </div>
   );
 };

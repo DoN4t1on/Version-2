@@ -203,9 +203,9 @@ export const Comment = (props) => {
             src={require('./img/three-dots.svg')}
           />
         </Link>
-        <div>
+        <div className='post-creator-div'>
           <Link to={`/profil/${props.item.user[0]._id}`}>
-            <button className='btn btn-success button small'>
+            <button className='btn btn-success button small position-right'>
               {props.item.user[0].fname}
 
               <img

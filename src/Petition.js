@@ -247,10 +247,10 @@ export const Petition = (petition) => {
           {' '}
           <img src={require('./img/three-dots.svg')} className='report' />{' '}
         </Link>
-        <div>
+        <div className='post-creator-div'>
           <Link to={`/profil/${petition.item.user._id}`}>
             {petition.item.user != '' ? (
-              <button className='btn btn-success button small'>
+              <button className='btn btn-success button small position-right'>
                 <span className='petition-creator-name'>
                   {petition.item.user.fname}
                 </span>
