@@ -206,8 +206,9 @@ export const Comment = (props) => {
         <div className='post-creator-div'>
           <Link to={`/profil/${props.item.user[0]._id}`}>
             <button className='btn btn-success button small position-right'>
+            <span className='petition-creator-name'>
               {props.item.user[0].fname}
-
+              </span>
               <img
                 src={
                   props.item.user[0].pic
@@ -224,7 +225,7 @@ export const Comment = (props) => {
       <p className='comment'>{props.item.expereince} </p>
 
       <div className='interaction-bar interaction-bar-comment'>
-        <div className='voting-div'>
+        <div className='voting-div-comment'>
           <div>
             {' '}
             <img

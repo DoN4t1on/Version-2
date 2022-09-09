@@ -322,6 +322,7 @@ export const Petition = (petition) => {
       </form>
 
       <div className='interaction-bar'>
+        
         <div className='voting-div'>
           <div>
             {' '}

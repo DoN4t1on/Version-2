@@ -186,7 +186,7 @@ body {
 
   top: 3px;
 
-  left: 55px;
+  left: 57px;
 
   
 }
@@ -215,7 +215,7 @@ body {
 .report-comments {
   position: relative;
   top: 4px;
-  left: 55px;
+  left: 57px;
   height: 35px;
 }
 .headline {
@@ -556,18 +556,21 @@ body {
   bottom: 8px;
   font-size: 35px;
   z-index: -3;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .share-button {
   position: relative;
 
   top: 12px;
   right: 12px;
+  padding-left: 15px;
 }
 .voting-button {
   height: 35px;
   width: auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .info-image {
@@ -716,6 +719,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
 .interaction-bar {
   display: flex;
   justify-content: space-between;
@@ -728,12 +732,28 @@ body {
 }
 .voting-div {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   position: relative;
   top: 12px;
-  left: 10px;
+  
   height: 80px;
-  min-width: 90px;
+ width: 150px;
+ 
+  
+  
+}
+
+.voting-div-comment {
+  display: flex;
+  justify-content: start;
+  position: relative;
+  top: 12px;
+  
+  height: 80px;
+
+ 
+  
+  
 }
 
 .profile-name {
@@ -742,7 +762,7 @@ body {
 .comments-div {
   position: relative;
   top: 3px;
-  right: 20px;
+  right: 50px;
 }
 .hr-petition {
   margin-top: 6px;
@@ -830,7 +850,7 @@ body {
   padding-right: 40px;
 }
 .divider-horizontal-rule-comments {
-  width: 35%;
+  width: 45%;
   position: relative;
   top: 11px;
 }
@@ -1003,7 +1023,7 @@ body {
     width: 80%;
   }
   .divider-horizontal-rule-comments {
-    width: 50%;
+    width: 60%;
   }
 
   .petition-picture {
@@ -1071,7 +1091,7 @@ body {
 }
 @media (min-width: 600px) {
   .divider-horizontal-rule-comments {
-    width: 60%;
+    width: 70%;
   }
   .petition-desc,
   .petition-titel {
@@ -1099,7 +1119,7 @@ body {
     bottom: 60px;
   }
   .divider-horizontal-rule-comments {
-    width: 65%;
+    width: 75%;
   }
   .petition-picture {
     width: 60%;
