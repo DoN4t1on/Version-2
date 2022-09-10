@@ -564,7 +564,12 @@ body {
 
   top: 12px;
   right: 12px;
-  padding-left: 15px;
+  
+}
+.width-left {
+  
+  padding-left: 25px;
+
 }
 .voting-button {
   height: 35px;

@@ -275,7 +275,7 @@ export const Comment = (props) => {
 
         <Link to='/teilen' state={{ url: '/neuste-kommentare/' + Id }}>
           {' '}
-          <img src={require('./img/share.svg')} className='share-button' />
+          <img src={require('./img/share.svg')} className='share-button width-left' />
         </Link>
       </div>
     </div>
