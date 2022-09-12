@@ -84,7 +84,7 @@ function SocialLogin() {
 
       <div className='my-3'>
         <FacebookLogin
-          appId={'811216629840391'}
+          appId={'670076524299446'}
           textButton='Weiter mit Facebook'
           fields='name,email,picture'
           callback={FacebookLoginSuccessRequest}
@@ -92,7 +92,6 @@ function SocialLogin() {
           icon={<i className='fab fa-facebook   mx-2'></i>}
         />
       </div>
-
     </div>
   );
 }
