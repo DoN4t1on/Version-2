@@ -250,19 +250,21 @@ export const Petitions = () => {
                 </a>{' '}
                 Ihre Region in der Warteliste.
                 <br />
-                <br /> 1. Aachen <br /> 2. Paris <br />
-                3. Stuttgart <br />
-                4. Rheinland-Pfalz <br /> 5. Ungarn <br />
-                6. Nordrhein-Westfalen <br />
-                7. Indien <br />
-                8. Bayern
+                <br />
+                1. Aachen (3) <br /> 
+                2. Paris (1) <br />
+                3. Stuttgart (1) <br />
+                4. Rheinland-Pfalz (1) <br /> 
+                5. Ungarn (1) <br />
+                6. Nordrhein-Westfalen (1)<br />
+                7. Indien (1) <br />
+                8. Bayern (1)
                 <br />
                 <br />
                 <Link to='/info'>
-                  <img
-                    src={require('./img/info-circle.svg')}
-                    className='info-image-notification'
-                  />
+
+                  <img src={require('./img/info-circle.svg')} className='info-image-notification' />
+
                 </Link>
               </div>
             </>
@@ -353,25 +355,34 @@ export const Petitions = () => {
             Ihre Region in der Warteliste.
             <br />
             <br />
-            1. Aachen <br /> 2. Paris <br />
-            3. Stuttgart <br />
-            4. Rheinland-Pfalz <br /> 5. Ungarn <br />
-            6. Nordrhein-Westfalen <br />
-            7. Indien <br />
-            8. Bayern
+            1. Aachen (3) <br /> 
+            2. Paris (1) <br />
+            3. Stuttgart (1) <br />
+            4. Rheinland-Pfalz (1) <br />
+            5. Ungarn (1) <br />
+            6. Nordrhein-Westfalen (1)<br />
+            7. Indien (1) <br />
+            8. Bayern (1)
             <br />
             <br />
             <Link to='/info'>
-              <img
-                src={require('./img/info-circle.svg')}
-                className='info-image-notification'
-              />
+
+              <img src={require('./img/info-circle.svg')} className='info-image-notification' />
+
             </Link>
           </div>
         </>
       )}
 
-      {lat == '' ? <></> : null}
+
+      {lat == '' ? (
+        <>
+
+        </>
+      ) : null}
+
+
+
     </div>
   );
 };
