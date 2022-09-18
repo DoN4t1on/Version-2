@@ -25,11 +25,11 @@ export const PetitionsAccepted = () => {
           <Link className='strong' to='/'>
             Anträge
           </Link>{' '}
-          | <Link to='/crowdfunding'>Crowdfunding</Link>
+          | <Link to='/crowdfunding' className='grey'>Crowdfunding</Link>
         </p>
         <p className='menu2 small-headlines '>
           {' '}
-          <Link to='/' className=''>
+          <Link to='/' className='grey'>
             Aktiv{' '}
           </Link>
           |
@@ -38,7 +38,7 @@ export const PetitionsAccepted = () => {
             Akzeptiert{' '}
           </Link>
           |{' '}
-          <Link to='/antrage-abgelehnt' className=''>
+          <Link to='/antrage-abgelehnt' className='grey'>
             Abgelehnt{' '}
           </Link>{' '}
         </p>

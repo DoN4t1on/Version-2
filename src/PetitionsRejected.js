@@ -25,15 +25,15 @@ export const PetitionsRejected = () => {
           <Link className='strong' to='/'>
             Anträge
           </Link>{' '}
-          | <Link to='/crowdfunding'>Crowdfunding</Link>
+          | <Link to='/crowdfunding' className='grey'>Crowdfunding</Link>
         </p>
         <p className='menu2 small-headlines '>
           {' '}
-          <Link to='/' className=''>
+          <Link to='/' className='grey'>
             Aktiv{' '}
           </Link>
           |
-          <Link to='/antrage-akzeptiert' className=''>
+          <Link to='/antrage-akzeptiert' className='grey'>
             {' '}
             Akzeptiert{' '}
           </Link>

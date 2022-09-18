@@ -103,7 +103,7 @@ export const PetitionsActiveMostPopular = () => {
           <Link className='strong' to='/'>
             Anträge
           </Link>{' '}
-          | <Link to='/crowdfunding'>Crowdfunding</Link>
+          | <Link to='/crowdfunding' className='grey'>Crowdfunding</Link>
         </p>
         <p className='menu2 small-headlines '>
           {' '}
@@ -111,22 +111,22 @@ export const PetitionsActiveMostPopular = () => {
             Aktiv{' '}
           </Link>
           |
-          <Link to='/antrage-akzeptiert' className=''>
+          <Link to='/antrage-akzeptiert' className='grey'>
             {' '}
             Akzeptiert{' '}
           </Link>
           |{' '}
-          <Link to='/antrage-abgelehnt' className=''>
+          <Link to='/antrage-abgelehnt' className='grey'>
             Abgelehnt{' '}
           </Link>{' '}
         </p>
         <p className='last-menu small-headlines'>
           {' '}
-          <Link to='/' className=''>
+          <Link to='/' className='grey'>
             Am nächsten{' '}
           </Link>
           |{' '}
-          <Link to='/antrage-aktiv-neuste' className=''>
+          <Link to='/antrage-aktiv-neuste' className='grey'>
             {' '}
             Neuste{' '}
           </Link>

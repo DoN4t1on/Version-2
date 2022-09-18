@@ -261,12 +261,16 @@ export const Petitions = () => {
                 8. Bayern (1)
                 <br />
                 <br />
-                <Link to='/info'>
-
-                  <img src={require('./img/info-circle.svg')} className='info-image-notification' />
-
-                </Link>
+                <br />
+                <br />
+                
               </div>
+              <NavbarBottom
+                classstart='under-navitem-selected'
+                classsearch='under-navitem-unselected'
+                classactivity='under-navitem-unselected'
+                classprofile='under-navitem-unselected'
+              />
             </>
           ) : (
             <>
@@ -283,7 +287,7 @@ export const Petitions = () => {
                   <Link className='strong' to='/'>
                     Anträge
                   </Link>{' '}
-                  | <Link to='/crowdfunding'>Crowdfunding</Link>
+                  | <Link to='/crowdfunding' className='grey'>Crowdfunding</Link>
                 </p>
                 <p className='menu2 small-headlines '>
                   {' '}
@@ -291,12 +295,12 @@ export const Petitions = () => {
                     Aktiv{' '}
                   </Link>
                   |
-                  <Link to='/antrage-akzeptiert' className=''>
+                  <Link to='/antrage-akzeptiert' className='grey'>
                     {' '}
                     Akzeptiert{' '}
                   </Link>
                   |{' '}
-                  <Link to='/antrage-abgelehnt' className=''>
+                  <Link to='/antrage-abgelehnt' className='grey'>
                     Abgelehnt{' '}
                   </Link>{' '}
                 </p>
@@ -306,12 +310,12 @@ export const Petitions = () => {
                     Am nächsten{' '}
                   </Link>
                   |{' '}
-                  <Link to='/antrage-aktiv-neuste' className=''>
+                  <Link to='/antrage-aktiv-neuste' className='grey'>
                     {' '}
                     Neuste{' '}
                   </Link>
                   |{' '}
-                  <Link to='/antrage-aktiv-am-beliebtesten' className=''>
+                  <Link to='/antrage-aktiv-am-beliebtesten' className='grey'>
                     {' '}
                     Beliebtest
                   </Link>{' '}

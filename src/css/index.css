@@ -186,7 +186,7 @@ body {
 
   top: 3px;
 
-  left: 57px;
+  left: 54px;
 
   
 }
@@ -212,10 +212,13 @@ body {
 .black {
   color: black;
 }
+.grey{
+  color:#d3d3d3;
+}
 .report-comments {
   position: relative;
   top: 4px;
-  left: 57px;
+  left: 54px;
   height: 35px;
 }
 .headline {
@@ -766,7 +769,7 @@ body {
 }
 .comments-div {
   position: relative;
-  top: 3px;
+  top: 4px;
   right: 53px;
 }
 .hr-petition {
@@ -857,8 +860,9 @@ body {
 .divider-horizontal-rule-comments {
   width: 45%;
   position: relative;
-  top: 11px;
+  top: 10px;
 }
+
 .search-input::placeholder {
   color: white;
   font-weight: bold;
@@ -883,7 +887,11 @@ body {
 
 .link-your-profile {
   position: relative;
-  right: 2px;
+  right: 0px;
+ 
+}
+.link-input{
+ padding-left: 0px;
 }
 .margin-bottom {
   margin-bottom: 8px;
