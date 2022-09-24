@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Petition } from './Petition';
+import { Suggestion } from './Suggestion';
 import { NavbarBottom } from './NavbarBottom';
-import Spielplatz from './img/playground_petition.jpg';
+import Spielplatz from './img/playground_Suggestion.jpg';
 import { ImageEndPoint } from './config/config';
 import Parkbank from './img/bench.jpg';
 import Sportplatz from './img/sportsfield.jpg';
@@ -18,7 +18,7 @@ import { Get_All_POSTS } from './reactStore/actions/Actions';
 
 import { useParams } from 'react-router-dom';
 
-export const PetitionsApprove = () => {
+export const SuggestionsApprove = () => {
   const { Id } = useParams();
   const dispatch = useDispatch();
 
@@ -30,8 +30,8 @@ export const PetitionsApprove = () => {
   const [moreRefetch, setmoreRefetch] = React.useState(true);
 
   const getAllPosts = useQuery(
-    'PetitionApprove',
-    () => userServices.commonGetService(`/post/getApprovePetition/${Id}`),
+    'SuggestionsApprove',
+    () => userServices.commonGetService(`/post/getApproveSuggestion/${Id}`),
     {
       refetchOnWindowFocus: false,
       ///refetchInterval: moreRefetch == true ? 500 : false,
@@ -90,25 +90,25 @@ export const PetitionsApprove = () => {
       </div>
       <div className='sharing'>
         {allPost.map((item) => (
-          <Petition
+          <Suggestion
             item={item}
-            // titel={item.title}
-            // beschreibung={item.description}
-            // bild={ImageEndPoint + item.pic}
+          // titel={item.title}
+          // beschreibung={item.description}
+          // bild={ImageEndPoint + item.pic}
           />
         ))}
 
-        {/* <Petition
+        {/* <Suggestion
           titel='Parkbank'
           beschreibung='Krasse neue Parkbank im Nordpark'
           bild={Parkbank}
         />
-        <Petition
+        <Suggestion
           titel='Sportplatz'
           beschreibung='Mega nicer neuer Sportplatz'
           bild={Sportplatz}
         />
-        <Petition
+        <Suggestion
           titel='Fahrradweg'
           beschreibung='Bester Fahrradweg nach Mühlheim'
           bild={Radweg}

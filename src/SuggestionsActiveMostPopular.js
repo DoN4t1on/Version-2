@@ -1,8 +1,12 @@
+
+
+
+
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Petition } from './Petition';
+import { Suggestion } from './Suggestion';
 import { NavbarBottom } from './NavbarBottom';
-import Spielplatz from './img/playground_petition.jpg';
+import Spielplatz from './img/playground_Suggestion.jpg';
 import { ImageEndPoint } from './config/config';
 import Parkbank from './img/bench.jpg';
 import Sportplatz from './img/sportsfield.jpg';
@@ -16,13 +20,11 @@ import ReactGA from 'react-ga4';
 import { useDispatch, useSelector } from 'react-redux';
 import { Get_All_POSTS } from './reactStore/actions/Actions';
 
-import { useParams } from 'react-router-dom';
-
-export const PetitionsSingle = () => {
-  const { Id } = useParams();
+export const SuggestionsActiveMostPopular = () => {
   const dispatch = useDispatch();
 
   const [allPost, setallPost] = React.useState([]);
+  const { locationName, lat, long } = useSelector((state) => state.Geo);
 
   //////const { allPost } = useSelector((state) => state.Posts);
 
@@ -30,8 +32,11 @@ export const PetitionsSingle = () => {
   const [moreRefetch, setmoreRefetch] = React.useState(true);
 
   const getAllPosts = useQuery(
-    'PetitionSingle',
-    () => userServices.commonGetService(`/post/getOnePetition/${Id}`),
+    'allpostMostPoplar',
+    () =>
+      userServices.commonGetService(
+        `/post/getAllMostPopularPost/${chunksPost}`
+      ),
     {
       refetchOnWindowFocus: false,
       ///refetchInterval: moreRefetch == true ? 500 : false,
@@ -68,7 +73,7 @@ export const PetitionsSingle = () => {
 
         ///////// dispatch(Get_All_POSTS(res.data.data));
 
-        setallPost(res.data.data);
+        setallPost(res.data.data)
 
         //// setallPost((oldArray) => [...oldArray, ...res.data.data]);
         ///  }
@@ -85,37 +90,81 @@ export const PetitionsSingle = () => {
   }, []);
   return (
     <div>
-      <div className='casual-header-div'>
-        <h4 className='headline'>Geteilter Antrag</h4>
+      <div id='header'>
+        <p className='location' id='location'>
+          <Link to='/karte'>
+            {locationName}{' '}
+            <img id='filter' src={require('./img/funnel-fill.svg')} />{' '}
+          </Link>{' '}
+        </p>
+
+        <p className='menu1 small-headlines'>
+          {' '}
+          <Link className='strong' to='/'>
+            Anträge
+          </Link>{' '}
+          | <Link to='/crowdfunding' className='grey'>Crowdfunding</Link>
+        </p>
+        <p className='menu2 small-headlines '>
+          {' '}
+          <Link to='/' className='strong'>
+            Aktiv{' '}
+          </Link>
+          |
+          <Link to='/antrage-akzeptiert' className='grey'>
+            {' '}
+            Akzeptiert{' '}
+          </Link>
+          |{' '}
+          <Link to='/antrage-abgelehnt' className='grey'>
+            Abgelehnt{' '}
+          </Link>{' '}
+        </p>
+        <p className='last-menu small-headlines'>
+          {' '}
+          <Link to='/' className='grey'>
+            Am nächsten{' '}
+          </Link>
+          |{' '}
+          <Link to='/antrage-aktiv-neuste' className='grey'>
+            {' '}
+            Neuste{' '}
+          </Link>
+          |{' '}
+          <Link to='/antrage-aktiv-am-beliebtesten' className='strong'>
+            {' '}
+            Beliebtest
+          </Link>{' '}
+        </p>
       </div>
-      <div className='sharing'>
+      <div className='campaigns'>
         {allPost.map((item) => (
-          <Petition
+          <Suggestion
             item={item}
-            // titel={item.title}
-            // beschreibung={item.description}
-            // bild={ImageEndPoint + item.pic}
+          // titel={item.title}
+          // beschreibung={item.description}
+          // bild={ImageEndPoint + item.pic}
           />
         ))}
 
-        {/* <Petition
+        {/* <Suggestion
           titel='Parkbank'
           beschreibung='Krasse neue Parkbank im Nordpark'
           bild={Parkbank}
         />
-        <Petition
+        <Suggestion
           titel='Sportplatz'
           beschreibung='Mega nicer neuer Sportplatz'
           bild={Sportplatz}
         />
-        <Petition
+        <Suggestion
           titel='Fahrradweg'
           beschreibung='Bester Fahrradweg nach Mühlheim'
           bild={Radweg}
         /> */}
       </div>
       <NavbarBottom
-        classstart='under-navitem-unselected'
+        classstart='under-navitem-selected'
         classsearch='under-navitem-unselected'
         classactivity='under-navitem-unselected'
         classprofile='under-navitem-unselected'

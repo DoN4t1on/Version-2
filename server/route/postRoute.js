@@ -122,9 +122,9 @@ module.exports = (PostController) => {
   );
 
   postRouter.get(
-    '/getOnePetition/:Id',
+    '/getOneSuggestion/:Id',
 
-    PostController.getOnePetition
+    PostController.getOneSuggestion
   );
 
   postRouter.get(
@@ -133,7 +133,7 @@ module.exports = (PostController) => {
     PostController.approvePostByadmin
   );
 
-  
+
 
   postRouter.get(
     '/getAllPost/:diseaseId',

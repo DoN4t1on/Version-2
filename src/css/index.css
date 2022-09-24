@@ -187,17 +187,14 @@ body {
   top: 3px;
 
   left: 54px;
-
-  
 }
 .post-creator-div {
   width: 200px;
 }
-.position-right{
+.position-right {
   float: right;
 }
 .under-work-statement {
-
   margin-top: 250px;
 }
 .report-crowdfunding-campaign {
@@ -212,8 +209,8 @@ body {
 .black {
   color: black;
 }
-.grey{
-  color:#d3d3d3;
+.grey {
+  color: #d3d3d3;
 }
 .report-comments {
   position: relative;
@@ -338,7 +335,7 @@ body {
   bottom: 10px;
   height: 20px;
 }
-.button-petition {
+.button-Suggestion {
   margin-bottom: 15px;
 }
 .your-donation {
@@ -364,7 +361,7 @@ body {
   right: 4px;
   clear: right;
 }
-.petition-titel {
+.Suggestion-titel {
   font-size: 35px;
   position: relative;
   margin-top: 5px;
@@ -379,7 +376,7 @@ body {
   margin-top: 15px;
   font-size: 35px;
 }
-.petition-picture {
+.Suggestion-picture {
   border-radius: 5px;
   width: 100%;
   object-fit: cover;
@@ -567,12 +564,9 @@ body {
 
   top: 12px;
   right: 12px;
-  
 }
 .width-left {
-  
   padding-left: 25px;
-
 }
 .voting-button {
   height: 35px;
@@ -743,12 +737,9 @@ body {
   justify-content: start;
   position: relative;
   top: 12px;
-  
+
   height: 80px;
- width: 150px;
- 
-  
-  
+  width: 150px;
 }
 
 .voting-div-comment {
@@ -756,12 +747,8 @@ body {
   justify-content: start;
   position: relative;
   top: 12px;
-  
-  height: 80px;
 
- 
-  
-  
+  height: 80px;
 }
 
 .profile-name {
@@ -772,7 +759,7 @@ body {
   top: 4px;
   right: 53px;
 }
-.hr-petition {
+.hr-Suggestion {
   margin-top: 6px;
   margin-bottom: 2px;
 }
@@ -796,7 +783,7 @@ body {
 .donors {
   font-size: 25px;
 }
-.petition-creator-name {
+.Suggestion-creator-name {
   position: relative;
   top: 1px;
 }
@@ -888,10 +875,9 @@ body {
 .link-your-profile {
   position: relative;
   right: 0px;
- 
 }
-.link-input{
- padding-left: 0px;
+.link-input {
+  padding-left: 0px;
 }
 .margin-bottom {
   margin-bottom: 8px;
@@ -997,7 +983,7 @@ body {
   font-size: 20px;
 }
 
-.create-a-petition {
+.create-a-Suggestion {
   max-width: 100%;
 }
 .no-data-crowdfunding {
@@ -1009,7 +995,7 @@ body {
   font-size: 20px;
 }
 
-.petition-desc {
+.Suggestion-desc {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5px;
@@ -1039,7 +1025,7 @@ body {
     width: 60%;
   }
 
-  .petition-picture {
+  .Suggestion-picture {
     width: 100%;
   }
   .interaction-bar {
@@ -1106,11 +1092,11 @@ body {
   .divider-horizontal-rule-comments {
     width: 70%;
   }
-  .petition-desc,
-  .petition-titel {
+  .Suggestion-desc,
+  .Suggestion-titel {
     width: 65%;
   }
-  .petition-picture {
+  .Suggestion-picture {
     width: 70%;
   }
   .search-input {
@@ -1118,8 +1104,8 @@ body {
   }
 }
 @media (min-width: 900px) {
-  .petition-desc,
-  .petition-titel {
+  .Suggestion-desc,
+  .Suggestion-titel {
     width: 60%;
   }
   .create-map-div {
@@ -1134,7 +1120,7 @@ body {
   .divider-horizontal-rule-comments {
     width: 75%;
   }
-  .petition-picture {
+  .Suggestion-picture {
     width: 60%;
   }
   .input-style1 {
@@ -1197,14 +1183,14 @@ body {
 }
 
 @media (min-width: 1200px) {
-  .petition-picture {
+  .Suggestion-picture {
     width: 50%;
   }
   .input-style1 {
     width: 40%;
   }
-  .petition-desc,
-  .petition-titel {
+  .Suggestion-desc,
+  .Suggestion-titel {
     width: 45%;
   }
   .no-data {
@@ -1251,7 +1237,7 @@ body {
 }
 
 @media (min-width: 1800px) {
-  .petition-picture {
+  .Suggestion-picture {
     width: 40%;
   }
   .input-style1 {
@@ -1292,6 +1278,6 @@ body {
     margin-right: 450px;
   }
 }
-.statement-petitions {
+.statement-Suggestions {
   margin-top: 50px;
 }

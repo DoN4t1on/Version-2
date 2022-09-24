@@ -72,7 +72,7 @@ export const Crowdfundingcampaign = (props) => {
         <p id='crowdfunding-titel'>{props.crowdfundingtitel}</p>
         <br />
 
-        <img src={props.crowdfundingpicture} className='petition-picture' />
+        <img src={props.crowdfundingpicture} className='Suggestion-picture' />
 
         <br />
         <br />

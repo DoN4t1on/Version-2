@@ -16,7 +16,7 @@ async function forgetEmailBody(data) {
 async function verifyEmailBody(data) {
   return (
     `
-<p>Willkommen bei Lokalspende. Bitte &ouml;ffnen Sie diesen Link in Ihrem Browser, um Ihr Konto zu verifizieren:</p>
+<p>Willkommen bei Lokalspende. Bitte &ouml;ffnen Sie diesen Link, um Ihr Konto zu verifizieren:</p>
     
 
 <p style="text-align: center;"><strong><span style="color: rgb(209, 72, 65);">` +
@@ -27,16 +27,7 @@ async function verifyEmailBody(data) {
   );
 }
 
-async function welcomeEmailBody(data) {
-  return (
-    `
 
-    <p>Willkommen bei unserem API service</p>
-    
-    
-    `
-  );
-}
 
 const ThanksEmailBody = `<!DOCTYPE html>
 <html lang="en">
@@ -65,12 +56,12 @@ const ThanksEmailBody = `<!DOCTYPE html>
 <body class="jumbotron text-center">
     <div class="jumbotron text-center">
         <h1 class="display-3"></h1>
-        <p class="lead"><strong>Ihre E-Mail ist jetzt bestätigt</strong> Bitte loggen Sie sich in Ihren Account ein
+        <p class="lead">Ihre E-Mail ist jetzt bestätigt. <br /> Bitte loggen Sie sich in Ihren Account ein.
         </p>
-        <hr>
+  
 
         <p class="lead">
-            <a class="btn btn-primary btn-sm" href="${websiteLink}dein-profil" role="button">Login</a>
+            <a class="btn-success btn-lg button" href="${websiteLink}dein-profil" role="button">Login</a>
         </p>
     </div>
 </body>

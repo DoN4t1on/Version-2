@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import { Crowdfundingcampaign } from "./Crowdfundingcampaign";
 
-import Spielplatz from "./img/playground_petition.jpg";
+import Spielplatz from "./img/playground_Suggestion.jpg";
 import Radweg from "./img/bikeway.jpg";
 import Bunker from "./img/bunker.jpg";
 import Header from './components/Header';
@@ -12,7 +12,7 @@ import Header from './components/Header';
 export const CrowdfundingSuccessful = () => {
 
 
-	return (
+  return (
     <div>
       <Header />
 

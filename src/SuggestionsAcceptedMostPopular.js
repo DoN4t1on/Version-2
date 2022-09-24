@@ -1,8 +1,8 @@
 
 import React, { useState, useEffect } from 'react';
-import { Petition } from './Petition';
+import { Suggestion } from './Suggestion';
 import { NavbarBottom } from './NavbarBottom';
-import Spielplatz from './img/playground_petition.jpg';
+import Spielplatz from './img/playground_Suggestion.jpg';
 import Parkbank from './img/bench.jpg';
 import Sportplatz from './img/sportsfield.jpg';
 import Radweg from './img/bikeway.jpg';
@@ -12,7 +12,7 @@ import ErrorService from './services/formatError/ErrorService';
 import userServices from './services/httpService/userAuth/userServices';
 import { useMutation, useQuery } from 'react-query';
 import { useDispatch, useSelector } from 'react-redux';
-export const PetitionsAcceptedMostPopular = () => {
+export const SuggestionsAcceptedMostPopular = () => {
   const [allPost, setallPost] = React.useState([]);
 
   //////const { allPost } = useSelector((state) => state.Posts);

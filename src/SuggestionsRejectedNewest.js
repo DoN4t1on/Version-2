@@ -1,17 +1,17 @@
 
-import { Petition } from "./Petition";
+import { Suggestion } from "./Suggestion";
 import { NavbarBottom } from "./NavbarBottom";
-import Spielplatz from "./img/playground_petition.jpg";
+import Spielplatz from "./img/playground_Suggestion.jpg";
 import Parkbank from "./img/bench.jpg";
 import Sportplatz from "./img/sportsfield.jpg";
 import Radweg from "./img/bikeway.jpg";
 import { Link } from "react-router-dom";
 import Header from './components/Header';
 
-export const PetitionsRejectedNewest = () => {
+export const SuggestionsRejectedNewest = () => {
 
 
-	return (
+  return (
     <div>
       <Header />
 
