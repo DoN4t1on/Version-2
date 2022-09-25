@@ -248,20 +248,10 @@ export const Suggestions = () => {
                   {' '}
                   hier{' '}
                 </a>{' '}
-                Ihre Region in der Warteliste.
-                <br />
-                <br />
-                1. Aachen (3) <br />
-                2. Paris (1) <br />
-                3. Stuttgart (1) <br />
-                4. Rheinland-Pfalz (1) <br />
-                5. Ungarn (1) <br />
-                6. Nordrhein-Westfalen (1)<br />
-                7. Indien (1) <br />
-                8. Bayern (1) <br />
-                9. Berlin (1)
-                <br />
-                <br />
+                Ihre Region in der<a style={{ color: 'blue' }} href='https://lokalspende.org/warteliste/'>
+                  {' '}
+                  Warteliste
+                </a>.
                 <br />
                 <br />
 
@@ -357,18 +347,10 @@ export const Suggestions = () => {
               {' '}
               hier{' '}
             </a>{' '}
-            Ihre Region in der Warteliste.
-            <br />
-            <br />
-            1. Aachen (3) <br />
-            2. Paris (1) <br />
-            3. Stuttgart (1) <br />
-            4. Rheinland-Pfalz (1) <br />
-            5. Ungarn (1) <br />
-            6. Nordrhein-Westfalen (1)<br />
-            7. Indien (1) <br />
-            8. Bayern (1) <br />
-            9. Berlin (1)
+            Ihre Region in der<a style={{ color: 'blue' }} href='https://lokalspende.org/warteliste/'>
+                  {' '}
+                  Warteliste
+                </a>.
             <br />
             <br />
             <Link to='/info'>
