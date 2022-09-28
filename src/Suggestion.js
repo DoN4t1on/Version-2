@@ -254,6 +254,7 @@ export const Suggestion = (Suggestion) => {
                 <span className='Suggestion-creator-name'>
                   {Suggestion.item.user.fname}
                 </span>
+                 {/*
                 <img
                   src={
                     Suggestion.item.user.pic
@@ -261,7 +262,7 @@ export const Suggestion = (Suggestion) => {
                       : require('./img/profile.png')
                   }
                   className='profile-picture'
-                />
+                /> */}
               </button>
             ) : (
               ''

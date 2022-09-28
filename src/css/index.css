@@ -385,10 +385,10 @@ body {
   font-size: 30px;
 }
 .comments-img {
-  height: 32px;
+  height: 30px;
   width: auto;
   position: relative;
-  bottom: 3px;
+  
 }
 .comment {
   font-size: 20px;
@@ -503,6 +503,7 @@ body {
   border-radius: 25px;
   border-color: #000000;
   border: solid 3px;
+  
   width: 80px;
   position: relative;
   font-weight: 650;
@@ -519,6 +520,8 @@ body {
 .amount-p {
   position: relative;
   left: 10px;
+margin-top: 15px;
+margin-bottom: 15px;
 }
 .unterstützer-link {
   color: black;
@@ -538,8 +541,9 @@ body {
 .comments-counter {
   position: relative;
   right: 1px;
+  top: 3px;
   color: black;
-  font-size: 30px;
+  font-size: 28px;
 }
 .voting-counter-sum {
   position: relative;
@@ -554,7 +558,7 @@ body {
 .voting-counter-upanddown {
   position: relative;
   bottom: 8px;
-  font-size: 35px;
+  font-size: 32px;
   z-index: -3;
   padding-left: 10px;
   padding-right: 10px;
@@ -562,14 +566,15 @@ body {
 .share-button {
   position: relative;
 
-  top: 12px;
+  top: 14px;
   right: 12px;
+  height: 28px;
 }
 .width-left {
   padding-left: 25px;
 }
 .voting-button {
-  height: 35px;
+  height: 32px;
   width: auto;
   padding-left: 10px;
   padding-right: 10px;
@@ -736,7 +741,7 @@ body {
   display: flex;
   justify-content: start;
   position: relative;
-  top: 12px;
+  top: 13px;
 
   height: 80px;
   width: 150px;

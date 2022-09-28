@@ -84,12 +84,7 @@ export const Settings = () => {
             <strong>Impressum</strong>{' '}
           </Link>
         </p>
-        <p>
-          {' '}
-          <Link className='black' to='/agb'>
-            <strong>AGB</strong>
-          </Link>
-        </p>
+       
         <p>
           {' '}
           <Link className='black' to='/datenschutz'>

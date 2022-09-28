@@ -209,6 +209,7 @@ export const Comment = (props) => {
               <span className='Suggestion-creator-name'>
                 {props.item.user[0].fname}
               </span>
+                {/*
               <img
                 src={
                   props.item.user[0].pic
@@ -217,6 +218,7 @@ export const Comment = (props) => {
                 }
                 className='profile-picture'
               />
+              */}
             </button>
           </Link>
         </div>
