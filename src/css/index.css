@@ -593,6 +593,7 @@ margin-bottom: 15px;
   position: fixed;
   bottom: 10px;
   left: 6px;
+  z-index: 50;
 }
 .info-image-comments {
   height: 22px;
@@ -790,7 +791,7 @@ margin-bottom: 15px;
 }
 .Suggestion-creator-name {
   position: relative;
-  top: 1px;
+  bottom: 1px;
 }
 .campaign-header {
   display: flex;
@@ -1106,6 +1107,12 @@ margin-bottom: 15px;
   }
   .search-input {
     background: url(../img/search.svg) no-repeat scroll 10px 3px;
+  }
+  .amount::placeholder {
+    
+    position: relative;
+    left: 6px;
+   
   }
 }
 @media (min-width: 900px) {
