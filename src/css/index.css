@@ -186,7 +186,7 @@ body {
 
   top: 3px;
 
-  left: 54px;
+  left: 55px;
 }
 .post-creator-div {
   width: 200px;
@@ -215,7 +215,7 @@ body {
 .report-comments {
   position: relative;
   top: 4px;
-  left: 54px;
+  left: 55px;
   height: 35px;
 }
 .headline {
@@ -601,6 +601,7 @@ margin-bottom: 15px;
   position: fixed;
   bottom: 100px;
   left: 6px;
+  z-index: 50;
 }
 .under-navbar {
   position: fixed;
