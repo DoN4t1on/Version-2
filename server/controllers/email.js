@@ -9,6 +9,7 @@ const applyForgotPassword = async (req, res) => {
     const { email } = req.body;
 
     let userEmail = email.toLowerCase();
+    
 
     console.log(req.body);
     const user = await User.findOne({
@@ -94,12 +95,12 @@ const verifyEmail = async (req, res) => {
         },
       ];
 
-      sendEmail(
-        emailToSend,
-        'Welcome to  APi Service',
-        emailParameters,
-        'Welcome_Email_Body'
-      );
+      // sendEmail(
+      //   emailToSend,
+      //   'Welcome to  APi Service',
+      //   emailParameters,
+      //   'Welcome_Email_Body'
+      // );
       res.send(ThanksEmailBody);
     } else {
       res.send('Kein Eintrag gefunden');
