@@ -37,59 +37,64 @@ export const Upvoter = () => {
   return (
     <div>
       <div className='casual-header-div '>
-          <Link to='/'>
+        <Link to='/'>
           {' '}
           <img
             className='back-button'
             src={require('./img/arrow-left-short.svg')}
           />{' '}
         </Link>
-            <h4 className=' headline headline-with-back-button '> Upvoter </h4>
-          </div>
+        <h4 className=' headline headline-with-back-button '> Upvoter </h4>
+      </div>
 
-      <div className='casual-menu'>
-        <div className='voter-div'>
-          {allupvoters.map((item) => (
-            <>
-              {item.Isincognito ? (
-                <>
-                  <p className='anonym supporter-list'>
-                    Anonym
-                    <span className='time-supported'>
-                      {moment(item.dateTime).format('YYYY-MM-DD')}
-                    </span>
-                  </p>
-                </>
-              ) : (
-                <>
-                  <p>
-                    <span className='supporter-list'>
-                      <Link
-                        to={`/profil/${item.user._id}`}
-                        className='linkblack'
-                      >
-                        <img
-                          src={
-                            item.user.pic
-                              ? ImageEndPoint + item.user.pic
-                              : require('./img/profile.png')
-                          }
-                          className='supporter-list-image'
-                        />{' '}
-                        {item.user.fname}
-                      </Link>
-                    </span>
- {/*
+      <div className='voter-div-one '>
+      <div className='voter-div-two '>
+    
+        
+          
+            {allupvoters.map((item) => (
+              <>
+                {item.Isincognito ? (
+                  <>
+                    <p className='anonym supporter-list'>
+                      Anonym
+                      <span className='time-supported'>
+                        {moment(item.dateTime).format('YYYY-MM-DD')}
+                      </span>
+                    </p>
+                  </>
+                ) : (
+                  <>
+                    <p>
+                      <span className='supporter-list'>
+                        <Link
+                          to={`/profil/${item.user._id}`}
+                          className='linkblack'
+                        >
+                          <img
+                            src={
+                              item.user.pic
+                                ? ImageEndPoint + item.user.pic
+                                : require('./img/profile.png')
+                            }
+                            className='supporter-list-image'
+                          />{' '}
+                          {item.user.fname}
+                        </Link>
+                      </span>
+                      {/*
                     <span className='time-supported'>
                       {' '}
                       {moment(item.dateTime).toNow()}
                     </span>
                     */}
-                  </p>
-                </>
-              )}
-            </>
-          ))}
+                    </p>
+                  </>
+                )}
+              </>
+            ))}
+        
+       
         </div>
       </div>
 

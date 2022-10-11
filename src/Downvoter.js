@@ -36,18 +36,18 @@ export const Downvoter = () => {
   return (
     <div>
       <div className='casual-header-div '>
-          <Link to='/'>
+        <Link to='/'>
           {' '}
           <img
             className='back-button'
             src={require('./img/arrow-left-short.svg')}
           />{' '}
         </Link>
-            <h4 className=' headline headline-with-back-button '> Downvoter </h4>
-          </div>
+        <h4 className=' headline headline-with-back-button '> Downvoter </h4>
+      </div>
 
-      <div className='casual-menu'>
-        <div className='voter-div'>
+      <div className='voter-div-one '>
+        <div className='voter-div-two '>
           {allupvoters.map((item) => (
             <>
               {item.Isincognito ? (
@@ -78,7 +78,7 @@ export const Downvoter = () => {
                         {item.user.fname}
                       </Link>
                     </span>
- {/*
+                    {/*
                     <span className='time-supported'>
                       {' '}
                       {moment(item.dateTime).toNow()}

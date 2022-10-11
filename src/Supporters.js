@@ -42,8 +42,8 @@ export const Supporters = () => {
             <h4 className=' headline headline-with-back-button '> Spendenzusagen </h4>
           </div>
 
-      <div className='casual-menu'>
-        <div className='voter-div'>
+         <div className='voter-div-one '>
+      <div className='voter-div-two '>
           {allbidders.map((item) => (
             <p>
               <span className='supporter-list'>
