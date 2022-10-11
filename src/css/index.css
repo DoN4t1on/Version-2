@@ -21,10 +21,7 @@ body {
   float: left;
   border-radius: 100px;
 }
-.voter-div {
-  position: relative;
-  right: 0px;
-}
+
 .single-comment {
   margin-bottom: 0px;
 }
@@ -308,6 +305,17 @@ body {
   margin-bottom: 100px;
   overflow: hidden;
 }
+.voter-div-one {
+ display: flex;
+ justify-content: center;
+  margin-top: 82px;
+  margin-bottom: 100px;
+}
+
+.voter-div-two {
+ text-align: left;
+}
+
 .right {
   float: right;
 }
@@ -388,7 +396,6 @@ body {
   height: 30px;
   width: auto;
   position: relative;
-  
 }
 .comment {
   font-size: 20px;
@@ -503,7 +510,7 @@ body {
   border-radius: 25px;
   border-color: #000000;
   border: solid 3px;
-  
+
   width: 80px;
   position: relative;
   font-weight: 650;
@@ -520,8 +527,8 @@ body {
 .amount-p {
   position: relative;
   left: 10px;
-margin-top: 15px;
-margin-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .unterstützer-link {
   color: black;
@@ -1110,10 +1117,8 @@ margin-bottom: 15px;
     background: url(../img/search.svg) no-repeat scroll 10px 3px;
   }
   .amount::placeholder {
-    
     position: relative;
     left: 6px;
-   
   }
 }
 @media (min-width: 900px) {
@@ -1173,6 +1178,10 @@ margin-bottom: 15px;
   .casual-header-div,
   .casual-menu,
   .comment {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+  .voter-div-one {
     padding-left: 130px;
     padding-right: 130px;
   }
@@ -1239,6 +1248,10 @@ margin-bottom: 15px;
     padding-left: 270px;
     padding-right: 270px;
   }
+  .voter-div-one {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
   .divider-horizontal-rule {
     padding-left: 420px;
     padding-right: 420px;
@@ -1281,6 +1294,10 @@ margin-bottom: 15px;
   .comment {
     padding-left: 500px;
     padding-right: 500px;
+  }
+  .voter-div-one {
+    padding-left: 130px;
+    padding-right: 130px;
   }
   .divider-horizontal-rule {
     padding-left: 670px;
