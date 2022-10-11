@@ -12,7 +12,7 @@ export const useCreateEmailAccount = () => {
     {
       onSuccess: (data) => {
         if (data.status) {
-          toast.success('Account erstellt');
+          toast.success('Bitte bestätigen Sie Ihre Registrierung in der Mail die wir Ihnen geschickt haben');
         }
       },
       onError: (err) => {

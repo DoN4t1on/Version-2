@@ -53,7 +53,7 @@ const Marker = (props) => {
   );
 };
 
-export const CreateAPetition = () => {
+export const CreateASuggestion = () => {
   let navigate = useNavigate();
 
   const [currentLat, setcurrentLat] = useState(store.getState().Geo.lat);
@@ -118,7 +118,7 @@ export const CreateAPetition = () => {
         formData.append('long', currentLong);
         formData.append('userId', localStorageData('_id'));
 
-        addNewPetition.mutate(formData);
+        addNewSuggestion.mutate(formData);
 
         console.log(values);
       } else {
@@ -130,9 +130,9 @@ export const CreateAPetition = () => {
     },
   });
 
-  const addNewPetition = useMutation(
-    (NewPetition) =>
-      userServices.commonPostService('/post/uploadPost', NewPetition),
+  const addNewSuggestion = useMutation(
+    (NewSuggestion) =>
+      userServices.commonPostService('/post/uploadPost', NewSuggestion),
     {
       onError: (error) => {
         toast.error(ErrorService.uniformError(error));
@@ -185,7 +185,7 @@ export const CreateAPetition = () => {
             type='title'
             maxLength='40'
             className='input-style1'
-            
+
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.title}
@@ -244,8 +244,8 @@ export const CreateAPetition = () => {
               className='input-style2'
               rows='10'
               cols='2'
-              maxLength='2500'
-             
+
+
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.description}
@@ -315,7 +315,7 @@ export const CreateAPetition = () => {
           /> */}
 
           <br />
-          {addNewPetition.isLoading ? (
+          {addNewSuggestion.isLoading ? (
             <CircularProgress />
           ) : (
             <button type='submit' className='btn btn-success btn-lg button'>

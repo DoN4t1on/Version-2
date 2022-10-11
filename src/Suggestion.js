@@ -17,18 +17,18 @@ import Grid from '@mui/material/Grid';
 
 
 
-export const Petition = (petition) => {
+export const Suggestion = (Suggestion) => {
   const localtz = moment.tz.guess();
   const [sumcounter, setSumcounter] = useState(
-    petition.item.upvotes.length - petition.item.downvotes.length
+    Suggestion.item.upvotes.length - Suggestion.item.downvotes.length
   );
 
   const [upvotecounter, setUpvotecounter] = useState(
-    petition.item.upvotes.length
+    Suggestion.item.upvotes.length
   );
 
   const [downvotecounter, setDownvotecounter] = useState(
-    petition.item.downvotes.length
+    Suggestion.item.downvotes.length
   );
 
   const [upvoteimage, setUpvoteimage] = useState(upvoteempty);
@@ -36,12 +36,12 @@ export const Petition = (petition) => {
   const [downvoteimage, setDownvoteimage] = useState(downvoteempty);
 
   useEffect(() => {
-    petition.item.downvotes.map((item) => {
+    Suggestion.item.downvotes.map((item) => {
       if (item.userId == localStorageData('_id')) {
         setDownvoteimage(downvotefull);
       }
     });
-    petition.item.upvotes.map((item) => {
+    Suggestion.item.upvotes.map((item) => {
       if (item.userId == localStorageData('_id')) {
         setUpvoteimage(upvotefull);
       }
@@ -50,7 +50,7 @@ export const Petition = (petition) => {
 
   const [pinimage, setPinimage] = useState(pinimageempty);
 
-  const [supporters, setSupporters] = useState(petition.item.bidder);
+  const [supporters, setSupporters] = useState(Suggestion.item.bidder);
 
   const [amount, setAmount] = useState();
 
@@ -125,7 +125,7 @@ export const Petition = (petition) => {
 
       UpvoteOnPost.mutate({
         userId: localStorageData('_id'),
-        postId: petition.item._id,
+        postId: Suggestion.item._id,
         timeZone: localtz,
         dateTime: new Date(),
       });
@@ -167,7 +167,7 @@ export const Petition = (petition) => {
 
       DownvoteOnPost.mutate({
         userId: localStorageData('_id'),
-        postId: petition.item._id,
+        postId: Suggestion.item._id,
         timeZone: localtz,
         dateTime: new Date(),
       });
@@ -214,7 +214,7 @@ export const Petition = (petition) => {
 
       BidOnPost.mutate({
         userId: localStorageData('_id'),
-        postId: petition.item._id,
+        postId: Suggestion.item._id,
         amount: amount,
         timeZone: localtz,
         dateTime: new Date(),
@@ -238,30 +238,31 @@ export const Petition = (petition) => {
         <Link
           to={`/melden`}
           state={{
-            name: 'petition',
-            Id: petition.item._id,
+            name: 'Suggestion',
+            Id: Suggestion.item._id,
 
-            link: `https://app.lokalspende.org/geteilter-antrag/${petition.item._id}`,
+            link: `https://app.lokalspende.org/geteilter-antrag/${Suggestion.item._id}`,
           }}
         >
           {' '}
           <img src={require('./img/three-dots.svg')} className='report' />{' '}
         </Link>
         <div className='post-creator-div'>
-          <Link to={`/profil/${petition.item.user._id}`}>
-            {petition.item.user != '' ? (
+          <Link to={`/profil/${Suggestion.item.user._id}`}>
+            {Suggestion.item.user != '' ? (
               <button className='btn btn-success button small position-right'>
-                <span className='petition-creator-name'>
-                  {petition.item.user.fname}
+                <span className='Suggestion-creator-name'>
+                  {Suggestion.item.user.fname}
                 </span>
+                 {/*
                 <img
                   src={
-                    petition.item.user.pic
-                      ? ImageEndPoint + petition.item.user.pic
+                    Suggestion.item.user.pic
+                      ? ImageEndPoint + Suggestion.item.user.pic
                       : require('./img/profile.png')
                   }
                   className='profile-picture'
-                />
+                /> */}
               </button>
             ) : (
               ''
@@ -277,21 +278,21 @@ export const Petition = (petition) => {
         </div>
       </div>
 
-      <p className='petition-titel'> {petition.item.title} </p>
+      <p className='Suggestion-titel'> {Suggestion.item.title} </p>
 
       <img
-        src={ImageEndPoint + petition.item.pic}
-        className='petition-picture'
+        src={ImageEndPoint + Suggestion.item.pic}
+        className='Suggestion-picture'
       />
 
       <br />
 
-      <p className='petition-desc'> {petition.item.description} </p>
+      <p className='Suggestion-desc'> {Suggestion.item.description} </p>
 
       <p className='donation-statements'> Spendenzusagen: </p>
 
       <Link
-        to={`/spendenzusagen/${petition.item._id}`}
+        to={`/spendenzusagen/${Suggestion.item._id}`}
         className='Supporters unterstützer-link'
       >
         {supporters}
@@ -313,7 +314,7 @@ export const Petition = (petition) => {
         </p>
 
         <button
-          className='btn btn-success button-petition btn-lg button'
+          className='btn btn-success button-Suggestion btn-lg button'
           type='submit'
           id='Donate'
         >
@@ -322,7 +323,7 @@ export const Petition = (petition) => {
       </form>
 
       <div className='interaction-bar'>
-        
+
         <div className='voting-div'>
           <div>
             {' '}
@@ -332,17 +333,17 @@ export const Petition = (petition) => {
               className='voting-button'
               id='upvotebutton'
             />
-            <Link className='linkblack' to={`/upvoter/${petition.item._id}`}>
+            <Link className='linkblack' to={`/upvoter/${Suggestion.item._id}`}>
               <p id='upvotes' className='voting-counter-upanddown '>
                 {upvotecounter}
               </p>
             </Link>
           </div>
-{/*
+          {/*
           <p id='votes' className='voting-counter-sum'>
             {sumcounter}
           </p>
-*/} 
+*/}
           <div>
             {' '}
             <img
@@ -351,7 +352,7 @@ export const Petition = (petition) => {
               className='voting-button'
               id='downvotebutton'
             />
-            <Link className='linkblack' to={`/downvoter/${petition.item._id}`}>
+            <Link className='linkblack' to={`/downvoter/${Suggestion.item._id}`}>
               <p id='downvotes' className=' voting-counter-upanddown '>
                 {downvotecounter}
               </p>
@@ -360,25 +361,25 @@ export const Petition = (petition) => {
         </div>
 
         <div className='comments-div'>
-          <Link to={`/neuste-kommentare/${petition.item._id}`}>
+          <Link to={`/neuste-kommentare/${Suggestion.item._id}`}>
             <img src={require('./img/comments.svg')} className='comments-img' />
             <span className='comments-counter'>
               {' '}
-              {petition.item.comments}
+              {Suggestion.item.comments}
             </span>{' '}
           </Link>
         </div>
 
         <Link
           to='/teilen'
-          state={{ url: '/geteilter-antrag/' + petition.item._id }}
+          state={{ url: '/geteilter-antrag/' + Suggestion.item._id }}
         >
           {' '}
           <img src={require('./img/share.svg')} className='share-button' />
         </Link>
       </div>
       <div className='divider-horizontal-rule'>
-        <hr className='hr-petition' />
+        <hr className='hr-Suggestion' />
       </div>
     </div>
   );

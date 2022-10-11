@@ -3,9 +3,9 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Petition } from './Petition';
+import { Suggestion } from './Suggestion';
 import { NavbarBottom } from './NavbarBottom';
-import Spielplatz from './img/playground_petition.jpg';
+import Spielplatz from './img/playground_Suggestion.jpg';
 import { ImageEndPoint } from './config/config';
 import Parkbank from './img/bench.jpg';
 import Sportplatz from './img/sportsfield.jpg';
@@ -19,7 +19,7 @@ import ReactGA from 'react-ga4';
 import { useDispatch, useSelector } from 'react-redux';
 import { Get_All_POSTS } from './reactStore/actions/Actions';
 import { useDispatch, useSelector } from 'react-redux';
-export const PetitionsActiveNewest = () => {
+export const SuggestionsActiveNewest = () => {
   const dispatch = useDispatch();
   const { locationName, lat, long } = useSelector((state) => state.Geo);
 
@@ -32,7 +32,7 @@ export const PetitionsActiveNewest = () => {
   const [moreRefetch, setmoreRefetch] = React.useState(true);
 
   const getAllPosts = useQuery(
-    'allpostPetitions',
+    'allpostSuggestions',
     () =>
       userServices.commonGetService(
         `/post/getAllPost/${chunksPost}/false/false`
@@ -102,7 +102,7 @@ export const PetitionsActiveNewest = () => {
           <Link className='strong' to='/'>
             Anträge
           </Link>{' '}
-          | <Link to='/crowdfunding'>Crowdfunding</Link>
+          | <Link className='grey' to='/crowdfunding'>Crowdfunding</Link>
         </p>
         <p className='menu2 small-headlines '>
           {' '}
@@ -110,18 +110,18 @@ export const PetitionsActiveNewest = () => {
             Aktiv{' '}
           </Link>
           |
-          <Link to='/antrage-akzeptiert' className=''>
+          <Link to='/antrage-akzeptiert' className='grey'>
             {' '}
             Akzeptiert{' '}
           </Link>
           |{' '}
-          <Link to='/antrage-abgelehnt' className=''>
+          <Link to='/antrage-abgelehnt' className='grey'>
             Abgelehnt{' '}
           </Link>{' '}
         </p>
         <p className='last-menu small-headlines'>
           {' '}
-          <Link to='/' className=''>
+          <Link to='/' className='grey'>
             Am nächsten{' '}
           </Link>
           |{' '}
@@ -130,7 +130,7 @@ export const PetitionsActiveNewest = () => {
             Neuste{' '}
           </Link>
           |{' '}
-          <Link to='/antrage-aktiv-am-beliebtesten' className=''>
+          <Link to='/antrage-aktiv-am-beliebtesten' className='grey'>
             {' '}
             Beliebtest
           </Link>{' '}
@@ -138,7 +138,7 @@ export const PetitionsActiveNewest = () => {
       </div>
       <div className='campaigns'>
         {allPost.map((item) => (
-          <Petition item={item} />
+          <Suggestion item={item} />
         ))}
       </div>
       <NavbarBottom

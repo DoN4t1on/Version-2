@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Petition } from './Petition';
+import { Suggestion } from './Suggestion';
 import { NavbarBottom } from './NavbarBottom';
-import Spielplatz from './img/playground_petition.jpg';
+import Spielplatz from './img/playground_Suggestion.jpg';
 import { ImageEndPoint } from './config/config';
 import Parkbank from './img/bench.jpg';
 import Sportplatz from './img/sportsfield.jpg';
@@ -23,7 +23,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { SET_City, SET_LatLong } from './reactStore/actions/Actions';
 import { store } from './reactStore/MainStore';
 
-export const Petitions = () => {
+export const Suggestions = () => {
   let navigate = useNavigate();
 
   const dispatch = useDispatch();
@@ -143,7 +143,7 @@ export const Petitions = () => {
   // }, []);
 
   const getAllPosts = useQuery(
-    'allpostdataPetitions',
+    'allpostdataSuggestions',
     () =>
       userServices.commonGetService(
         `/post/getAllPost/${chunksPost}/${lat}/${long}`
@@ -229,7 +229,7 @@ export const Petitions = () => {
                   </Link>{' '}
                 </p>
               </div>
-              <div className='campaigns no-data statement-petitions'>
+              <div className='campaigns no-data statement-Suggestions'>
                 Wir arbeiten noch nicht in dieser Region. Klicken Sie auf eine
                 Region in der wir arbeiten.
                 <br />
@@ -237,7 +237,7 @@ export const Petitions = () => {
                 <a
                   style={{ color: 'blue' }}
                   onClick={setKolin}
-                  ///href='https://app.lokalspende.org/karte'
+                ///href='https://app.lokalspende.org/karte'
                 >
                   Köln
                 </a>
@@ -248,25 +248,20 @@ export const Petitions = () => {
                   {' '}
                   hier{' '}
                 </a>{' '}
-                Ihre Region in der Warteliste.
+                Ihre Region in der<a style={{ color: 'blue' }} href='https://lokalspende.org/warteliste/'>
+                  {' '}
+                  Warteliste
+                </a>.
                 <br />
                 <br />
-                1. Aachen (3) <br /> 
-                2. Paris (1) <br />
-                3. Stuttgart (1) <br />
-                4. Rheinland-Pfalz (1) <br /> 
-                5. Ungarn (1) <br />
-                6. Nordrhein-Westfalen (1)<br />
-                7. Indien (1) <br />
-                8. Bayern (1)
-                <br />
-                <br />
-                <Link to='/info'>
 
-                  <img src={require('./img/info-circle.svg')} className='info-image-notification' />
-
-                </Link>
               </div>
+              <NavbarBottom
+                classstart='under-navitem-selected'
+                classsearch='under-navitem-unselected'
+                classactivity='under-navitem-unselected'
+                classprofile='under-navitem-unselected'
+              />
             </>
           ) : (
             <>
@@ -283,7 +278,7 @@ export const Petitions = () => {
                   <Link className='strong' to='/'>
                     Anträge
                   </Link>{' '}
-                  | <Link to='/crowdfunding'>Crowdfunding</Link>
+                  | <Link to='/crowdfunding' className='grey'>Crowdfunding</Link>
                 </p>
                 <p className='menu2 small-headlines '>
                   {' '}
@@ -291,12 +286,12 @@ export const Petitions = () => {
                     Aktiv{' '}
                   </Link>
                   |
-                  <Link to='/antrage-akzeptiert' className=''>
+                  <Link to='/antrage-akzeptiert' className='grey'>
                     {' '}
                     Akzeptiert{' '}
                   </Link>
                   |{' '}
-                  <Link to='/antrage-abgelehnt' className=''>
+                  <Link to='/antrage-abgelehnt' className='grey'>
                     Abgelehnt{' '}
                   </Link>{' '}
                 </p>
@@ -306,12 +301,12 @@ export const Petitions = () => {
                     Am nächsten{' '}
                   </Link>
                   |{' '}
-                  <Link to='/antrage-aktiv-neuste' className=''>
+                  <Link to='/antrage-aktiv-neuste' className='grey'>
                     {' '}
                     Neuste{' '}
                   </Link>
                   |{' '}
-                  <Link to='/antrage-aktiv-am-beliebtesten' className=''>
+                  <Link to='/antrage-aktiv-am-beliebtesten' className='grey'>
                     {' '}
                     Beliebtest
                   </Link>{' '}
@@ -320,7 +315,7 @@ export const Petitions = () => {
 
               <div className='campaigns'>
                 {allPost.map((item) => (
-                  <Petition item={item} />
+                  <Suggestion item={item} />
                 ))}
               </div>
               <NavbarBottom
@@ -334,14 +329,14 @@ export const Petitions = () => {
         </>
       ) : (
         <>
-          <div className='campaigns no-data statement-petitions'>
+          <div className='campaigns no-data statement-Suggestions'>
             Klicken Sie auf eine Region in der wir arbeiten.
             <br />
             <br />
             <a
               style={{ color: 'blue' }}
               onClick={setKolin}
-              ///href='https://app.lokalspende.org/karte'
+            ///href='https://app.lokalspende.org/karte'
             >
               Köln
             </a>
@@ -352,17 +347,10 @@ export const Petitions = () => {
               {' '}
               hier{' '}
             </a>{' '}
-            Ihre Region in der Warteliste.
-            <br />
-            <br />
-            1. Aachen (3) <br /> 
-            2. Paris (1) <br />
-            3. Stuttgart (1) <br />
-            4. Rheinland-Pfalz (1) <br />
-            5. Ungarn (1) <br />
-            6. Nordrhein-Westfalen (1)<br />
-            7. Indien (1) <br />
-            8. Bayern (1)
+            Ihre Region in der<a style={{ color: 'blue' }} href='https://lokalspende.org/warteliste/'>
+                  {' '}
+                  Warteliste
+                </a>.
             <br />
             <br />
             <Link to='/info'>

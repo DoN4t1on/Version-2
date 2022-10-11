@@ -146,7 +146,7 @@ export const Comment = (props) => {
         setDownvotecounter(res.data.data[0].downvotecomments.length);
         setSumcounter(
           res.data.data[0].upvotecomments.length -
-            res.data.data[0].downvotecomments.length
+          res.data.data[0].downvotecomments.length
         );
         //// getComments.refetch();
         /// navigate('/');
@@ -167,7 +167,7 @@ export const Comment = (props) => {
         setDownvotecounter(res.data.data[0].downvotecomments.length);
         setSumcounter(
           res.data.data[0].upvotecomments.length -
-            res.data.data[0].downvotecomments.length
+          res.data.data[0].downvotecomments.length
         );
 
         //setUpvotecounter(res.data.data.upVote);
@@ -206,9 +206,10 @@ export const Comment = (props) => {
         <div className='post-creator-div'>
           <Link to={`/profil/${props.item.user[0]._id}`}>
             <button className='btn btn-success button small position-right'>
-            <span className='petition-creator-name'>
-              {props.item.user[0].fname}
+              <span className='Suggestion-creator-name'>
+                {props.item.user[0].fname}
               </span>
+                {/*
               <img
                 src={
                   props.item.user[0].pic
@@ -217,6 +218,7 @@ export const Comment = (props) => {
                 }
                 className='profile-picture'
               />
+              */}
             </button>
           </Link>
         </div>
@@ -248,7 +250,7 @@ export const Comment = (props) => {
           <p id='votes' className='voting-counter-sum'>
             {sumcounter}
           </p>
-*/} 
+*/}
 
           <div>
             {' '}

@@ -119,7 +119,7 @@ export const SetLocation = () => {
         formData.append('long', currentLong);
         formData.append('userId', localStorageData('_id'));
 
-        addNewPetition.mutate(formData);
+        addNewSuggestion.mutate(formData);
 
         console.log(values);
       } else {
@@ -131,9 +131,9 @@ export const SetLocation = () => {
     },
   });
 
-  const addNewPetition = useMutation(
-    (NewPetition) =>
-      userServices.commonPostService('/post/uploadPost', NewPetition),
+  const addNewSuggestion = useMutation(
+    (NewSuggestion) =>
+      userServices.commonPostService('/post/uploadPost', NewSuggestion),
     {
       onError: (error) => {
         toast.error(ErrorService.uniformError(error));

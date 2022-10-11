@@ -12,25 +12,9 @@ export const Activity = () => {
   return (
     <div>
       <div className='casual-header-div'>
-        <h4 className='headline-activity'>Aktivität</h4>
+        <h4 className='headline'>Aktivität</h4>
 
 
-        <p className="activity" >
-
-
-
-
-          <strong>Meine Anträge</strong>
-          <br />
-
-
-          Meine Kommentare
-          <br />
-
-
-
-
-        </p>
       </div>
       <p className="under-work-statement"> Dieser Bereich befindet sich in Arbeit </p>
       <NavbarBottom

@@ -1059,7 +1059,7 @@ const getThemeByUserId = async (req, res) => {
   }
 };
 
-const getOnePetition = async (req, res) => {
+const getOneSuggestion = async (req, res) => {
   try {
     let Fetch = await Post.aggregate([
       {
@@ -1351,7 +1351,7 @@ module.exports = {
 
   getUpvoterListComments,
   getDownvoterListComments,
-  getOnePetition,
+  getOneSuggestion,
   sendReport,
   upvoteOnComment,
   downvoteOnComment,

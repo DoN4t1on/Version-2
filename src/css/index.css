@@ -186,18 +186,15 @@ body {
 
   top: 3px;
 
-  left: 57px;
-
-  
+  left: 55px;
 }
 .post-creator-div {
   width: 200px;
 }
-.position-right{
+.position-right {
   float: right;
 }
 .under-work-statement {
-
   margin-top: 250px;
 }
 .report-crowdfunding-campaign {
@@ -212,10 +209,13 @@ body {
 .black {
   color: black;
 }
+.grey {
+  color: #d3d3d3;
+}
 .report-comments {
   position: relative;
   top: 4px;
-  left: 57px;
+  left: 55px;
   height: 35px;
 }
 .headline {
@@ -335,7 +335,7 @@ body {
   bottom: 10px;
   height: 20px;
 }
-.button-petition {
+.button-Suggestion {
   margin-bottom: 15px;
 }
 .your-donation {
@@ -361,7 +361,7 @@ body {
   right: 4px;
   clear: right;
 }
-.petition-titel {
+.Suggestion-titel {
   font-size: 35px;
   position: relative;
   margin-top: 5px;
@@ -376,7 +376,7 @@ body {
   margin-top: 15px;
   font-size: 35px;
 }
-.petition-picture {
+.Suggestion-picture {
   border-radius: 5px;
   width: 100%;
   object-fit: cover;
@@ -385,10 +385,10 @@ body {
   font-size: 30px;
 }
 .comments-img {
-  height: 32px;
+  height: 30px;
   width: auto;
   position: relative;
-  bottom: 3px;
+  
 }
 .comment {
   font-size: 20px;
@@ -503,6 +503,7 @@ body {
   border-radius: 25px;
   border-color: #000000;
   border: solid 3px;
+  
   width: 80px;
   position: relative;
   font-weight: 650;
@@ -519,6 +520,8 @@ body {
 .amount-p {
   position: relative;
   left: 10px;
+margin-top: 15px;
+margin-bottom: 15px;
 }
 .unterstützer-link {
   color: black;
@@ -538,8 +541,9 @@ body {
 .comments-counter {
   position: relative;
   right: 1px;
+  top: 3px;
   color: black;
-  font-size: 30px;
+  font-size: 28px;
 }
 .voting-counter-sum {
   position: relative;
@@ -554,7 +558,7 @@ body {
 .voting-counter-upanddown {
   position: relative;
   bottom: 8px;
-  font-size: 35px;
+  font-size: 32px;
   z-index: -3;
   padding-left: 10px;
   padding-right: 10px;
@@ -562,17 +566,15 @@ body {
 .share-button {
   position: relative;
 
-  top: 12px;
+  top: 14px;
   right: 12px;
-  
+  height: 28px;
 }
 .width-left {
-  
   padding-left: 25px;
-
 }
 .voting-button {
-  height: 35px;
+  height: 32px;
   width: auto;
   padding-left: 10px;
   padding-right: 10px;
@@ -591,6 +593,7 @@ body {
   position: fixed;
   bottom: 10px;
   left: 6px;
+  z-index: 50;
 }
 .info-image-comments {
   height: 22px;
@@ -598,6 +601,7 @@ body {
   position: fixed;
   bottom: 100px;
   left: 6px;
+  z-index: 50;
 }
 .under-navbar {
   position: fixed;
@@ -739,13 +743,10 @@ body {
   display: flex;
   justify-content: start;
   position: relative;
-  top: 12px;
-  
+  top: 13px;
+
   height: 80px;
- width: 150px;
- 
-  
-  
+  width: 150px;
 }
 
 .voting-div-comment {
@@ -753,12 +754,8 @@ body {
   justify-content: start;
   position: relative;
   top: 12px;
-  
-  height: 80px;
 
- 
-  
-  
+  height: 80px;
 }
 
 .profile-name {
@@ -766,10 +763,10 @@ body {
 }
 .comments-div {
   position: relative;
-  top: 3px;
+  top: 4px;
   right: 53px;
 }
-.hr-petition {
+.hr-Suggestion {
   margin-top: 6px;
   margin-bottom: 2px;
 }
@@ -793,9 +790,9 @@ body {
 .donors {
   font-size: 25px;
 }
-.petition-creator-name {
+.Suggestion-creator-name {
   position: relative;
-  top: 1px;
+  bottom: 1px;
 }
 .campaign-header {
   display: flex;
@@ -857,8 +854,9 @@ body {
 .divider-horizontal-rule-comments {
   width: 45%;
   position: relative;
-  top: 11px;
+  top: 10px;
 }
+
 .search-input::placeholder {
   color: white;
   font-weight: bold;
@@ -883,7 +881,10 @@ body {
 
 .link-your-profile {
   position: relative;
-  right: 2px;
+  right: 0px;
+}
+.link-input {
+  padding-left: 0px;
 }
 .margin-bottom {
   margin-bottom: 8px;
@@ -989,7 +990,7 @@ body {
   font-size: 20px;
 }
 
-.create-a-petition {
+.create-a-Suggestion {
   max-width: 100%;
 }
 .no-data-crowdfunding {
@@ -1001,7 +1002,7 @@ body {
   font-size: 20px;
 }
 
-.petition-desc {
+.Suggestion-desc {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5px;
@@ -1031,7 +1032,7 @@ body {
     width: 60%;
   }
 
-  .petition-picture {
+  .Suggestion-picture {
     width: 100%;
   }
   .interaction-bar {
@@ -1098,20 +1099,26 @@ body {
   .divider-horizontal-rule-comments {
     width: 70%;
   }
-  .petition-desc,
-  .petition-titel {
+  .Suggestion-desc,
+  .Suggestion-titel {
     width: 65%;
   }
-  .petition-picture {
+  .Suggestion-picture {
     width: 70%;
   }
   .search-input {
     background: url(../img/search.svg) no-repeat scroll 10px 3px;
   }
+  .amount::placeholder {
+    
+    position: relative;
+    left: 6px;
+   
+  }
 }
 @media (min-width: 900px) {
-  .petition-desc,
-  .petition-titel {
+  .Suggestion-desc,
+  .Suggestion-titel {
     width: 60%;
   }
   .create-map-div {
@@ -1126,7 +1133,7 @@ body {
   .divider-horizontal-rule-comments {
     width: 75%;
   }
-  .petition-picture {
+  .Suggestion-picture {
     width: 60%;
   }
   .input-style1 {
@@ -1189,14 +1196,14 @@ body {
 }
 
 @media (min-width: 1200px) {
-  .petition-picture {
+  .Suggestion-picture {
     width: 50%;
   }
   .input-style1 {
     width: 40%;
   }
-  .petition-desc,
-  .petition-titel {
+  .Suggestion-desc,
+  .Suggestion-titel {
     width: 45%;
   }
   .no-data {
@@ -1243,7 +1250,7 @@ body {
 }
 
 @media (min-width: 1800px) {
-  .petition-picture {
+  .Suggestion-picture {
     width: 40%;
   }
   .input-style1 {
@@ -1284,6 +1291,6 @@ body {
     margin-right: 450px;
   }
 }
-.statement-petitions {
+.statement-Suggestions {
   margin-top: 50px;
 }

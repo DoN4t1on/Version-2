@@ -1,13 +1,13 @@
-import { Petition } from './Petition';
+import { Suggestion } from './Suggestion';
 import { NavbarBottom } from './NavbarBottom';
-import Spielplatz from './img/playground_petition.jpg';
+import Spielplatz from './img/playground_Suggestion.jpg';
 import Parkbank from './img/bench.jpg';
 import Sportplatz from './img/sportsfield.jpg';
 import Radweg from './img/bikeway.jpg';
 import { Link } from 'react-router-dom';
 import Header from './components/Header';
 import { useDispatch, useSelector } from 'react-redux';
-export const PetitionsAccepted = () => {
+export const SuggestionsRejected = () => {
   const { locationName, lat, long } = useSelector((state) => state.Geo);
 
   return (
@@ -25,27 +25,27 @@ export const PetitionsAccepted = () => {
           <Link className='strong' to='/'>
             Anträge
           </Link>{' '}
-          | <Link to='/crowdfunding'>Crowdfunding</Link>
+          | <Link to='/crowdfunding' className='grey'>Crowdfunding</Link>
         </p>
         <p className='menu2 small-headlines '>
           {' '}
-          <Link to='/' className=''>
+          <Link to='/' className='grey'>
             Aktiv{' '}
           </Link>
           |
-          <Link to='/antrage-akzeptiert' className='strong'>
+          <Link to='/antrage-akzeptiert' className='grey'>
             {' '}
             Akzeptiert{' '}
           </Link>
           |{' '}
-          <Link to='/antrage-abgelehnt' className=''>
+          <Link to='/antrage-abgelehnt' className='strong'>
             Abgelehnt{' '}
           </Link>{' '}
         </p>
       </div>
 
       <div className='campaigns no-data'>
-        In diesem Gebiet befinden sich noch keine akzeptierten Anträge. Wir sind aber
+        In diesem Gebiet befinden sich noch keine abgelehnten Anträge. Wir sind aber
         bereits im Dialog mit der öffentlichen Verwaltung. Gerne können Sie
         diese auch persönlich kontaktieren.
       </div>

@@ -5,24 +5,24 @@ import './css/index.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 import CookieConsent from 'react-cookie-consent';
-import { Petitions } from './Petitions';
-import { PetitionsActiveNewest } from './PetitionsActiveNewest';
-import { PetitionsActiveMostPopular } from './PetitionsActiveMostPopular';
+import { Suggestions } from './Suggestions';
+import { SuggestionsActiveNewest } from './SuggestionsActiveNewest';
+import { SuggestionsActiveMostPopular } from './SuggestionsActiveMostPopular';
 
-import { PetitionsSingle } from './PetitionsSingle';
-
-
+import { SuggestionsSingle } from './SuggestionsSingle';
 
 
-import { PetitionsApprove } from './PetitionsApprove';
 
-import { PetitionsAccepted } from './PetitionsAccepted';
-import { PetitionsAcceptedNewest } from './PetitionsAcceptedNewest';
-import { PetitionsAcceptedMostPopular } from './PetitionsAcceptedMostPopular';
 
-import { PetitionsRejected } from './PetitionsRejected';
-import { PetitionsRejectedNewest } from './PetitionsRejectedNewest';
-import { PetitionsRejectedMostPopular } from './PetitionsRejectedMostPopular';
+import { SuggestionsApprove } from './SuggestionsApprove';
+
+import { SuggestionsAccepted } from './SuggestionsAccepted';
+import { SuggestionsAcceptedNewest } from './SuggestionsAcceptedNewest';
+import { SuggestionsAcceptedMostPopular } from './SuggestionsAcceptedMostPopular';
+
+import { SuggestionsRejected } from './SuggestionsRejected';
+import { SuggestionsRejectedNewest } from './SuggestionsRejectedNewest';
+import { SuggestionsRejectedMostPopular } from './SuggestionsRejectedMostPopular';
 
 import { Crowdfunding } from './Crowdfunding';
 
@@ -64,13 +64,13 @@ import { Agb } from './Agb';
 
 import { Search } from './Search';
 
-import { CreateAPetition } from './CreateAPetition';
+import { CreateASuggestion } from './CreateASuggestion';
 
 import { Activity } from './Activity';
 
-import { PetitionActivity } from './PetitionActivity';
-import { PetitionActivitySupported } from './PetitionActivitySupported';
-import { PetitionActivityCreated } from './PetitionActivityCreated';
+import { SuggestionsActivity } from './SuggestionsActivity';
+import { SuggestionsActivitySupported } from './SuggestionsActivitySupported';
+import { SuggestionsActivityCreated } from './SuggestionsActivityCreated';
 
 import { CrowdfundingActivity } from './CrowdfundingActivity';
 import { CrowdfundingActivitySupported } from './CrowdfundingActivitySupported';
@@ -105,38 +105,38 @@ ReactDOM.render(
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Petitions />} />
+          <Route path='/' element={<Suggestions />} />
           <Route
             path='/antrage-aktiv-neuste'
-            element={<PetitionsActiveNewest />}
+            element={<SuggestionsActiveNewest />}
           />
           <Route
             path='/antrage-aktiv-am-beliebtesten'
-            element={<PetitionsActiveMostPopular />}
+            element={<SuggestionsActiveMostPopular />}
           />
 
-          <Route path='/geteilter-antrag/:Id' element={<PetitionsSingle />} />
+          <Route path='/geteilter-antrag/:Id' element={<SuggestionsSingle />} />
 
-          <Route path='/post-verify/:Id' element={<PetitionsApprove />} />
+          <Route path='/post-verify/:Id' element={<SuggestionsApprove />} />
 
-          <Route path='/antrage-akzeptiert' element={<PetitionsAccepted />} />
+          <Route path='/antrage-akzeptiert' element={<SuggestionsAccepted />} />
           <Route
             path='/antrage-akzeptiert-neuste'
-            element={<PetitionsAcceptedNewest />}
+            element={<SuggestionsAcceptedNewest />}
           />
           <Route
             path='/antrage-akzeptiert-am-beliebtesten'
-            element={<PetitionsAcceptedMostPopular />}
+            element={<SuggestionsAcceptedMostPopular />}
           />
 
-          <Route path='/antrage-abgelehnt' element={<PetitionsRejected />} />
+          <Route path='/antrage-abgelehnt' element={<SuggestionsRejected />} />
           <Route
             path='/antrage-abgelehnt-neuste'
-            element={<PetitionsRejectedNewest />}
+            element={<SuggestionsRejectedNewest />}
           />
           <Route
             path='/antrage-abgelehnt-am-beliebtesten'
-            element={<PetitionsRejectedMostPopular />}
+            element={<SuggestionsRejectedMostPopular />}
           />
 
           <Route path='/crowdfunding' element={<Crowdfunding />} />
@@ -185,20 +185,20 @@ ReactDOM.render(
 
           <Route path='/suche' element={<Search />} />
 
-          <Route path='/antrag-erstellen' element={<CreateAPetition />} />
+          <Route path='/antrag-erstellen' element={<CreateASuggestion />} />
 
           <Route path='/aktivitat' element={<Activity />} />
 
-          <Route path='/antrag-activity' element={<PetitionActivity />} />
+          <Route path='/antrag-activity' element={<SuggestionsActivity />} />
 
           <Route
             path='/antrag-activity-unterstutzt'
-            element={<PetitionActivitySupported />}
+            element={<SuggestionsActivitySupported />}
           />
 
           <Route
             path='/antrag-activity-erstellt'
-            element={<PetitionActivityCreated />}
+            element={<SuggestionsActivityCreated />}
           />
 
           <Route
