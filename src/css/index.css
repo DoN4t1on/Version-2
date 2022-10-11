@@ -573,7 +573,14 @@ body {
 .share-button {
   position: relative;
 
-  top: 14px;
+  top: 16px;
+  right: 12px;
+  height: 28px;
+}
+.share-button-comment {
+  position: relative;
+
+  top: 12px;
   right: 12px;
   height: 28px;
 }
