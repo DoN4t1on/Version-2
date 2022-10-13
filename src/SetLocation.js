@@ -123,7 +123,7 @@ export const SetLocation = () => {
 
         console.log(values);
       } else {
-        toast.error('Erstelle ein Profil um fortzufahren');
+        toast.error('Erstellen Sie ein Profil um fortzufahren');
       }
 
       // toast('');

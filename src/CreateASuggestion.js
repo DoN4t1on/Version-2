@@ -122,7 +122,7 @@ export const CreateASuggestion = () => {
 
         console.log(values);
       } else {
-        toast.error('Erstelle ein Profil um fortzufahren');
+        toast.error('Erstellen Sie ein Profil um fortzufahren');
       }
 
       // toast('');
@@ -170,7 +170,7 @@ export const CreateASuggestion = () => {
   return (
     <div>
       <div className='casual-header-div'>
-        <h4 className='headline'>Erstelle einen Antrag</h4>
+        <h4 className='headline'>Erstellen Sie einen Antrag</h4>
       </div>
 
       <div className='casual-menu'>

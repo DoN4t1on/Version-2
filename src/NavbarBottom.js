@@ -10,7 +10,7 @@ export const NavbarBottom = (props) => {
     if (localStorageData('_id')) {
       navigate('/antrag-erstellen');
     } else {
-      toast.error('Erstelle ein Profil um fortzufahren');
+      toast.error('Erstellen Sie ein Profil um fortzufahren');
     }
   };
 

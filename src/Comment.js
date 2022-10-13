@@ -70,7 +70,7 @@ export const Comment = (props) => {
         dateTime: new Date(),
       });
     } else {
-      toast.error('Erstelle ein Profil um fortzufahren');
+      toast.error('Erstellen Sie ein Profil um fortzufahren');
     }
 
     // if (upvotecounter == 0) {
@@ -112,7 +112,7 @@ export const Comment = (props) => {
         dateTime: new Date(),
       });
     } else {
-      toast.error('Erstelle ein Profil um fortzufahren');
+      toast.error('Erstellen Sie ein Profil um fortzufahren');
     }
 
     // if (downvotecounter == 0) {
@@ -209,7 +209,7 @@ export const Comment = (props) => {
               <span className='Suggestion-creator-name'>
                 {props.item.user[0].fname}
               </span>
-                {/*
+              {/*
               <img
                 src={
                   props.item.user[0].pic
