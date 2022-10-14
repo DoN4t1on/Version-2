@@ -60,7 +60,7 @@ export const Supporters = () => {
                 </Link>
               </span>
 
-              <span className='time-supported'> {item.amount}</span>€
+              <span className='time-supported'>•{item.amount}</span>€
             </p>
           ))}
 
