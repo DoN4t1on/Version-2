@@ -1,6 +1,6 @@
 ## Links
 
-- Pitch Deck: https://docs.google.com/presentation/d/1jUlmcIu8lM33pqnqQXOK6X9ylC7xx78MCiD9OrE4aho/edit?usp=sharing
+- Pitch Deck: https://docs.google.com/presentation/d/1F8w4StDPxbPq-F8iSwAMJXAphtt9uBInWVfdUHkDG6Y/edit#slide=id.gdaa249776a_2_53
 
 - App: https://App.Lokalspende.org
 
