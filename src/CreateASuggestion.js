@@ -183,7 +183,7 @@ export const CreateASuggestion = () => {
             id='title'
             name='title'
             type='title'
-            maxLength='40'
+            maxLength='60'
             className='input-style1'
 
             onChange={formik.handleChange}
