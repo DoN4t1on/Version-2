@@ -132,7 +132,7 @@ export const YourProfile = () => {
             src={require('./img/settings.svg')}
           />{' '}
         </Link>
-        <h4 className='headline headline-profilesettings'> Dein Profil </h4>
+        <h4 className='headline headline-profilesettings'> Ihr Profil </h4>
       </div>
 
       <div className='casual-menu'>
