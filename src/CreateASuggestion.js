@@ -242,7 +242,7 @@ export const CreateASuggestion = () => {
               name='description'
               type='description'
               className='input-style2'
-              rows='10'
+              rows='5'
               cols='2'
 
 

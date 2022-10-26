@@ -393,9 +393,10 @@ body {
   font-size: 30px;
 }
 .comments-img {
-  height: 30px;
+  height: 28px;
   width: auto;
   position: relative;
+  top: 1px;
 }
 .comment {
   font-size: 20px;
@@ -550,7 +551,7 @@ body {
   right: 1px;
   top: 3px;
   color: black;
-  font-size: 28px;
+  font-size: 25px;
 }
 .voting-counter-sum {
   position: relative;
@@ -564,8 +565,8 @@ body {
 
 .voting-counter-upanddown {
   position: relative;
-  bottom: 8px;
-  font-size: 32px;
+  bottom: 3px;
+  font-size: 25px;
   z-index: -3;
   padding-left: 10px;
   padding-right: 10px;
@@ -573,7 +574,7 @@ body {
 .share-button {
   position: relative;
 
-  top: 16px;
+  top: 14px;
   right: 12px;
   height: 28px;
 }
@@ -777,7 +778,7 @@ body {
 }
 .comments-div {
   position: relative;
-  top: 4px;
+  top: 5px;
   right: 53px;
 }
 .hr-Suggestion {
@@ -944,7 +945,7 @@ body {
 }
 .separator:after {
   background: #fff;
-  content: "oder";
+  content: "oder mit";
   padding: 0 4px;
   position: relative;
   top: -13px;

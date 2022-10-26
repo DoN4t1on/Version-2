@@ -46,7 +46,7 @@ export const SuggestionsAccepted = () => {
 
       <div className='campaigns no-data'>
         In diesem Gebiet befinden sich noch keine akzeptierten Anträge. Wir sind aber
-        bereits im Dialog mit der öffentlichen Verwaltung. Gerne können Sie
+        bereits im Dialog mit der öffentlichen Verwaltung für eine Ratsversammlung. Gerne können Sie
         diese auch persönlich kontaktieren.
       </div>
       <NavbarBottom
