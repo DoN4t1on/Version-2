@@ -25,6 +25,8 @@
 - Facebook: https://www.facebook.com/Lokalspende
 - Instagram: https://www.instagram.com/Lokalspende
 
+##
+
 MIT Licence: 
 
 Copyright (c) 2022 LocalPetition UG (haftungsbeschränkt)
