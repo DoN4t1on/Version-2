@@ -863,8 +863,15 @@ body {
   border-radius: 25px;
 }
 .divider-horizontal-rule {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+ 
+}
+.black-hr {
+  background-color: black;
+  height: 2px;
+  border-radius: 25px;
 }
 .divider-horizontal-rule-comments {
   width: 45%;
@@ -1203,8 +1210,8 @@ body {
   }
 
   .divider-horizontal-rule {
-    padding-left: 270px;
-    padding-right: 270px;
+    padding-left: 200px;
+    padding-right: 200px;
   }
 
   .share-crowdfunding {
@@ -1261,8 +1268,8 @@ body {
     padding-right: 130px;
   }
   .divider-horizontal-rule {
-    padding-left: 420px;
-    padding-right: 420px;
+    padding-left: 300px;
+    padding-right: 300px;
   }
 
   .share-crowdfunding {
@@ -1308,8 +1315,8 @@ body {
     padding-right: 130px;
   }
   .divider-horizontal-rule {
-    padding-left: 670px;
-    padding-right: 670px;
+    padding-left: 550px;
+    padding-right: 550px;
   }
 
   .share-crowdfunding {
