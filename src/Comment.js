@@ -272,7 +272,7 @@ export const Comment = (props) => {
         </div>
 
         <div className='divider-horizontal-rule-comments'>
-          <hr />
+        
         </div>
 
         <Link to='/teilen' state={{ url: '/neuste-kommentare/' + Id }}>

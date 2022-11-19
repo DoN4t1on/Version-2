@@ -574,7 +574,7 @@ body {
 .share-button {
   position: relative;
 
-  top: 14px;
+  top: 13px;
   right: 12px;
   height: 28px;
 }
@@ -876,7 +876,9 @@ body {
 .divider-horizontal-rule-comments {
   width: 45%;
   position: relative;
-  top: 10px;
+  top: 25px;
+  background-color: black;
+  height: 2px;
 }
 
 .search-input::placeholder {

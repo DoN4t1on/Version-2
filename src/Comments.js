@@ -76,7 +76,7 @@ export const Comments = () => {
         </Link>
         <h4 className=' headline headline-with-back-button '>
           {' '}
-          Kommentare ({allComments.length})
+          Kommentare
         </h4>
       </div>
 
@@ -163,3 +163,5 @@ export const Comments = () => {
     </div>
   );
 };
+
+
