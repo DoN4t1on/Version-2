@@ -379,7 +379,7 @@ export const Suggestion = (Suggestion) => {
         </Link>
       </div>
       <div className='divider-horizontal-rule'>
-        <hr className='hr-Suggestion' />
+        <div className='black-hr'></div>
       </div>
     </div>
   );

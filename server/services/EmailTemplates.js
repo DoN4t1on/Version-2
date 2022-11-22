@@ -18,7 +18,7 @@ async function verifyEmailBody(data) {
     `
 <p>Willkommen bei Lokalspende</p>
  <br />
-  <p> Bitte &ouml;ffnen Sie diesen Link, um Ihr Konto zu verifizieren:</p>
+  <p> Bitte &ouml;ffnen Sie diesen Link um Ihr Konto zu verifizieren:</p>
     
 
 <p style="text-align: center;"><strong><span style="color: #28a745;">` +

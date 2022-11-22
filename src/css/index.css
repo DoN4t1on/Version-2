@@ -393,9 +393,10 @@ body {
   font-size: 30px;
 }
 .comments-img {
-  height: 30px;
+  height: 28px;
   width: auto;
   position: relative;
+  top: 1px;
 }
 .comment {
   font-size: 20px;
@@ -550,7 +551,7 @@ body {
   right: 1px;
   top: 3px;
   color: black;
-  font-size: 28px;
+  font-size: 25px;
 }
 .voting-counter-sum {
   position: relative;
@@ -564,8 +565,8 @@ body {
 
 .voting-counter-upanddown {
   position: relative;
-  bottom: 8px;
-  font-size: 32px;
+  bottom: 3px;
+  font-size: 25px;
   z-index: -3;
   padding-left: 10px;
   padding-right: 10px;
@@ -573,7 +574,7 @@ body {
 .share-button {
   position: relative;
 
-  top: 16px;
+  top: 13px;
   right: 12px;
   height: 28px;
 }
@@ -777,12 +778,12 @@ body {
 }
 .comments-div {
   position: relative;
-  top: 4px;
+  top: 5px;
   right: 53px;
 }
 .hr-Suggestion {
-  margin-top: 6px;
-  margin-bottom: 2px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .sub-comments-div {
   position: relative;
@@ -862,13 +863,22 @@ body {
   border-radius: 25px;
 }
 .divider-horizontal-rule {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+ 
+}
+.black-hr {
+  background-color: black;
+  height: 2px;
+  border-radius: 25px;
 }
 .divider-horizontal-rule-comments {
   width: 45%;
   position: relative;
-  top: 10px;
+  top: 25px;
+  background-color: black;
+  height: 2px;
 }
 
 .search-input::placeholder {
@@ -944,7 +954,7 @@ body {
 }
 .separator:after {
   background: #fff;
-  content: "oder";
+  content: "oder mit";
   padding: 0 4px;
   position: relative;
   top: -13px;
@@ -1202,8 +1212,8 @@ body {
   }
 
   .divider-horizontal-rule {
-    padding-left: 270px;
-    padding-right: 270px;
+    padding-left: 200px;
+    padding-right: 200px;
   }
 
   .share-crowdfunding {
@@ -1260,8 +1270,8 @@ body {
     padding-right: 130px;
   }
   .divider-horizontal-rule {
-    padding-left: 420px;
-    padding-right: 420px;
+    padding-left: 300px;
+    padding-right: 300px;
   }
 
   .share-crowdfunding {
@@ -1307,8 +1317,8 @@ body {
     padding-right: 130px;
   }
   .divider-horizontal-rule {
-    padding-left: 670px;
-    padding-right: 670px;
+    padding-left: 550px;
+    padding-right: 550px;
   }
 
   .share-crowdfunding {

@@ -196,7 +196,9 @@
 	line-height: inherit;
       }
       .time-supported {
-	font-size: 15px;
+	font-size: 25px;
+	position: relative;
+	bottom: 1px;
       }
       ol,
       ul {
