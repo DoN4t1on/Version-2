@@ -275,7 +275,7 @@ export const YourProfile = () => {
               
               < br />
               <button
-                className='btn btn-success btn-lg button'
+                className='btn btn-success btn-lg button border-black'
                 type='submit'
                 id='Update'
                 onClick={() => {

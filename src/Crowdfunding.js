@@ -32,7 +32,7 @@ export const Crowdfunding = () => {
 
       <div className='campaigns no-data-crowdfunding'>
         In diesem Gebiet befinden sich noch keine Crowdfundingkampagnen. Wir
-        sind aber bereits im Dialog mit der öffentlichen Verwaltung. Gerne
+        sind aber bereits im Dialog mit der Kämmerei. Gerne
         können Sie diese auch persönlich kontaktieren.
       </div>
 
