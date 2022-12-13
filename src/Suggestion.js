@@ -314,7 +314,7 @@ export const Suggestion = (Suggestion) => {
         </p>
 
         <button
-          className='btn btn-success button-Suggestion btn-lg button'
+          className='btn btn-success button-Suggestion btn-lg button border-black'
           type='submit'
           id='Donate'
         >

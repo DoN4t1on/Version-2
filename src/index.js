@@ -250,7 +250,7 @@ ReactDOM.render(
         Diese Webseite benutzt Cookies.{' '}
         <a
           href='https://app.lokalspende.org/datenschutz'
-          style={{ color: 'lightblue' }}
+          style={{ color: '#28a745' }}
         >
           Hier
         </a>{' '}

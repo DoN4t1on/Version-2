@@ -318,7 +318,7 @@ export const CreateASuggestion = () => {
           {addNewSuggestion.isLoading ? (
             <CircularProgress />
           ) : (
-            <button type='submit' className='btn btn-success btn-lg button'>
+            <button type='submit' className='btn btn-success btn-lg button border-black'>
               Erstellen
             </button>
           )}

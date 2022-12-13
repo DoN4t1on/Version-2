@@ -740,8 +740,13 @@ body {
 }
 .horzontal-rule-setting {
   max-width: 175px;
+  background-color: #000;
+  height: 2px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-radius: 2px;
 }
 
 .interaction-bar {
@@ -863,22 +868,27 @@ body {
   border-radius: 25px;
 }
 .divider-horizontal-rule {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
   
  
 }
 .black-hr {
   background-color: black;
-  height: 2px;
+  height: 3px;
   border-radius: 25px;
+ 
+  
 }
+
+
 .divider-horizontal-rule-comments {
   width: 45%;
   position: relative;
   top: 25px;
   background-color: black;
   height: 2px;
+  border-radius: 25px;
 }
 
 .search-input::placeholder {

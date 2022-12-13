@@ -43,6 +43,13 @@ export const Settings = () => {
           </button>{' '}
         </a>
         <br /> <br />
+        <a href='https://t.me/LocalDonation'>
+          {' '}
+          <button className='btn btn-success btn-lg button border-black'>
+            Werden Sie Teil des Teams 🙌
+          </button>{' '}
+        </a>
+        <br /> <br />
 
         <a href='https://donorbox.org/localdonation'>
           {' '}
@@ -50,15 +57,8 @@ export const Settings = () => {
             Spenden 💸
           </button>{' '}
         </a>
-        <br /> <br />
-        <a href='https://t.me/LocalDonation'>
-          {' '}
-          <button className='btn btn-success btn-lg button border-black'>
-            Werden Sie Teil des Teams 🙌
-          </button>{' '}
-        </a>
         <div className='horzontal-rule-setting'>
-          <hr />
+        
         </div>
 
         {localStorageData('_id') != '' ? (
