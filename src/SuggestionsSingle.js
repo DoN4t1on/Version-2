@@ -29,9 +29,14 @@ export const SuggestionsSingle = () => {
   const [chunksPost, setchunksPost] = React.useState(0);
   const [moreRefetch, setmoreRefetch] = React.useState(true);
 
+  console.log('-------------------its id---------------------------------', Id);
+
   const getAllPosts = useQuery(
-    'SuggestionsSingle',
-    () => userServices.commonGetService(`/post/getOneSuggestion/${Id}`),
+    'SuggestionsSingleone',
+    () =>
+      userServices.commonGetService(
+        `/post/getOneSuggestion/635634a4b3a93216eaecf78e`
+      ),
     {
       refetchOnWindowFocus: false,
       ///refetchInterval: moreRefetch == true ? 500 : false,
@@ -41,8 +46,8 @@ export const SuggestionsSingle = () => {
       },
       onSuccess: (res) => {
         console.log(
-          '----------------------------------------------------',
-          res.data.data
+          '------------sasa----------------------------------------',
+          res.data
         );
 
         // if (res.data.data == '') {
@@ -92,9 +97,9 @@ export const SuggestionsSingle = () => {
         {allPost.map((item) => (
           <Suggestion
             item={item}
-          // titel={item.title}
-          // beschreibung={item.description}
-          // bild={ImageEndPoint + item.pic}
+            // titel={item.title}
+            // beschreibung={item.description}
+            // bild={ImageEndPoint + item.pic}
           />
         ))}
 

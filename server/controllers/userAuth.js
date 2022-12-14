@@ -65,6 +65,14 @@ const login = async (req, res) => {
 
     if (user && user.pass && (await bcrypt.compare(pass, user.pass))) {
       console.log(process.env.TOKEN_Time);
+
+
+  if (user.verify == 'no') {
+    return res
+      .status(400)
+      .json({ message: 'Sie müssen ihren Account erst bestätigen' });
+  }
+
       // Create token
       const token = jwt.sign(
         { user_id: user._id, username },
