@@ -112,14 +112,14 @@ const registerUser = async (req, res, isChildAccount = false) => {
     if (isChildAccount) {
       return {
         success: true,
-        message: 'Verfication Email has been sent.Please Check your email',
+        message: 'Die Verifikationsemail wurde gesendet. Bitte überprüfen Sie Ihre Email',
         user,
       };
     }
 
     return res
       .status(201)
-      .json('Verfication Email has been sent.Please Check your email ');
+      .json('Die Verfikationsemail wurde gesendet. Bitte überprüfen Sie Ihre Email');
   } catch (err) {
     console.log(err);
     if (isChildAccount) {

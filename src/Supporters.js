@@ -54,7 +54,7 @@ export const Supporters = () => {
                         ? ImageEndPoint + item.user.pic
                         : require('./img/profile.png')
                     }
-                    className='supporter-list-image'
+                    className='supporter-list-image border-black'
                   />{' '}
                   {item.user.fname}
                 </Link>

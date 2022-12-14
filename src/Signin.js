@@ -86,7 +86,7 @@ function Signin() {
   return (
     <div>
       <button
-        className='btn btn-success btn-lg button'
+        className='btn btn-success btn-lg button border-black'
         type='submit'
         id='Donate'
         onClick={handleClickOpen}
@@ -146,7 +146,7 @@ function Signin() {
                 <>
                   <button
                     type='submit'
-                    className='btn btn-success btn-lg button btn-sign'
+                    className='btn btn-success btn-lg button btn-sign border-black'
                   >
                     Einloggen
                   </button>

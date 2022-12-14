@@ -49,7 +49,7 @@ export const Report = () => {
             link: link,
           });
         }}
-        className='btn btn-success btn-lg button'
+        className='btn btn-success btn-lg button border-black'
       >
         Melden
       </button>

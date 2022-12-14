@@ -174,7 +174,7 @@ export const YourProfile = () => {
                   ? ImageEndPoint + localStorageData('pic')
                   : require('./img/profile.png')
               }
-              className='profile-picture-fullscreen'
+              className='profile-picture-fullscreen border-black'
             />
 
             <br />
