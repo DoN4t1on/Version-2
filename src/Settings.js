@@ -50,7 +50,20 @@ export const Settings = () => {
           </button>{' '}
         </a>
         <br /> <br />
-
+        <a href='https://github.com/LocalDonation-Dev'>
+          {' '}
+          <button className='btn btn-success btn-lg button border-black'>
+            Code 💻
+          </button>{' '}
+        </a>
+        <br /> <br />
+        <a href='https://lokalspende.org/merchandise/'>
+          {' '}
+          <button className='btn btn-success btn-lg button border-black'>
+            Merchandise 🛒
+          </button>{' '}
+        </a>
+        <br /> <br />
         <a href='https://donorbox.org/localdonation'>
           {' '}
           <button className='btn btn-success btn-lg button border-black'>

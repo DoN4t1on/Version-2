@@ -55,14 +55,14 @@ export const Profile = () => {
             />
             <br />
             <p className='profile-description'>{userDetail.description}</p>
-            <span>
+            <span className='profile-link-span'>
               <img
                 className='link-profile'
                 src={userDetail.link != '' ? require('./img/link.svg') : ''}
               />
               <a
                 className='profile-link'
-                onClick={() => window.open('https://www.' + userDetail.link)}
+                onClick={() => window.open(userDetail.link)}
               >
                 {userDetail.link}
               </a>

@@ -57,8 +57,9 @@ body {
 #location {
   color: white;
   position: relative;
-  height: 35px;
+  height: 28px;
   left: 8px;
+
 }
 .filter-checkbox {
   height: 25px;
@@ -121,7 +122,7 @@ body {
   width: auto;
   position: relative;
   bottom: 2px;
-  right: 4px;
+  right: 6px;
 }
 .create-titel {
   clear: left;
@@ -141,6 +142,8 @@ body {
 }
 .menu1 {
   font-size: 16px;
+  
+
 }
 .create-titel-input {
   max-width: 100%;
@@ -207,7 +210,7 @@ body {
   color: black;
 }
 .grey {
-  color: #d3d3d3;
+  color: lightgrey;
 }
 .report-comments {
   position: relative;
@@ -413,7 +416,7 @@ body {
 .campaigns {
   margin-bottom: 90px;
   overflow: hidden;
-  margin-top: 120px;
+  margin-top: 113px;
 }
 .single-campaign {
   margin-bottom: 10px;
@@ -706,7 +709,8 @@ body {
   margin-top: 0px;
   margin-bottom: 0px;
   position: relative;
-  bottom: 4px;
+  bottom: 6px;
+  
 }
 .profile-picture-fullscreen {
   border-radius: 150px;
@@ -875,7 +879,7 @@ body {
 }
 .black-hr {
   background-color: black;
-  height: 3px;
+  height: 2px;
   border-radius: 25px;
  
   
@@ -915,7 +919,11 @@ body {
 
 .link-your-profile {
   position: relative;
-  right: 0px;
+  right: 2px;
+}
+.profile-link-span {
+  position: relative;
+  bottom: 8px;
 }
 .link-input {
   padding-left: 0px;
@@ -1060,7 +1068,7 @@ body {
 }
 @media (min-width: 350px) {
   .input-style1 {
-    width: 80%;
+    width: 100%;
   }
   .divider-horizontal-rule-comments {
     width: 60%;
@@ -1169,7 +1177,7 @@ body {
     width: 60%;
   }
   .input-style1 {
-    width: 60%;
+    width: 80%;
   }
   .input-style2 {
     width: 80%;
@@ -1236,7 +1244,7 @@ body {
     width: 50%;
   }
   .input-style1 {
-    width: 40%;
+    width: 60%;
   }
   .Suggestion-desc,
   .Suggestion-titel {
@@ -1294,7 +1302,7 @@ body {
     width: 40%;
   }
   .input-style1 {
-    width: 50%;
+    width: 60%;
   }
   .info {
     margin-left: 450px;

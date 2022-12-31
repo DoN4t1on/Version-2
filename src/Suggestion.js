@@ -250,7 +250,7 @@ export const Suggestion = (Suggestion) => {
         <div className='post-creator-div'>
           <Link to={`/profil/${Suggestion.item.user._id}`}>
             {Suggestion.item.user != '' ? (
-              <button className='btn btn-success button small position-right border-black'>
+              <button className='btn btn-success button small position-right'>
                 <span className='Suggestion-creator-name'>
                   {Suggestion.item.user.fname}
                 </span>

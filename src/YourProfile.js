@@ -224,6 +224,7 @@ export const YourProfile = () => {
               <br />
               <TextField
                 label='Webseite'
+                placeholder='https://...'
                 size='small'
                 onChange={(e) => setlink(e.target.value)}
                 value={link}

@@ -205,7 +205,7 @@ export const Comment = (props) => {
         </Link>
         <div className='post-creator-div'>
           <Link to={`/profil/${props.item.user[0]._id}`}>
-            <button className='btn btn-success button small position-right border-black'>
+            <button className='btn btn-success button small position-right'>
               <span className='Suggestion-creator-name'>
                 {props.item.user[0].fname}
               </span>
