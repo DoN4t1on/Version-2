@@ -1,30 +1,29 @@
 import { NavbarBottom } from './NavbarBottom';
 
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useLocation, useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
 import { baseUrl } from './config/config';
 export const Share = () => {
   const { state } = useLocation();
-
+  const navigate = useNavigate();
   console.log(state.id);
 
   let urlToSend = state.url;
 
   return (
     <div>
-      <div className='casual-header-div '>
-        <Link to='/'>
-          {' '}
-          <img
-            className='back-button-icon'
-            src={require('./img/arrow-left-short.svg')}
-          />{' '}
-        </Link>
-        <h4 className=' headline headline-with-back-button '> Teilen </h4>
-      </div>
-
+       <div className='casual-header-div '>
+            <button className='back-button-button' onClick={() => navigate(-1)}>
+             
+              <img
+                className='back-button-icon'
+                src={require('./img/arrow-left-short.svg')}
+              />
+            </button>
+            <h4 className=' headline headline-with-back-button '> Teilen </h4>
+          </div>
       <div className='casual-menu'>
         <div style={{ float: 'right' }}>
           <a

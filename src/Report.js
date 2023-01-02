@@ -39,8 +39,18 @@ export const Report = () => {
 
   return (
     <div>
-      <br />
-      <br />
+        <div className='casual-header-div '>
+        <button className='back-button-button' onClick={() => navigate(-1)}>
+          
+          <img
+            className='back-button-icon'
+            src={require('./img/arrow-left-short.svg')}
+          />
+        </button>
+        <h4 className=' headline headline-with-back-button '> Mehr </h4>
+      </div>
+      <div className='casual-menu'>
+        <br />
       <button
         onClick={() => {
           sendReport.mutate({
@@ -53,7 +63,7 @@ export const Report = () => {
       >
         Melden
       </button>
-
+      </div>
       <NavbarBottom
         classstart='under-navitem-selected'
         classsearch='under-navitem-unselected'
