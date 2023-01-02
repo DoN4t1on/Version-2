@@ -2,19 +2,19 @@ import { NavbarBottom } from './NavbarBottom';
 import { Link } from 'react-router-dom';
 
 import { localStorageData, Logout } from './services/auth/localStorageData';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useNavigate } from 'react-router-dom';
 export const Settings = () => {
   let navigate = useNavigate();
   return (
     <div>
       <div className='casual-header-div '>
-        <Link to='/dein-profil'>
-          {' '}
+        <button className='back-button-button' onClick={() => navigate(-1)}>
+        
           <img
-            className='back-button'
+            className='back-button-icon'
             src={require('./img/arrow-left-short.svg')}
-          />{' '}
-        </Link>
+          />
+        </button>
         <h4 className=' headline headline-with-back-button '> Einstellungen </h4>
       </div>
 
@@ -71,7 +71,7 @@ export const Settings = () => {
           </button>{' '}
         </a>
         <div className='horzontal-rule-setting'>
-        
+
         </div>
 
         {localStorageData('_id') != '' ? (
@@ -97,14 +97,14 @@ export const Settings = () => {
             <strong>Impressum</strong>{' '}
           </Link>
         </p>
-       
+
         <p>
           {' '}
           <Link className='black' to='/datenschutz'>
             <strong>Datenschutzerklärung</strong>
           </Link>
         </p>
-        
+
       </div>
 
       <NavbarBottom

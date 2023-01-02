@@ -244,13 +244,13 @@ export const SetLocation = () => {
   return (
     <div>
       <div className='casual-header-div '>
-        <Link to='/'>
-          {' '}
+        <button className='back-button-button' onClick={() => navigate(-1)}>
+          
           <img
-            className='back-button'
+            className='back-button-icon'
             src={require('./img/arrow-left-short.svg')}
-          />{' '}
-        </Link>
+          />
+        </button>
 
         <h4 className=' headline headline-with-back-button '> Ihr Standort </h4>
       </div>

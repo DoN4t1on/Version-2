@@ -1,5 +1,5 @@
 import { NavbarBottom } from './NavbarBottom';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams, useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 import { localStorageData, Logout } from './services/auth/localStorageData';
 import ErrorService from './services/formatError/ErrorService';
@@ -8,6 +8,8 @@ import { useMutation, useQuery } from 'react-query';
 import { toast } from 'react-toastify';
 import { ImageEndPoint } from './config/config';
 export const Profile = () => {
+
+  const navigate = useNavigate();
   const { Id } = useParams();
 
   const [userDetail, setuserDetail] = React.useState();
@@ -32,13 +34,13 @@ export const Profile = () => {
       {userDetail ? (
         <>
           <div className='casual-header-div '>
-          <Link to='/'>
-          {' '}
-          <img
-            className='back-button'
-            src={require('./img/arrow-left-short.svg')}
-          />{' '}
-        </Link>
+            <button className='back-button-button' onClick={() => navigate(-1)}>
+             
+              <img
+                className='back-button-icon'
+                src={require('./img/arrow-left-short.svg')}
+              />
+            </button>
             <h4 className=' headline headline-with-back-button '> Profil </h4>
           </div>
 
@@ -68,16 +70,16 @@ export const Profile = () => {
               </a>
             </span>
             {userDetail.address != '' ? (
-                <p> {/* 
+              <p> {/* 
                <img
                   className='location-marker-profile'
                   src={require('./img/location-marker-profile.svg')}
                 /> 
                 {userDetail.address}
-             */} </p>  
+             */} </p>
             ) : null}
-            
-          </div>  
+
+          </div>
           <NavbarBottom
             classstart='under-navitem-selected'
             classsearch='under-navitem-unselected'

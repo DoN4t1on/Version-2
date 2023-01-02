@@ -2,7 +2,7 @@
 import { NavbarBottom } from "./NavbarBottom";
 import { Comment } from "./Comment";
 import { useState } from "react";
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams, useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 import { localStorageData, Logout } from './services/auth/localStorageData';
 import ErrorService from './services/formatError/ErrorService';
@@ -13,6 +13,7 @@ import moment from 'moment-timezone';
 import { ImageEndPoint } from './config/config';
 
 export const Comments = () => {
+  const navigate = useNavigate();
   const localtz = moment.tz.guess();
   const { Id } = useParams();
 
@@ -67,13 +68,12 @@ export const Comments = () => {
     <div>
 
       <div className='casual-header-div '>
-        <Link to='/'>
-          {' '}
+        <button className='back-button-button' onClick={() => navigate(-1)}>
           <img
-            className='back-button'
+            className='back-button-icon'
             src={require('./img/arrow-left-short.svg')}
-          />{' '}
-        </Link>
+          />
+        </button>
         <h4 className=' headline headline-with-back-button '>
           {' '}
           Kommentare

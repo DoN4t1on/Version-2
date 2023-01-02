@@ -1,6 +1,6 @@
 
 import { NavbarBottom } from "./NavbarBottom";
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams, useNavigate } from 'react-router-dom';
 import { localStorageData, Logout } from './services/auth/localStorageData';
 import ErrorService from './services/formatError/ErrorService';
 import userServices from './services/httpService/userAuth/userServices';
@@ -10,6 +10,7 @@ import { ImageEndPoint } from './config/config';
 import React, { useState } from 'react';
 
 export const Supporters = () => {
+  let navigate = useNavigate();
   const { Id } = useParams();
 
   const [allbidders, setallbidders] = React.useState([]);
@@ -32,18 +33,18 @@ export const Supporters = () => {
   return (
     <div>
       <div className='casual-header-div '>
-          <Link to='/'>
-          {' '}
+        <button className='back-button-button' onClick={() => navigate(-1)}>
+        
           <img
-            className='back-button'
-            src={require('./img/arrow-left-short.svg')}
-          />{' '}
-        </Link>
-            <h4 className=' headline headline-with-back-button '> Spendenzusagen </h4>
-          </div>
+            className='back-button-icon' 
+          src={require('./img/arrow-left-short.svg')}
+          />
+        </button>
+        <h4 className=' headline headline-with-back-button '> Spendenzusagen </h4>
+      </div>
 
-         <div className='voter-div-one '>
-      <div className='voter-div-two '>
+      <div className='voter-div-one '>
+        <div className='voter-div-two '>
           {allbidders.map((item) => (
             <p>
               <span className='supporter-list'>

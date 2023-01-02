@@ -1,6 +1,6 @@
 import { NavbarBottom } from './NavbarBottom';
 
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams, useNavigate } from 'react-router-dom';
 import { localStorageData, Logout } from './services/auth/localStorageData';
 import ErrorService from './services/formatError/ErrorService';
 import userServices from './services/httpService/userAuth/userServices';
@@ -11,6 +11,7 @@ import React, { useState } from 'react';
 import moment from 'moment-timezone';
 
 export const Upvoter = () => {
+  let navigate = useNavigate();
   moment.locale('de');
   const { Id } = useParams();
 
@@ -37,64 +38,64 @@ export const Upvoter = () => {
   return (
     <div>
       <div className='casual-header-div '>
-        <Link to='/'>
-          {' '}
+        <button className='back-button-button' onClick={() => navigate(-1)}>
+          
           <img
-            className='back-button'
+            className='back-button-icon'
             src={require('./img/arrow-left-short.svg')}
-          />{' '}
-        </Link>
+          />
+        </button>
         <h4 className=' headline headline-with-back-button '> Upvoter </h4>
       </div>
 
       <div className='voter-div-one '>
-      <div className='voter-div-two '>
-    
-        
-          
-            {allupvoters.map((item) => (
-              <>
-                {item.Isincognito ? (
-                  <>
-                    <p className='anonym supporter-list'>
-                      Anonym
-                      <span className='time-supported'>
-                        {moment(item.dateTime).format('YYYY-MM-DD')}
-                      </span>
-                    </p>
-                  </>
-                ) : (
-                  <>
-                    <p>
-                      <span className='supporter-list'>
-                        <Link
-                          to={`/profil/${item.user._id}`}
-                          className='linkblack'
-                        >
-                          <img
-                            src={
-                              item.user.pic
-                                ? ImageEndPoint + item.user.pic
-                                : require('./img/profile.png')
-                            }
-                            className='supporter-list-image border-black'
-                          />{' '}
-                          {item.user.fname}
-                        </Link>
-                      </span>
-                      {/*
+        <div className='voter-div-two '>
+
+
+
+          {allupvoters.map((item) => (
+            <>
+              {item.Isincognito ? (
+                <>
+                  <p className='anonym supporter-list'>
+                    Anonym
+                    <span className='time-supported'>
+                      {moment(item.dateTime).format('YYYY-MM-DD')}
+                    </span>
+                  </p>
+                </>
+              ) : (
+                <>
+                  <p>
+                    <span className='supporter-list'>
+                      <Link
+                        to={`/profil/${item.user._id}`}
+                        className='linkblack'
+                      >
+                        <img
+                          src={
+                            item.user.pic
+                              ? ImageEndPoint + item.user.pic
+                              : require('./img/profile.png')
+                          }
+                          className='supporter-list-image border-black'
+                        />{' '}
+                        {item.user.fname}
+                      </Link>
+                    </span>
+                    {/*
                     <span className='time-supported'>
                       {' '}
                       {moment(item.dateTime).toNow()}
                     </span>
                     */}
-                    </p>
-                  </>
-                )}
-              </>
-            ))}
-        
-       
+                  </p>
+                </>
+              )}
+            </>
+          ))}
+
+
         </div>
       </div>
 

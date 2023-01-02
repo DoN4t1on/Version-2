@@ -18,7 +18,7 @@ export const Share = () => {
         <Link to='/'>
           {' '}
           <img
-            className='back-button'
+            className='back-button-icon'
             src={require('./img/arrow-left-short.svg')}
           />{' '}
         </Link>

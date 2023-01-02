@@ -228,7 +228,7 @@ body {
   margin-top: 25px;
   margin-bottom: 25px;
   position: relative;
-  right: 22px;
+  right: 34px;
 }
 .comments-headline {
   position: relative;
@@ -251,15 +251,26 @@ body {
   border: solid 2px;
   width: 90%;
 }
-.back-button {
-  height: 45px;
 
-  float: left;
-  position: relative;
-  top: 16px;
-  left: 00px;
-  z-index: 10;
+
+.back-button-icon {
+ 
+height: 45px;
+
+
+position: relative;
+top: 13px;
+right: 10px;
+z-index: 10;
+  
 }
+.back-button-button {
+  float: left;
+  background-color: transparent;
+  border-color: transparent;
+
+}
+
 .back-button-comments {
   height: 45px;
 

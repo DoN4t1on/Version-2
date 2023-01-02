@@ -1,6 +1,6 @@
 import { NavbarBottom } from './NavbarBottom';
 
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams, useNavigate } from 'react-router-dom';
 import { localStorageData, Logout } from './services/auth/localStorageData';
 import ErrorService from './services/formatError/ErrorService';
 import userServices from './services/httpService/userAuth/userServices';
@@ -11,6 +11,7 @@ import React, { useState } from 'react';
 import moment from 'moment-timezone';
 
 export const DownvoterComments = () => {
+  let navigate = useNavigate();
   moment.locale('de');
   const { Id } = useParams();
 
@@ -37,13 +38,13 @@ export const DownvoterComments = () => {
   return (
     <div>
       <div className='casual-header-div '>
-        <Link to='/'>
-          {' '}
+        <button className='back-button-button' onClick={() => navigate(-1)}>
+
           <img
-            className='back-button'
+            className='back-button-icon'
             src={require('./img/arrow-left-short.svg')}
-          />{' '}
-        </Link>
+          />
+        </button>
         <h4 className=' headline headline-with-back-button '> Downvoter </h4>
       </div>
 
@@ -79,7 +80,7 @@ export const DownvoterComments = () => {
                         {item.user.fname}
                       </Link>
                     </span>
- {/*
+                    {/*
                     <span className='time-supported'>
                       {' '}
                       {moment(item.dateTime).toNow()}
