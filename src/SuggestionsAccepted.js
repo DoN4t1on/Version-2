@@ -14,10 +14,10 @@ export const SuggestionsAccepted = () => {
     <div>
       <div id='header'>
         <p className='location' id='location'>
-          <Link to='/karte'>
-            {locationName}{' '}
+          
+            Köln{' '}
             <img id='filter' src={require('./img/funnel-fill.svg')} />{' '}
-          </Link>{' '}
+          {' '}
         </p>
 
         <p className='menu1 small-headlines'>

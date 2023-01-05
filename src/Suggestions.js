@@ -223,14 +223,13 @@ export const Suggestions = () => {
             <>
               <div id='header'>
                 <p className='location' id='location'>
-                  <Link to='/karte'>
-                    {locationName}{' '}
+                    Köln{' '}
                     <img id='filter' src={require('./img/funnel-fill.svg')} />{' '}
-                  </Link>{' '}
+                  {' '}
                 </p>
               </div>
               <div className='campaigns no-data statement-Suggestions'>
-              
+
                 Wir arbeiten noch nicht in dieser Region. Klicken Sie auf eine
                 Region in der wir arbeiten.
                 <br />
@@ -269,7 +268,7 @@ export const Suggestions = () => {
               <div id='header'>
                 <p className='location' id='location'>
                   <Link to='/karte'>
-                    {locationName}{' '}
+                    Köln{' '}
                     <img id='filter' src={require('./img/funnel-fill.svg')} />{' '}
                   </Link>{' '}
                 </p>
@@ -331,7 +330,7 @@ export const Suggestions = () => {
       ) : (
         <>
           <div className='campaigns no-data statement-Suggestions'>
-          
+
             (Alpha Version)
             <br />
             <br />
@@ -353,9 +352,9 @@ export const Suggestions = () => {
               hier{' '}
             </a>{' '}
             Ihre Region in der<a style={{ color: 'blue' }} href='https://lokalspende.org/warteliste/'>
-                  {' '}
-                  Warteliste
-                </a>.
+              {' '}
+              Warteliste
+            </a>.
             <br />
             <br />
             <Link to='/info'>

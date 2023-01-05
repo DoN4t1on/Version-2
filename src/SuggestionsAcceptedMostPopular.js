@@ -68,12 +68,12 @@ export const SuggestionsAcceptedMostPopular = () => {
   return (
     <div>
       <div id='header'>
-       <p className='location' id='location'>
-          <Link to='/karte'>
-            {locationName}{' '}
-            <img id='filter' src={require('./img/funnel-fill.svg')} />{' '}  
+        <p className='location' id='location'>
+          
+            Köln{' '}
+            <img id='filter' src={require('./img/funnel-fill.svg')} />{' '}
 
-          </Link>{' '}
+        {' '}
         </p>
 
         <p className='menu1 small-headlines'>
