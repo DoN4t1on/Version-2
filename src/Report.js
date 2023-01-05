@@ -50,7 +50,7 @@ export const Report = () => {
         <h4 className=' headline headline-with-back-button '> Mehr </h4>
       </div>
       <div className='casual-menu'>
-        <br />
+       
       <button
         onClick={() => {
           sendReport.mutate({

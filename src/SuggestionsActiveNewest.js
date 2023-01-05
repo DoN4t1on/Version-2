@@ -120,11 +120,11 @@ export const SuggestionsActiveNewest = () => {
           </Link>{' '}
         </p>
         <p className='last-menu small-headlines'>
-          {' '}
-          <Link to='/' className='grey'>
+        {/* {' '}
+         <Link to='/' className='grey'>
             Am nächsten{' '}
           </Link>
-          |{' '}
+  |{' '} */}
           <Link to='/antrage-aktiv-neuste' className='strong'>
             {' '}
             Neuste{' '}

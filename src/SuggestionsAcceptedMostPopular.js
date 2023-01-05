@@ -68,10 +68,11 @@ export const SuggestionsAcceptedMostPopular = () => {
   return (
     <div>
       <div id='header'>
-        <p className='location' id='location'>
+       <p className='location' id='location'>
           <Link to='/karte'>
             {locationName}{' '}
-            <img id='filter' src={require('./img/funnel-fill.svg')} />{' '}
+            <img id='filter' src={require('./img/funnel-fill.svg')} />{' '}  
+
           </Link>{' '}
         </p>
 
@@ -113,7 +114,7 @@ export const SuggestionsAcceptedMostPopular = () => {
             Beliebtest
           </Link>{' '}
         </p>
-      </div>
+      </div >
       <div className='campaigns no-data'>
         In diesem Gebiet befinden sich noch keine akzeptierten
         Crowdfundingkampagnen. Wir sind bereits im Dialog mit der öffentlichen
@@ -125,6 +126,6 @@ export const SuggestionsAcceptedMostPopular = () => {
         classactivity='under-navitem-unselected'
         classprofile='under-navitem-unselected'
       />
-    </div>
+    </div >
   );
 };

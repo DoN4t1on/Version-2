@@ -258,16 +258,20 @@ body {
 height: 45px;
 
 
-position: relative;
-top: 14px;
-right: 15px;
-z-index: 10;
+
+
   
 }
 .back-button-button {
   float: left;
   background-color: transparent;
   border-color: transparent;
+  height: auto;
+  width: auto;
+  position: relative;
+top: 14px;
+right: 15px;
+z-index: 10;
 
 }
 
@@ -1047,7 +1051,7 @@ z-index: 10;
   max-width: 100%;
 }
 .no-data-crowdfunding {
-  margin: 80px 30px 0px 30px;
+  margin: 60px 30px 0px 30px;
   font-size: 20px;
 }
 .no-data {
@@ -1198,7 +1202,7 @@ z-index: 10;
     font-size: 20px;
   }
   .no-data-crowdfunding {
-    margin: 80px 250px 0px 250px;
+    margin: 60px 250px 0px 250px;
   }
   .info {
     margin-left: 150px;
@@ -1266,7 +1270,7 @@ z-index: 10;
     font-size: 20px;
   }
   .no-data-crowdfunding {
-    margin: 80px 450px 0px 450px;
+    margin: 60px 450px 0px 450px;
   }
   .info {
     margin-left: 300px;
