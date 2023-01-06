@@ -258,7 +258,7 @@ export const CreateASuggestion = () => {
             ) : null}
           </div>
 
-          {/* <PlacesAutocomplete setSelected={setSelected} /> */}
+          {/* <PlacesAutocomplete setSelected={setSelected} /> 
 
           <p className='create-font-size'>Standort:</p>
 
@@ -272,8 +272,8 @@ export const CreateASuggestion = () => {
             setlong={setcurrentLong}
           /> */}
 
-
-          <div className='create-map-div'>
+{/*
+          <div className='create-map-div'> */}
             {/* <GoogleMapReact
               bootstrapURLKeys={{
                 key: 'key',
@@ -287,7 +287,7 @@ export const CreateASuggestion = () => {
             {/* <Marker lat={currentLat} lng={currentLong} /> */}
             {/* </GoogleMapReact> */}
 
-            <WrappedMap
+           {/* <WrappedMap
               googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${mapAPiKey}`}
               loadingElement={<div style={{ height: `100%`, borderRadius: '10px' }} />}
               containerElement={<div style={{ height: `200px`, borderRadius: '10px' }} />}
@@ -313,7 +313,6 @@ export const CreateASuggestion = () => {
             disabled={true}
             value={locationName}
           /> */}
-
           <br />
           {addNewSuggestion.isLoading ? (
             <CircularProgress />
