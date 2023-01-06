@@ -87,9 +87,11 @@ body {
 }
 .input-style1 {
   width: 5000px;
+  
 }
 .input-style2 {
   width: 5000px;
+
 }
 .middle-menu {
   border-color: black;
@@ -332,6 +334,7 @@ z-index: 10;
 
 .voter-div-two {
  text-align: left;
+ margin-left: 15px;
 }
 
 .right {
@@ -388,15 +391,16 @@ z-index: 10;
   clear: right;
 }
 .Suggestion-titel {
+  text-align: start;
   font-size: 35px;
   position: relative;
-  margin-top: 5px;
-  bottom: 5px;
+ 
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0px;
-
-  width: 98%;
+  word-break: break-word;
+  width: 95%;
+  
 }
 #crowdfunding-titel {
   margin-top: 15px;
@@ -417,16 +421,20 @@ z-index: 10;
   top: 1px;
 }
 .comment {
+  text-align: start;
   font-size: 20px;
   padding-top: 0px;
-  padding-right: 20px;
-  padding-left: 20px;
-  word-break: break-all;
-  margin-bottom: 0px;
-  position: relative;
-  top: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
+  word-break: break-word;
+  
   width: 95%;
+  position: relative;
+ 
+  top: 0px;
+  
   margin: 0 auto;
+  margin-bottom: -10px;
 }
 .campaigns {
   margin-bottom: 90px;
@@ -836,6 +844,7 @@ z-index: 10;
 .campaign-header {
   display: flex;
   justify-content: space-between;
+  height: 28px;
 }
 .campaign-header-comments {
   display: flex;
@@ -843,6 +852,7 @@ z-index: 10;
   position: relative;
   bottom: 10px;
   z-index: 0;
+  height: 25px;
 }
 .linkblack {
   color: #000;
@@ -1064,7 +1074,10 @@ z-index: 10;
   margin-right: auto;
   margin-top: 5px;
   width: 95%;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  text-align: start;
+  word-break: break-word;
+  
 }
 
 .create-map-div {
@@ -1158,7 +1171,7 @@ z-index: 10;
   }
   .Suggestion-desc,
   .Suggestion-titel {
-    width: 65%;
+    width: 75%;
   }
   .Suggestion-picture {
     width: 70%;
@@ -1174,7 +1187,7 @@ z-index: 10;
 @media (min-width: 900px) {
   .Suggestion-desc,
   .Suggestion-titel {
-    width: 60%;
+    width: 70%;
   }
   .create-map-div {
     width: 80%;
@@ -1263,7 +1276,7 @@ z-index: 10;
   }
   .Suggestion-desc,
   .Suggestion-titel {
-    width: 45%;
+    width: 40%;
   }
   .no-data {
     margin: 100px 450px 0px 450px;

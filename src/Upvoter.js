@@ -72,14 +72,14 @@ export const Upvoter = () => {
                         to={`/profil/${item.user._id}`}
                         className='linkblack'
                       >
-                        <img
+                        {/*<img
                           src={
                             item.user.pic
                               ? ImageEndPoint + item.user.pic
                               : require('./img/profile.png')
-                          }
+                          } 
                           className='supporter-list-image border-black'
-                        />{' '}
+                        /> */}{' '}
                         {item.user.fname}
                       </Link>
                     </span>

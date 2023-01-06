@@ -176,7 +176,7 @@ export const CreateASuggestion = () => {
       <div className='casual-menu'>
         <form onSubmit={formik.handleSubmit}>
           {/* <p className='Pflichtfeld'>* = Pflichtfeld</p> */}
-          <br />
+          
           <p className='create-titel create-font-size'>Titel:</p>
 
           <input

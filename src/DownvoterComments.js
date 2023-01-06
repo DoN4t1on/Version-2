@@ -40,7 +40,7 @@ export const DownvoterComments = () => {
       <div className='casual-header-div '>
         <button className='back-button-button' onClick={() => navigate(-1)}>
 
-          <img
+         <img
             className='back-button-icon'
             src={require('./img/arrow-left-short.svg')}
           />
@@ -69,14 +69,14 @@ export const DownvoterComments = () => {
                         to={`/profil/${item.user._id}`}
                         className='linkblack'
                       >
-                        <img
+                        {/* <img
                           src={
                             item.user.pic
                               ? ImageEndPoint + item.user.pic
                               : require('./img/profile.png')
                           }
                           className='supporter-list-image'
-                        />{' '}
+                        /> */}{' '}
                         {item.user.fname}
                       </Link>
                     </span>

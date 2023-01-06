@@ -32,7 +32,7 @@ export const Share = () => {
               toast.success('Link kopiert');
             }}
           >
-            <button className='btn btn-success share-button-link border-black'>
+            <button className='btn btn-success share-button-link '>
               Link kopieren
             </button>
           </a>
@@ -41,7 +41,7 @@ export const Share = () => {
             href={`https://twitter.com/share?url=${baseUrl}` + urlToSend}
             target='_blank'
           >
-            <button className='btn btn-success share-button-link border-black'>
+            <button className='btn btn-success share-button-link '>
               Twitter
             </button>
           </a>
@@ -50,13 +50,13 @@ export const Share = () => {
             href={`whatsapp://send?text=${baseUrl}` + urlToSend}
             data-action='share/whatsapp/share'
           >
-            <button className='btn btn-success share-button-link border-black'>
+            <button className='btn btn-success share-button-link '>
               WhatsApp
             </button>
           </a>
           <br /> <br />
           <a href={`https://t.me/share/url?url=${baseUrl}` + urlToSend}>
-            <button className='btn btn-success share-button-link border-black'>
+            <button className='btn btn-success share-button-link '>
               Telegram
             </button>
           </a>
@@ -64,7 +64,7 @@ export const Share = () => {
           <a
             href={`https://www.linkedin.com/shareArticle?url=${baseUrl}${urlToSend}&title=Lokalspende`}
           >
-            <button className='btn btn-success share-button-link border-black'>
+            <button className='btn btn-success share-button-link '>
               LinkedIn
             </button>
           </a>
@@ -72,7 +72,7 @@ export const Share = () => {
           <a
             href={`https://reddit.com/submit?url=${baseUrl}${urlToSend}&title=Lokalspende`}
           >
-            <button className='btn btn-success share-button-link border-black'>
+            <button className='btn btn-success share-button-link '>
               Reddit
             </button>
           </a>
@@ -84,7 +84,7 @@ export const Share = () => {
             }
             target='_blank'
           >
-            <button className='btn btn-success share-button-link border-black'>
+            <button className='btn btn-success share-button-link '>
               Facebook
             </button>
           </a>
