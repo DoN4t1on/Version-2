@@ -232,16 +232,7 @@ export const YourProfile = () => {
                 sx={{ m: 1, width: '18ch' }}
                 color='success'
                
-                InputProps={{
-                  startAdornment: (
-                    <InputAdornment  position='start'>
-                      <img
-                        className='link-your-profile'
-                        src={require('./img/link.svg')}
-                      />
-                    </InputAdornment>
-                  ),
-                }}
+              
               />
               <br />
 {/* 

@@ -230,7 +230,7 @@ body {
   margin-top: 25px;
   margin-bottom: 25px;
   position: relative;
-  right: 38px;
+  right: 39px;
 }
 .comments-headline {
   position: relative;
@@ -619,6 +619,21 @@ z-index: 10;
   width: auto;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+#upvotebutton:active  {
+ 
+ 
+  transform: translateY(-0.25em);
+  
+
+}
+#downvotebutton:active {
+ 
+  
+  transform: translateY(0.25em);
+
+
 }
 
 .info-image {
