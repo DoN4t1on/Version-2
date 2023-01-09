@@ -620,22 +620,22 @@ z-index: 10;
   padding-left: 10px;
   padding-right: 10px;
 }
-
+/*
 #upvotebutton:active  {
  
  
-  transform: translateY(-0.25em);
+ transform: translateY(-0.25em);
   
 
 }
 #downvotebutton:active {
  
   
-  transform: translateY(0.25em);
+  transform: translateY(0.25em); 
 
 
 }
-
+*/
 .info-image {
   height: 22px;
   width: auto;
@@ -751,7 +751,8 @@ z-index: 10;
   
 }
 .profile-picture-fullscreen {
-  border-radius: 150px;
+  border: 2px solid  #28a745;
+  border-radius: 500px;
   object-fit: cover;
   width: 200px;
   height: 200px;
@@ -759,6 +760,15 @@ z-index: 10;
 .comments-header {
   margin-top: 25px;
   margin-bottom: 15px;
+}
+.edit-picture {
+  position: relative;
+  top: 5px;
+  height: 25px;
+
+}
+.edit-picture-label {
+  margin-bottom: 5px;
 }
 .comment-menu {
   margin-top: 90px;
@@ -774,6 +784,9 @@ z-index: 10;
   text-align: center;
   z-index: 2;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.camera {
+  height: 35px;
 }
 .horzontal-rule-general {
   max-width: 375px;
@@ -1124,13 +1137,7 @@ z-index: 10;
     padding-left: 1px;
     padding-right: 1px;
   }
-  .profile-picture-fullscreen {
-    border-radius: 150px;
-    object-fit: cover;
 
-    width: 200px;
-    height: 200px;
-  }
   .donation-bar {
     margin-left: 25px;
     margin-right: 25px;
@@ -1143,13 +1150,7 @@ z-index: 10;
   .report {
     top: 2px;
   }
-  .profile-picture-fullscreen {
-    border-radius: 150px;
-    object-fit: cover;
 
-    width: 200px;
-    height: 200px;
-  }
   .small {
     font-size: 12px;
   }
@@ -1183,6 +1184,11 @@ z-index: 10;
 @media (min-width: 600px) {
   .divider-horizontal-rule-comments {
     width: 70%;
+  }
+  .profile-picture-fullscreen {
+    
+    width: 300px;
+    height: 300px;
   }
   .Suggestion-desc,
   .Suggestion-titel {
@@ -1241,13 +1247,7 @@ z-index: 10;
     margin-right: 180px;
   }
 
-  .profile-picture-fullscreen {
-    border-radius: 150px;
-    object-fit: cover;
 
-    width: 250px;
-    height: 250px;
-  }
   .campaign-header,
   .comment-bar,
   .interaction-bar,
@@ -1308,13 +1308,7 @@ z-index: 10;
     margin-left: 330px;
     margin-right: 330px;
   }
-  .profile-picture-fullscreen {
-    border-radius: 150px;
-    object-fit: cover;
-
-    width: 250px;
-    height: 250px;
-  }
+ 
   .campaign-header,
   .interaction-bar,
   .under-navbar,
@@ -1355,13 +1349,7 @@ z-index: 10;
     margin-left: 480px;
     margin-right: 480px;
   }
-  .profile-picture-fullscreen {
-    border-radius: 150px;
-    object-fit: cover;
-
-    width: 250px;
-    height: 250px;
-  }
+  
   .campaign-header,
   .interaction-bar,
   .under-navbar,

@@ -195,7 +195,7 @@ export const CreateASuggestion = () => {
           ) : null}
 
           <br />
-          <br />
+        
 
           <p className='create-font-size'>Bild:</p>
 
@@ -222,6 +222,7 @@ export const CreateASuggestion = () => {
                 id='output'
                 aria-label='upload picture'
                 component='span'
+                className='camera'
               >
                 <PhotoCamera
                   id='output'

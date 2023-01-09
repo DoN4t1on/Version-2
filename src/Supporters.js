@@ -47,7 +47,7 @@ export const Supporters = () => {
         <div className='voter-div-two '>
           {allbidders.map((item) => (
             <p>
-              <span className='supporter-list'>
+              <span className='supporter'>
                 <Link to={`/profil/${item.user._id}`} className='linkblack'>
                   {/* <img
                     src={
@@ -57,11 +57,7 @@ export const Supporters = () => {
                     }
                     className='supporter-list-image border-black'
                   />{' '} */}
-                  {item.user.fname}
-                </Link>
-              </span>
-
-              <span className='time-supported'>•{item.amount}€</span>
+                  {item.user.fname}•{item.amount}€</Link></span> 
             </p>
           ))}
 

@@ -167,20 +167,19 @@ export const YourProfile = () => {
 
             <img
               id='output'
-              height='180'
-              width='180'
+             
               src={
                 localStorageData('pic') != ''
                   ? ImageEndPoint + localStorageData('pic')
                   : require('./img/profile.png')
               }
-              className='profile-picture-fullscreen border-black'
+              className='profile-picture-fullscreen'
             />
 
             <br />
             {/* <Link onChange={onChangeHandler} to=''> */}
 
-            <label htmlFor='icon-button-file'>
+            <label className='edit-picture-label' htmlFor='icon-button-file'>
               <Input
                 accept='image/*'
                 onChange={onChangeHandler}
@@ -188,11 +187,11 @@ export const YourProfile = () => {
                 type='file'
               />
 
-              <img className='margin-bottom' src={require('./img/edit.svg')} />
+              <img className='margin-bottom edit-picture' src={require('./img/pencil-square.svg')} />
             </label>
 
             {/* </Link> */}
-            <br />
+            
             <br />
 
             <TextField
