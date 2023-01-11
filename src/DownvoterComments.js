@@ -48,8 +48,8 @@ export const DownvoterComments = () => {
         <h4 className=' headline headline-with-back-button '> Downvoter </h4>
       </div>
 
-      <div className='casual-menu'>
-        <div className='voter-div'>
+      <div className='voter-div-one '>
+        <div className='voter-div-two '>
           {allupvoters.map((item) => (
             <>
               {item.Isincognito ? (

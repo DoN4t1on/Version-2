@@ -223,8 +223,8 @@ export const Suggestions = () => {
             <>
               <div id='header'>
                 <p className='location' id='location'>
-                    Köln{' '}
-                    <img id='filter' src={require('./img/funnel-fill.svg')} />{' '}
+                  Köln{' '}
+                  <img class='location-icon' src={require('./img/geo-alt-fill.svg')} />{' '}
                   {' '}
                 </p>
               </div>
@@ -269,7 +269,7 @@ export const Suggestions = () => {
                 <p className='location' id='location'>
                   <Link to='/karte'>
                     Köln{' '}
-                    <img id='filter' src={require('./img/funnel-fill.svg')} />{' '}
+                    <img class='location-icon' src={require('./img/geo-alt-fill.svg')} />{' '}
                   </Link>{' '}
                 </p>
 

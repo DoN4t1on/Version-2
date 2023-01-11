@@ -15,9 +15,9 @@ export const Crowdfunding = () => {
     <div>
       <div id='header'>
         <p className='location' id='location'>
-           Köln{' '}
-            <img id='filter' src={require('./img/funnel-fill.svg')} />{' '}
-        {' '}
+          Köln{' '}
+          <img class='location-icon' src={require('./img/geo-alt-fill.svg')} />{' '}
+          {' '}
         </p>
 
         <p className='menu1 small-headlines'>

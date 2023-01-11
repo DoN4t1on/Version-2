@@ -119,12 +119,12 @@ body {
   position: relative;
   left: 25px;
 }
-#filter {
+.location-icon {
   height: 24px;
-  width: auto;
+
   position: relative;
-  bottom: 2px;
-  right: 6px;
+  bottom: 3px;
+  right: 7px;
 }
 .create-titel {
   clear: left;
