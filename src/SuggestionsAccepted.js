@@ -14,10 +14,10 @@ export const SuggestionsAccepted = () => {
     <div>
       <div id='header'>
         <p className='location' id='location'>
-
-          Köln{' '}
+        {' '}
           <img class='location-icon' src={require('./img/geo-alt-fill.svg')} />{' '}
           {' '}
+          Köln
         </p>
 
         <p className='menu1 small-headlines'>

@@ -54,13 +54,7 @@ body {
   bottom: 7px;
   left: 4px;
 }
-#location {
-  color: white;
-  position: relative;
-  height: 28px;
-  left: 8px;
 
-}
 .filter-checkbox {
   height: 25px;
   width: 25px;
@@ -120,11 +114,11 @@ body {
   left: 25px;
 }
 .location-icon {
-  height: 24px;
+  height: 23px;
 
   position: relative;
   bottom: 3px;
-  right: 7px;
+  left: 6px;
 }
 .create-titel {
   clear: left;
@@ -144,6 +138,7 @@ body {
 }
 .menu1 {
   font-size: 16px;
+  height: 20px;
   
 
 }
@@ -162,6 +157,7 @@ body {
 }
 .menu2 {
   font-size: 16px;
+  height: 20px;
   margin-top: 0px;
 }
 .last-menu {
@@ -362,10 +358,12 @@ z-index: 10;
   margin-bottom: 0;
   position: relative;
   bottom: 10px;
-  height: 20px;
+  height: 10px;
 }
 .button-Suggestion {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  position: relative;
+  bottom: 5px;
 }
 .your-donation {
   font-size: 25px;
@@ -439,11 +437,9 @@ z-index: 10;
 .campaigns {
   margin-bottom: 90px;
   overflow: hidden;
-  margin-top: 113px;
+  margin-top: 105px;
 }
-.single-campaign {
-  margin-bottom: 10px;
-}
+
 .comment-bar {
   position: fixed;
   bottom: 60px;
@@ -554,8 +550,8 @@ z-index: 10;
 .amount-p {
   position: relative;
   left: 10px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  
 }
 .unterstützer-link {
   color: black;
@@ -591,7 +587,7 @@ z-index: 10;
 
 .voting-counter-upanddown {
   position: relative;
-  bottom: 3px;
+  bottom: 5px;
   font-size: 25px;
   z-index: -3;
   padding-left: 10px;
@@ -734,24 +730,30 @@ z-index: 10;
   margin-top: 160px;
 }
 .Supporters {
+  height: 50px;
   font-size: 40px;
   position: relative;
-  top: 5px;
+  top: 8px;
+
+ 
 }
 .anonymous-support {
   position: relative;
   left: 22px;
 }
 .location {
+  height: 28px;
   font-size: 30px;
   margin-top: 0px;
   margin-bottom: 0px;
   position: relative;
   bottom: 6px;
+  right: 11px;
+  color: white
   
 }
 .profile-picture-fullscreen {
-  border: 2px solid  #28a745;
+ /* border: 2px solid  #28a745; */
   border-radius: 500px;
   object-fit: cover;
   width: 200px;
@@ -807,6 +809,8 @@ z-index: 10;
 .interaction-bar {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  bottom: 13px;
 }
 .interaction-bar-comment {
   position: relative;
@@ -927,6 +931,9 @@ z-index: 10;
 .divider-horizontal-rule {
   padding-left: 0px;
   padding-right: 0px;
+  position: relative;
+  bottom: 15px;
+
   
  
 }

@@ -223,9 +223,9 @@ export const Suggestions = () => {
             <>
               <div id='header'>
                 <p className='location' id='location'>
-                  Köln{' '}
+                {' '}
                   <img class='location-icon' src={require('./img/geo-alt-fill.svg')} />{' '}
-                  {' '}
+                  {' '}Köln
                 </p>
               </div>
               <div className='campaigns no-data statement-Suggestions'>
@@ -268,9 +268,9 @@ export const Suggestions = () => {
               <div id='header'>
                 <p className='location' id='location'>
                   <Link to='/karte'>
-                    Köln{' '}
+                  {' '}
                     <img class='location-icon' src={require('./img/geo-alt-fill.svg')} />{' '}
-                  </Link>{' '}
+                  </Link>{' '}Köln
                 </p>
 
                 <p className='menu1 small-headlines'>

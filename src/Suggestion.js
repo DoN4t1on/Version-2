@@ -293,11 +293,12 @@ export const Suggestion = (Suggestion) => {
 
       <Link
         to={`/spendenzusagen/${Suggestion.item._id}`}
-        className='Supporters unterstützer-link'
+        className='unterstützer-link'
       >
-        {supporters}
+       <p className='Supporters'>{supporters}</p>
+        
       </Link>
-      <p className='your-donation'> Ihre Spendenzusage: </p>
+    
       <form onSubmit={handleSubmit}>
         <p className='amount-p'>
           <input

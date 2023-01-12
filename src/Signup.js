@@ -94,7 +94,7 @@ function Signup() {
         aria-describedby='alert-dialog-description'
       >
         <DialogTitle id='alert-dialog-title'>
-          {'Login-Dienst verwendens?'}
+          {'Login-Dienst verwenden?'}
         </DialogTitle>
         <DialogContent>
           <SocialLogin />

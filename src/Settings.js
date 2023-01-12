@@ -28,6 +28,13 @@ export const Settings = () => {
         </Link>
         
         {' '} */}
+<a href='https://lokalspende.org/warteliste/'>
+          {' '}
+          <button className='btn btn-success btn-lg button border-black'>
+          Warteliste 📋
+          </button>{' '}
+        </a>{' '}
+        <br /> <br />
 
         <a href='https://Lokalspende.org/fragen/'>
           {' '}
@@ -67,7 +74,7 @@ export const Settings = () => {
         <a href='https://donorbox.org/localdonation'>
           {' '}
           <button className='btn btn-success btn-lg button border-black'>
-            Spenden 💸
+           An uns spenden 💸
           </button>{' '}
         </a>
         <div className='horzontal-rule-setting'>
