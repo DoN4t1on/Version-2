@@ -67,7 +67,7 @@ export const Upvoter = () => {
               ) : (
                 <>
                   <p>
-                    <span className='supporter-list'>
+                    <p className='supporter-list'>
                       <Link
                         to={`/profil/${item.user._id}`}
                         className='linkblack'
@@ -82,7 +82,7 @@ export const Upvoter = () => {
                         /> */}{' '}
                         {item.user.fname}
                       </Link>
-                    </span>
+                    </ p>
                     {/*
                     <span className='time-supported'>
                       {' '}
