@@ -125,7 +125,7 @@ export const SuggestionsActiveNewest = () => {
             Am nächsten{' '}
           </Link>
   |{' '} */}
-          <Link to='/antrage-aktiv-neuste' className='strong'>
+          <Link to='/' className='strong'>
             {' '}
             Neuste{' '}
           </Link>

@@ -105,7 +105,7 @@ ReactDOM.render(
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<SuggestionsActiveNewest />} />
+          <Route path='/' element={<Suggestions />} />
           <Route
             path='/antrage-aktiv-neuste'
             element={<SuggestionsActiveNewest />}

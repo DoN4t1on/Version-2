@@ -79,7 +79,7 @@ function Signup() {
   return (
     <div>
       <button
-        className='btn btn-success btn-lg button border-black'
+        className='btn btn-success btn-lg button'
         type='submit'
         id='Donate'
         onClick={handleClickOpen}

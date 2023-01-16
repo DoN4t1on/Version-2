@@ -162,7 +162,7 @@ function Header() {
           </Link>
           |{' '}
           <Link
-            to='/antrage-aktiv-neuste'
+            to='/'
             className={
               window.location.pathname == '/antrage-aktiv-neuste'
                 ? 'strong'

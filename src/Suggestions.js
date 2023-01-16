@@ -143,13 +143,13 @@ export const Suggestions = () => {
   // }, []);
 
   const getAllPosts = useQuery(
-    'allpostdataSuggestions',
+    'allpostSuggestions',
     () =>
       userServices.commonGetService(
-        `/post/getAllPost/${chunksPost}/${lat}/${long}`
+        `/post/getAllPost/${chunksPost}/false/false`
       ),
     {
-      enabled: lat == '' || long == '' ? false : true,
+      ////enabled: lat == '' || long == '' ? false : true,
       refetchOnWindowFocus: false,
       refetchInterval: moreRefetch == true ? 500 : false,
       refetchIntervalInBackground: true,
@@ -265,59 +265,58 @@ export const Suggestions = () => {
             </>
           ) : (
             <>
-              <div id='header'>
-                <p className='location' id='location'>
-                  <Link to='/karte'>
-                  {' '}
-                    <img class='location-icon' src={require('./img/geo-alt-fill.svg')} />{' '}
-                  </Link>{' '}Köln
-                </p>
+             <div id='header'>
+        <p className='location' id='location'>
+        {' '}
+          <img class='location-icon' src={require('./img/geo-alt-fill.svg')} />{' '}
+          {' '}
+          Köln
+        </p>
 
-                <p className='menu1 small-headlines'>
-                  {' '}
-                  <Link className='strong' to='/'>
-                    Anträge
-                  </Link>{' '}
-                  | <Link to='/crowdfunding' className='grey'>Crowdfunding</Link>
-                </p>
-                <p className='menu2 small-headlines '>
-                  {' '}
-                  <Link to='/' className='strong'>
-                    Aktiv{' '}
-                  </Link>
-                  |
-                  <Link to='/antrage-akzeptiert' className='grey'>
-                    {' '}
-                    Akzeptiert{' '}
-                  </Link>
-                  |{' '}
-                  <Link to='/antrage-abgelehnt' className='grey'>
-                    Abgelehnt{' '}
-                  </Link>{' '}
-                </p>
-                <p className='last-menu small-headlines'>
-                  {' '}
-                  <Link to='/' className='strong'>
-                    Am nächsten{' '}
-                  </Link>
-                  |{' '}
-                  <Link to='/antrage-aktiv-neuste' className='grey'>
-                    {' '}
-                    Neuste{' '}
-                  </Link>
-                  |{' '}
-                  <Link to='/antrage-aktiv-am-beliebtesten' className='grey'>
-                    {' '}
-                    Beliebtest
-                  </Link>{' '}
-                </p>
-              </div>
-
-              <div className='campaigns'>
-                {allPost.map((item) => (
-                  <Suggestion item={item} />
-                ))}
-              </div>
+        <p className='menu1 small-headlines'>
+          {' '}
+          <Link className='strong' to='/'>
+            Anträge
+          </Link>{' '}
+          | <Link className='grey' to='/crowdfunding'>Crowdfunding</Link>
+        </p>
+        <p className='menu2 small-headlines '>
+          {' '}
+          <Link to='/' className='strong'>
+            Aktiv{' '}
+          </Link>
+          |
+          <Link to='/antrage-akzeptiert' className='grey'>
+            {' '}
+            Akzeptiert{' '}
+          </Link>
+          |{' '}
+          <Link to='/antrage-abgelehnt' className='grey'>
+            Abgelehnt{' '}
+          </Link>{' '}
+        </p>
+        <p className='last-menu small-headlines'>
+          {/* {' '}
+         <Link to='/' className='grey'>
+            Am nächsten{' '}
+          </Link>
+  |{' '} */}
+          <Link to='/' className='strong'>
+            {' '}
+            Neuste{' '}
+          </Link>
+          |{' '}
+          <Link to='/antrage-aktiv-am-beliebtesten' className='grey'>
+            {' '}
+            Beliebtest
+          </Link>{' '}
+        </p>
+      </div>
+      <div className='campaigns'>
+        {allPost.map((item) => (
+          <Suggestion item={item} />
+        ))}
+      </div>
               <NavbarBottom
                 classstart='under-navitem-selected'
                 classsearch='under-navitem-unselected'

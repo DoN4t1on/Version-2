@@ -274,7 +274,7 @@ export const CreateASuggestion = () => {
           /> */}
 
 
-          <div className='create-map-div'>
+        {/*   <div className='create-map-div'>
             {/* <GoogleMapReact
               bootstrapURLKeys={{
                 key: 'key',
@@ -287,7 +287,7 @@ export const CreateASuggestion = () => {
             > */}
             {/* <Marker lat={currentLat} lng={currentLong} /> */}
             {/* </GoogleMapReact> */}
-
+ {/*
             <WrappedMap
               googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${mapAPiKey}`}
               loadingElement={<div style={{ height: `100%`, borderRadius: '10px' }} />}
@@ -302,7 +302,7 @@ export const CreateASuggestion = () => {
             />
 
           </div>
-          <br />
+          <br /> */}
           {/*
           <input
             id='location'
@@ -319,7 +319,7 @@ export const CreateASuggestion = () => {
           {addNewSuggestion.isLoading ? (
             <CircularProgress />
           ) : (
-           <button type='submit' className='btn btn-success btn-lg button border-black'>
+           <button type='submit' className='btn btn-success btn-lg button'>
               Erstellen
             </button>
           )}

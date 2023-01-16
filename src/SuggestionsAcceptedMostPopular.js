@@ -69,7 +69,7 @@ export const SuggestionsAcceptedMostPopular = () => {
     <div>
       <div id='header'>
         <p className='location' id='location'>
-        {' '}
+          {' '}
           <img class='location-icon' src={require('./img/geo-alt-fill.svg')} />{' '}
           {' '}
           Köln
@@ -116,7 +116,7 @@ export const SuggestionsAcceptedMostPopular = () => {
       </div >
       <div className='campaigns no-data'>
         In diesem Gebiet befinden sich noch keine akzeptierten
-        Crowdfundingkampagnen. Wir sind bereits im Dialog mit der öffentlichen
+        Crowdfundingkampagnen. Wir sind bereits im Dialog mit der lokalen
         Verwaltung. Gerne können Sie diese auch persönlich kontaktieren.
       </div>
       <NavbarBottom

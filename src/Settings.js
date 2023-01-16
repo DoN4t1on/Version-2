@@ -30,7 +30,7 @@ export const Settings = () => {
         {' '} */}
 <a href='https://lokalspende.org/warteliste/'>
           {' '}
-          <button className='btn btn-success btn-lg button border-black'>
+          <button className='btn btn-success btn-lg button'>
           Warteliste 📋
           </button>{' '}
         </a>{' '}
@@ -38,42 +38,42 @@ export const Settings = () => {
 
         <a href='https://Lokalspende.org/fragen/'>
           {' '}
-          <button className='btn btn-success btn-lg button border-black'>
+          <button className='btn btn-success btn-lg button'>
             Fragen ⁉️
           </button>{' '}
         </a>{' '}
         <br /> <br />
         <a href='https://Lokalspende.org/kontakt/'>
           {' '}
-          <button className='btn btn-success btn-lg button border-black'>
+          <button className='btn btn-success btn-lg button'>
             Kontaktieren Sie uns 📩
           </button>{' '}
         </a>
         <br /> <br />
         <a href='https://t.me/LocalDonation'>
           {' '}
-          <button className='btn btn-success btn-lg button border-black'>
+          <button className='btn btn-success btn-lg button'>
             Werden Sie Teil des Teams 🙌
           </button>{' '}
         </a>
         <br /> <br />
         <a href='https://github.com/LocalDonation-Dev'>
           {' '}
-          <button className='btn btn-success btn-lg button border-black'>
+          <button className='btn btn-success btn-lg button'>
             Code 💻
           </button>{' '}
         </a>
         <br /> <br />
         <a href='https://lokalspende.org/merchandise/'>
           {' '}
-          <button className='btn btn-success btn-lg button border-black'>
+          <button className='btn btn-success btn-lg button'>
             Merchandise 🛒
           </button>{' '}
         </a>
         <br /> <br />
         <a href='https://donorbox.org/localdonation'>
           {' '}
-          <button className='btn btn-success btn-lg button border-black'>
+          <button className='btn btn-success btn-lg button'>
            An uns spenden 💸
           </button>{' '}
         </a>
