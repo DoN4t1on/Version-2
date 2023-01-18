@@ -811,7 +811,9 @@ z-index: 10;
   justify-content: space-between;
   position: relative;
   bottom: 13px;
+  height: 65px;
 }
+
 .interaction-bar-comment {
   position: relative;
   top: 0px;
@@ -932,7 +934,7 @@ z-index: 10;
   padding-left: 0px;
   padding-right: 0px;
   position: relative;
-  bottom: 15px;
+  bottom: 5px;
 
   
  
@@ -1090,7 +1092,7 @@ z-index: 10;
   margin-top: 150px;
 }
 .no-data {
-  margin: 150px 30px 0px 30px;
+  margin: 80px 5px 0px 5px;
   font-size: 20px;
 }
 
@@ -1098,11 +1100,11 @@ z-index: 10;
   max-width: 100%;
 }
 .no-data-crowdfunding {
-  margin: 60px 30px 0px 30px;
+  margin: 55px 30px 0px 30px;
   font-size: 20px;
 }
 .no-data {
-  margin: 100px 30px 0px 30px;
+  margin: 80px 30px 0px 30px;
   font-size: 20px;
 }
 
@@ -1158,6 +1160,8 @@ z-index: 10;
 @media (max-width: 370px) {
   .report {
     top: 2px;
+    position: relative;
+    left: 60px;
   }
 
   .small {
@@ -1180,7 +1184,7 @@ z-index: 10;
     bottom: 1px;
   }
   .campaigns {
-    margin-top: 110px;
+    margin-top: 102px;
   }
   .interaction-bar {
     padding-left: 1px;
@@ -1240,12 +1244,12 @@ z-index: 10;
   .input-style2 {
     width: 80%;
   }
-  .no-data {
-    margin: 100px 250px 0px 250px;
-    font-size: 20px;
-  }
+ 
   .no-data-crowdfunding {
     margin: 60px 250px 0px 250px;
+  }
+  .no-data {
+    margin: 80px 250px 0px 250px;
   }
   .info {
     margin-left: 150px;
@@ -1302,12 +1306,12 @@ z-index: 10;
   .Suggestion-titel {
     width: 40%;
   }
-  .no-data {
-    margin: 100px 450px 0px 450px;
-    font-size: 20px;
-  }
+ 
   .no-data-crowdfunding {
     margin: 60px 450px 0px 450px;
+  }
+  .no-data {
+    margin: 80px 450px 0px 450px;
   }
   .info {
     margin-left: 300px;

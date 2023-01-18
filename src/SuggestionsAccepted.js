@@ -44,7 +44,7 @@ export const SuggestionsAccepted = () => {
         </p>
       </div>
 
-      <div className='campaigns no-data'>
+      <div className='no-data'>
         In diesem Gebiet befinden sich noch keine akzeptierten Anträge. Wir sind aber
         bereits im Dialog mit der lokalen Verwaltung für eine Ratsversammlung. Gerne können Sie
         diese auch persönlich kontaktieren.
