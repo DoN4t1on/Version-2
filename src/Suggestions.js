@@ -333,7 +333,7 @@ export const Suggestions = () => {
             (Alpha Version)
             <br />
             <br />
-            Klicken Sie auf eine Region in der wir arbeiten.
+            Klicken Sie auf eine Region in der wir arbeiten:
             <br />
             <br />
             <a

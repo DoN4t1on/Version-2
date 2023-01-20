@@ -31,7 +31,7 @@ export const Settings = () => {
 <a href='https://lokalspende.org/warteliste/'>
           {' '}
           <button className='btn btn-success btn-lg button'>
-          Warteliste 📋
+          Regionen Warteliste 📋
           </button>{' '}
         </a>{' '}
         <br /> <br />
