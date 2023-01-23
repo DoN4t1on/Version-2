@@ -247,7 +247,7 @@ ReactDOM.render(
         contentClasses='content-cookies'
         overlay
       >
-        Diese Webseite benutzt Cookies.{' '}
+        Diese Web-App benutzt Cookies.{' '}
         <a
           href='https://app.lokalspende.org/datenschutz'
           style={{ color: '#28a745' }}
