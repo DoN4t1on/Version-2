@@ -242,7 +242,7 @@ ReactDOM.render(
         cookieName='myAwesomeCookieName3'
         expires={999}
         buttonClasses='btn btn-success btn-lg button btn-cookies'
-        containerClasses='conatiner-cookies'
+        containerClasses='container-cookies'
         buttonText='Ich verstehe'
         contentClasses='content-cookies'
         overlay
@@ -251,6 +251,7 @@ ReactDOM.render(
         <a
           href='https://app.lokalspende.org/datenschutz'
           style={{ color: '#28a745' }}
+        
         >
           Hier
         </a>{' '}

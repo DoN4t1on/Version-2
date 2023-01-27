@@ -570,7 +570,7 @@ z-index: 10;
 }
 .comments-counter {
   position: relative;
-  right: 1px;
+  right: 3px;
   top: 3px;
   color: black;
   font-size: 25px;
@@ -593,12 +593,20 @@ z-index: 10;
   padding-left: 10px;
   padding-right: 10px;
 }
-.share-button {
+.share-button { 
   position: relative;
-
   top: 13px;
   right: 12px;
   height: 28px;
+}
+
+.round-borders {
+  border-radius: 150px;
+}
+.share-icon {
+  margin-bottom: 10px;
+  float: right;
+  clear: right;
 }
 .share-button-comment {
   position: relative;
@@ -666,25 +674,28 @@ z-index: 10;
   overflow-x: auto;
   z-index: 1;
 }
-.conatiner-cookies {
+.container-cookies {
   position: fixed;
   bottom: 0;
-  background-color: #292929;
-
+ 
+  background: rgba(41, 41, 41, 0.75);
   width: 100%;
   padding-top: 15px;
-
   /* opacity: 0.7; */
   z-index: 1000;
 }
 .content-cookies {
-  color: white;
+  
+  color: rgba(255, 255, 255, 1);
 }
 .btn-cookies {
   margin-top: 10px;
   margin-bottom: 25px;
+  opacity: 100%;
 }
-
+.underlined {
+  text-decoration-line: underline;
+}
 .profile-link {
   color: blue;
 }
@@ -1159,11 +1170,16 @@ z-index: 10;
 }
 @media (max-width: 370px) {
   .report {
-    top: 2px;
+    top: 0px;
     position: relative;
     left: 60px;
   }
-
+  .report-comments {
+    position: relative;
+    top: 2px;
+    left: 60px;
+    
+  }
   .small {
     font-size: 12px;
   }
