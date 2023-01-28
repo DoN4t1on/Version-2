@@ -42,7 +42,9 @@ body {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 0px 0px;
 }
-
+.white {
+ color: white;
+}
 .anonym {
   position: relative;
 
@@ -607,6 +609,12 @@ z-index: 10;
   margin-bottom: 10px;
   float: right;
   clear: right;
+}
+.share-icon-link {
+  margin-bottom: 10px;
+  float: right;
+  clear: right;
+
 }
 .share-button-comment {
   position: relative;

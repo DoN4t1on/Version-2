@@ -76,8 +76,9 @@ export const Share = () => {
               toast.success('Link kopiert');
             }}
           >
-            <button className='btn btn-success share-icon-link share-icon round-borders'>
-              Link kopieren
+            <button className='btn btn-success share-icon-link round-borders'>
+              Link kopieren <img src={require('./img/link-white.svg')} />
+
             </button>
           </a>
           <br />
@@ -86,30 +87,30 @@ export const Share = () => {
             href={`https://twitter.com/share?url=${baseUrl}` + urlToSend}
             target='_blank'
           >
-            <TwitterIcon size={50} round={true} className='share-icon' /> </a>
+            <TwitterIcon size={75} round={true} className='share-icon' /> </a>
           <br />
           <a
             href={`whatsapp://send?text=${baseUrl}` + urlToSend}
             data-action='share/whatsapp/share'
-          > <WhatsappIcon size={50} round={true} className='share-icon' /> </a>
+          > <WhatsappIcon size={75} round={true} className='share-icon' /> </a>
           <br />
 
           <a
             href={`https://t.me/share/url?url=${baseUrl}` + urlToSend}
             data-action='share/whatsapp/share'
-          > <TelegramIcon size={50} round={true} className='share-icon' /> </a>
+          > <TelegramIcon size={75} round={true} className='share-icon' /> </a>
           <br />
 
           <a
             href={`https://www.linkedin.com/shareArticle?url=${baseUrl}${urlToSend}&title=Lokalspende`}
             data-action='share/whatsapp/share'
-          > <LinkedinIcon className='share-icon' size={50} round={true} /> </a>
+          > <LinkedinIcon className='share-icon' size={75} round={true} /> </a>
           <br />
 
           <a
             href={`https://reddit.com/submit?url=${baseUrl}${urlToSend}&title=Lokalspende`}
             data-action='share/whatsapp/share'
-          > <RedditIcon className='share-icon' size={50} round={true} /> </a>
+          > <RedditIcon className='share-icon' size={75} round={true} /> </a>
           <br />
 
           <a
@@ -117,7 +118,7 @@ export const Share = () => {
               `https://www.facebook.com/sharer/sharer.php?u=${baseUrl}` +
               urlToSend
             }
-          > <FacebookIcon className='share-icon' size={50} round={true} /> </a>
+          > <FacebookIcon className='share-icon' size={75} round={true} /> </a>
           {/* <a href='' target='_blank'>
             <button className='btn btn-success share-icon-link'>
               Generate
