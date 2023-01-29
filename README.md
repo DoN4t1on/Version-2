@@ -1,3 +1,12 @@
+To Dos for contributing: 
+
+Into terminal:
+
+git clone https://github.com/LocalDonation-Dev/German.git
+
+npm install
+
+
 ## Links
 
 - To Dos: https://github.com/orgs/LocalDonation-Dev/projects/1
