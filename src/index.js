@@ -97,6 +97,7 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 import { ToastContainer } from 'react-toastify';
 import Test from './Test';
 import Agb from './Agb';
+import Signin from './Signin';
 
 const queryClient = new QueryClient();
 const app = document.getElementById('app');
@@ -226,6 +227,7 @@ ReactDOM.render(
           <Route path='/abstimmfilter' element={<VotingFilter />} />
 
           <Route path='/erstellzeit-filter' element={<CreationFilter />} />
+          <Route path='/einloggen' element={<Signin />} />
 
           <Route
             path='/benachrichtigungseinstellungen'

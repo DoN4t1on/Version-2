@@ -139,7 +139,7 @@ function Signup() {
                 id='pass'
                 type='password'
                 className='input-style1'
-                placeholder={'Passwort'}
+                placeholder={'Password'}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 value={formik.values.pass}

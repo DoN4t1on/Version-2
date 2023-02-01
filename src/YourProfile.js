@@ -165,16 +165,16 @@ export const YourProfile = () => {
               />
             </FormControl> */}
 
-            <img
+             <img
               id='output'
              
               src={
                 localStorageData('pic') != ''
-                  ? ImageEndPoint + localStorageData('pic')
-                  : require('./img/profile.png')
+                  ?require('./img/profile.png'):ImageEndPoint + localStorageData('pic')
+                 
               }
               className='profile-picture-fullscreen'
-            />
+            /> 
 
             <br />
             {/* <Link onChange={onChangeHandler} to=''> */}

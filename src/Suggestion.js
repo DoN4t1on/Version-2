@@ -5,7 +5,7 @@ import downvoteempty from './img/arrow-down.svg';
 import downvotefull from './img/arrow-down-fill.svg';
 import pinimageempty from './img/pin.svg';
 import pinimagefull from './img/pin-fill.svg';
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import { ImageEndPoint } from './config/config';
 import { localStorageData, Logout } from './services/auth/localStorageData';
 import ErrorService from './services/formatError/ErrorService';
@@ -15,7 +15,7 @@ import { toast } from 'react-toastify';
 import moment from 'moment-timezone';
 import Grid from '@mui/material/Grid';
 
-
+// import { useNavigate } from '@reach/router';
 
 export const Suggestion = (Suggestion) => {
   const localtz = moment.tz.guess();
@@ -110,7 +110,7 @@ export const Suggestion = (Suggestion) => {
       },
     }
   );
-
+  // const navigate = useNavigate();
   const upvote = () => {
     if (localStorageData('_id')) {
       if (upvoteimage == upvotefull) {
@@ -173,6 +173,7 @@ export const Suggestion = (Suggestion) => {
       });
     } else {
       toast.error('Erstellen Sie ein Profil um fortzufahren');
+      // navigate('einloggen')
     }
 
     // if (downvotecounter == 0) {
@@ -327,7 +328,6 @@ export const Suggestion = (Suggestion) => {
 
         <div className='voting-div'>
           <div>
-            {' '}
             <img
               onClick={upvote}
               src={upvoteimage}
@@ -346,7 +346,7 @@ export const Suggestion = (Suggestion) => {
           </p>
 */}
           <div>
-            {' '}
+         
             <img
               onClick={downvote}
               src={downvoteimage}

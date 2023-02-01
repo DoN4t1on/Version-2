@@ -35,7 +35,7 @@ export const SuggestionsSingle = () => {
     'SuggestionsSingleone',
     () =>
       userServices.commonGetService(
-        `/post/getOneSuggestion/635634a4b3a93216eaecf78e`
+        `/post/getOneSuggestion/${Id}`
       ),
     {
       refetchOnWindowFocus: false,

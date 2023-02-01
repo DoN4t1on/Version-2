@@ -1,8 +1,8 @@
-import { NavbarBottom } from './NavbarBottom';
+import { NavbarBottom } from "./NavbarBottom";
 
-import { Link, useNavigate } from 'react-router-dom';
-import { useLocation, useParams } from 'react-router-dom';
-import { toast } from 'react-toastify';
+import { Link, useNavigate } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
+import { toast } from "react-toastify";
 import {
   EmailShareButton,
   FacebookShareButton,
@@ -22,7 +22,7 @@ import {
   ViberShareButton,
   VKShareButton,
   WhatsappShareButton,
-  WorkplaceShareButton
+  WorkplaceShareButton,
 } from "react-share";
 import {
   EmailIcon,
@@ -45,10 +45,10 @@ import {
   VKIcon,
   WeiboIcon,
   WhatsappIcon,
-  WorkplaceIcon
+  WorkplaceIcon,
 } from "react-share";
 
-import { baseUrl } from './config/config';
+import { baseUrl } from "./config/config";
 export const Share = () => {
   const { state } = useLocation();
   const navigate = useNavigate();
@@ -58,59 +58,69 @@ export const Share = () => {
 
   return (
     <div>
-      <div className='casual-header-div '>
-        <button className='back-button-button' onClick={() => navigate(-1)}>
-
+      <div className="casual-header-div ">
+        <button className="back-button-button" onClick={() => navigate(-1)}>
           <img
-            className='back-button-icon'
-            src={require('./img/arrow-left-short.svg')}
+            className="back-button-icon"
+            src={require("./img/arrow-left-short.svg")}
           />
         </button>
-        <h4 className=' headline headline-with-back-button '> Teilen </h4>
+        <h4 className=" headline headline-with-back-button "> Teilen </h4>
       </div>
-      <div className='casual-menu'>
-        <div className='sharing-right'>
+      <div className="casual-menu">
+        <div className="sharing-right">
           <a
             onClick={() => {
               navigator.clipboard.writeText(baseUrl + urlToSend);
-              toast.success('Link kopiert');
+              toast.success("Link kopiert");
             }}
           >
-            <button className='btn btn-success share-icon-link round-borders'>
-              Link kopieren <img src={require('./img/link-white.svg')} />
-
+            <button className="btn btn-success share-icon-link round-borders">
+              Link kopieren <img src={require("./img/link-white.svg")} />
             </button>
           </a>
           <br />
           <a
-
             href={`https://twitter.com/share?url=${baseUrl}` + urlToSend}
-            target='_blank'
+            target="_blank"
           >
-            <TwitterIcon size={75} round={true} className='share-icon' /> </a>
+            <TwitterIcon size={50} round={true} className="share-icon" />
+          </a>
           <br />
           <a
             href={`whatsapp://send?text=${baseUrl}` + urlToSend}
-            data-action='share/whatsapp/share'
-          > <WhatsappIcon size={75} round={true} className='share-icon' /> </a>
+            data-action="share/whatsapp/share"
+          >
+
+            <WhatsappIcon size={50} round={true} className="share-icon" />
+          </a>
           <br />
 
           <a
             href={`https://t.me/share/url?url=${baseUrl}` + urlToSend}
-            data-action='share/whatsapp/share'
-          > <TelegramIcon size={75} round={true} className='share-icon' /> </a>
+            data-action="share/whatsapp/share"
+          >
+
+            <TelegramIcon size={50} round={true} className="share-icon" />
+          </a>
           <br />
 
           <a
             href={`https://www.linkedin.com/shareArticle?url=${baseUrl}${urlToSend}&title=Lokalspende`}
-            data-action='share/whatsapp/share'
-          > <LinkedinIcon className='share-icon' size={75} round={true} /> </a>
+            data-action="share/whatsapp/share"
+          >
+
+            <LinkedinIcon className="share-icon" size={50} round={true} />
+          </a>
           <br />
 
           <a
             href={`https://reddit.com/submit?url=${baseUrl}${urlToSend}&title=Lokalspende`}
-            data-action='share/whatsapp/share'
-          > <RedditIcon className='share-icon' size={75} round={true} /> </a>
+            data-action="share/whatsapp/share"
+          >
+
+            <RedditIcon className="share-icon" size={50} round={true} />
+          </a>
           <br />
 
           <a
@@ -118,7 +128,10 @@ export const Share = () => {
               `https://www.facebook.com/sharer/sharer.php?u=${baseUrl}` +
               urlToSend
             }
-          > <FacebookIcon className='share-icon' size={75} round={true} /> </a>
+          >
+
+            <FacebookIcon className="share-icon" size={50} round={true} />
+          </a>
           {/* <a href='' target='_blank'>
             <button className='btn btn-success share-icon-link'>
               Generate
@@ -128,10 +141,10 @@ export const Share = () => {
       </div>
 
       <NavbarBottom
-        classstart='under-navitem-unselected'
-        classsearch='under-navitem-unselected'
-        classactivity='under-navitem-unselected'
-        classprofile='under-navitem-unselected'
+        classstart="under-navitem-unselected"
+        classsearch="under-navitem-unselected"
+        classactivity="under-navitem-unselected"
+        classprofile="under-navitem-unselected"
       />
     </div>
   );
