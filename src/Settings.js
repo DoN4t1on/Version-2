@@ -31,7 +31,7 @@ export const Settings = () => {
 <a href='https://lokalspende.org/warteliste/'>
           {' '}
           <button className='btn btn-success btn-lg button'>
-          Regionen Warteliste 📋
+          Regionen Warteliste📋
           </button>{' '}
         </a>{' '}
         <br /> <br />
@@ -39,7 +39,7 @@ export const Settings = () => {
         <a href='https://Lokalspende.org/fragen/'>
           {' '}
           <button className='btn btn-success btn-lg button'>
-            Fragen ⁉️
+            Fragen⁉️
           </button>{' '}
         </a>{' '}
         <br /> <br />

@@ -120,7 +120,7 @@ body {
 
   position: relative;
   bottom: 3px;
-  left: 6px;
+  left: 8px;
 }
 .create-titel {
   clear: left;
@@ -289,7 +289,7 @@ z-index: 10;
 
   float: right;
   position: relative;
-  top: 19px;
+  top: 20px;
   right: 15px;
   z-index: 10;
 }
@@ -439,7 +439,7 @@ z-index: 10;
 .campaigns {
   margin-bottom: 90px;
   overflow: hidden;
-  margin-top: 105px;
+  margin-top: 103px;
 }
 
 .comment-bar {
@@ -761,7 +761,7 @@ z-index: 10;
   left: 22px;
 }
 .location {
-  height: 28px;
+  height: 25px;
   font-size: 30px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -1208,7 +1208,7 @@ z-index: 10;
     bottom: 1px;
   }
   .campaigns {
-    margin-top: 102px;
+    margin-top: 100px;
   }
   .interaction-bar {
     padding-left: 1px;

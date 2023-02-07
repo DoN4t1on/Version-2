@@ -33,7 +33,7 @@ export const Imprint = () => {
       <br />
       <br />
       <strong>
-        Urheberrecht © 2021-2023 LocalPetition UG (haftungsbeschränkt). <br />{' '}
+        Urheberrecht © 2023 LocalPetition UG (haftungsbeschränkt). <br />{' '}
         Alle Rechte vorbehalten.{' '}
       </strong>
       <br /> <br />
