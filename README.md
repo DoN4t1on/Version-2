@@ -1,6 +1,6 @@
 To Dos for contributing: 
 
-Into terminal:
+Put into terminal:
 
 git clone https://github.com/LocalDonation-Dev/German.git
 
