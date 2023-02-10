@@ -1,4 +1,4 @@
-To Dos for contributing: 
+Guide for contributing: 
 
 Put into terminal:
 
