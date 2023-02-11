@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Suggestion } from './Suggestion';
 import { NavbarBottom } from './NavbarBottom';
+import { NavbarTop } from './NavbarTop'
 import Spielplatz from './img/playground_Suggestion.jpg';
 import { ImageEndPoint } from './config/config';
 import Parkbank from './img/bench.jpg';
@@ -265,53 +266,7 @@ export const Suggestions = () => {
             </>
           ) : (
             <>
-             <div id='header'>
-        <p className='location' id='location'>
-        {' '}
-          <img class='location-icon' src={require('./img/geo-alt-fill.svg')} />{' '}
-          {' '}
-          Köln
-        </p>
-
-        <p className='menu1 small-headlines'>
-          {' '}
-          <Link className='strong' to='/'>
-            Anträge
-          </Link>{' '}
-          | <Link className='grey' to='/crowdfunding'>Crowdfunding</Link>
-        </p>
-        <p className='menu2 small-headlines '>
-          {' '}
-          <Link to='/' className='strong'>
-            Aktiv{' '}
-          </Link>
-          |
-          <Link to='/antrage-akzeptiert' className='grey'>
-            {' '}
-            Akzeptiert{' '}
-          </Link>
-          |{' '}
-          <Link to='/antrage-abgelehnt' className='grey'>
-            Abgelehnt{' '}
-          </Link>{' '}
-        </p>
-        <p className='last-menu small-headlines'>
-          {/* {' '}
-         <Link to='/' className='grey'>
-            Am nächsten{' '}
-          </Link>
-  |{' '} */}
-          <Link to='/' className='strong'>
-            {' '}
-            Neuste{' '}
-          </Link>
-          |{' '}
-          <Link to='/antrage-aktiv-am-beliebtesten' className='grey'>
-            {' '}
-            Beliebtest
-          </Link>{' '}
-        </p>
-      </div>
+      <NavbarTop suggestions={true} suggestions_active={true} newest={true} />
       <div className='campaigns'>
         {allPost.map((item) => (
           <Suggestion item={item} />

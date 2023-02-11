@@ -8,26 +8,13 @@ import Radweg from './img/bikeway.jpg';
 import Bunker from './img/bunker.jpg';
 import Header from './components/Header';
 import { useDispatch, useSelector } from 'react-redux';
+import { NavbarTop } from './NavbarTop';
 export const Crowdfunding = () => {
   const { locationName, lat, long } = useSelector((state) => state.Geo);
 
   return (
     <div>
-      <div id='header'>
-        <p className='location' id='location'>
-        {' '}
-          <img class='location-icon' src={require('./img/geo-alt-fill.svg')} />{' '}
-          {' '} Köln
-        </p>
-
-        <p className='menu1 small-headlines'>
-          {' '}
-          <Link className='grey' to='/'>Anträge</Link> |{' '}
-          <Link to='/crowdfunding' className='strong'>
-            Crowdfunding
-          </Link>
-        </p>
-      </div>
+      <NavbarTop crowdfunding={true} suggestions_active={true} newest={true}/>
 
       <div className=' no-data-crowdfunding'>
         In diesem Gebiet befinden sich noch keine Crowdfundingkampagnen. Wir

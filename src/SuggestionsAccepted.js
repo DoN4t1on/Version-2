@@ -7,42 +7,13 @@ import Radweg from './img/bikeway.jpg';
 import { Link } from 'react-router-dom';
 import Header from './components/Header';
 import { useDispatch, useSelector } from 'react-redux';
+import { NavbarTop } from './NavbarTop';
 export const SuggestionsAccepted = () => {
   const { locationName, lat, long } = useSelector((state) => state.Geo);
 
   return (
     <div>
-      <div id='header'>
-        <p className='location' id='location'>
-        {' '}
-          <img class='location-icon' src={require('./img/geo-alt-fill.svg')} />{' '}
-          {' '}
-          Köln
-        </p>
-
-        <p className='menu1 small-headlines'>
-          {' '}
-          <Link className='strong' to='/'>
-            Anträge
-          </Link>{' '}
-          | <Link to='/crowdfunding' className='grey'>Crowdfunding</Link>
-        </p>
-        <p className='menu2 small-headlines '>
-          {' '}
-          <Link to='/' className='grey'>
-            Aktiv{' '}
-          </Link>
-          |
-          <Link to='/antrage-akzeptiert' className='strong'>
-            {' '}
-            Akzeptiert{' '}
-          </Link>
-          |{' '}
-          <Link to='/antrage-abgelehnt' className='grey'>
-            Abgelehnt{' '}
-          </Link>{' '}
-        </p>
-      </div>
+      <NavbarTop suggestions_accepted={true} suggestions={true} newest={true}/>
 
       <div className='no-data'>
         In diesem Gebiet befinden sich noch keine akzeptierten Anträge. Wir sind aber
