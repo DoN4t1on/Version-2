@@ -117,7 +117,7 @@ export const SuggestionsAcceptedMostPopular = () => {
       <div className='campaigns no-data'>
         In diesem Gebiet befinden sich noch keine akzeptierten
         Crowdfundingkampagnen. Wir sind bereits im Dialog mit der lokalen
-        Verwaltung. Gerne können Sie diese auch persönlich kontaktieren.
+        Regierung. Gerne können Sie diese auch persönlich kontaktieren.
       </div>
       <NavbarBottom
         classstart='under-navitem-selected'

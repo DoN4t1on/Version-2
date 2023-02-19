@@ -330,7 +330,7 @@ export const Suggestions = () => {
         <>
           <div className='campaigns no-data statement-Suggestions'>
 
-            (Erste Version)
+            (In Arbeit)
             <br />
             <br />
             Klicken Sie auf eine Region in der wir arbeiten:

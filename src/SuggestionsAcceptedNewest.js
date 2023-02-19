@@ -14,7 +14,7 @@ export const SuggestionsAcceptedNewest = () => {
   return (
     <div>
       <Header />
-      <div className='campaigns no-data'>In diesem Gebiet befinden sich noch keine akzeptierten Crowdfundingkampagnen. Wir sind bereits im Dialog mit der lokalen Verwaltung für eine Ratsversammlung. Gerne können Sie diese auch persönlich kontaktieren.</ div>
+      <div className='campaigns no-data'>In diesem Gebiet befinden sich noch keine akzeptierten Crowdfundingkampagnen. Wir sind bereits im Dialog mit der lokalen Regierung für eine Ratsversammlung. Gerne können Sie diese auch persönlich kontaktieren.</ div>
       <NavbarBottom
         classstart='under-navitem-selected'
         classsearch='under-navitem-unselected'
