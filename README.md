@@ -1,10 +1,4 @@
-Guide for contributing: 
 
-Put into terminal:
-
-git clone https://github.com/LocalDonation-Dev/German.git
-
-npm install
 
 
 ## Links
