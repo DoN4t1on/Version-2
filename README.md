@@ -1,10 +1,6 @@
-Guide for contributing: 
+Bugs:
 
-Put into terminal:
-
-git clone https://github.com/LocalDonation-Dev/German.git
-
-npm install
+Sign up / sign in wasn't swiping up.
 
 
 ## Links
