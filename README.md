@@ -7,8 +7,6 @@
 
 - Pitch Deck: https://docs.google.com/presentation/d/1F8w4StDPxbPq-F8iSwAMJXAphtt9uBInWVfdUHkDG6Y/edit#slide=id.gdaa249776a_2_53
 
-- App: https://App.Lokalspende.org
-
 ##
 
 - Donate: https://donorbox.org/localdonation
