@@ -9,10 +9,6 @@
 
 ##
 
-- Donate: https://donorbox.org/localdonation
-
-##
-
 - German landingpage: http://Lokalspende.org
 - International landingpage: http://LocalDonation.org
 
