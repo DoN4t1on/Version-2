@@ -5,7 +5,7 @@ import downvoteempty from './img/arrow-down.svg';
 import downvotefull from './img/arrow-down-fill.svg';
 import pinimageempty from './img/pin.svg';
 import pinimagefull from './img/pin-fill.svg';
-import { Link, Navigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { ImageEndPoint } from './config/config';
 import { localStorageData, Logout } from './services/auth/localStorageData';
 import ErrorService from './services/formatError/ErrorService';
@@ -18,6 +18,7 @@ import Grid from '@mui/material/Grid';
 // import { useNavigate } from '@reach/router';
 
 export const Suggestion = (Suggestion) => {
+  const navigate = useNavigate();
   const localtz = moment.tz.guess();
   const [sumcounter, setSumcounter] = useState(
     Suggestion.item.upvotes.length - Suggestion.item.downvotes.length
@@ -110,6 +111,12 @@ export const Suggestion = (Suggestion) => {
       },
     }
   );
+
+  const redirectToLogin = () => {
+    navigate("/dein-profil", {replace: true})
+    toast.error('Erstellen Sie ein Profil um fortzufahren');
+  }
+
   // const navigate = useNavigate();
   const upvote = () => {
     if (localStorageData('_id')) {
@@ -130,7 +137,7 @@ export const Suggestion = (Suggestion) => {
         dateTime: new Date(),
       });
     } else {
-      toast.error('Erstellen Sie ein Profil um fortzufahren');
+      redirectToLogin()
     }
 
     // if (upvotecounter == 0) {
@@ -172,8 +179,7 @@ export const Suggestion = (Suggestion) => {
         dateTime: new Date(),
       });
     } else {
-      toast.error('Erstellen Sie ein Profil um fortzufahren');
-      // navigate('einloggen')
+      redirectToLogin()
     }
 
     // if (downvotecounter == 0) {
