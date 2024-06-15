@@ -33,6 +33,11 @@ export const Comments = () => {
 
   const [allComments, setallComments] = React.useState([]);
 
+  const redirectToLogin = () => {
+    navigate("/dein-profil", {replace: true})
+    toast.error('Erstellen Sie ein Profil um fortzufahren'); // TODO: move to service (used in NavbarBottom, Suggestion and Comments)
+  }
+
   const getComments = useQuery(
     'getCommentshere',
     () => userServices.commonGetService(`/post/getComments/${Id}`),
@@ -60,7 +65,7 @@ export const Comments = () => {
       });
       setAmount('');
     } else {
-      toast.error('Erstellen Sie ein Profil um fortzufahren');
+      redirectToLogin()
     }
   };
 
