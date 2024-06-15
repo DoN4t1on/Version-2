@@ -6,11 +6,16 @@ import CookieConsent from 'react-cookie-consent';
 export const NavbarBottom = (props) => {
   let navigate = useNavigate();
 
+  const redirectToLogin = () => {
+    navigate("/dein-profil", {replace: true})
+    toast.error('Erstellen Sie ein Profil um fortzufahren'); // TODO: move to service (used in NavbarBottom, Suggestion and Comments)
+  }
+
   const route = () => {
     if (localStorageData('_id')) {
       navigate('/antrag-erstellen');
     } else {
-      toast.error('Erstellen Sie ein Profil um fortzufahren');
+      redirectToLogin()
     }
   };
 
