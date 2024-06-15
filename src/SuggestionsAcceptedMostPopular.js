@@ -67,53 +67,7 @@ export const SuggestionsAcceptedMostPopular = () => {
 
   return (
     <div>
-      <div id='header'>
-        <p className='location' id='location'>
-          {' '}
-          <img class='location-icon' src={require('./img/geo-alt-fill.svg')} />{' '}
-          {' '}
-          Köln
-        </p>
-
-        <p className='menu1 small-headlines'>
-          {' '}
-          <Link className='strong' to='/'>
-            Anträge
-          </Link>{' '}
-          | <Link to='/crowdfunding'>Crowdfunding</Link>
-        </p>
-        <p className='menu2 small-headlines '>
-          {' '}
-          <Link to='/' className=''>
-            Aktiv{' '}
-          </Link>
-          |
-          <Link to='/antrage-akzeptiert' className='strong'>
-            {' '}
-            Akzeptiert{' '}
-          </Link>
-          |{' '}
-          <Link to='/antrage-abgelehnt' className=''>
-            Abgelehnt{' '}
-          </Link>{' '}
-        </p>
-        <p className='last-menu small-headlines'>
-          {' '}
-          <Link to='/' className=''>
-            Am nächsten{' '}
-          </Link>
-          |{' '}
-          <Link to='/' className=''>
-            {' '}
-            Neuste{' '}
-          </Link>
-          |{' '}
-          <Link to='/' className=''>
-            {' '}
-            Beliebtest
-          </Link>{' '}
-        </p>
-      </div >
+      <Header suggestions={true} suggestions_accepted={true} suggestions_favourites={true}/>
       <div className='campaigns no-data'>
         In diesem Gebiet befinden sich noch keine akzeptierten
         Crowdfundingkampagnen. Wir sind bereits im Dialog mit der lokalen

@@ -33,15 +33,38 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  /* margin-top: -20px; */
   width: 100%;
-  background-color: #28a745;
   color: white;
   text-align: center;
   z-index: 2;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 0px 0px;
+  background-color: #fff;
 }
+
+.header-row {
+  background-color: #28a745;
+}
+
+.filters {
+  margin-left: 6px;
+}
+
+.filters, 
+.header-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+
+#header h1 {
+  color: #28a745;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
 .white {
  color: white;
 }
@@ -117,10 +140,9 @@ body {
 }
 .location-icon {
   height: 23px;
-
   position: relative;
-  bottom: 3px;
-  left: 8px;
+  /* bottom: 3px; */
+  /* left: 8px; */
 }
 .create-titel {
   clear: left;
@@ -138,12 +160,39 @@ body {
   display: block;
   margin-top: -210px;
 }
-.menu1 {
-  font-size: 16px;
-  height: 20px;
-  
 
+.header-search-input {
+  border:solid 1px #28a745;
+  border-radius: 0.2rem;
+  width: 97%;
+  height: 50px;
+  padding: 10px;
 }
+
+.tab-bar-menu {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  border:solid 1px #28a745;
+  font-size: 14px;
+  margin: 4px;
+  /* height: 30px; */
+  /* width: fit-content; */
+  border-radius: 15px;
+}
+
+.tab-bar-selected {
+  background-color: #28a745;
+  color: #fff;
+  padding: 4px;
+  border-radius: 12px;
+}
+
+.tab-bar-unselected {
+  padding: 4px;
+  color: #28a745;
+}
+
 .create-titel-input {
   max-width: 100%;
   width: 300px;
@@ -157,14 +206,7 @@ body {
   border-color: black;
   border: 1px solid black;
 }
-.menu2 {
-  font-size: 16px;
-  height: 20px;
-  margin-top: 0px;
-}
-.last-menu {
-  margin-bottom: 3px;
-}
+
 .left {
   float: left;
 }
@@ -439,7 +481,7 @@ z-index: 10;
 .campaigns {
   margin-bottom: 90px;
   overflow: hidden;
-  margin-top: 103px;
+  margin-top: 250px;
 }
 
 .comment-bar {
@@ -761,15 +803,14 @@ z-index: 10;
   left: 22px;
 }
 .location {
-  height: 25px;
+  /* height: 25px; */
   font-size: 30px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  /* margin-top: 0px; */
+  /* margin-bottom: 0px; */
   position: relative;
-  bottom: 6px;
-  right: 11px;
+  /* bottom: 6px; */
+  /* right: 11px; */
   color: white
-  
 }
 .profile-picture-fullscreen {
  /* border: 2px solid  #28a745; */

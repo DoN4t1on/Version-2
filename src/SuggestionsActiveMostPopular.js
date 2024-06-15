@@ -19,6 +19,7 @@ import Header from './components/Header';
 import ReactGA from 'react-ga4';
 import { useDispatch, useSelector } from 'react-redux';
 import { Get_All_POSTS } from './reactStore/actions/Actions';
+import { NavbarTop } from './NavbarTop';
 
 export const SuggestionsActiveMostPopular = () => {
   const dispatch = useDispatch();
@@ -90,53 +91,7 @@ export const SuggestionsActiveMostPopular = () => {
   }, []);
   return (
     <div>
-      <div id='header'>
-        <p className='location' id='location'>
-        {' '}
-          <img class='location-icon' src={require('./img/geo-alt-fill.svg')} />{' '}
-          {' '}
-          Köln
-        </p>
-
-        <p className='menu1 small-headlines'>
-          {' '}
-          <Link className='strong' to='/'>
-            Anträge
-          </Link>{' '}
-          | <Link to='/crowdfunding' className='grey'>Crowdfunding</Link>
-        </p>
-        <p className='menu2 small-headlines '>
-          {' '}
-          <Link to='/' className='strong'>
-            Aktiv{' '}
-          </Link>
-          |
-          <Link to='/antrage-akzeptiert' className='grey'>
-            {' '}
-            Akzeptiert{' '}
-          </Link>
-          |{' '}
-          <Link to='/antrage-abgelehnt' className='grey'>
-            Abgelehnt{' '}
-          </Link>{' '}
-        </p>
-        <p className='last-menu small-headlines'>
-          {/*{' '}
-          <Link to='/' className='grey'>
-            Am nächsten{' '}
-          </Link>
-          |{' '}*/}
-          <Link to='/' className='grey'>
-            {' '}
-            Neuste{' '}
-          </Link>
-          |{' '}
-          <Link to='/antrage-aktiv-am-beliebtesten' className='strong'>
-            {' '}
-            Beliebtest
-          </Link>{' '}
-        </p>
-      </div>
+      <NavbarTop suggestions={true} suggestions_active={true} favourites={true}/>
       <div className='campaigns'>
         {allPost.map((item) => (
           <Suggestion
